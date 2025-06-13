@@ -9,7 +9,7 @@ function LandingPage() {
         <div className="textstructure text-black">
           {/* Subheading */}
           <h2 className="text-lg text-black mb-4 tracking-wide">
-            Empower Your Learning Journey 🚀
+            Empower Your Learning Journey 🎓
           </h2>
 
           {/* Main Heading */}
