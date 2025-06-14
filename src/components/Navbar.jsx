@@ -39,7 +39,7 @@ export default function Navbar() {
         </div>
 
         <div className="links flex gap-10 text-black">
-          {["Home", "Services", "About Us", "OurTeam", "Contacts"].map(
+          {["Home", "Programs", "About Us", "OurTeam", "Contacts"].map(
             (item, index) => (
               <a
                 key={index}
