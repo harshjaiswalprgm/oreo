@@ -1,7 +1,7 @@
 export default function Featured() {
   return (
     <div className="w-full py-20">
-      <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
+      <div className="w-full px-20 border-b-[1px] border-white pb-20">
         <h1 className='text-6xl font-["Neue_Montreal"]'>Featured projects</h1>
       </div>
       <div className="px-20">

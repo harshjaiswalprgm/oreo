@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="bg-[#e9ff4c] text-black font-sans py-20">
+    <section className="bg-white text-black font-sans py-20">
 
       {/* Top Section - Sticks to Left */}
       <div className="w-full">

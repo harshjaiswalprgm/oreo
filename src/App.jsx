@@ -5,14 +5,15 @@ import About from "./components/About";
 import ProgramCard from "./components/ProgramCard";
 import Featured from "./components/Featured";
 import Services from "./components/Services";
-import ClientReviews from "./components/ClientReviews";
+
 import Glnumbers from "./components/Glnumbers";
 import HolisticProcess from "./components/HolisticProcess";
 import Niche from "./components/Niche";
-import Aabout from "./components/Aabout";
+
 import SectionOne from "./components/SectionOne";
 import Testimonial from "./components/Testimonials";
 import Background from "./components/Background";
+import CustomCursor from "./components/CustomCursor";
 import './index.css';
 
 
@@ -20,7 +21,8 @@ import './index.css';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-zinc-900 text-white">
+    <div className="w-full min-h-screen bg-[] text-black">
+      <CustomCursor />
       <Background />
       <Navbar />
       <LandingPage />
@@ -29,13 +31,12 @@ function App() {
       <ProgramCard />
       <Featured />
       <Services />
-      <ClientReviews />
       <Glnumbers />
       <HolisticProcess />
-      <Aabout />
       <Testimonial />
       <SectionOne />
       <Niche />
+
     </div>
   );
 }

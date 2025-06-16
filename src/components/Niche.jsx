@@ -1,68 +1,82 @@
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-[#f2f2f2] text-black px-8 py-20 font-sans">
-      <div className="flex flex-col md:flex-row justify-between">
-        {/* Left Side - The Learniverse */}
-        <div className="text-[6rem] md:text-[7rem] leading-[1] font-extrabold tracking-tight md:w-1/2">
-          <p>The</p>
+    <section className="w-screen min-h-screen bg-[#8BCA1E] text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
+
+      {/* Top Grid Content */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+
+        {/* Left: Brand / Tagline */}
+        <div className="text-6xl md:text-7xl font-extrabold leading-none">
+          <p>The-</p>
           <p>Learniverse</p>
         </div>
 
-        {/* Right Side */}
-        <div className="md:w-1/2 flex flex-col gap-12 mt-12 md:mt-0">
-          {/* Title */}
-          <h1 className="text-[4rem] font-bold leading-none">PRESENTATIONS</h1>
+        {/* Middle: Socials, Location, Contact */}
+        <div className="text-sm space-y-10">
+          <div>
+            <p className="font-semibold mb-2">S:</p>
+            <ul className="space-y-1">
+              <li><a href="#" className="underline">Instagram</a></li>
+              <li><a href="#" className="underline">Behance</a></li>
+              <li><a href="#" className="underline">Facebook</a></li>
+              <li><a href="#" className="underline">LinkedIn</a></li>
+            </ul>
+          </div>
 
-          {/* Sections */}
-          <div className="flex flex-col sm:flex-row flex-wrap gap-14 text-[1.25rem]">
-            {/* Social */}
-            <div>
-              <h4 className="font-semibold text-lg mb-3">S:</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="underline hover:opacity-70">Instagram</a></li>
-                <li><a href="#" className="underline hover:opacity-70">Behance</a></li>
-                <li><a href="#" className="underline hover:opacity-70">Facebook</a></li>
-                <li><a href="#" className="underline hover:opacity-70">LinkedIn</a></li>
-              </ul>
-            </div>
+          <div>
+            <p className="font-semibold mb-2">L:</p>
+            <ul className="space-y-1">
+              <li><a href="#" className="underline">Outer ring road</a></li>
+              <li><a href="#" className="underline">Near Eye Devi Hospital</a></li>
+              <li><a href="#" className="underline">Beside MRP</a></li>
+              <li><a href="#" className="underline">Bengluru,Karnatka</a></li>
+            </ul>
+          </div>
 
-            {/* Location */}
-            <div>
-              <h4 className="font-semibold text-lg mb-3">L:</h4>
-              <p>202-1965 W 4th Ave<br /><a href="#" className="underline">Vancouver, Canada</a></p>
-              <br />
-              <p>30 Chukarina St<br /><a href="#" className="underline">Lviv, Ukraine</a></p>
-            </div>
+          <div>
+            <p className="font-semibold mb-2">E:</p>
+            <p><a href="mailto:hello@ochi.design" className="underline">hr@glowlogics.in</a></p>
+          </div>
 
-            {/* Email */}
-            <div>
-              <h4 className="font-semibold text-lg mb-3">E:</h4>
-              <a href="mailto:thelearniverse@gmail.com" className="underline">thelearniverse@gmail.com</a>
-            </div>
+          <div>
+            <p className="font-semibold mb-2">P:</p>
+            <p><a href="tel:+1234567890" className="underline">+91 9794545008</a></p>
+          </div>
+        </div>
 
-            {/* Menu */}
-            <div>
-              <h4 className="font-semibold text-lg mb-3">M:</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="underline">Home</a></li>
-                <li><a href="#" className="underline">Services</a></li>
-                <li><a href="#" className="underline">Our work</a></li>
-                <li><a href="#" className="underline">About us</a></li>
-                <li><a href="#" className="underline">Insights</a></li>
-                <li><a href="#" className="underline">Contact us</a></li>
-              </ul>
-            </div>
+        {/* Right: Menu & Newsletter (optional) */}
+        <div className="text-sm space-y-6">
+          <div>
+            <p className="font-semibold mb-2">M:</p>
+            <ul className="space-y-1">
+              <li><a href="#" className="underline">Home</a></li>
+              <li><a href="#" className="underline">Services</a></li>
+              <li><a href="#" className="underline">Our Work</a></li>
+              <li><a href="#" className="underline">About Us</a></li>
+              <li><a href="#" className="underline">Insights</a></li>
+              <li><a href="#" className="underline">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-semibold mb-2">Subscribe to our newsletter:</p>
+            <form className="flex flex-col md:flex-row gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none"
+              />
+              <button className="px-4 py-2 bg-black text-white text-xs rounded-md hover:bg-gray-800">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="mt-20 text-base text-gray-600 w-full flex justify-between items-center border-t pt-6">
-        <span>© TheLearniverse 2025. <a href="#" className="underline">Legal Terms</a></span>
-        <span className="text-right">Website by TheLearniverse</span>
+      {/* Bottom Row */}
+      <div className="flex flex-col md:flex-row justify-between text-xs text-black-500 gap-4">
+        <p>© TheLearniverse design 2025. <a href="#" className="underline">Legal Terms</a> | <a href="#" className="underline">Privacy Policy</a></p>
+        <p>Website by Glowlogics</p>
       </div>
-    </footer>
+    </section>
   );
-};
-
-export default Footer;
+}

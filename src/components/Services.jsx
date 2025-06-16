@@ -1,152 +1,109 @@
-import firstImage from "../assets/images/first.jpg";
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { FaChalkboardTeacher, FaProjectDiagram, FaBriefcase, FaBullseye, FaUsers } from "react-icons/fa";
+import { MdDateRange, MdPeopleAlt, MdCalendarMonth } from "react-icons/md";
 
-const carouselData = [
-  {
-    image: firstImage,
-    label: "POSITIVITY",
-    title: "Learn, adapt succeed.",
-  },
-  {
-    image: firstImage,
-    label: "POSITIVITY",
-    title: "Dedicated Committed Success.",
-  },
-  {
-    image: firstImage,
-    label: "POSITIVITY",
-    title: "Success starts with learning",
-  },
-  {
-    image: firstImage,
-    label: "POSITIVITY",
-    title: "Success is a journey, not a destination",
-  },
-];
+export default function GlowlogicsUltimate() {
+  const cursorRef = useRef(null);
 
-export default function Services() {
+  useEffect(() => {
+    const cursor = cursorRef.current;
+    const moveCursor = (e) => {
+      cursor.animate(
+        {
+          transform: `translate(${e.clientX}px, ${e.clientY}px)`
+        },
+        { duration: 300, fill: "forwards" }
+      );
+    };
+    window.addEventListener("mousemove", moveCursor);
+    return () => window.removeEventListener("mousemove", moveCursor);
+  }, []);
+
   return (
-    <div className="bg-white text-black px-8 md:px-20 py-12">
-      {/* Header */}
-      <h1 className="text-6xl md:text-7xl font-extrabold mb-12"></h1>
+    <div className="relative min-h-screen flex justify-center items-center p-10 bg-black overflow-hidden">
 
-      {/* Main Statement */}
-      <div className="bg-white text-black px-8 md:px-20 py-16">
-        {/* Updated Heading */}
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-10 text-center md:text-left leading-tight">
-          🚀 Launch Your Career <br className="hidden md:block" />
-          <span className="text-[#8BCA1E]">with Industry-Ready Skills</span>
-        </h1>
+      {/* Optional floating blurred elements for premium touch */}
+      <div className="absolute w-80 h-80 bg-white rounded-full blur-3xl opacity-10 top-[-10%] left-[10%] animate-pulse"></div>
+      <div className="absolute w-80 h-80 bg-white rounded-full blur-3xl opacity-10 bottom-[-15%] right-[5%] animate-pulse"></div>
 
-        {/* Updated Sub-text */}
-        <p className="text-xl md:text-2xl font-light mb-16 max-w-5xl leading-relaxed text-gray-700">
-          Gain{" "}
-          <span className="font-semibold text-black">practical skills</span>,
-          work on
-          <span className="font-semibold text-black"> real-world projects</span>
-          , and unlock
-          <span className="font-semibold text-black">
-            {" "}
-            career opportunities
-          </span>{" "}
-          with our expert-led e-learning platform. From{" "}
-          <span className="text-[#4F46E5] font-semibold">Coding</span> to
-          <span className="text-[#4F46E5] font-semibold"> Design</span>,
-          <span className="text-[#4F46E5] font-semibold"> Marketing</span> to
-          <span className="text-[#4F46E5] font-semibold"> Data</span> — we
-          prepare you for the roles that companies hire for.
-        </p>
-
-        {/* Benefit Points */}
-        <div className="grid md:grid-cols-3 gap-10 text-lg text-gray-900 mb-20">
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl text-green-500">✅</span>
-              <h3 className="font-semibold text-xl">Expert-Led Courses</h3>
-            </div>
-            <p>
-              Learn directly from industry professionals with hands-on practical
-              sessions.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl text-green-500">✅</span>
-              <h3 className="font-semibold text-xl">Real-World Projects</h3>
-            </div>
-            <p>
-              Build live projects that mirror actual industry challenges and
-              requirements.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl text-green-500">✅</span>
-              <h3 className="font-semibold text-xl">Placement Assistance</h3>
-            </div>
-            <p>
-              Get dedicated career support, mock interviews, and placement
-              guidance to land your dream job.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Grid for 3 Services */}
-      <div className="grid md:grid-cols-3 gap-10 text-base text-gray-900 mb-20">
-        <div>
-          <h3 className="font-semibold underline mb-2">Goal defines it all</h3>
-          <p>
-            What do you want to achieve? Understanding the purpose of your
-            presentation allows us to tailor it to ensure it hits the mark and
-            drives results.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="font-semibold underline mb-2">Audience is the hero</h3>
-          <p>
-            Who is it for? What do they want? Why does it matter to them? We
-            need to know your audience to build an impactful narrative.
-          </p>
-        </div>
-
-        <div>
-          <h3 className="font-semibold underline mb-2">
-            Context makes a difference
-          </h3>
-          <p>
-            When do you present? Online or live? At a sales meeting, at a
-            conference, or just sending a cold email? We knit the context
-            together to decide the style of the presentation.
-          </p>
-        </div>
-      </div>
-
-      {/* INFINITE CARD ROLLING SECTION */}
-      <div className="overflow-hidden relative w-full py-10">
-        <div className="flex gap-8 animate-marquee-faster">
-          {[...carouselData, ...carouselData].map((item, idx) => (
-            <div
-              key={idx}
-              className="min-w-[350px] md:min-w-[450px] rounded-3xl overflow-hidden shadow-lg bg-white transition-transform duration-500 ease-in-out hover:scale-105"
-            >
-              <div className="relative h-72 md:h-80">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-4 text-center">
-                <p className="text-sm uppercase text-gray-400">{item.label}</p>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
+      {/* Main Content */}
+      <motion.div
+        className="relative backdrop-blur-3xl bg-white/10 border border-white/20 rounded-3xl p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 shadow-2xl"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        {data.map((item, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.1 }}
+            className="cursor-pointer group bg-white/20 backdrop-blur-xl rounded-2xl p-8 border border-white/30 shadow-lg transition-all duration-500"
+          >
+            <div className="flex justify-center items-center mb-6">
+              <div className={`text-6xl ${item.color} group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] transition`}>
+                {item.icon}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+            <h3 className="text-xl font-bold text-center mb-3 text-white">{item.title}</h3>
+            <p className="text-gray-200 text-center">{item.desc}</p>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      {/* Smooth Magnetic Cursor */}
+      <div ref={cursorRef} className="fixed w-5 h-5 rounded-full bg-white opacity-90 pointer-events-none z-[9999] mix-blend-difference -translate-x-1/2 -translate-y-1/2"></div>
     </div>
   );
 }
+
+const data = [
+  {
+    icon: <FaChalkboardTeacher />,
+    title: "Expert-Led Courses",
+    desc: "Learn directly from industry professionals with hands-on sessions.",
+    color: "text-green-300"
+  },
+  {
+    icon: <FaProjectDiagram />,
+    title: "Real-World Projects",
+    desc: "Build live projects that mirror actual industry challenges.",
+    color: "text-green-300"
+  },
+  {
+    icon: <FaBriefcase />,
+    title: "Placement Assistance",
+    desc: "Get career support, mock interviews & placement guidance.",
+    color: "text-green-300"
+  },
+  {
+    icon: <FaBullseye />,
+    title: "Goal Defines It All",
+    desc: "We customize learning to your goals & deliver impactful results.",
+    color: "text-pink-300"
+  },
+  {
+    icon: <FaUsers />,
+    title: "Audience is the Hero",
+    desc: "Tailored experiences by deeply understanding audience needs.",
+    color: "text-pink-300"
+  },
+  {
+    icon: <MdCalendarMonth />,
+    title: "Context Matters",
+    desc: "We structure learning for online, live or self-paced formats.",
+    color: "text-pink-300"
+  },
+  {
+    icon: <MdDateRange />,
+    title: "Founded In 2021",
+    desc: "Started with a vision to be the best and make the best.",
+    color: "text-blue-300"
+  },
+  {
+    icon: <MdPeopleAlt />,
+    title: "30,000+ Students",
+    desc: "Students learning & reaching where they want to go.",
+    color: "text-green-300"
+  }
+];

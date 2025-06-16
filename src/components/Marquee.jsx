@@ -40,19 +40,23 @@ const logos = [
 
 function Marquee() {
   return (
-    <div className="w-full overflow-hidden bg-white py-10 relative">
-      <div className="flex items-center">
-        <motion.div
-          className="flex min-w-max"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ ease: "linear", repeat: Infinity, duration: 60 }}
-        >
-          {[...logos, ...logos].map((logo, index) => (
-            <div key={index} className="flex items-center justify-center px-8">
-              <img src={logo} alt={`logo-${index}`} className="h-32 w-auto object-contain" />
-            </div>
-          ))}
-        </motion.div>
+    <div className="w-full flex justify-center items-center py-12 bg-gradient-to-r from-[#f9f9f9] via-[#fdfdfd] to-[#f9f9f9]">
+      <div className="w-full bg-white rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] border border-[#e6e6e6] p-10 mx-4">
+        <div className="w-full overflow-hidden relative">
+          <div className="flex items-center">
+            <motion.div
+              className="flex min-w-max"
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{ ease: "linear", repeat: Infinity, duration: 60 }}
+            >
+              {[...logos, ...logos].map((logo, index) => (
+                <div key={index} className="flex items-center justify-center px-8">
+                  <img src={logo} alt={`logo-${index}`} className="h-32 w-auto object-contain" />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

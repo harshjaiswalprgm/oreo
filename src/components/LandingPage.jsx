@@ -6,7 +6,7 @@ function LandingPage() {
       className="w-full h-screen pt-1 flex flex-col bg-cover bg-center relative"
       style={{
         backgroundImage:
-          "url('https://media.istockphoto.com/id/1409522268/vector/motion-node-networking-connection-communication-abstract-background-pattern.jpg?s=612x612&w=0&k=20&c=yGWkPSTPE3PfvDdDNZT36JHC-0jE91AUX1U11PD6hVw=')",
+          "url('')",
       }}
     >
       {/* Overlay for better text visibility */}
