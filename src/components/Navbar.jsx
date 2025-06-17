@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
-import TheLearniverseLogo from "../assets/NewwLogo.svg";
+import TheLearniverseLogo from "../assets/logos/newlogo.svg";
 import { FiMenu, FiX } from "react-icons/fi";
 import { BsMoon, BsSun } from "react-icons/bs";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,50 +34,51 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
   return (
     <div>
       <div
-        className={`transition-all duration-300 z-[999] w-full fixed top-0 px-6 md:px-10 py-3 flex justify-between items-center backdrop-blur-md border border-white/30 shadow-md ${
-          show ? "top-0" : "-top-28"
-        } ${
-          scrolled
-            ? "bg-white/70 dark:bg-gray-900/90"
-            : "bg-white/30 dark:bg-black/30"
-        } rounded-3xl mx-auto max-w-[96%] mt-2`}
+        className={`fixed top-0 left-1/2 -translate-x-1/2 mt-2 max-w-[96%] w-full rounded-full px-6 md:px-10 py-2
+          backdrop-blur-md border-[0.5px] border-gray-300 shadow-sm transition-all duration-300 z-[999]
+          flex justify-between items-center
+          ${show ? "top-0" : "-top-28"}
+          ${scrolled ? "bg-white/90 dark:bg-gray-900" : "bg-white/40 dark:bg-black/40"}`}
       >
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-8">
           <img
             src={TheLearniverseLogo}
-            alt="The Learniverse Logo"
-            className="h-[60px] md:h-[80px] transition-transform duration-300 hover:scale-105"
+            alt="Logo"
+            className="h-[50px] md:h-[60px] transition-transform duration-300 hover:scale-105"
           />
-
-          <div className="hidden lg:flex gap-10 items-center">
-            {["About", "Programs", "Career", "Blogs"].map((item, index) => (
+          <div className="hidden lg:flex gap-6 items-center">
+            {[
+              { label: "About", link: "#" },
+              { label: "Programs", link: "#" },
+              { label: "Career", link: "#" },
+              { label: "Blogs", link: "#" },
+            ].map((item, index) => (
               <a
                 key={index}
-                href="#"
-                className="text-base font-bold text-black dark:text-white hover:text-black dark:hover:text-white transition duration-300"
+                href={item.link}
+                className="px-4 py-1 rounded-full text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
               >
-                {item}
+                {item.label}
               </a>
             ))}
-            <span className="text-xs font-bold bg-black text-white px-2 py-1 rounded-md">
-              We are hiring
+            <span className="text-[10px] font-bold bg-black text-white px-2 py-1 rounded-md uppercase">
+              New session started
             </span>
           </div>
         </div>
 
-        <div className="hidden lg:flex gap-4 items-center">
-          <button className="px-5 py-2 text-sm font-semibold text-white bg-slate-800 dark:bg-slate-200 dark:text-black rounded-full hover:bg-slate-900 dark:hover:bg-slate-100 transition">
-            <i className="fas fa-user mr-2" /> Sign Up
+        <div className="hidden lg:flex items-center gap-3">
+          <button className="flex items-center gap-1 px-4 py-1.5 text-sm font-medium bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded-full hover:bg-gray-300 dark:hover:bg-gray-600">
+            <i className="fas fa-user" /> Sign Up
           </button>
-          <button className="px-5 py-2 text-sm font-semibold text-black bg-white rounded-full hover:bg-gray-200 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 transition">
-            <i className="fas fa-sign-in-alt mr-2" /> Login
+          <button className="flex items-center gap-1 px-4 py-1.5 text-sm font-medium bg-black text-white dark:bg-white dark:text-black rounded-full hover:opacity-90">
+            <i className="fas fa-sign-in-alt" /> Login
           </button>
-          <button
-            onClick={toggleDarkMode}
-            className="w-10 h-10 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center transition-transform hover:scale-110"
-          >
-            {darkMode ? <BsSun size={20} /> : <BsMoon size={20} />}
-          </button>
+          <div className="flex flex-col items-center justify-between bg-black text-white dark:bg-white dark:text-black w-8 h-[60px] rounded-full p-1">
+            <button onClick={toggleDarkMode}>
+              {darkMode ? <BsSun size={16} /> : <BsMoon size={16} />}
+            </button>
+          </div>
         </div>
 
         <div
