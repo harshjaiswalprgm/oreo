@@ -1,49 +1,99 @@
-const AboutSection = () => {
+
+import { motion } from "framer-motion";
+import { FaArrowRight, FaPhoneAlt, FaEnvelope,} from "react-icons/fa";
+import { MdOutlineDesktopMac } from "react-icons/md";
+
+const SupportSection = () => {
   return (
-    <section className="bg-white text-black font-sans py-20">
-
-      {/* Top Section - Sticks to Left */}
-      <div className="w-full">
-        <h1 className="text-4xl md:text-6xl font-medium leading-tight tracking-tight max-w-4xl pl-4 md:pl-12">
-          Ochi is a strategic presentation agency for forward-thinking businesses that need to{' '}
-          <span className="underline">raise funds</span>,{' '}
-          <span className="underline">sell products</span>,{' '}
-          <span className="underline">explain complex ideas</span>, and{' '}
-          <span className="underline">hire great people</span>.
-        </h1>
-      </div>
-
-      {/* Divider Line */}
-      <div className="border-t border-black mt-16 mb-12 mx-6 md:mx-20"></div>
-
-      {/* Bottom Section - Grid Layout */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6 md:px-0 text-base md:text-lg">
-        <div className="font-medium">What you can expect:</div>
-
-        <div className="col-span-1 md:col-span-1 space-y-6">
-          <p>
-            We partner with the companies and startups who make the world go round — they drive the
-            net-zero economy, revolutionize crypto treasury management, build photonic chips, and
-            open Michelin-starred restaurants.
-          </p>
-          <p>
-            We believe the mix of strategy and design (with a bit of coffee) is what makes your
-            message clear, convincing, and captivating.
+    <section className="relative w-full px-4 md:px-12 lg:px-20 py-16 bg-gradient-to-b from-white via-blue-50 to-white">
+      {/* Top Big Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full bg-white rounded-3xl shadow-xl p-8 flex flex-col lg:flex-row justify-between items-center gap-8 mb-16"
+      >
+        <div className="flex-1 space-y-4">
+          <p className="text-sm font-semibold text-gray-500 uppercase">Support</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            TheLearnivers Academic <br className="hidden md:block" />
+            Support
+          </h2>
+          <p className="text-gray-500 text-lg">
+            Get better help from our best support teamr@glowlogics. We’re here to guide you through every step.
           </p>
         </div>
-
-        <div className="col-span-1">
-          <p className="font-medium">S:</p>
-          <ul className="space-y-1 underline">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
+        <div className="flex-1">
+          <img
+            src="https://www.shutterstock.com/shutterstock/photos/2483488709/display_1500/stock-vector-remote-recruitment-colorful-flat-illustration-2483488709.jpg"
+            alt="Support Agent"
+            className="w-full max-w-md rounded-xl"
+          />
         </div>
+      </motion.div>
+
+      {/* Bottom Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Card 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all"
+        >
+          <p className="text-xs uppercase font-semibold text-gray-500 mb-2">Demo</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Request a free demo</h3>
+          <div className="flex items-center gap-3 mt-6">
+            <MdOutlineDesktopMac className="text-green-500 text-2xl" />
+            <a href="#" className="text-green-600 font-medium hover:underline text-sm flex items-center">
+              Request <FaArrowRight className="ml-1" />
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Card 2 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all"
+        >
+          <p className="text-xs uppercase font-semibold text-gray-500 mb-2">Call Us</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Have doubt? Call Us</h3>
+          <div className="flex items-center gap-3 mt-6">
+            <FaPhoneAlt className="text-blue-500 text-lg" />
+            <a
+              href="tel:+919"
+              className="text-blue-600 font-medium hover:underline text-sm flex items-center"
+            >
+              +91 9794545008 <FaArrowRight className="ml-1" />
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Card 3 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all"
+        >
+          <p className="text-xs uppercase font-semibold text-gray-500 mb-2">Query</p>
+          <h3 className="text-xl font-bold text-gray-800 mb-4">Have query? Mail Us</h3>
+          <div className="flex items-center gap-3 mt-6">
+            <FaEnvelope className="text-purple-500 text-lg" />
+            <a
+              href="mailto:hr@glowlogics.in"
+              className="text-blue-600 font-medium hover:underline text-sm flex items-center"
+            >
+            hr@glowlogics.in <FaArrowRight className="ml-1" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default AboutSection;
+export default SupportSection;

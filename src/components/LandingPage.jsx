@@ -1,72 +1,74 @@
-import { FaArrowUpLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { FaPlay } from "react-icons/fa";
 
-function LandingPage() {
+const HeroSection = () => {
   return (
-    <div
-      className="w-full h-screen pt-1 flex flex-col bg-cover bg-center relative"
-      style={{
-        backgroundImage:
-          "url('')",
-      }}
-    >
-      {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-      {/* Main Content Area */}
-      <div className="flex flex-1 items-center justify-between px-20 pt-16 relative z-10">
-        {/* Left Content */}
-        <div className="textstructure text-white">
-          {/* Subheading */}
-          <h2 className="text-lg mb-4 tracking-wide">
-            Empower Your Learning Journey 🎓
-          </h2>
-
-          {/* Main Heading */}
-          {["Learn Smart", "Grow Fast", "Succeed"].map((item, index) => (
-            <div className="masker" key={index}>
-              <div className="w-fit overflow-hidden">
-                <h1 className="uppercase text-[6.5vw] leading-[7vw] tracking-tight font-['Founders Grotesk X-Condensed'] font-medium">
-                  {item}
-                </h1>
-              </div>
-            </div>
-          ))}
+    <section className="w-full min-h-screen bg-white px-6 md:px-16 lg:px-32 py-20 flex flex-col-reverse lg:flex-row items-center justify-between relative overflow-hidden">
+      {/* Left Content */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-xl text-center lg:text-left"
+      >
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+          Find The <span className="text-orange-500">Best Tutors</span> <br />
+          Around The Globe <br />
+          For Your Career Success.
+        </h1>
+        <p className="text-lg text-gray-500 mt-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper nulla pellentesque di.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start">
+          <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
+            Join now
+          </button>
+          <button className="flex items-center gap-2 text-black font-medium hover:underline">
+            <FaPlay className="text-orange-500" /> Watch Demo
+          </button>
         </div>
+        <div className="mt-6 flex items-center justify-center lg:justify-start gap-3">
+          <img src="https://tiimg.tistatic.com/fp/1/007/742/white-cute-little-female-sizu-pet-puppy-with-fur-hair-style-735.jpg" className="w-8 h-8 rounded-full border" />
+          <img src="https://tiimg.tistatic.com/fp/1/007/742/white-cute-little-female-sizu-pet-puppy-with-fur-hair-style-735.jpg" className="w-8 h-8 rounded-full border -ml-3" />
+          <img src="https://tiimg.tistatic.com/fp/1/007/742/white-cute-little-female-sizu-pet-puppy-with-fur-hair-style-735.jpg" className="w-8 h-8 rounded-full border -ml-3" />
+          <p className="ml-2 text-sm text-gray-600 font-medium">More Than 2k+ Tutors</p>
+        </div>
+      </motion.div>
 
-        {/* Right Image */}
-        <div className="w-[500px] h-auto">
+      {/* Right Content */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="relative mt-10 lg:mt-0"
+      >
+        <div className="bg-yellow-100 p-8 rounded-3xl shadow-xl w-[320px] sm:w-[360px] lg:w-[400px] text-center">
           <img
-            src="https://as1.ftcdn.net/v2/jpg/06/74/55/48/1000_F_674554865_kBGsKoQUxNcDdMoubOoRO7gVRceCaECI.jpg"
-            alt="Learning"
-            className="w-full h-auto rounded-xl"
+            src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg"
+            className="w-28 h-28 rounded-full mx-auto object-cover"
+            alt="Juan Miller"
           />
+          <h3 className="mt-4 text-xl font-semibold text-gray-900">Juan Miller</h3>
+          <p className="text-gray-600 text-sm">Chemistry Teacher</p>
+          <p className="text-gray-500 text-sm">University of Oxford, UK</p>
+          <div className="mt-2 text-yellow-500 text-lg">★★★★★</div>
         </div>
-      </div>
 
-      {/* Bottom Section */}
-      <div className="border-t-[1px] border-zinc-300 mt-10 text-white flex justify-between items-center py-5 px-20 relative z-10">
-        {[
-          "Unlock Your Future With Learning",
-          "From Classroom To Corporate Success",
-        ].map((item, index) => (
-          <p className="text-md font-light tracking-tight leading-none" key={index}>
-            {item}
-          </p>
-        ))}
-
-        <div className="start flex items-center gap-5">
-          <div className="px-5 py-2 border-[1px] border-white font-light text-md uppercase rounded-full cursor-pointer hover:bg-white hover:text-black transition-all duration-200">
-            Start Learning
-          </div>
-          <div className="w-10 h-12 border-[2px] flex items-center justify-center border-white rounded-full">
-            <span className="rotate-[45deg]">
-              <FaArrowUpLong />
-            </span>
-          </div>
+        <div className="absolute -left-28 top-10 w-52 bg-white p-3 rounded-xl shadow-xl text-sm text-left">
+          <p className="font-semibold text-gray-800">Academic Success</p>
+          <p className="text-gray-500 text-xs mt-1">Lorem ipsum dolor sit amet...</p>
         </div>
-      </div>
-    </div>
+
+        <div className="absolute -left-24 bottom-10 w-52 bg-white p-3 rounded-xl shadow-xl text-sm text-left">
+          <p className="font-semibold text-gray-800">Career Guidance</p>
+          <p className="text-gray-500 text-xs mt-1">Lorem ipsum dolor sit amet...</p>
+        </div>
+      </motion.div>
+
+
+
+    </section>
   );
-}
+};
 
-export default LandingPage;
+export default HeroSection;

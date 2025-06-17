@@ -4,84 +4,84 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function HolisticProcess() {
   const processData = [
     {
-      phase: '01. Phase',
+      phase: '01. Aditi',
       title: 'Discovery',
       description:
-        'We define your goals, get to know your audience, and understand the context.',
-      image: '/discovery.png',
+        'We define your goals, get toprepare assets for launch, making sure everything is polishprepare assets for launch, making sure everything is polishprepare assets for launch, making sure everything is polish know your audience, and understand the context.',
+      image: 'https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159',
     },
     {
-      phase: '02. Phase',
+      phase: '02. Harsh',
       title: 'Storytelling',
       description:
         'We craft a compelling narrative to reflect your brand and connect emotionally.',
       image: '/storytelling.png',
     },
     {
-      phase: '03. Phase',
+      phase: '03. Name',
       title: 'Design',
       description:
         'We create pixel-perfect, functional designs that embody your message.',
       image: '/design.png',
     },
     {
-      phase: '04. Phase',
+      phase: '04. Name',
       title: 'Feedback',
       description:
         'We work with you to iterate and refine the product based on your feedback.',
       image: '/feedback.png',
     },
     {
-      phase: '05. Phase',
+      phase: '05. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '06. Phase',
+      phase: '06. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '07. Phase',
+      phase: '07. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '08. Phase',
+      phase: '08. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '09. Phase',
+      phase: '09. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '10. Phase',
+      phase: '10. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '11. Phase',
+      phase: '11. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',
       image: '/delivery.png',
     },
      {
-      phase: '12. Phase',
+      phase: '12. Name',
       title: 'Delivery',
       description:
         'We prepare assets for launch, making sure everything is polished and ready.',

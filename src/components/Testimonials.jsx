@@ -1,97 +1,96 @@
-import { useRef, useState } from "react";
-import { GripHorizontal } from "lucide-react"; // Optional: icon from lucide-react
+import { FaQuoteLeft } from "react-icons/fa";
+import PropTypes from "prop-types";
 
-function DraggableShowcase() {
-  const scrollRef = useRef(null);
-  const [isHovering, setIsHovering] = useState(false);
+// Testimonial data
+const testimonials = [
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "Their ability to capture our brand essence in every project is unparalleled - an invaluable creative collaborator.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "Creative geniuses who listen, understand, and craft captivating visuals - an agency that truly understands our needs.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "Exceeded our expectations with innovative designs that brought our vision to life - a truly remarkable creative agency.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "A refreshing and imaginative agency that consistently delivers exceptional results - highly recommended for any project.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "Their team’s artistic flair and strategic approach resulted in remarkable campaigns - a reliable creative partner.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "From concept to execution, their creativity knows no bounds - a game-changer for our brand’s success.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+];
 
-  const handleDrag = (e) => {
-    const slider = scrollRef.current;
-    let isDown = true;
-    let startX = e.pageX - slider.offsetLeft;
-    let scrollLeft = slider.scrollLeft;
-
-    const mouseMove = (eMove) => {
-      if (!isDown) return;
-      eMove.preventDefault();
-      const x = eMove.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1.5; // Drag speed
-      slider.scrollLeft = scrollLeft - walk;
-    };
-
-    const mouseUp = () => {
-      isDown = false;
-      window.removeEventListener("mousemove", mouseMove);
-      window.removeEventListener("mouseup", mouseUp);
-    };
-
-    window.addEventListener("mousemove", mouseMove);
-    window.addEventListener("mouseup", mouseUp);
-  };
+export default function Testimonials() {
+  const loopTestimonials = [...testimonials, ...testimonials]; // Doubled for seamless loop
 
   return (
-    <div className="w-full py-20 bg-white">
-      <h2 className="text-4xl md:text-5xl font-bold px-10 mb-12">
-        Whats Happening at Oreo
+    <div className="bg-white py-12 overflow-hidden">
+      <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+        Words of praise from others<br />about our presence.
       </h2>
 
-      <div
-        ref={scrollRef}
-        onMouseDown={handleDrag}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-        className="relative cursor-grab active:cursor-grabbing flex gap-10 overflow-x-auto px-10"
-      >
-        {/* Floating "Drag Me" text/icon */}
-        {isHovering && (
-          <div className="absolute left-1/2 -top-10 transform -translate-x-1/2 bg-black text-white text-sm px-3 py-1 rounded-full flex items-center gap-2 animate-pulse z-10">
-            <GripHorizontal size={16} /> Drag Me
-          </div>
-        )}
+      <div className="relative w-full space-y-8 overflow-x-hidden">
+        {/* Row 1: left to right */}
+        <div className="flex w-max animate-marquee space-x-6 px-6">
+          {loopTestimonials.map((item, index) => (
+            <Card key={`row1-${index}`} item={item} />
+          ))}
+        </div>
 
-        {/* Testimonial cards */}
-        {[
-          {
-            title: "Medallia",
-            desc:
-              "The most impressive thing about Oreo is their attention to detail. The Oreo team tackled our project with unmatched professionalism. They understood our brand and vision, and transformed it into elegant design output that worked across all our client touchpoints. This became our go-to style guide!They didn't just design presentations, they helped us craft a compelling narrative. Their design insight is something we’ve never seen before in our line of work.",
-          },
-          {
-            title: "Planely",
-            desc:
-              "The Oreo team tackled our project with unmatched professionalism. They understood our brand and vision, and transformed it into elegant design output that worked across all our client touchpoints. This became our go-to style guide!",
-          },
-          {
-            title: "Officevibe",
-            desc:
-              "The team showed deep understanding of storytelling through slides. Oreo went above and beyond and delivered more than expected. Their support in the strategy meetings made a big difference to the final result.",
-          },
-          {
-            title: "Nestle",
-            desc:
-              "Amazing experience! As an established company, we need precision and fast turnarounds. Oreo nailed both. Their designs were elegant, effective, and always aligned with our brand language. This partnership will definitely continue.",
-          },
-          {
-            title: "Upcoming Event",
-            desc:
-              "Recently hosted our annual design summit with Oreo as our lead partner. From pitch decks to keynote presentations, the visual experience they crafted stole the show. Next up: brand film and launch creatives.",
-          },
-        ].map((item, idx) => (
-          <div
-            key={idx}
-            className="min-w-[400px] md:min-w-[500px] lg:min-w-[550px] bg-zinc-100 p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] border border-zinc-200"
-          >
-            <h3 className="text-xl font-semibold underline mb-4 text-black">
-              {item.title}
-            </h3>
-            <p className="text-base leading-relaxed text-zinc-700 whitespace-pre-line">
-              {item.desc}
-            </p>
-          </div>
-        ))}
+        {/* Row 2: right to left */}
+        <div className="flex w-max animate-marquee-reverse space-x-6 px-6">
+          {loopTestimonials.map((item, index) => (
+            <Card key={`row2-${index}`} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-export default DraggableShowcase;
+// Reusable card component
+function Card({ item }) {
+  return (
+    <div className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0">
+      <FaQuoteLeft className="text-blue-500 text-xl mb-2" />
+      <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+      <div className="flex items-center space-x-3 mt-auto">
+        <img src={item.img} alt={item.name} className="w-10 h-10 rounded-full" />
+        <div>
+          <p className="font-semibold text-sm">{item.name}</p>
+          <p className="text-xs text-gray-500">{item.title}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+Card.propTypes = {
+  item: PropTypes.shape({
+    name:  PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text:  PropTypes.string.isRequired,
+    img:   PropTypes.string.isRequired,
+  }).isRequired,
+};
