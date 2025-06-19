@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 const imageUrls = [
   "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1585900463818-bab83844be48?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1706466614967-f4f14a3d9d08?q=80&auto=format&fit=crop",

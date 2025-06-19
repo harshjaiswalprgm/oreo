@@ -20,6 +20,9 @@ export default {
         marquee: 'marquee 30s linear infinite',
         'marquee-reverse': 'marquee-reverse 30s linear infinite',
       },
+      colors: {
+      learniverse: '#8BCA1E',
+    },
     },
   },
   plugins: [],

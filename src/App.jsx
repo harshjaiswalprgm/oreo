@@ -13,6 +13,7 @@ import Background from "./components/Background";
 import CustomCursor from "./components/CustomCursor";
 import Image3DSlider from "./components/Image3DSlider";
 import FloatingSocials from "./components/FloatingSocials";
+import GlobalReachSection  from "./components/GlobalReachSection";
 import "./index.css";
 
 // adjust the path if needed
@@ -29,6 +30,7 @@ function App() {
       <ProgramCard />
       <Featured />
       <Services />
+      <GlobalReachSection  />
       <HolisticProcess />
       <Image3DSlider />
       <Testimonial />
