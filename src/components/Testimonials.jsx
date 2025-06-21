@@ -39,6 +39,25 @@ const testimonials = [
     text: "From concept to execution, their creativity knows no bounds - a game-changer for our brand’s success.",
     img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
   },
+  {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "From concept to execution, their creativity knows no bounds - a game-changer for our brand’s success.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+    {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "From concept to execution, their creativity knows no bounds - a game-changer for our brand’s success.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+    {
+    name: "Harsh Jaiswal",
+    title: "CEO and Co-founder of ABC Company",
+    text: "From concept to execution, their creativity knows no bounds - a game-changer for our brand’s success.",
+    img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
+  },
+
 ];
 
 export default function Testimonials() {
@@ -47,7 +66,7 @@ export default function Testimonials() {
   return (
     <div className="bg-white py-12 overflow-hidden">
       <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-        Words of praise from others<br />about our presence.
+       Admiration expressed by others regarding our presence.
       </h2>
 
       <div className="relative w-full space-y-8 overflow-x-hidden">
@@ -55,13 +74,6 @@ export default function Testimonials() {
         <div className="flex w-max animate-marquee space-x-6 px-6">
           {loopTestimonials.map((item, index) => (
             <Card key={`row1-${index}`} item={item} />
-          ))}
-        </div>
-
-        {/* Row 2: right to left */}
-        <div className="flex w-max animate-marquee-reverse space-x-6 px-6">
-          {loopTestimonials.map((item, index) => (
-            <Card key={`row2-${index}`} item={item} />
           ))}
         </div>
       </div>
