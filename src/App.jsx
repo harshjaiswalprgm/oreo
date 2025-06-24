@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-// import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import ProgramCard from "./components/ProgramCard";
@@ -26,7 +26,7 @@ function App() {
       <Background />
       <Navbar />
       <HeroSection />
-      {/* <LandingPage /> */}
+      <LandingPage />
       <Marquee />
       <About />
       <ProgramCard />
