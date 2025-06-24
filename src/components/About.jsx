@@ -19,19 +19,19 @@ function About() {
           transition={{ duration: 1 }}
           className="w-full p-10 md:p-20 bg-[#8BCA1E] text-black space-y-16"
         >
-          <h1 className="font-['Neue_Montreal'] text-xl md:text-2xl leading-relaxed tracking-tight text-center max-w-6xl mx-auto">
-            TheLearniverse is a dynamic e-learning hub designed for students and
+          <h1 className="font-['Neue_Montreal']text-base leading-relaxed text-2xl">
+            Glowlogics is a dynamic e-learning hub designed for students and
             working professionals seeking practical skills and career growth. Dive
             into expert courses that help you grasp challenging concepts, boost
             your professional value, prepare for competitive roles, and
-            continuously upskill for an evolving job market.
+            continuously upskill for an evolving job market. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores sapiente, quis error sequi ab aliquam veniam tempore accusantium unde dolorem, itaque vel dolore hic, exercitationem qui ipsum temporibus. Facere accusamus, ratione distinctio natus assumenda beatae hic amet fugit ipsum, cum velit dicta, voluptate nihil dolore ad. Nostrum, laboriosam animi.
           </h1>
 
           <div className="flex flex-col md:flex-row gap-10 border-t-[1px] pt-10 border-[#a1b562]">
             <div className="w-full md:w-1/2 space-y-6">
               <h2 className="text-4xl md:text-6xl font-bold">Our Approach:</h2>
 
-              <p className="text-lg leading-relaxed max-w-xl">
+              <p className="text-base leading-relaxed">
                 At TheLearniverse, our approach is simple: we empower your growth.
                 We believe in making complex topics clear and practical, ensuring
                 every course equips you with the skills you need to succeed in
@@ -43,6 +43,26 @@ function About() {
                 fresh or leveling up, TheLearniverse is your partner in every step
                 of your learning journey.
               </p>
+
+              <div className="space-y-10 pt-4">
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Our Vision</h3>
+                  <p className="text-base leading-relaxed">
+                    To become the world’s most trusted learning ecosystem where individuals
+                    from all backgrounds can access quality, future-focused education
+                    and transform their potential into excellence. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sint quos aliquam consequatur sapiente sit iusto blanditiis quae eius dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis labore suscipit nostrum deleniti ut inventore vel ex alias fugit?
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
+                  <p className="text-base leading-relaxed">
+                    We aim to empower learners and professionals through affordable,
+                    innovative, and real-world aligned education experiences — helping
+                    them thrive in an ever-evolving global job market.
+                  </p>
+                </div>
+              </div>
 
               <button className="flex uppercase gap-4 items-center px-8 py-4 bg-zinc-900 rounded-full text-white shadow-lg hover:bg-[#6b9e17] transition-all duration-300 group">
                 Read More

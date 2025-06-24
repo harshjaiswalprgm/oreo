@@ -27,6 +27,9 @@ const Navbar = () => {
 
   return (
     <motion.nav
+      initial={{ opacity: 0, y: -50 }} // Fade + Slide from top
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       className={`w-full fixed top-0 left-0 z-50 bg-gray-100 shadow-sm transition-transform duration-500 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
@@ -39,14 +42,14 @@ const Navbar = () => {
             transition={{ type: "spring", stiffness: 300 }}
             className="text-2xl font-bold"
           >
-            <span className="text-black">Learniverse</span>
+            <span className="text-black">Glowlogics</span>
           </motion.div>
           <div className="text-sm font-medium text-gray-700 flex items-center gap-1 cursor-pointer hover:text-black transition">
             EN <FaChevronDown size={12} />
           </div>
         </div>
 
-        {/* Center Nav Links with Flip & Underline */}
+        {/* Center Nav Links */}
         <div className="hidden md:flex gap-8">
           {navLinks.map((link, index) => (
             <motion.a
@@ -54,12 +57,9 @@ const Navbar = () => {
               href="#"
               className="group relative font-semibold uppercase text-sm text-gray-700 transition duration-300"
             >
-              {/* Rotating Text (front only) */}
               <span className="block transition-transform duration-500 group-hover:rotate-x-180 origin-center">
                 {link}
               </span>
-
-              {/* Underline on Hover */}
               <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
             </motion.a>
           ))}
