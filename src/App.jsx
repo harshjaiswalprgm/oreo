@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import LandingPage from "./components/LandingPage";
+// import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import ProgramCard from "./components/ProgramCard";
 import Featured from "./components/Featured";
 import Services from "./components/Services";
-import HolisticProcess from "./components/HolisticProcess";
+import FAQSection from "./components/FAQSection";
 import Niche from "./components/Niche";
 import SectionOne from "./components/SectionOne";
 import Testimonial from "./components/Testimonials";
@@ -26,14 +26,14 @@ function App() {
       <Background />
       <Navbar />
       <HeroSection />
-      <LandingPage />
+      {/* <LandingPage /> */}
       <Marquee />
       <About />
       <ProgramCard />
       <Featured />
       <Services />
       <GlobalReachSection  />
-      <HolisticProcess />
+      <FAQSection />
       <Image3DSlider />
       <Testimonial />
       <SectionOne />
