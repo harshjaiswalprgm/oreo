@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import LandingPage from "./components/LandingPage";
+// import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import ProgramCard from "./components/ProgramCard";
@@ -14,6 +14,7 @@ import CustomCursor from "./components/CustomCursor";
 import Image3DSlider from "./components/Image3DSlider";
 import FloatingSocials from "./components/FloatingSocials";
 import GlobalReachSection  from "./components/GlobalReachSection";
+import HeroSection  from "./components/HeroSection";
 import "./index.css";
 
 // adjust the path if needed
@@ -24,7 +25,8 @@ function App() {
       <CustomCursor />
       <Background />
       <Navbar />
-      <LandingPage />
+      <HeroSection />
+      {/* <LandingPage /> */}
       <Marquee />
       <About />
       <ProgramCard />

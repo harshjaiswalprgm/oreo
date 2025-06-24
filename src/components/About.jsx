@@ -17,7 +17,7 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1 }}
-          className="w-full p-10 md:p-20 bg-[#8BCA1E] text-black space-y-16"
+          className="w-full p-10 md:p-20 bg-[#FFA500]  text-black space-y-16"
         >
           <h1 className="font-['Neue_Montreal']text-base leading-relaxed text-2xl">
             Glowlogics is a dynamic e-learning hub designed for students and
@@ -89,7 +89,7 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1 }}
-          className="bg-[#8BCA1E] text-black py-20"
+          className="bg-[#FFA500] text-black py-20"
         >
           <div className="border-t border-black mx-6 md:mx-20 mb-12"></div>
 

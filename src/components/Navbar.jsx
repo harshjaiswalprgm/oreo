@@ -1,38 +1,41 @@
 import { motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const navLinks = ["Home", "Services", "Programs", "Pricing", "About"];
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0); // Use a ref to keep track of last scroll position
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        // Scrolling down
         setShowNavbar(false);
       } else {
+        // Scrolling up
         setShowNavbar(true);
       }
 
-      setLastScrollY(currentScrollY);
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <motion.nav
-      initial={{ opacity: 0, y: -50 }} // Fade + Slide from top
+      initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className={`w-full fixed top-0 left-0 z-50 bg-gray-100 shadow-sm transition-transform duration-500 ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`w-full fixed top-0 left-0 z-50 transition-transform duration-500
+        ${showNavbar ? "translate-y-0" : "-translate-y-full"}
+        backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
         {/* Left - Logo and Language */}

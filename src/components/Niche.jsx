@@ -1,14 +1,13 @@
 export default function Footer() {
   return (
-    <section className="w-screen min-h-screen bg-[#8BCA1E] text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
+    <section className="w-screen min-h-screen bg-[#FFA500]  text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
 
       {/* Top Grid Content */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
 
         {/* Left: Brand / Tagline */}
         <div className="text-6xl md:text-7xl font-extrabold leading-none">
-          <p>The-</p>
-          <p>Learniverse</p>
+          <p>Glowlogics</p>
         </div>
 
         {/* Middle: Socials, Location, Contact */}
