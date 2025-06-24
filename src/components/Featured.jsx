@@ -65,9 +65,9 @@ export default function Featured() {
       {/* Heading */}
       <div className="w-full px-20 border-white pb-10 group">
         <h1 className='text-6xl font-["Neue_Montreal"] relative inline-block'>
-          Featured projects
+          Featured Projects
           {/* Animated underline on hover */}
-          <span className="block h-[2px] bg-[#CDEA68] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 mt-2"></span>
+          <span className="block h-[2px] bg-[#FFA500] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 mt-2"></span>
         </h1>
 
         {/* Subtle horizontal line below heading */}

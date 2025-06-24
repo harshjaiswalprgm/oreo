@@ -97,7 +97,7 @@ export default function HolisticProcess() {
 
   return (
     <section className="bg-gray-100 text-black px-6 md:px-16 py-16">
-      <h2 className="text-4xl font-semibold mb-6">Frequently Asked Questions</h2>
+      <h2 className="text-4xl font-semibold mb-6">Frequently   <span className="text-[#FFA500]"> Asked Questions</span></h2>
       <div className="divide-y divide-gray-300">
         {processData.map((step, index) => (
           <div key={index} className="py-4 cursor-pointer" onClick={() => toggle(index)}>

@@ -73,7 +73,7 @@ const GlobalReachSection = () => {
   return (
     <section className="w-full bg-white py-20 px-6 md:px-12 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        Learners Worldwide Trust <span className="text-learniverse">TheLearniverse</span> to Transform Their Future
+        Learners Worldwide Trust <span className="text-[#FFA500]">TheLearniverse</span> to Transform Their Future
       </h2>
 
       <p className="text-gray-500 text-lg mb-10">

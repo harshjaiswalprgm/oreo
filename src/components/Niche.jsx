@@ -7,6 +7,7 @@ export default function Footer() {
 
         {/* Left: Brand / Tagline */}
         <div className="text-6xl md:text-7xl font-extrabold leading-none">
+          <p>The-</p>
           <p>Glowlogics</p>
         </div>
 

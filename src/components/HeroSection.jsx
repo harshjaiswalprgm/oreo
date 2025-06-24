@@ -34,7 +34,7 @@ const HeroSection = () => {
 
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center">
-        <button className="bg-[#FFA500] text-white px-6 py-3 rounded-full hover:bg-green-800 transition w-full sm:w-auto">
+        <button className="bg-[#FFA500] text-black px-6 py-3 rounded-full hover:bg-[#FFA500] transition w-full sm:w-auto">
           Get Started
         </button>
         <button className="border border-gray-300 px-6 py-3 rounded-full hover:bg-gray-100 transition w-full sm:w-auto">
