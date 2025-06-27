@@ -25,7 +25,8 @@ import HeroSection from "./components/HeroSection";
 
 import "./index.css";
 // import TermsPage from "./pages/TermsPage";
-import ML from "./pages/ML";
+// import ML from "./pages/ML";
+import Career from "./pages/Career";
 
 function App() {
   return (
@@ -47,7 +48,8 @@ function App() {
       <SectionOne />
       <Niche />
       <FloatingSocials />
-      <ML />
+      {/* <ML /> */}
+      <Career />
       {/* <TermsPage /> */}
     </div>
   );

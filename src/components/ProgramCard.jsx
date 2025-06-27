@@ -24,7 +24,7 @@ const programData = [
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "01 Jun 25",
-    image: "https://img.freepik.com/free-vector/wireframe-robot-ai-artificial-intelligence-robotic-hand-machine-learning-cyber-mind-domination-concept_127544-854.jpg",
+    image: "https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Learn React, Node, APIs & deployment hands-on.",
     details: "Master full-stack development with React, Node.js, MongoDB, REST API, auth, deployment, projects, & more.",
     popupTitle: "Become a Full-Stack Developer"
@@ -35,7 +35,7 @@ const programData = [
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "15 Sep 25",
-    image: "https://cdn.pixabay.com/photo/2017/06/09/16/25/red-bull-2387317_1280.jpg",
+    image: "https://img.freepik.com/free-vector/ai-futuristic-technology-background_53876-97391.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Scalable microservices & system design.",
     details: "Distributed systems, microservices architecture, caching, load balancing, database scaling, real-world case studies.",
     popupTitle: "Master System Design"
@@ -46,7 +46,7 @@ const programData = [
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "10 Oct 25",
-    image: "https://img.freepik.com/free-photo/devops-development-operations-infrastructure-concept_53876-125112.jpg",
+    image: "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169861.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "CI/CD, Docker, Kubernetes & Cloud.",
     details: "Learn how to automate deployments, use Docker, Kubernetes, Jenkins & host scalable apps on cloud.",
     popupTitle: "Master DevOps"
@@ -57,7 +57,7 @@ const programData = [
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "05 Nov 25",
-    image: "https://img.freepik.com/free-vector/artificial-intelligence-illustration_52683-60246.jpg",
+    image: "https://img.freepik.com/free-photo/cyber-security-concept-digital-art_23-2151637765.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Integrate AI into your apps.",
     details: "Use AI APIs, GPT models, machine learning basics & add AI features to your web apps.",
     popupTitle: "Build AI-Powered Apps"
@@ -69,7 +69,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "01 Oct 25",
-  image: "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg",
+  image: "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "Deep dive into React and frontend patterns.",
   details: "Learn React patterns, state management, routing, animations, testing, and performance optimization.",
   popupTitle: "Become a Frontend Engineer"
@@ -80,7 +80,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "08 Oct 25",
-  image: "https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg",
+  image: "https://img.freepik.com/premium-photo/creative-square-circuit-button-hologram-with-cloud-icon-dark-wallpaper-technology-cloud-computing-concept-3d-rendering_670147-96675.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "SSR, SSG, API Routes, Auth, and more.",
   details: "Master fullstack development with Next.js including routing, middleware, Prisma, and Vercel deployment.",
   popupTitle: "Master Next.js"
@@ -91,7 +91,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "12 Oct 25",
-  image: "https://img.freepik.com/free-vector/app-development-concept-with-flat-design_23-2147851171.jpg",
+  image: "https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNlbWljb25kdWN0b3J8ZW58MHx8MHx8fDA%3D",
   desc: "Cross-platform mobile development.",
   details: "Build Android & iOS apps using Flutter, Firebase, animations, REST APIs, and state management.",
   popupTitle: "Build Mobile Apps"
@@ -102,7 +102,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "15 Oct 25",
-  image: "https://img.freepik.com/free-vector/javascript-frameworks-concept_23-2148811624.jpg",
+  image: "https://img.freepik.com/premium-vector/internet-things-iot_35632-74.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "Strong typing for scalable apps.",
   details: "Learn interfaces, generics, utility types, declaration merging, and integration with React/Node.",
   popupTitle: "Write Safer Code"
@@ -113,7 +113,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "18 Oct 25",
-  image: "https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg",
+  image: "https://img.freepik.com/free-photo/tired-woman-architect-working-modern-cad-program-overtime-sitting-desk-start-up-office-industrial-female-engineer-studying-prototype-idea-pc-showing-cad-software-device-display_482257-13399.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "APIs, Django, Flask, and databases.",
   details: "Build RESTful APIs, authentication, ORM, SQL & PostgreSQL using Python, Flask, and Django.",
   popupTitle: "Python Backend Bootcamp"
@@ -124,7 +124,7 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "20 Oct 25",
-  image: "https://img.freepik.com/free-vector/algorithm-concept-illustration_114360-1394.jpg",
+  image: "https://img.freepik.com/premium-photo/business-man-pushing-touch-screen-interface-java-programming-concept-virtual-machine_1085052-2842.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "Ace coding interviews.",
   details: "Master recursion, trees, graphs, sorting, dynamic programming with hands-on problems.",
   popupTitle: "Crack DSA Interviews"
@@ -135,28 +135,28 @@ const programData = [
   category: "BTech",
   author: "Harsh Jaiswal",
   date: "23 Oct 25",
-  image: "https://img.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-747.jpg",
+  image: "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169839.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
   desc: "Launch apps on AWS.",
   details: "EC2, S3, Lambda, IAM, RDS, networking, security — everything to get started on AWS cloud.",
   popupTitle: "Launch with AWS"
 },
-{
-  id: 19,
-  title: "Cybersecurity Essentials",
-  category: "BTech",
-  author: "Harsh Jaiswal",
-  date: "25 Oct 25",
-  image: "https://img.freepik.com/free-vector/cyber-security-concept_23-2148532223.jpg",
-  desc: "Secure apps & networks.",
-  details: "Encryption, firewalls, OWASP, SQL injection, XSS, threat modeling & ethical hacking basics.",
-  popupTitle: "Defend the Web"
-},
+// {
+//   id: 19,
+//   title: "Cybersecurity Essentials",
+//   category: "BTech",
+//   author: "Harsh Jaiswal",
+//   date: "25 Oct 25",
+//   image: "https://img.freepik.com/free-vector/cyber-security-concept_23-2148532223.jpg",
+//   desc: "Secure apps & networks.",
+//   details: "Encryption, firewalls, OWASP, SQL injection, XSS, threat modeling & ethical hacking basics.",
+//   popupTitle: "Defend the Web"
+// },
 
   // Marketing
   {
     id: 3,
     title: "Digital Marketing Pro",
-    category: "Marketing",
+    category: "Graduates",
     author: "Harsh Jaiswal",
     date: "20 Aug 25",
     image: "https://img.freepik.com/free-vector/digital-marketing-landing-page_33099-1726.jpg",
@@ -167,7 +167,7 @@ const programData = [
   {
     id: 8,
     title: "Content Strategy Lab",
-    category: "Marketing",
+    category: "Graduates",
     author: "Harsh Jaiswal",
     date: "05 Sep 25",
     image: "https://img.freepik.com/free-vector/content-marketing-article-blogging-webinar-seo_107791-2708.jpg",
@@ -178,7 +178,7 @@ const programData = [
   {
     id: 9,
     title: "Instagram Growth Hacks",
-    category: "Marketing",
+    category: "Graduates",
     author: "Harsh Jaiswal",
     date: "28 Aug 25",
     image: "https://img.freepik.com/free-vector/social-media-growth-concept_23-2148651954.jpg",

@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "What is your cancellation policy?",
     answer:
-      "You can cancel your subscription at any time, and your access will continue until the end of your billing cycle.",
+      "You can cancel your subscription at any time, and your access will continue until the end of your billing cycle.You can cancel your subscription at any time, and your access will continue until the end of your billing cycle.You can cancel your subscription at any time, and your access will continue until the end of your billing cycle. ",
   },
   {
     question: "Can other info be added to an invoice?",

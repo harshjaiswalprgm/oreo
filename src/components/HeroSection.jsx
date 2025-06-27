@@ -187,18 +187,20 @@ export default function HeroSection() {
 
         {/* Colab Logos */}
         <motion.div
-          className="w-full flex justify-center mt-12 px-4"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.7, ease: [0.42, 0, 0.58, 1] }}
-        >
-          <img
-            src={colabImage}
-            alt="Collaboration Logos"
-            className="w-full max-w-4xl h-auto object-contain"
-          />
-        </motion.div>
+  className="w-full flex justify-center mt-12 px-4"
+  variants={fadeUpVariant}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+>
+  <motion.img
+    src={colabImage}
+    alt="Collaboration Logos"
+    className="w-full max-w-4xl h-auto object-contain transition-all duration-300"
+    whileHover={{ scale: 1.03, filter: "brightness(1.05)" }}
+    transition={{ type: "spring", stiffness: 100 }}
+  />
+</motion.div>
       </motion.section>
     </AnimatePresence>
   );
