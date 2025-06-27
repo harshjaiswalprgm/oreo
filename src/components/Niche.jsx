@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <section className="w-screen min-h-screen bg-[#FFA500]  text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
@@ -70,10 +71,10 @@ export default function Footer() {
             </form>
           </div>
         </div>
-      </div>
+      </div>i
 
       {/* Bottom Row */}
-      <div className="flex flex-col md:flex-row justify-between text-xs text-black-500 gap-4">
+      <div className="flex flex-col md:flex-row justify-between text-1xl  text-black-500 gap-4">
         <p>© TheLearniverse design 2025. <a href="#" className="underline">Legal Terms</a> | <a href="#" className="underline">Privacy Policy</a></p>
         <p>Website by Glowlogics</p>
       </div>

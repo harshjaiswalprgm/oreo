@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const categories = ["All", "Design", "Tech", "Marketing", "Soft Skills"];
+const categories = ["All", "BTech", "Graduates", "Masters", "Crash Course"];
 
 const programData = [
   // Design
@@ -21,7 +21,7 @@ const programData = [
   {
     id: 2,
     title: "Full-Stack Web Dev Bootcamp",
-    category: "Tech",
+    category: "BTech",
     author: "Harsh Jaiswal",
     date: "01 Jun 25",
     image: "https://img.freepik.com/free-vector/wireframe-robot-ai-artificial-intelligence-robotic-hand-machine-learning-cyber-mind-domination-concept_127544-854.jpg",
@@ -32,7 +32,7 @@ const programData = [
   {
     id: 5,
     title: "Advanced Backend Systems",
-    category: "Tech",
+    category: "BTech",
     author: "Harsh Jaiswal",
     date: "15 Sep 25",
     image: "https://cdn.pixabay.com/photo/2017/06/09/16/25/red-bull-2387317_1280.jpg",
@@ -43,7 +43,7 @@ const programData = [
   {
     id: 6,
     title: "DevOps Essentials",
-    category: "Tech",
+    category: "BTech",
     author: "Harsh Jaiswal",
     date: "10 Oct 25",
     image: "https://img.freepik.com/free-photo/devops-development-operations-infrastructure-concept_53876-125112.jpg",
@@ -54,7 +54,7 @@ const programData = [
   {
     id: 7,
     title: "AI for Developers",
-    category: "Tech",
+    category: "BTech",
     author: "Harsh Jaiswal",
     date: "05 Nov 25",
     image: "https://img.freepik.com/free-vector/artificial-intelligence-illustration_52683-60246.jpg",
@@ -66,7 +66,7 @@ const programData = [
 {
   id: 12,
   title: "Frontend Engineering with React",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "01 Oct 25",
   image: "https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg",
@@ -77,7 +77,7 @@ const programData = [
 {
   id: 13,
   title: "Next.js Fullstack Bootcamp",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "08 Oct 25",
   image: "https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg",
@@ -88,7 +88,7 @@ const programData = [
 {
   id: 14,
   title: "Mobile App Dev with Flutter",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "12 Oct 25",
   image: "https://img.freepik.com/free-vector/app-development-concept-with-flat-design_23-2147851171.jpg",
@@ -99,7 +99,7 @@ const programData = [
 {
   id: 15,
   title: "Mastering TypeScript",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "15 Oct 25",
   image: "https://img.freepik.com/free-vector/javascript-frameworks-concept_23-2148811624.jpg",
@@ -110,7 +110,7 @@ const programData = [
 {
   id: 16,
   title: "Python for Backend Devs",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "18 Oct 25",
   image: "https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg",
@@ -121,7 +121,7 @@ const programData = [
 {
   id: 17,
   title: "Data Structures & Algorithms",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "20 Oct 25",
   image: "https://img.freepik.com/free-vector/algorithm-concept-illustration_114360-1394.jpg",
@@ -132,7 +132,7 @@ const programData = [
 {
   id: 18,
   title: "AWS Cloud Fundamentals",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "23 Oct 25",
   image: "https://img.freepik.com/free-vector/cloud-hosting-concept-illustration_114360-747.jpg",
@@ -143,7 +143,7 @@ const programData = [
 {
   id: 19,
   title: "Cybersecurity Essentials",
-  category: "Tech",
+  category: "BTech",
   author: "Harsh Jaiswal",
   date: "25 Oct 25",
   image: "https://img.freepik.com/free-vector/cyber-security-concept_23-2148532223.jpg",
@@ -245,7 +245,7 @@ export default function ProgramShowcase() {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-6 md:px-20 relative" ref={containerRef}>
+    <div className="bg-gray-80 py-16 px-6 md:px-20 relative" ref={containerRef}>
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-black leading-snug">
           🚀 Transform Your Career with <span className="text-[#FFA500]">Top-Tier Programs</span>

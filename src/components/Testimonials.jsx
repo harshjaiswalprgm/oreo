@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Harsh Jaiswal",
     title: "CEO and Co-founder of ABC Company",
-    text: "Creative geniuses who listen, understand, and craft captivating visuals - an agency that truly understands our needs.",
+    text: "Creative geniuses who listen,  understand, and craft captivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly ucaptivating visuals - an agency that truly understands our needs.",
     img: "https://headsupfortails.com/cdn/shop/articles/Poodle_1_3d74a3cd-80a6-4aee-97fc-24d31058e27f.jpg?v=1748861159",
   },
   {
@@ -88,7 +88,7 @@ function Card({ item }) {
       <FaQuoteLeft className="text-blue-500 text-xl mb-2" />
       <p className="text-gray-700 text-sm mb-4">{item.text}</p>
       <div className="flex items-center space-x-3 mt-auto">
-        <img src={item.img} alt={item.name} className="w-10 h-10 rounded-full" />
+        <img src={item.img} alt={item.name} className="w-20 h-20 rounded-full" />
         <div>
           <p className="font-semibold text-sm">{item.name}</p>
           <p className="text-xs text-gray-500">{item.title}</p>

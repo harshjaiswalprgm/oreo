@@ -1,13 +1,7 @@
-import { useRef } from "react";
 
 export default function Featured() {
-  // Refs for each card
-  const leftRef1 = useRef(null);
-  const rightRef1 = useRef(null);
-  const leftRef2 = useRef(null);
-  const rightRef2 = useRef(null);
-  const leftRef3 = useRef(null);
-  const rightRef3 = useRef(null);
+  // Refs
+  const refs = Array.from({ length: 6 }, () => (null));
 
   const handleMouseMove = (e, ref) => {
     const rect = ref.current.getBoundingClientRect();
@@ -27,57 +21,42 @@ export default function Featured() {
     ref.current.style.transform = `rotateX(0deg) rotateY(0deg)`;
   };
 
-  const renderCardBlock = (leftRef, rightRef) => (
-    <div className="cards w-full flex gap-10 mt-10">
-      <div className="cardcontainer relative w-1/2 h-[75vh]">
-        <div
-          ref={leftRef}
-          className="card w-full h-full rounded-xl overflow-hidden transition-transform duration-200 ease-out"
-          onMouseMove={(e) => handleMouseMove(e, leftRef)}
-          onMouseLeave={() => handleMouseLeave(leftRef)}
-        >
-          <img
-            className="w-full h-full bg-cover"
-            src="https://template.canva.com/EAFqjszhz0k/2/0/1600w-Tk7BT3Fzhro.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div className="cardcontainer relative w-1/2 h-[75vh]">
-        <div
-          ref={rightRef}
-          className="card w-full h-full rounded-xl overflow-hidden transition-transform duration-200 ease-out"
-          onMouseMove={(e) => handleMouseMove(e, rightRef)}
-          onMouseLeave={() => handleMouseLeave(rightRef)}
-        >
-          <img
-            className="w-full h-full bg-cover"
-            src="https://template.canva.com/EAEuzgGlyLs/2/0/1600w-xUKm4LDWVYc.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  );
+  const cardImages = [
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1673255745677-e36f618550d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGFpfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHJ8ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9ufGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
+  ];
 
   return (
-    <div className="w-full py-20">
-      {/* Heading */}
-      <div className="w-full px-20 border-white pb-10 group">
-        <h1 className='text-6xl font-["Neue_Montreal"] relative inline-block'>
-          Featured Projects
-          {/* Animated underline on hover */}
-          <span className="block h-[2px] bg-[#FFA500] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 mt-2"></span>
-        </h1>
+    <div className="w-full py-20 bg-gray-100">
+      {/* Section Header */}
+      <div className="text-center pb-10">
+        <h1 className='text-5xl font-bold relative inline-block'>
+       Projects that blend creativity, code, and real-world impact.
 
-        {/* Subtle horizontal line below heading */}
-        <div className="border-t border-black/30 mx-6 md:mx-20 mb-12 mt-6"></div>
+
+          <span className="block h-[3px] bg-orange-400 scale-x-0 hover:scale-x-100 origin-left transition-transform duration-500 mt-2"></span>
+        </h1>
+        <p className="text-gray-600 mt-4 text-lg">These featured projects reflect our students ability to combine innovative thinking with practical development skills. <br/> From intuitive designs to scalable tech solutions, each project is built to solve real problems while showcasing creativity and purpose.</p>
       </div>
 
-      {/* Three card blocks */}
-      <div className="px-20">{renderCardBlock(leftRef1, rightRef1)}</div>
-      <div className="px-20">{renderCardBlock(leftRef2, rightRef2)}</div>
-      <div className="px-20">{renderCardBlock(leftRef3, rightRef3)}</div>
+      {/* Grid Container */}
+      <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {cardImages.map((img, i) => (
+          <div
+            key={i}
+            className="aspect-square w-full rounded-2xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105 bg-white"
+            ref={refs[i]}
+            onMouseMove={(e) => handleMouseMove(e, refs[i])}
+            onMouseLeave={() => handleMouseLeave(refs[i])}
+          >
+            <img src={img} alt={`Project ${i + 1}`} className="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -32,6 +32,7 @@ html {
   } */
 }
 @keyframes marquee {
+
   0% {
     transform: translateX(0%);
   }
@@ -80,4 +81,26 @@ body {
   transform: rotateX(180deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
+}
+.cursor-hover {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #ff6e0c !important;
+  mix-blend-mode: normal !important;
+}
+
+.cursor-click {
+  animation: cursor-click 0.2s ease-in-out;
+}
+
+@keyframes cursor-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
