@@ -8,7 +8,7 @@ const programData = [
   {
     id: 1,
     title: "UI/UX Masterclass",
-    category: "Design",
+    category: "Crash Course",
     author: "Harsh Jaiswal",
     date: "10 Jul 25",
     image: "https://img.freepik.com/premium-vector/modern-3d-illustration-landing-page-ui-design_145666-1960.jpg",
@@ -16,6 +16,7 @@ const programData = [
     details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
     popupTitle: "Become a Product Designer"
   },
+
 
   // Tech
   {
@@ -191,7 +192,7 @@ const programData = [
   {
     id: 4,
     title: "Public Speaking & Influence",
-    category: "Soft Skills",
+    category: "Masters",
     author: "Harsh Jaiswal",
     date: "15 Jul 25",
     image: "https://img.freepik.com/free-photo/human-resource-hiring-recruiter-select-career-concept_53876-21141.jpg",
@@ -202,7 +203,7 @@ const programData = [
   {
     id: 10,
     title: "Emotional Intelligence 101",
-    category: "Soft Skills",
+    category: "Masters",
     author: "Harsh Jaiswal",
     date: "30 Aug 25",
     image: "https://img.freepik.com/free-photo/emotional-intelligence-eq-concept_53876-120565.jpg",
@@ -213,7 +214,7 @@ const programData = [
   {
     id: 11,
     title: "Time Management Mastery",
-    category: "Soft Skills",
+    category: "Masters",
     author: "Harsh Jaiswal",
     date: "20 Sep 25",
     image: "https://img.freepik.com/free-vector/time-management-concept_23-2148483330.jpg",
@@ -282,7 +283,14 @@ export default function ProgramShowcase() {
                 whileHover={{ scale: 1.05, boxShadow: "0px 15px 35px rgba(0,0,0,0.2)" }}
                 className="bg-white rounded-xl shadow-sm transition-transform duration-200 p-4 cursor-pointer block"
               >
-                <img src={prog.image} alt={prog.title} className="rounded-lg mb-4 h-48 w-full object-cover" />
+                <div className="relative mb-4 h-48 w-full">
+  <img src={prog.image} alt={prog.title} className="rounded-lg h-full w-full object-cover" />
+  {["BTech", "Masters", "Graduates"].includes(prog.category) && (
+    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+      LIVE
+    </span>
+  )}
+</div>
                 <h3 className="text-lg font-semibold mb-1">{prog.title}</h3>
                 <p className="text-sm text-gray-500 mb-2">{prog.desc}</p>
                 <div className="text-sm text-gray-700 mt-auto">
