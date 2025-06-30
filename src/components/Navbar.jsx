@@ -2,13 +2,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
 import logo from "../assets/BlackGL.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const navLinks = ["Home", "Services", "Programs", "Career", "About"];
+const navLinks = [
+  { name: "Home", id: "home" },
+  { name: "Programs", id: "programs" },
+  { name: "Services", id: "services" },
+  { name: "Career", id: "career" },
+  { name: "About", id: "about" },
+];
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +33,23 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleNavClick = (id) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => scrollToSection(id), 100);
+    } else {
+      scrollToSection(id);
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   const mobileMenuVariants = {
     hidden: { opacity: 0, x: "100%" },
@@ -62,16 +88,16 @@ const Navbar = () => {
           {/* Nav Links - Desktop */}
           <div className="hidden md:flex gap-6 lg:gap-10">
             {navLinks.map((link, index) => (
-              <motion.a
+              <motion.button
                 key={index}
-                href="#"
+                onClick={() => handleNavClick(link.id)}
                 className="group relative font-semibold uppercase text-sm text-gray-800 hover:text-black transition duration-300"
               >
                 <span className="block transition-transform duration-500 group-hover:-translate-y-1">
-                  {link}
+                  {link.name}
                 </span>
                 <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
-              </motion.a>
+              </motion.button>
             ))}
           </div>
 
@@ -107,7 +133,6 @@ const Navbar = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.4 }}
@@ -115,8 +140,6 @@ const Navbar = () => {
               className="fixed inset-0 bg-black backdrop-blur-md z-40"
               onClick={() => setIsMobileMenuOpen(false)}
             />
-
-            {/* Slide-in Drawer */}
             <motion.div
               variants={mobileMenuVariants}
               initial="hidden"
@@ -138,14 +161,13 @@ const Navbar = () => {
 
               {/* Mobile Links */}
               {navLinks.map((link, index) => (
-                <a
+                <button
                   key={index}
-                  href="#"
-                  className="text-lg font-semibold text-gray-800 hover:text-black transition"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => handleNavClick(link.id)}
+                  className="text-lg font-semibold text-gray-800 hover:text-black transition text-left"
                 >
-                  {link}
-                </a>
+                  {link.name}
+                </button>
               ))}
 
               <hr />
