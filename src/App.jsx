@@ -1,7 +1,6 @@
 import ScrollToTop from "./components/ScrollToTop";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
 import Navbar from "./components/Navbar";
 import Marquee from "./components/Marquee";
 import Description from "./components/Description";
