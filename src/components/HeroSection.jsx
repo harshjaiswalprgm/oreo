@@ -69,18 +69,23 @@ const imageCardVariant = {
 
 export default function HeroSection() {
   return (
-<AnimatePresence mode="wait">
-  <motion.section
-    key="hero"
-    layout
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -30 }}
-    transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-    className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-gray-50 px-4 pt-36 pb-20 font-sans"
-  >
-        <motion.div variants={containerVariants} initial="hidden" animate="show" className="w-full flex flex-col items-center">
-          {/* Heading */}
+    <AnimatePresence mode="wait">
+      <motion.section
+        id="home" // ✅ This enables smooth scrolling from navbar
+        key="hero"
+        layout
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+        className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-gray-50 px-4 pt-36 pb-20 font-sans"
+      >
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          className="w-full flex flex-col items-center"
+        >
           <motion.h1
             variants={fadeUpVariant}
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight relative group"
@@ -95,7 +100,6 @@ export default function HeroSection() {
             <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span>
           </motion.h1>
 
-          {/* Subheading */}
           <motion.p
             variants={fadeUpVariant}
             className="text-base sm:text-lg text-gray-600 mt-4 max-w-xl mx-auto font-medium"
@@ -103,7 +107,6 @@ export default function HeroSection() {
             Expert tech to elevate your manufacturing. Let’s take your business further.
           </motion.p>
 
-          {/* Select Courses */}
           <motion.div
             variants={fadeUpVariant}
             className="mt-6 w-full max-w-md bg-white border border-gray-200 rounded-full flex items-center justify-between px-3 py-1 shadow-md"
@@ -122,7 +125,6 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
-          {/* CTA Buttons */}
           <motion.div
             variants={fadeUpVariant}
             className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center"
@@ -136,7 +138,6 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
-          {/* Tutor Avatars */}
           <motion.div
             variants={fadeUpVariant}
             className="flex items-center gap-3 mt-6 flex-wrap justify-center"
@@ -155,7 +156,6 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Image Cards */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-12 w-full max-w-6xl px-4"
           variants={containerVariants}
@@ -179,28 +179,26 @@ export default function HeroSection() {
                 alt="Visual"
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
               />
-              {/* Glass shimmer */}
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transform rotate-12 scale-150 opacity-0 group-hover:opacity-100 transition duration-700 pointer-events-none" />
             </motion.div>
           ))}
         </motion.div>
 
-        {/* Colab Logos */}
         <motion.div
-  className="w-full flex justify-center mt-12 px-4"
-  variants={fadeUpVariant}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true, amount: 0.2 }}
->
-  <motion.img
-    src={colabImage}
-    alt="Collaboration Logos"
-    className="w-full max-w-4xl h-auto object-contain transition-all duration-300"
-    whileHover={{ scale: 1.03, filter: "brightness(1.05)" }}
-    transition={{ type: "spring", stiffness: 100 }}
-  />
-</motion.div>
+          className="w-full flex justify-center mt-12 px-4"
+          variants={fadeUpVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <motion.img
+            src={colabImage}
+            alt="Collaboration Logos"
+            className="w-full max-w-4xl h-auto object-contain transition-all duration-300"
+            whileHover={{ scale: 1.03, filter: "brightness(1.05)" }}
+            transition={{ type: "spring", stiffness: 100 }}
+          />
+        </motion.div>
       </motion.section>
     </AnimatePresence>
   );

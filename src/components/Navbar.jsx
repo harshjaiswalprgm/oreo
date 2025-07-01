@@ -37,17 +37,37 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   const handleNavClick = (id) => {
+    // Navigate to standalone routes
+    if (id === "career" || id === "about") {
+      navigate(`/${id}`);
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    // Scroll to section on homepage
     if (location.pathname !== "/") {
       navigate("/");
-      setTimeout(() => scrollToSection(id), 100);
+
+      const scrollWhenReady = () => {
+        const checkExist = setInterval(() => {
+          const section = document.getElementById(id);
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
+            clearInterval(checkExist);
+          }
+        }, 100);
+      };
+
+      setTimeout(scrollWhenReady, 300);
     } else {
       scrollToSection(id);
     }
+
     setIsMobileMenuOpen(false);
   };
 
