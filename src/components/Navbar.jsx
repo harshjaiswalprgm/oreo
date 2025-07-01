@@ -15,22 +15,28 @@ const navLinks = [
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const lastScrollY = useRef(0);
+  const lastScrollY = useRef(window.scrollY);
+
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+      const currentY = window.scrollY;
+
+      if (currentY > lastScrollY.current && currentY > 80) {
+        // scrolling down
         setShowNavbar(false);
       } else {
+        // scrolling up
         setShowNavbar(true);
       }
-      lastScrollY.current = currentScrollY;
+
+      lastScrollY.current = currentY;
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -42,28 +48,14 @@ const Navbar = () => {
   };
 
   const handleNavClick = (id) => {
-    // Navigate to standalone routes
     if (id === "career" || id === "about") {
       navigate(`/${id}`);
       setIsMobileMenuOpen(false);
       return;
     }
 
-    // Scroll to section on homepage
     if (location.pathname !== "/") {
-      navigate("/");
-
-      const scrollWhenReady = () => {
-        const checkExist = setInterval(() => {
-          const section = document.getElementById(id);
-          if (section) {
-            section.scrollIntoView({ behavior: "smooth", block: "start" });
-            clearInterval(checkExist);
-          }
-        }, 100);
-      };
-
-      setTimeout(scrollWhenReady, 300);
+      navigate("/", { state: { scrollTo: id } });
     } else {
       scrollToSection(id);
     }
@@ -79,33 +71,29 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Navbar */}
+      {/* ✅ Navbar Container */}
       <motion.nav
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className={`w-full fixed top-0 left-0 z-50 transition-transform duration-500 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         } backdrop-blur-md bg-white/40 border-b border-white/30 shadow-md`}
       >
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 py-4 flex justify-between items-center">
-          {/* Logo */}
+          {/* ✅ Logo */}
           <div className="flex items-center gap-3">
             <motion.div
               whileHover={{ scale: 1.05, rotate: 1 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="w-auto"
             >
-              <img
-                src={logo}
-                alt="Logo"
-                className="h-6 sm:h-7 md:h-7 object-contain"
-              />
+              <img src={logo} alt="Logo" className="h-6 sm:h-7 md:h-7 object-contain" />
             </motion.div>
           </div>
 
-          {/* Nav Links - Desktop */}
+          {/* ✅ Desktop Nav Links */}
           <div className="hidden md:flex gap-6 lg:gap-10">
             {navLinks.map((link, index) => (
               <motion.button
@@ -121,7 +109,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Buttons - Desktop */}
+          {/* ✅ Desktop Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -137,7 +125,7 @@ const Navbar = () => {
             </motion.button>
           </div>
 
-          {/* Hamburger - Mobile */}
+          {/* ✅ Mobile Hamburger */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
@@ -149,7 +137,7 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu */}
+      {/* ✅ Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
@@ -168,13 +156,10 @@ const Navbar = () => {
               transition={{ type: "tween", duration: 0.4 }}
               className="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-white z-50 p-6 flex flex-col gap-6 shadow-xl"
             >
-              {/* Header */}
+              {/* Mobile Header */}
               <div className="flex justify-between items-center mb-6">
                 <img src={logo} alt="Logo" className="h-8 object-contain" />
-                <button
-                  className="text-2xl text-black"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
+                <button className="text-2xl text-black" onClick={() => setIsMobileMenuOpen(false)}>
                   <FaTimes />
                 </button>
               </div>
@@ -192,7 +177,7 @@ const Navbar = () => {
 
               <hr />
 
-              {/* Buttons */}
+              {/* Mobile Buttons */}
               <button className="w-full px-5 py-3 border border-black text-sm rounded-full font-semibold hover:bg-black hover:text-white transition">
                 Get Started
               </button>

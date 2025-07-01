@@ -1,69 +1,75 @@
-// src/pages/About.jsx
-const About = () => {
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+const images = [
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+
+];
+
+export default function About3DMarquee() {
+  const [speed, setSpeed] = useState(35);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    setSpeed(isMobile ? 50 : 35);
+  }, []);
+
   return (
-    <div className="bg-gradient-to-b from-purple-100 to-white text-gray-900 py-16 px-6 md:px-16">
-      {/* Top Section */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
-        {/* <button className="text-sm bg-purple-200 text-purple-800 px-4 py-1 rounded-full mb-4">
-          About us
-        </button> */}
-        <h1 className="text-3xl md:text-5xl font-semibold mb-4">
-          Our Journey to smarter conversations
-        </h1>
-        <p className="text-lg text-gray-600">
-          Explore how our passion for innovation fuels intelligent, human-like AI solutions.
+    <section className="bg-[#fff7f3] w-full py-24 px-4 text-center overflow-hidden relative">
+      <div className="max-w-4xl mx-auto mb-14">
+        <p className="text-sm text-orange-600 font-semibold uppercase tracking-widest mb-2">
+          Join over 100,000 happy students
+        </p>
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+          Where Ambition <br /> Meets Opportunity
+        </h2>
+        <p className="text-gray-600 text-base md:text-lg max-w-xl mx-auto">
+        Join thousands of learners transforming their careers with modern, industry-relevant education—accessible anytime, anywhere.
         </p>
       </div>
 
-      {/* Team Image */}
-      <div className="flex justify-center mb-12">
-        <img
-          src="https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg" // Replace with your image URL or local image path
-          alt="Team working together"
-          className="rounded-2xl shadow-lg w-full max-w-5xl"
-        />
+      {/* Marquee Track */}
+      <div className="relative w-full overflow-hidden">
+        <motion.div
+          className="flex gap-8 w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ ease: "linear", duration: speed, repeat: Infinity }}
+        >
+          {[...images, ...images].map((img, idx) => (
+            <motion.div
+              key={idx}
+              className="w-[230px] h-[320px] rounded-2xl shadow-xl overflow-hidden bg-white"
+              whileHover={{ scale: 1.05, rotateY: 10 }}
+              transition={{ type: "spring", stiffness: 200 }}
+              style={{ transformStyle: "preserve-3d" }}
+            >
+              <img
+                src={img}
+                alt="card"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
 
-      {/* Stats Section */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-16">
-        <div>
-          <p className="text-3xl font-bold">98%</p>
-          <p className="text-sm text-gray-600">User satisfaction Rate</p>
-        </div>
-        <div>
-          <p className="text-3xl font-bold">5X</p>
-          <p className="text-sm text-gray-600">Faster response time</p>
-        </div>
-        <div>
-          <p className="text-3xl font-bold">24/7</p>
-          <p className="text-sm text-gray-600">Availability</p>
-        </div>
-        <div>
-          <p className="text-3xl font-bold">1M+</p>
-          <p className="text-sm text-gray-600">Interactions handled</p>
-        </div>
+      {/* CTA */}
+      <div className="mt-12">
+        <button className="px-6 py-3 bg-red-400 text-white text-sm rounded-full shadow-lg hover:bg-red-500 transition duration-300">
+          Get Started
+        </button>
       </div>
-
-      {/* What Defines Us */}
-      <div className="text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">What defines us</h2>
-        <p className="text-gray-600 mb-6">
-          Explore our beginnings, what we stand for, and where we are headed in the world of AI.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <button className="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition">
-            Our purpose
-          </button>
-          <button className="bg-gray-200 text-black px-5 py-2 rounded-full hover:bg-gray-300 transition">
-            Our journey
-          </button>
-          <button className="bg-gray-200 text-black px-5 py-2 rounded-full hover:bg-gray-300 transition">
-            Our promise
-          </button>
-        </div>
-      </div>
-    </div>
+    </section>
   );
-};
-
-export default About;
+}

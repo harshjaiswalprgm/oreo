@@ -17,6 +17,75 @@ const programData = [
     popupTitle: "Become a Product Designer"
   },
 
+   {
+    id: 2,
+    title: "Power BI",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+
+     {
+    id: 3,
+    title: "Advance Excel",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+
+   {
+    id: 4,
+    title: "Digital Marketing",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/premium-photo/search-engine-marketing-composition-design_23-2150923510.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+   {
+    id: 5,
+    title: "Java Fullstack",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/premium-photo/writing-code-creating-website-dashboards-programming-help-technology-website-upkeep_27634-1240.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+   {
+    id: 6,
+    title: "Data Science",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/premium-photo/businessman-working-with-business-analytics-data-management-system-computer-online-document-management-metrics-connected-database-corporate-strategy-finance-operations-salesx9_661047-4235.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+   {
+    id: 7,
+    title: "App Development",
+    category: "Crash Course",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image: "https://img.freepik.com/free-photo/man-working-with-computer-side-view_23-2149930994.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details: "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer"
+  },
+
 
   // Tech
   {
@@ -188,14 +257,14 @@ const programData = [
     popupTitle: "Hack Instagram Growth"
   },
 
-  // Soft Skills
+  // Soft Skills now i converted to Masters okay
   {
     id: 4,
-    title: "Public Speaking & Influence",
+    title: "Digital Marketing",
     category: "Masters",
     author: "Harsh Jaiswal",
     date: "15 Jul 25",
-    image: "https://img.freepik.com/free-photo/human-resource-hiring-recruiter-select-career-concept_53876-21141.jpg",
+    image: "https://img.freepik.com/premium-photo/search-engine-marketing-composition-design_23-2150923510.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Build confidence & speak like a pro on stage.",
     details: "Learn storytelling, persuasion, confidence building, stage fear removal & deliver powerful speeches.",
     popupTitle: "Master Public Speaking"

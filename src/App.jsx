@@ -18,8 +18,11 @@ import FloatingSocials from "./components/FloatingSocials";
 import GlobalReachSection from "./components/GlobalReachSection";
 import HeroSection from "./components/HeroSection";
 
+//////////////////////////////////////////////////////////////////////////////////
 import Career from "./pages/Career";
 import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy"; // ✅ added
+import LegalTerms from "./pages/LegalTerms";       // ✅ added
 
 import "./index.css";
 
@@ -88,9 +91,12 @@ function App() {
       <ScrollToTop />
 
       <Routes>
-        <Route path="/" element={<HomePage />} /> {/* ✅ Homepage is root */}
+        <Route path="/" element={<HomePage />} />                      {/* ✅ Homepage is root Hhai.. */}
         <Route path="/career" element={<Career />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />   {/* privacy wala page */}
+        <Route path="/legal-terms" element={<LegalTerms />} />         {/* legal-terms wala page */}
+
       </Routes>
 
       <FloatingSocials />

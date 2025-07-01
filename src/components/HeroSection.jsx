@@ -7,6 +7,7 @@ import img3 from "../assets/images/img3.png";
 import img4 from "../assets/images/img4.png";
 import img5 from "../assets/images/img5.png";
 
+// ✅ Image cards for bottom collage
 const imageCards = [
   { img: img1, size: "large", direction: "left" },
   { img: img2, size: "medium", direction: "left" },
@@ -15,6 +16,7 @@ const imageCards = [
   { img: img5, size: "large", direction: "right" },
 ];
 
+// ✅ Tutor avatars (placeholder)
 const tutorImages = [
   "https://randomuser.me/api/portraits/women/44.jpg",
   "https://randomuser.me/api/portraits/men/46.jpg",
@@ -22,64 +24,54 @@ const tutorImages = [
   "https://randomuser.me/api/portraits/men/49.jpg",
 ];
 
+// ✅ Course dropdown lists
 const technicalCourses = [
   "Artificial Intelligence", "Data Science with MI", "Cyber Security & Ethical Hacking", "Web Development full Stack",
-  "Full Stack JAVA", "Cloud Computing", "App Development", "UI/UX", "VLSI", "IOT", "AutoCAD with Self‑paced MATLAB",
+  "Full Stack JAVA", "Cloud Computing", "App Development", "UI/UX", "VLSI", "IOT", "AutoCAD with Self -paced MATLAB",
 ];
-
 const nonTechnicalCourses = [
   "Digital Marketing", "HRM and Finance", "Leadership and Management", "Advanced Excel with Power BI", "Accounting",
 ];
 
+// ✅ Framer motion variants
 const containerVariants = {
   hidden: {},
   show: {
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.2,
-    },
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
   },
 };
-
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      type: "spring",
-      damping: 20,
-      stiffness: 100,
-    },
+    transition: { type: "spring", damping: 20, stiffness: 100 },
   },
 };
-
 const imageCardVariant = {
   hidden: { opacity: 0, scale: 0.9 },
   show: {
     opacity: 1,
     scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 120,
-      damping: 15,
-    },
+    transition: { type: "spring", stiffness: 120, damping: 15 },
   },
 };
 
+// ✅ Main Hero Section Component
 export default function HeroSection() {
   return (
     <AnimatePresence mode="wait">
       <motion.section
-        id="home" // ✅ This enables smooth scrolling from navbar
+        id="home"
         key="hero"
         layout
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-        className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-gray-50 px-4 pt-36 pb-20 font-sans"
+        className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-[#fff7f3] px-4 pt-36 pb-20 font-sans"
       >
+        {/* ✅ Headline Section */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -92,7 +84,7 @@ export default function HeroSection() {
           >
             <span className="relative z-10">
               Digital Learning for Smart <br />
-              Manufacturing{" "}
+              Manufacturing {" "}
               <span className="text-[#ff6e0c] group-hover:underline underline-offset-4 decoration-[#ff6e0c] transition-all duration-300">
                 and Innovation
               </span>
@@ -100,6 +92,7 @@ export default function HeroSection() {
             <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span>
           </motion.h1>
 
+          {/* ✅ Subtext */}
           <motion.p
             variants={fadeUpVariant}
             className="text-base sm:text-lg text-gray-600 mt-4 max-w-xl mx-auto font-medium"
@@ -107,6 +100,7 @@ export default function HeroSection() {
             Expert tech to elevate your manufacturing. Let’s take your business further.
           </motion.p>
 
+          {/* ✅ Dropdown with Start Button */}
           <motion.div
             variants={fadeUpVariant}
             className="mt-6 w-full max-w-md bg-white border border-gray-200 rounded-full flex items-center justify-between px-3 py-1 shadow-md"
@@ -125,6 +119,7 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
+          {/* ✅ CTA Buttons */}
           <motion.div
             variants={fadeUpVariant}
             className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center"
@@ -138,6 +133,7 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
+          {/* ✅ Tutor Avatars */}
           <motion.div
             variants={fadeUpVariant}
             className="flex items-center gap-3 mt-6 flex-wrap justify-center"
@@ -156,8 +152,40 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
+        {/* ✅ Mobile Pyramid Layout */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-12 w-full max-w-6xl px-4"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          className="flex flex-col items-center gap-4 mt-12 w-full px-4 sm:hidden"
+        >
+          {/* Top Small Card */}
+          <motion.div variants={imageCardVariant} className="w-[140px] h-[180px]">
+            <img src={imageCards[2].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+          </motion.div>
+
+          {/* Middle Medium Cards */}
+          <div className="flex gap-4">
+            {[1, 3].map((index) => (
+              <motion.div key={index} variants={imageCardVariant} className="w-[160px] h-[200px]">
+                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Bottom Large Cards */}
+          <div className="flex gap-4">
+            {[0, 4].map((index) => (
+              <motion.div key={index} variants={imageCardVariant} className="w-[180px] h-[220px]">
+                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ✅ Grid layout for tablets and above */}
+        <motion.div
+          className="hidden sm:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-12 w-full max-w-7xl px-4"
           variants={containerVariants}
           initial="hidden"
           animate="show"
@@ -170,8 +198,8 @@ export default function HeroSection() {
                 card.size === "large"
                   ? "w-[220px] h-[270px]"
                   : card.size === "medium"
-                  ? "w-[190px] h-[230px]"
-                  : "w-[170px] h-[200px]"
+                  ? "w-[200px] h-[230px]"
+                  : "w-[180px] h-[210px]"
               }`}
             >
               <img
@@ -184,6 +212,7 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
+        {/* ✅ Brand/Collaboration Image */}
         <motion.div
           className="w-full flex justify-center mt-12 px-4"
           variants={fadeUpVariant}
