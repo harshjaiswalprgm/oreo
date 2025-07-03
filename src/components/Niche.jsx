@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between mb-20">
         {/* Left Section: Brand + Map */}
         <div className="w-full md:w-1/3 text-6xl md:text-7xl font-extrabold leading-none">
-          <p>The-</p>
           <p>Glowlogics</p>
+          <p>Solutions</p>
 
           <div className="mt-8 overflow-hidden rounded-[30px] shadow-lg border border-black max-w-[450px]">
             <iframe

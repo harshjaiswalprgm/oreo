@@ -7,7 +7,7 @@ function About() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1 }}
-      className="w-full flex justify-center bg-white" // Outer white background
+      className="w-full flex justify-center bg-orange-100" // Outer white background
     >
       {/* 🔶 Inner Glassy Orange Container */}
       <div className="rounded-3xl overflow-hidden m-4 md:m-10 bg-[#FFA500]/90 backdrop-blur-md border border-white/30 shadow-xl max-w-[90rem] w-full">
@@ -71,7 +71,7 @@ function About() {
           {/* CTA Button */}
           <button className="flex uppercase gap-4 items-center px-8 py-4 bg-zinc-900 rounded-full text-white shadow-lg hover:bg-[#6b9e17] transition-all duration-300 group mt-10">
             Read More
-            <span className="w-2 h-2 bg-zinc-100 rounded-full group-hover:scale-125 transition-transform"></span>
+            <span className="w-2 h-2 bg-orange-100 rounded-full group-hover:scale-125 transition-transform"></span>
           </button>
         </motion.section>
 

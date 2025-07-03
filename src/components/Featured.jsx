@@ -31,7 +31,7 @@ export default function Featured() {
   ];
 
   return (
-    <div className="w-full py-20 bg-gray-100">
+    <div className="w-full py-20 bg-orange-100">
       {/* Section Header */}
       <div className="text-center pb-10">
         <h1 className='text-5xl font-bold relative inline-block'>

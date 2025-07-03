@@ -120,7 +120,8 @@ export default function Career() {
   const uniqueTitles = ["All", ...new Set(jobOpenings.map((job) => job.title))];
 
   return (
-    <div className="min-h-screen bg-orange-100 py-10 px-4 overflow-hidden">
+    <div className="min-h-screen bg-orange-100 py-10 px-4 overflow-hidden pt-28">
+
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center mb-20 px-4">
         <div>
@@ -141,39 +142,44 @@ export default function Career() {
       </div>
 
       {/* Feature Circles */}
-      <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 mb-16 px-4">
-  {["G2", "Ultra 4K", "Capterra"].map((title, i) => (
+      {/* Feature Circles */}
+<div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 mb-16 px-4">
+  {[
+    {
+      title: "G2",
+      img: "https://images.pexels.com/photos/3957616/pexels-photo-3957616.jpeg?auto=compress&cs=tinysrgb&w=600",
+      rating: "4.5/5 – from 107 reviews",
+      platform: "G2 Platform"
+    },
+    {
+      title: "Ultra 4K",
+      img: "https://images.pexels.com/photos/814544/pexels-photo-814544.jpeg?auto=compress&cs=tinysrgb&w=600",
+      rating: "Ultra 4K",
+      platform: "Video quality and more"
+    },
+    {
+      title: "Capterra",
+      img: "https://images.pexels.com/photos/3321789/pexels-photo-3321789.jpeg?auto=compress&cs=tinysrgb&w=600",
+      rating: "4.6/5 – from 413 reviews",
+      platform: "Capterra"
+    }
+  ].map((feature, i) => (
     <div key={i} className="w-64 h-64 rounded-full overflow-hidden shadow-lg bg-white flex flex-col">
       <div className="h-1/2 w-full relative">
         <img
-          src="https://img.freepik.com/premium-vector/we-are-hiring_1213848-520.jpg?w=740"
-          alt={title}
+          src={feature.img}
+          alt={feature.title}
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
       <div className="h-1/2 flex flex-col justify-center items-center px-4 text-center text-sm">
-        {title === "G2" && (
-          <>
-            <p className="font-semibold">4.5/5 – from 107 reviews</p>
-            <p className="text-gray-500 text-xs mt-1">G2 Platform</p>
-          </>
-        )}
-        {title === "Ultra 4K" && (
-          <>
-            <p className="font-semibold text-black">Ultra 4K</p>
-            <p className="text-gray-500 text-xs mt-1">Video quality and more</p>
-          </>
-        )}
-        {title === "Capterra" && (
-          <>
-            <p className="font-semibold">4.6/5 – from 413 reviews</p>
-            <p className="text-gray-500 text-xs mt-1">Capterra</p>
-          </>
-        )}
+        <p className="font-semibold">{feature.rating}</p>
+        <p className="text-gray-500 text-xs mt-1">{feature.platform}</p>
       </div>
     </div>
   ))}
 </div>
+
 
 
       {/* Search & Filter */}

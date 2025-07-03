@@ -50,7 +50,7 @@ export default function MarqueeSlider() {
 
   return (
     <motion.section
-      className="w-full bg-[#f5f5ff] py-16 px-4 text-center"
+      className="w-full bg-orange-100 py-16 px-4 text-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

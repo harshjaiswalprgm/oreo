@@ -10,35 +10,60 @@ const navLinks = [
   { name: "Services", id: "services" },
   { name: "Career", id: "career" },
   { name: "About", id: "about" },
+  { name: "EventHub", id: "eventHub" },
 ];
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const lastScrollY = useRef(window.scrollY);
+  const [activeLink, setActiveLink] = useState("home");
 
+  const lastScrollY = useRef(window.scrollY);
   const location = useLocation();
   const navigate = useNavigate();
 
+  // Show/hide navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
-
-      if (currentY > lastScrollY.current && currentY > 80) {
-        // scrolling down
-        setShowNavbar(false);
-      } else {
-        // scrolling up
-        setShowNavbar(true);
-      }
-
+      setShowNavbar(currentY < lastScrollY.current || currentY < 80);
       lastScrollY.current = currentY;
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Scroll spy for active section detection
+  useEffect(() => {
+    const handleActiveLink = () => {
+      if (location.pathname !== "/") {
+        if (location.pathname.includes("about")) setActiveLink("about");
+        else if (location.pathname.includes("career")) setActiveLink("career");
+        else if (location.pathname.includes("eventHub")) setActiveLink("eventHub");
+        return;
+      }
+
+      const sectionOffsets = navLinks.map((link) => {
+        const section = document.getElementById(link.id);
+        return section
+          ? { id: link.id, offset: section.getBoundingClientRect().top }
+          : null;
+      });
+
+      const visible = sectionOffsets.filter(
+        (s) => s && s.offset < window.innerHeight / 2
+      );
+
+      if (visible.length > 0) {
+        setActiveLink(visible[visible.length - 1].id);
+      }
+    };
+
+    window.addEventListener("scroll", handleActiveLink);
+    handleActiveLink(); // Initial
+    return () => window.removeEventListener("scroll", handleActiveLink);
+  }, [location.pathname]);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -48,16 +73,19 @@ const Navbar = () => {
   };
 
   const handleNavClick = (id) => {
-    if (id === "career" || id === "about") {
-      navigate(`/${id}`);
-      setIsMobileMenuOpen(false);
-      return;
-    }
+    setActiveLink(id);
 
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: id } });
-    } else {
+    // Route-based pages
+    if (id === "career" || id === "about" || id === "eventHub") {
+      navigate(`/${id}`);
+    }
+    // Scroll to section if already on home
+    else if (location.pathname === "/") {
       scrollToSection(id);
+    }
+    // Otherwise, go to home and scroll from there
+    else {
+      navigate("/", { state: { scrollTo: id } });
     }
 
     setIsMobileMenuOpen(false);
@@ -71,7 +99,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* ✅ Navbar Container */}
       <motion.nav
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -82,7 +109,7 @@ const Navbar = () => {
         } backdrop-blur-md bg-white/40 border-b border-white/30 shadow-md`}
       >
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 py-4 flex justify-between items-center">
-          {/* ✅ Logo */}
+          {/* Logo */}
           <div className="flex items-center gap-3">
             <motion.div
               whileHover={{ scale: 1.05, rotate: 1 }}
@@ -93,7 +120,7 @@ const Navbar = () => {
             </motion.div>
           </div>
 
-          {/* ✅ Desktop Nav Links */}
+          {/* Desktop Links */}
           <div className="hidden md:flex gap-6 lg:gap-10">
             {navLinks.map((link, index) => (
               <motion.button
@@ -101,15 +128,25 @@ const Navbar = () => {
                 onClick={() => handleNavClick(link.id)}
                 className="group relative font-semibold uppercase text-sm text-gray-800 hover:text-black transition duration-300"
               >
-                <span className="block transition-transform duration-500 group-hover:-translate-y-1">
+                <span
+                  className={`block transition-transform duration-500 group-hover:-translate-y-1 ${
+                    activeLink === link.id ? "text-black font-bold" : ""
+                  }`}
+                >
                   {link.name}
                 </span>
-                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-black transition-all duration-500 group-hover:w-full"></span>
+                <span
+                  className={`absolute left-0 -bottom-1 h-0.5 transition-all duration-500 ${
+                    activeLink === link.id
+                      ? "w-full bg-black"
+                      : "w-0 bg-black group-hover:w-full"
+                  }`}
+                ></span>
               </motion.button>
             ))}
           </div>
 
-          {/* ✅ Desktop Buttons */}
+          {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -125,7 +162,7 @@ const Navbar = () => {
             </motion.button>
           </div>
 
-          {/* ✅ Mobile Hamburger */}
+          {/* Mobile Hamburger */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
@@ -137,7 +174,7 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* ✅ Mobile Menu */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
@@ -169,7 +206,9 @@ const Navbar = () => {
                 <button
                   key={index}
                   onClick={() => handleNavClick(link.id)}
-                  className="text-lg font-semibold text-gray-800 hover:text-black transition text-left"
+                  className={`text-lg font-semibold text-left transition ${
+                    activeLink === link.id ? "text-black font-bold" : "text-gray-800 hover:text-black"
+                  }`}
                 >
                   {link.name}
                 </button>

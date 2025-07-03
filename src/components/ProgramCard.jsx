@@ -315,7 +315,7 @@ export default function ProgramShowcase() {
   };
 
   return (
-    <div className="bg-gray-80 py-16 px-6 md:px-20 relative" ref={containerRef}>
+    <div className="bg-orange-100 py-16 px-6 md:px-20 relative" ref={containerRef}>
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-black leading-snug">
           🚀 Transform Your Career with <span className="text-[#FFA500]">Top-Tier Programs</span>

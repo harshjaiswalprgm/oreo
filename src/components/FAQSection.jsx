@@ -77,7 +77,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-16">
+    <section className="w-full max-w-4xl mx-auto px-4 py-16 ">
       <div className="text-center mb-10">
         <p className="text-sm font-medium text-gray-500 uppercase"></p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

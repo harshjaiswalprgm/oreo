@@ -21,7 +21,7 @@ export default function GlowlogicsUltimate() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col lg:flex-row justify-center items-start gap-12 p-10 bg-white overflow-hidden">
+    <div className="relative min-h-screen flex flex-col lg:flex-row justify-center items-start gap-12 p-10 bg-orange-100 overflow-hidden">
       {/* Subtle Glass Background Shadow */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-white to-gray-100 opacity-60 z-0"></div>
 
@@ -36,7 +36,9 @@ export default function GlowlogicsUltimate() {
           Why Choose <span className="text-[#FFA500]">Glowlogics</span>?
         </h2>
         <p className="text-gray-600 text-lg leading-relaxed">
-          Elevate your career with industry-driven learning experiences, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eos doloremque dolorum fuga ipsa eveniet laudantium, tenetur culpa? Ipsam tenetur sequi ratione magni nostrum ad natus cupiditate quidem, libero repellendus eum totam illum asperiores ex officia vero, illo, cumque sint! Eum quo illo modi ullam numquam maxime repellat, esse laborum, saepe officiis architecto quibusdam odio autem obcaecati laboriosam! Totam, sunt quo? Fuga, aut. Cupiditate voluptate fuga soluta earum deleniti. Quos quod quae, rem veritatis vel officiis quis asperiores iusto necessitatibus obcaecati recusandae sequi officia et esse eligendi tenetur harum dicta voluptatem cumque saepe dolorem? Repellat soluta necessitatibus recusandae maxime earum repellendus, consectetur ratione velit obcaecati numquam asperiores officia rem rerum voluptate, nam alias quod atque sequi! Sapiente dolore voluptates nam mollitia dolorem quasi nisi modi pariatur illum qui iusto architecto ea impedit, neque consequatur animi saepe tenetur deleniti ad repellendus rem obcaecati adipisci ipsa? Necessitatibus totam ut illum ducimus dolorum? Amet ipsam nulla consequuntur illo harum vel magni iste placeat laboriosam, cum, rem iure doloribus mollitia ratione. Dolorem animi enim maiores beatae, incidunt impedit adipisci consectetur similique ratione quos sit, odit placeat accusamus voluptas quibusdam non! Illo consequatur architecto quae, sed placeat reprehenderit fugiat eius sequi laborum. Natus, magnam animi. real projects, and expert mentorship. Join thousands of learners achieving their goals.
+          At Glowlogics, we’re more than just an edtech company — we’re your partner in growth. Whether you are a student, professional, or institution, our mission is to equip you with real-world skills through industry-relevant programs, expert mentorship, and cutting-edge learning experiences. With a focus on quality, flexibility, and outcomes, we help you unlock your potential and stay ahead in a competitive world.
+
+
         </p>
       </motion.div>
 
