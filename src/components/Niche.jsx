@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <section className="w-screen min-h-screen bg-[#FFA500] text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
+    <section className="w-screen min-h-screen bg-[#ff6e0c] text-black px-6 md:px-24 py-20 font-sans flex flex-col justify-between">
       {/* Top Layout */}
       <div className="flex flex-col md:flex-row justify-between mb-20">
         {/* Left Section: Brand + Map */}

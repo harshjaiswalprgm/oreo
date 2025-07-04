@@ -52,7 +52,7 @@ export default function FAQSection() {
     const parts = text.split(new RegExp(`(${term})`, "gi"));
     return parts.map((part, i) =>
       part.toLowerCase() === term.toLowerCase() ? (
-        <mark key={i} className="bg-yellow-200 px-1 rounded">
+        <mark key={i} className="bg-[#ff6e0c] px-1 rounded">
           {part}
         </mark>
       ) : (
@@ -88,13 +88,13 @@ export default function FAQSection() {
           <input
             type="text"
             placeholder="🔍 Search..."
-            className="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-400 transition"
+            className="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-[#ff6e0c] transition"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <button
             onClick={handleExpandCollapseAll}
-            className="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition"
+            className="px-4 py-2 bg-[#ff6e0c] text-white rounded hover:bg-[#ff6e0c] transition"
           >
             {toggleAll ? "Collapse All" : "Expand All"}
           </button>

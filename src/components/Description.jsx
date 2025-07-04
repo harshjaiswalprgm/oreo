@@ -10,7 +10,7 @@ function About() {
       className="w-full flex justify-center bg-orange-100" // Outer white background
     >
       {/* 🔶 Inner Glassy Orange Container */}
-      <div className="rounded-3xl overflow-hidden m-4 md:m-10 bg-[#FFA500]/90 backdrop-blur-md border border-white/30 shadow-xl max-w-[90rem] w-full">
+      <div className="rounded-3xl overflow-hidden m-4 md:m-10 bg-[#ff6e0c] backdrop-blur-md border border-white/30 shadow-xl max-w-[90rem] w-full">
 
         {/* First Section */}
         <motion.section
@@ -81,7 +81,7 @@ function About() {
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, amount: 0.2 }}
   transition={{ duration: 1 }}
-  className="bg-[#FFA500] text-black py-16 px-6 md:px-12 rounded-b-3xl"
+  className="bg-[#ff6e0c] text-black py-16 px-6 md:px-12 rounded-b-3xl"
 >
   <div className="border-t border-black mb-12"></div>
 

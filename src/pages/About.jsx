@@ -26,7 +26,7 @@ export default function About3DMarquee() {
   }, []);
 
   return (
-    <section className="bg-[#fff7f3] w-full text-black">
+    <section className="bg-orange-100 w-full text-black">
       {/* === Top Header Section === */}
       <div className="py-24 px-4 text-center overflow-hidden relative">
         <div className="max-w-4xl mx-auto mb-14">
@@ -111,10 +111,11 @@ export default function About3DMarquee() {
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/LlkcvvGbs9I?si=DWXLz_MPgRDaBx0P"
-                title="Intro Video"
+                src="https://www.youtube.com/embed/uIQ29DOWm6k?si=6e92M0VfowBX-QLT"
+                title="YouTube video player"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>
@@ -169,10 +170,201 @@ export default function About3DMarquee() {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </div>
+
+      <div className="max-w-6xl mx-auto p-6 my-10 rounded-2xl shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out animate-fade-in-up flex flex-col md:flex-row items-center gap-10">
+  {/* Left Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/unified-mentor-logo.png"
+      alt="Glowlogics logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="flex-1 text-center md:text-left">
+    <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2 flex items-center justify-center md:justify-start gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Collaboration Icon" className="w-7 h-7" />
+      Collaboration Announcement
+    </h2>
+    <p className="text-gray-600 leading-relaxed text-lg">
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      <span className="font-semibold"> skill development</span> and
+      <span className="font-semibold"> career growth</span>.
+    </p>
+
+    {/* Logos Inline */}
+    <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+      <img
+        src="https://yourdomain.com/dataspace-logo.png"
+        alt="IIT haydrabad logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+      <span className="text-xl text-gray-500 font-bold">×</span>
+      <img
+        src="https://yourdomain.com/unified-mentor-logo.png"
+        alt="Glowlogics logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+    </div>
+  </div>
+
+  {/* Right Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/dataspace-logo.png"
+      alt="IIT haydrabad logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+ <div className="max-w-6xl mx-auto p-6 my-10 rounded-2xl shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out animate-fade-in-up flex flex-col md:flex-row items-center gap-10">
+  {/* Left Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/unified-mentor-logo.png"
+      alt="Glowlogics logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="flex-1 text-center md:text-left">
+    <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2 flex items-center justify-center md:justify-start gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Collaboration Icon" className="w-7 h-7" />
+      Collaboration Announcement
+    </h2>
+    <p className="text-gray-600 leading-relaxed text-lg">
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      <span className="font-semibold"> skill development</span> and
+      <span className="font-semibold"> career growth</span>.
+    </p>
+
+    {/* Logos Inline */}
+    <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+      <img
+        src="https://yourdomain.com/dataspace-logo.png"
+        alt="IIT haydrabad logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+      <span className="text-xl text-gray-500 font-bold">×</span>
+      <img
+        src="https://yourdomain.com/unified-mentor-logo.png"
+        alt="Glowlogics logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+    </div>
+  </div>
+
+  {/* Right Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/dataspace-logo.png"
+      alt="IIT haydrabad logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+ <div className="max-w-6xl mx-auto p-6 my-10 rounded-2xl shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out animate-fade-in-up flex flex-col md:flex-row items-center gap-10">
+  {/* Left Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/unified-mentor-logo.png"
+      alt="Glowlogics logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="flex-1 text-center md:text-left">
+    <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2 flex items-center justify-center md:justify-start gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Collaboration Icon" className="w-7 h-7" />
+      Collaboration Announcement
+    </h2>
+    <p className="text-gray-600 leading-relaxed text-lg">
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      <span className="font-semibold"> skill development</span> and
+      <span className="font-semibold"> career growth</span>.
+    </p>
+
+    {/* Logos Inline */}
+    <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+      <img
+        src="https://yourdomain.com/dataspace-logo.png"
+        alt="IIT haydrabad logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+      <span className="text-xl text-gray-500 font-bold">×</span>
+      <img
+        src="https://yourdomain.com/unified-mentor-logo.png"
+        alt="Glowlogics logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+    </div>
+  </div>
+
+  {/* Right Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/dataspace-logo.png"
+      alt="IIT haydrabad logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+ <div className="max-w-6xl mx-auto p-6 my-10 rounded-2xl shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out animate-fade-in-up flex flex-col md:flex-row items-center gap-10">
+  {/* Left Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/unified-mentor-logo.png"
+      alt="Glowlogics logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="flex-1 text-center md:text-left">
+    <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2 flex items-center justify-center md:justify-start gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3524/3524659.png" alt="Collaboration Icon" className="w-7 h-7" />
+      Collaboration Announcement
+    </h2>
+    <p className="text-gray-600 leading-relaxed text-lg">
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      <span className="font-semibold"> skill development</span> and
+      <span className="font-semibold"> career growth</span>.
+    </p>
+
+    {/* Logos Inline */}
+    <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+      <img
+        src="https://yourdomain.com/dataspace-logo.png"
+        alt="IIT haydrabad logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+      <span className="text-xl text-gray-500 font-bold">×</span>
+      <img
+        src="https://yourdomain.com/unified-mentor-logo.png"
+        alt="Glowlogics logo"
+        className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
+      />
+    </div>
+  </div>
+
+  {/* Right Logo */}
+  <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
+    <img
+      src="https://yourdomain.com/dataspace-logo.png"
+      alt="IIT haydrabad logo"
+      className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+    />
+  </div>
+</div>
+
+
+
 
     </section>
   );

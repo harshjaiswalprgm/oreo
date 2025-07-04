@@ -128,7 +128,7 @@ export default function Career() {
           <h1 className="text-5xl font-extrabold text-black leading-snug">
             <span className="bg-yellow-300 px-2 inline-block rotate-[-2deg]">Shift</span>{" "}
             your career for{" "}
-            <span className="bg-orange-300 px-2 inline-block rotate-[-2deg]">better outcomes</span>
+            <span className="bg-orange-400 px-2 inline-block rotate-[-2deg]">better outcomes</span>
           </h1>
         </div>
         <div className="flex flex-col gap-4">

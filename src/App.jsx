@@ -17,13 +17,13 @@ import Image3DSlider from "./components/Image3DSlider";
 import FloatingSocials from "./components/FloatingSocials";
 import GlobalReachSection from "./components/GlobalReachSection";
 import HeroSection from "./components/HeroSection";
-
+//////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 import Career from "./pages/Career";
 import About from "./pages/About";
-import PrivacyPolicy from "./pages/PrivacyPolicy"; // ✅ added
-import LegalTerms from "./pages/LegalTerms";       // ✅ added
-import EventHub from "./pages/EventHub";       // ✅ added
+import PrivacyPolicy from "./pages/PrivacyPolicy";  // added
+import LegalTerms from "./pages/LegalTerms";       //  added
+import EventHub from "./pages/EventHub";          //   added
 
 import "./index.css";
 

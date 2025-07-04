@@ -23,25 +23,29 @@ const EventHub = () => {
     <section className="eventhub-container">
       {/* LEFT SECTION */}
       <div className="eventhub-left">
-        <motion.h1
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Unlock Top <br />
-          <span>Tech Talent</span> <br />
-          From the Best in Programming – <br />
-          <strong>One Click Away!</strong>
-        </motion.h1>
+      <motion.h1
+        initial={{ opacity: 10, y: 50, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-3xl md:text-5xl font-extrabold text-gray-100 leading-snug md:leading-tight"
+      >
+        Join our upcoming <br />
+        <strong className="text-blue-800">Hackathons & Workshops</strong> <br />
+        to learn, build, compete, and <br />
+        <strong className="text-blue-800">grow together.</strong>
+      </motion.h1>
 
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="eventhub-btn"
-        >
-          Start Project
-        </motion.button>
-      </div>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        className="eventhub-btn mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold shadow-md hover:bg-blue-700 transition-all"
+      >
+        Start Learning
+      </motion.button>
+    </div>
 
       {/* RIGHT SECTION */}
       <div className="eventhub-right">
@@ -185,6 +189,40 @@ const EventHub = () => {
           </div>
         </div>
       </div>
+      <div className="w-full flex justify-center">
+  <div className="w-full max-w-6xl p-4 border border-gray-300 rounded-xl bg-white/10 backdrop-blur-sm flex flex-col md:flex-row items-center justify-center gap-6">
+
+    {/* Card 1 */}
+    <a
+      href="https://forms.gle/your-form-link-1"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
+    >
+      <img
+        src="/src/assets/images/hackathon.jpg"
+        alt="Hackathon 1"
+        className="w-full h-auto object-cover"
+      />
+    </a>
+
+    {/* Card 2 */}
+    <a
+      href="https://forms.gle/your-form-link-2"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
+    >
+      <img
+        src="/src/assets/images/hackathon.jpg"
+        alt="Hackathon 2"
+        className="w-full h-auto object-cover"
+      />
+    </a>
+
+  </div>
+</div>
+
       <div className="w-full h-screen overflow-hidden rounded-[40px] shadow-2xl">
         <video
           autoPlay

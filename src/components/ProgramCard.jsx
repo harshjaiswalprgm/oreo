@@ -318,7 +318,7 @@ export default function ProgramShowcase() {
     <div className="bg-orange-100 py-16 px-6 md:px-20 relative" ref={containerRef}>
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-black leading-snug">
-          🚀 Transform Your Career with <span className="text-[#FFA500]">Top-Tier Programs</span>
+          🚀 Transform Your Career with <span className="text-[#ff6e0c]">Top-Tier Programs</span>
         </h2>
 
         <div className="flex flex-wrap gap-3 mb-8">
@@ -328,7 +328,7 @@ export default function ProgramShowcase() {
               onClick={() => setActive(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 active === cat
-                  ? "bg-[#FFA500] text-white shadow-md"
+                  ? "bg-[#ff6e0c] text-white shadow-md"
                   : "bg-white text-black border border-black hover:bg-black hover:text-white"
               }`}
             >

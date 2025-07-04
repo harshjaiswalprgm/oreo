@@ -53,7 +53,7 @@ const testimonials = [
   },
     {
     name: "Preetham",
-    title: "CEO and Co-founder of ABC Company",
+    title: "Navkis College of Engnineering",
     text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering, focusing on practical skill development and technical growth. In my final semester, I enrolled in a specialized VLSI course at Glow Logic Solutions, a well-regarded institute in semiconductor and embedded systems. The course covered Verilog/SystemVerilog, FPGA simulation, ASIC design flow, low-power techniques like MTCMOS, and hands-on experience with tools such as Cadence and Synopsys. As part of the program, I completed a design project that strengthened my Verilog skills and deepened my understanding of hardware design. This industry-oriented training has equipped me to contribute effectively in the semiconductor field.",
     img: "/src/assets/images/pritam.png",
   },
