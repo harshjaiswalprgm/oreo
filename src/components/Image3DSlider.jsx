@@ -42,7 +42,6 @@ export default function Image3DSlider() {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #f9fafb;
         overflow: hidden;
         padding: 40px 20px;
         box-sizing: border-box;
@@ -106,26 +105,29 @@ export default function Image3DSlider() {
   const angle = 360 / imageUrls.length;
 
   return (
-    <div className="carousel-wrapper">
-      <h2 className="carousel-heading">Fuel Your Ambitions with Industry-Leading Online Programs</h2>
-      <p className="carousel-description">
-        Learn in-demand tools and strategies to elevate your career from anywhere.
-      </p>
-      <div className="carousel">
-        {imageUrls.map((url, index) => {
-          const rotate = `rotateY(${angle * index}deg) translateZ(${radius}px)`;
-          return (
-            <img
-              key={index}
-              src={url}
-              alt={`course-${index}`}
-              style={{
-                transform: `translate(-50%, -50%) ${rotate}`,
-              }}
-            />
-          );
-        })}
-      </div>
-    </div>
+   <div
+  className="carousel-wrapper bg-orange-100 ">
+  <h2 className="carousel-heading">
+    Fuel Your Ambitions with Industry-Leading Online Programs
+  </h2>
+  <p className="carousel-description">
+    Learn in-demand tools and strategies to elevate your career from anywhere.
+  </p>
+  <div className="carousel">
+    {imageUrls.map((url, index) => {
+      const rotate = `rotateY(${angle * index}deg) translateZ(${radius}px)`;
+      return (
+        <img
+          key={index}
+          src={url}
+          alt={`course-${index}`}
+          style={{
+            transform: `translate(-50%, -50%) ${rotate}`,
+          }}
+        />
+      );
+    })}
+  </div>
+</div>
   );
 }

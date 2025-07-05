@@ -179,7 +179,7 @@ const EventHub = () => {
             <span>60%</span>
           </div>
         </div>
-        <div className="org-card textured green">
+        {/* <div className="org-card textured green">
           <h4>Organizational</h4>
           <h2>Self-belief</h2>
           <p>Boost confidence and empower your mindset toward growth.</p>
@@ -187,7 +187,7 @@ const EventHub = () => {
             <span>⭐ 3.9</span>
             <span>60%</span>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="w-full flex justify-center">
   <div className="w-full max-w-6xl p-4 border border-gray-300 rounded-xl bg-white/10 backdrop-blur-sm flex flex-col md:flex-row items-center justify-center gap-6">

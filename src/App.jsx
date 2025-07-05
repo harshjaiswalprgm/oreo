@@ -1,6 +1,7 @@
 import ScrollToTop from "./components/ScrollToTop";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import "./index.css";
 import Navbar from "./components/Navbar";
 import Marquee from "./components/Marquee";
 import Description from "./components/Description";
@@ -19,13 +20,18 @@ import GlobalReachSection from "./components/GlobalReachSection";
 import HeroSection from "./components/HeroSection";
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
+
 import Career from "./pages/Career";
 import About from "./pages/About";
-import PrivacyPolicy from "./pages/PrivacyPolicy";  // added
-import LegalTerms from "./pages/LegalTerms";       //  added
-import EventHub from "./pages/EventHub";          //   added
+import PrivacyPolicy from "./pages/PrivacyPolicy"; // added
+import LegalTerms from "./pages/LegalTerms"; //  added
+import EventHub from "./pages/EventHub"; //   added
 
-import "./index.css";
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
+
+import WebDev from "./pages/programs/webDev";
 
 // ✅ Scroll to section if route state has scrollTo
 function ScrollHandler() {
@@ -75,7 +81,9 @@ function HomePage() {
       <Image3DSlider />
       <Testimonial />
       <SectionOne />
+
       {/* <Niche /> */}
+
     </>
   );
 }
@@ -86,22 +94,25 @@ function App() {
     <div className="w-full min-h-screen text-black">
       <CustomCursor />
       <Background />
-       <ScrollToTop />
+      <ScrollToTop />
       <Navbar />
       <ScrollToTopOnLoad />
       <ScrollHandler />
 
-
       <Routes>
-        <Route path="/" element={<HomePage />} />                      {/* ✅ Homepage is root Hhai.. */}
+        <Route path="/" element={<HomePage />} />{" "}
+        {/* ✅ Homepage is root Hhai.. */}
         <Route path="/career" element={<Career />} />
         <Route path="/about" element={<About />} />
         <Route path="/eventHub" element={<EventHub />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />   {/* privacy wala page */}
-        <Route path="/legal-terms" element={<LegalTerms />} />         {/* legal-terms wala page */}
-
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />{" "}
+        {/* privacy wala page */}
+        <Route path="/legal-terms" element={<LegalTerms />} />{" "}
+        {/* legal-terms wala page */}
+        {/*////////////////////////////////////////This is programs routing ///////////////////////////////////////////////////////////////////*/}
+       <Route path="/programs/webDev" element={<WebDev />} />
       </Routes>
-       <Niche />
+      <Niche />
 
       <FloatingSocials />
     </div>

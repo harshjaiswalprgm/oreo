@@ -77,9 +77,9 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-16 ">
+    <section className="w-full  bg-orange-100">
       <div className="text-center mb-10">
-        <p className="text-sm font-medium text-gray-500 uppercase"></p>
+        <p className="text-sm font-medium bg-orange-100 uppercase"></p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Frequently asked questions
         </h2>
@@ -101,7 +101,7 @@ export default function FAQSection() {
         </div>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 max-w-4xl mx-auto px-4 py-16">
         {filteredFaqs.length > 0 ? (
           filteredFaqs.map((faq, index) => (
             <div key={index} className="border-b pb-4">

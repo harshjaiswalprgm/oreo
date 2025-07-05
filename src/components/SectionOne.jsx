@@ -5,7 +5,7 @@ import { MdOutlineDesktopMac } from "react-icons/md";
 
 const SupportSection = () => {
   return (
-    <section className="relative w-full px-4 md:px-12 lg:px-20 py-16 bg-gradient-to-b from-white via-blue-50 to-white">
+    <section className="relative w-full px-4 md:px-12 lg:px-20 py-16 bg-orange-100">
       {/* Top Big Card */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

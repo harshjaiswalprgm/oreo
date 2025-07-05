@@ -124,4 +124,11 @@ body {
 
 .animate-fade-in-up {
   animation: fade-in-up 0.8s ease-out forwards;
+/* }
+body {
+  @apply bg-orange-100;
+} */}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

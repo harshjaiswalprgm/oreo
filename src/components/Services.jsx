@@ -23,7 +23,7 @@ export default function GlowlogicsUltimate() {
   return (
     <div className="relative min-h-screen flex flex-col lg:flex-row justify-center items-start gap-12 p-10 bg-orange-100 overflow-hidden">
       {/* Subtle Glass Background Shadow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-white to-gray-100 opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br"></div>
 
       {/* Heading Section */}
       <motion.div
