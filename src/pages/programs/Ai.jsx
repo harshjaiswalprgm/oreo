@@ -50,7 +50,7 @@ const roleLogos = {
         {/* Left Content */}
         <div className="flex-1 w-full">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-            Full-Stack Web Dev Bootcamp
+          Aiiiiii
           </h1>
           <p className="text-lg text-gray-700 mb-6">
             Become a job-ready full-stack developer | Master React, Node.js,

@@ -27,11 +27,31 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"; // added
 import LegalTerms from "./pages/LegalTerms"; //  added
 import EventHub from "./pages/EventHub"; //   added
 
+
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
 
 import WebDev from "./pages/programs/webDev";
+import VLSI from "./pages/programs/VLSI";
+import UIUX from "./pages/programs/UIUX";
+import Ai from "./pages/programs/Ai";
+import DataSciences from "./pages/programs/Data Sciences";
+import CyberSecurity from "./pages/programs/CyberSecurity"; //   added
+import CloudComputing from "./pages/programs/CloudComputing"; //   added
+import IOT from "./pages/programs/IOT"; //   added
+import AutoCAD from "./pages/programs/AutoCAD"; //   added
+import JavaFullstack from "./pages/programs/JavaFullstack"; //   added
+import AppDevelopment from "./pages/programs/AppDevelopment"; //   added
+import DigitalMarketing from "./pages/programs/DigitalMarketing"; //   added
+import PowerBi from "./pages/programs/PowerBi"; //   added
+import HRM from "./pages/programs/HRM"; //   added
+import Leadership from "./pages/programs/Leadership"; //   added
+import AdvancedExcel from "./pages/programs/AdvancedExcel"; //   added
+import Accounting from "./pages/programs/Accounting"; //   added
+import Entrepreneurship from "./pages/programs/Entrepreneurship"; //   added
+// import BusinessCommunication from "./pages/programs/BusinessCommunication"; //   added
+// import BusinessLaw from "./pages/programs/businessLaw"; //   added
 
 // ✅ Scroll to section if route state has scrollTo
 function ScrollHandler() {
@@ -111,6 +131,25 @@ function App() {
         {/* legal-terms wala page */}
         {/*////////////////////////////////////////This is programs routing ///////////////////////////////////////////////////////////////////*/}
        <Route path="/programs/webDev" element={<WebDev />} />
+       <Route path="/programs/VLSI" element={<VLSI />} />
+       <Route path="/programs/UIUX" element={<UIUX />} />
+       <Route path="/programs/Ai" element={<Ai />} />
+       <Route path="/programs/DataSciences" element={<DataSciences />} />
+       <Route path="/programs/CyberSecurity" element={<CyberSecurity />} />
+       <Route path="/programs/CloudComputing" element={<CloudComputing />} />
+       <Route path="/programs/IOT" element={<IOT />} />
+       <Route path="/programs/AutoCAD" element={<AutoCAD />} />
+       <Route path="/programs/JavaFullstack" element={<JavaFullstack />} />
+       <Route path="/programs/AppDevelopment" element={<AppDevelopment />} />
+       <Route path="/programs/DigitalMarketing" element={<DigitalMarketing />} />
+       <Route path="/programs/PowerBi" element={<PowerBi />} />
+       <Route path="/programs/HRM" element={<HRM />} />
+       <Route path="/programs/Leadership" element={<Leadership />} />
+       <Route path="/programs/AdvancedExcel" element={<AdvancedExcel />} />
+       <Route path="/programs/Accounting" element={<Accounting />} />
+       <Route path="/programs/Entrepreneurship" element={<Entrepreneurship />} />
+       {/* <Route path="/programs/BusinessCommunication" element={<BusinessCommunication />} /> */}
+       {/* <Route path="/programs/businessLaw" element={<BusinessLaw/>} /> */}
       </Routes>
       <Niche />
 

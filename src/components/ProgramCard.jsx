@@ -6,10 +6,12 @@ const categories = ["All", "BTech", "Graduates", "Masters", "Crash Course"];
 
 const programData = [
   // Program data remains unchanged for brevity
+  // <----------------------------THIS IS CRASH COURSE---------------------->
 
   {
     id: 1,
     title: "UI/UX Masterclass",
+    slug: "UIUX",
     category: "Crash Course",
     author: "Harsh Jaiswal",
     date: "10 Jul 25",
@@ -38,6 +40,7 @@ const programData = [
   {
     id: 3,
     title: "Advance Excel",
+    slug: "AdvancedExcel",
     category: "Crash Course",
     author: "Kon hai",
     date: "10 Jul 25",
@@ -52,6 +55,7 @@ const programData = [
   {
     id: 4,
     title: "Digital Marketing",
+    slug: "DigitalMarketing",
     category: "Crash Course",
     author: "Kon hai",
     date: "10 Jul 25",
@@ -65,6 +69,7 @@ const programData = [
   {
     id: 5,
     title: "Java Fullstack",
+     slug: "JavaFullstack",
     category: "Crash Course",
     author: "Kon hai",
     date: "10 Jul 25",
@@ -78,6 +83,7 @@ const programData = [
   {
     id: 6,
     title: "Data Science",
+    slug: "DataSciences",
     category: "Crash Course",
     author: "Kon hai",
     date: "10 Jul 25",
@@ -91,6 +97,7 @@ const programData = [
   {
     id: 7,
     title: "App Development",
+     slug: "AppDevelopment",
     category: "Crash Course",
     author: "Kon hai",
     date: "10 Jul 25",
@@ -106,7 +113,7 @@ const programData = [
   {
     id: 8,
     title: "Full-Stack Web Dev",
-    slug: "webDev", // ✅ Added slug for routing
+    slug: "webDev", // I Added the slug for routing
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "01 Jun 25",
@@ -119,7 +126,8 @@ const programData = [
   },
   {
     id: 9,
-    title: "Advanced Backend Systems",
+    title: "AI",
+    slug: "Ai",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "15 Sep 25",
@@ -132,7 +140,8 @@ const programData = [
   },
   {
     id: 10,
-    title: "DevOps Essentials",
+    title: "Data Science",
+    slug: "DataSciences",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "10 Oct 25",
@@ -145,7 +154,8 @@ const programData = [
   },
   {
     id: 11,
-    title: "AI for Developers",
+    title: "Cyber Security",
+    slug: "CyberSecurity",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "05 Nov 25",
@@ -159,7 +169,8 @@ const programData = [
 
   {
     id: 12,
-    title: "Frontend Engineering with React",
+    title: "UI/UX",
+    slug: "UIUX",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "01 Oct 25",
@@ -172,7 +183,8 @@ const programData = [
   },
   {
     id: 13,
-    title: "Next.js Fullstack Bootcamp",
+    title: "Cloud Computing",
+    slug: "CloudComputing",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "08 Oct 25",
@@ -185,7 +197,8 @@ const programData = [
   },
   {
     id: 14,
-    title: "Mobile App Dev with Flutter",
+    slug: "VLSI",
+    title: "VLSI",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "12 Oct 25",
@@ -198,7 +211,8 @@ const programData = [
   },
   {
     id: 15,
-    title: "Mastering TypeScript",
+    title: "IOT",
+    slug: "IOT",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "15 Oct 25",
@@ -211,7 +225,8 @@ const programData = [
   },
   {
     id: 16,
-    title: "Python for Backend Devs",
+    title: "AutoCAD",
+    slug: "AutoCAD",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "18 Oct 25",
@@ -224,7 +239,8 @@ const programData = [
   },
   {
     id: 17,
-    title: "Data Structures & Algorithms",
+    title: "Fullstack Java",
+    slug: "JavaFullstack",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "20 Oct 25",
@@ -237,7 +253,8 @@ const programData = [
   },
   {
     id: 18,
-    title: "AWS Cloud Fundamentals",
+    title: "App Development",
+    slug: "AppDevelopment",
     category: "BTech",
     author: "Harsh Jaiswal",
     date: "23 Oct 25",
@@ -249,15 +266,16 @@ const programData = [
     popupTitle: "Launch with AWS",
   },
 
-  // Marketing
+  // Marketing  to >> Graduate..
   {
     id: 19,
-    title: "Digital Marketing Pro",
+    title: "Digital Marketing",
+    slug: "DigitalMarketing",
     category: "Graduates",
     author: "Harsh Jaiswal",
     date: "20 Aug 25",
     image:
-      "https://img.freepik.com/free-vector/digital-marketing-landing-page_33099-1726.jpg",
+      "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
     desc: "Google Ads, SEO, branding—all in one course.",
     details:
       "Master Google Ads, SEO, social media marketing, analytics & email campaigns for high-converting funnels.",
@@ -265,12 +283,13 @@ const programData = [
   },
   {
     id: 20,
-    title: "Content Strategy Lab",
+    title: "Power BI",
+    slug: "PowerBi",
     category: "Graduates",
     author: "Harsh Jaiswal",
     date: "05 Sep 25",
     image:
-      "https://img.freepik.com/free-vector/content-marketing-article-blogging-webinar-seo_107791-2708.jpg",
+      "https://img.freepik.com/premium-photo/businessman-hand-pressing-keyboard-with-mock-up-chart-slide-show-presentation-display-laptop_281691-370.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Plan, write & promote content.",
     details:
       "Master blog strategy, content calendars, SEO copywriting, and social media amplification.",
@@ -278,53 +297,198 @@ const programData = [
   },
   {
     id: 21,
-    title: "Instagram Growth Hacks",
+    title: "HRM & Finance",
+    slug: "HRM",
     category: "Graduates",
     author: "Harsh Jaiswal",
     date: "28 Aug 25",
     image:
-      "https://img.freepik.com/free-vector/social-media-growth-concept_23-2148651954.jpg",
+      "https://img.freepik.com/free-photo/three-business-people-meeting_23-2147626533.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Grow & monetize your IG brand.",
     details:
       "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
     popupTitle: "Hack Instagram Growth",
   },
 
-  // Soft Skills now i converted to Masters okay
   {
     id: 22,
+    title: "Leadership",
+    slug: "Leadership",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/premium-photo/business-teamwork-meeting-success-achievement-goal_42957-2564.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+  {
+    id: 23,
+    title: "Advance Excel",
+    slug: "AdvancedExcel",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+
+  {
+    id: 24,
+    title: "Accounting",
+    slug: "Accounting",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/free-photo/top-viewtop-view-manager-employee-doing-teamwork-business-office-looking-charts-laptop-display_482257-2443.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+  {
+    id: 25,
+    title: "Entrepreneurship",
+    slug: "Entrepreneurship",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/free-photo/businessmen-closing-deal-with-handshake_1098-3793.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+  {
+    id: 26,
+    title: "Business Law",
+    slug: "BusinessLaw",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/premium-photo/justice-law-concept-legal-counsel-presents-client-signed-contract-with-gavel-legal-law-legal-having-team-meeting-law-firm-background_265022-79598.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+  {
+    id: 27,
+    title: "Business Communication",
+    slug: "BusinessCommunication",
+    category: "Graduates",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/premium-photo/justice-law-concept-legal-counsel-presents-client-signed-contract-with-gavel-legal-law-legal-having-team-meeting-law-firm-background_265022-79598.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+
+  // Soft Skills >>>> now i converted to Masters okay
+  {
+    id: 28,
     title: "Digital Marketing",
+    slug: "DigitalMarketing",
     category: "Masters",
     author: "Harsh Jaiswal",
     date: "15 Jul 25",
     image:
-      "https://img.freepik.com/premium-photo/search-engine-marketing-composition-design_23-2150923510.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
     desc: "Build confidence & speak like a pro on stage.",
     details:
       "Learn storytelling, persuasion, confidence building, stage fear removal & deliver powerful speeches.",
     popupTitle: "Master Public Speaking",
   },
   {
-    id: 23,
-    title: "Emotional Intelligence 101",
+    id: 29,
+    title: "HRM & Finance",
+    slug: "HRM",
     category: "Masters",
     author: "Harsh Jaiswal",
-    date: "30 Aug 25",
+    date: "28 Aug 25",
     image:
-      "https://img.freepik.com/free-photo/emotional-intelligence-eq-concept_53876-120565.jpg",
-    desc: "Improve empathy & leadership.",
+      "https://img.freepik.com/free-photo/three-business-people-meeting_23-2147626533.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
     details:
-      "Understand emotions, lead teams better, resolve conflicts, and boost workplace harmony.",
-    popupTitle: "Boost EQ Skills",
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
   },
   {
-    id: 24,
-    title: "Time Management Mastery",
+    id: 30,
+    title: "Advance Excel",
+    slug: "AdvancedExcel",
+    category: "Masters",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image:
+      "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details:
+      "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer",
+  },
+
+  {
+    id: 31,
+    title: "Power BI",
+    slug: "PowerBi",
+    category: "Masters",
+    author: "Kon hai",
+    date: "10 Jul 25",
+    image:
+      "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Master product design, prototyping & user flows.",
+    details:
+      "Learn wireframing, design systems, UX research, usability testing and more to become a complete product designer.",
+    popupTitle: "Become a Product Designer",
+  },
+  {
+    id: 32,
+    title: "Entrepreneurship",
+    category: "Masters",
+    author: "Harsh Jaiswal",
+    date: "28 Aug 25",
+    image:
+      "https://img.freepik.com/free-photo/businessmen-closing-deal-with-handshake_1098-3793.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Grow & monetize your IG brand.",
+    details:
+      "Learn IG algorithms, reels optimization, audience engagement, and monetization strategies.",
+    popupTitle: "Hack Instagram Growth",
+  },
+
+  {
+    id: 33,
+    title: "Business Law",
     category: "Masters",
     author: "Harsh Jaiswal",
     date: "20 Sep 25",
     image:
-      "https://img.freepik.com/free-vector/time-management-concept_23-2148483330.jpg",
+      "https://img.freepik.com/free-photo/business-advisor-working-with-documentation_1098-15366.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+    desc: "Get more done, stress less.",
+    details:
+      "Learn prioritization, planning, Pomodoro, task batching & productivity routines.",
+    popupTitle: "Master Time Management",
+  },
+  {
+    id: 34,
+    title: "Business Communication",
+    category: "Masters",
+    author: "Harsh Jaiswal",
+    date: "20 Sep 25",
+    image:
+      "https://img.freepik.com/premium-photo/cooperation-action-group-young-modern-people-smart-casual-wear-working-together_425904-9440.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Get more done, stress less.",
     details:
       "Learn prioritization, planning, Pomodoro, task batching & productivity routines.",
@@ -403,7 +567,9 @@ export default function ProgramShowcase() {
                 className="bg-white rounded-xl shadow-sm transition-transform duration-200 p-4 cursor-pointer block"
               >
                 <div
-                 onClick={() => prog.slug && navigate(`/programs/${prog.slug}`)}
+                  onClick={() =>
+                    prog.slug && navigate(`/programs/${prog.slug}`)
+                  }
                   className="relative mb-4 h-48 w-full cursor-pointer"
                 >
                   <img
