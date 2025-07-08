@@ -129,7 +129,8 @@ export default function HeroSection() {
             </button>
             <button className="flex items-center gap-2 text-black hover:text-[#FFA500] font-medium transition-all duration-300 hover:scale-105">
               <FaPlay className="text-[#FFA500] group-hover:animate-pulse" />
-              Watch Demo
+               <a href="https://www.youtube.com/@Glowlogics">Watch Demo</a>
+
             </button>
           </motion.div>
 

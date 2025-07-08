@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 // import { FaQuoteLeft } from "react-icons/fa";
 
-const FullStackCourse = () => {
+const FullStackProgram = () => {
   const [openSection, setOpenSection] = useState(null);
 
   // const roles = [
@@ -50,35 +50,34 @@ const roleLogos = {
         {/* Left Content */}
         <div className="flex-1 w-full">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-          UIUX
+          UI/UX
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+           Become a Job-Ready UI/UX Designer | Master Design Thinking, Figma, Wireframing & Prototyping Tools
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, Deployment
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
+           <li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Design real-world UI/UX projects from scratch using Figma & Adobe XD
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Master Design Thinking, Wireframing, Prototyping & User Testing
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Career Mentorship + Dribbble & Behance Portfolio Development
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Includes resume review, mock interviews & LinkedIn profile optimization
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Guaranteed Live UI/UX Design Cohorts Starting Within 90 Days
+</li>
           </ul>
 
           {/* CTA Buttons */}
@@ -115,36 +114,34 @@ const roleLogos = {
         {/* Right Image */}
         <div className="flex-1 w-full flex justify-center max-w-2xl">
           <img
-            src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740"
+            src="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740"
             alt="Full Stack Web Dev"
             className="rounded-2xl shadow-xl max-w-xl w-full"
           />
         </div>
       </div>
 
-      {/* WebDev Overview Section */}
+      {/* UIUX Overview Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Course{" "}
+          UI/UX Certification Program{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for
-          a project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
+          Glowlogics UI/UX Design Training Program covers all the essential skills needed to become a modern, user-centric designer. The Program focuses on key areas such as design thinking, user research, wireframing, prototyping, and usability testing. Learners will explore emerging trends in UI/UX, the latest design tools like Figma and Adobe XD, and best practices in responsive and accessible design. With a strong focus on real-world applications and portfolio-building, this program equips you to create seamless, engaging digital experiences across web and mobile platforms.
+
+
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+              UIUX Program Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
-              ✅ 100% Money Back Guarantee
+              ✅ 100% ISO Verified Internship
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
@@ -154,7 +151,7 @@ const roleLogos = {
               "Transform Project Management With AI Through Exclusive Masterclasses on Generative AI",
               "Access to Cheat Sheet, Study Plans and Exam Application Support from Experts",
               "Lead the Way in Project Management With India’s Largest PMI Partner",
-              "24x7 Course Assistance",
+              "24x7 Program Assistance",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -169,15 +166,15 @@ const roleLogos = {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "Work breakdown structure",
-              "Project cost estimating",
-              "Resource allocation",
-              "Cost management",
-              "Gantt charts",
-              "Engineering economics",
-              "Mathematical project scheduling models",
-              "Leadership",
-            ].map((skill, index) => (
+  "Design Thinking & User-Centered Design",
+  "User Research & Persona Development",
+  "Information Architecture & User Flows",
+  "Wireframing & Interactive Prototyping",
+  "Visual Design Principles & Typography",
+  "UI Design using Figma & Adobe XD",
+  "Usability Testing & Accessibility Standards",
+  "Portfolio Development & Design Presentation Skills"
+].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -191,9 +188,9 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
+          The UIUX® certification can help you land lucrative roles in IT,
           manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
+          UIUX® certified project managers drive better project performance
           and are often rewarded with substantial pay raises as shown below.
         </p>
 
@@ -234,7 +231,7 @@ const roleLogos = {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+            UIUXelopment Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
@@ -242,12 +239,7 @@ const roleLogos = {
           <div>
             <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
             <p>
-              The WebDevelopment<sup>®</sup> certification is an essential professional
-              requirement for senior project manager roles across all
-              industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
+             The UIUX® Certification can open doors to creative and high-paying roles across industries like IT, finance, healthcare, e-commerce, and digital media. Certified UI/UX designers are skilled in crafting user-friendly, visually engaging digital experiences that drive business success. With companies placing a strong emphasis on customer experience, UIUX® certified professionals are in high demand — often rewarded with career growth, global opportunities, and competitive salaries in today’s design-driven world.
             </p>
           </div>
 
@@ -256,7 +248,7 @@ const roleLogos = {
             <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
             <p>
               No prior knowledge or experience is required to attend
-              Glowlogics WebDevelopment Certification Training. To qualify for the WebDevelopment
+              Glowlogics UIUXelopment Certification Training. To qualify for the UIUXelopment
               exam you should either have:
             </p>
             <ul className="list-disc list-inside mt-2">
@@ -267,16 +259,16 @@ const roleLogos = {
             </a>
           </div>
 
-          {/* Course Content */}
+          {/* Program Content */}
           <div className="mt-8 space-y-3">
-            <h3 className="text-xl font-semibold mb-4">Course Content</h3>
+            <h3 className="text-xl font-semibold mb-4">Program Content</h3>
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Section 01: Program Introduction",
                 lessons: [
                   {
-                    name: "Lesson 01: Course Introduction",
+                    name: "Lesson 01: Program Introduction",
                     time: "09:49",
                     preview: "#",
                   },
@@ -372,25 +364,25 @@ const roleLogos = {
     <div className="bg-white border rounded-lg shadow-md divide-y">
       {[
         {
-          q: "How to get a WebDevelopment® certification?",
+          q: "How to get a UIUXelopment® certification?",
           a: (
             <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
               <li>Meet the eligibility requirements</li>
-              <li>Enroll in an accredited WebDevelopment certification training course</li>
+              <li>Enroll in an accredited UIUXelopment certification training Program</li>
               <li>Meet the exam eligibility requirements</li>
-              <li>Apply for the WebDevelopment exam with PMI</li>
+              <li>Apply for the UIUXelopment exam with PMI</li>
               <li>Pass your exam to earn certification</li>
             </ul>
           )
         },
-        { q: "What are the WebDevelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
+        { q: "What are the UIUXelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
+        { q: "How long is the UIUXelopment certification valid for?", a: "UIUXelopment certification is valid for 3 years and requires renewal." },
         { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
-        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "How to schedule your examination after completing UIUXelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
+        { q: "Do you provide any practice tests as part of the UIUXelopment certification Program?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of the UIUXelopment certification Program?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of the UIUXelopment certification Program?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of the UIUXelopment certification Program?", a: "Yes, we provide full-length mock tests and practice questions." },
 
       ].map((item, idx) => (
         <div key={idx} className="group">
@@ -458,7 +450,7 @@ const roleLogos = {
         {
           name: "Vrinda K",
           title: "Dayalbagh Educational Institute",
-          text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course...",
+          text: "I had a great learning experience with Glow Logics while pursuing their cloud computing Program...",
           img: "/src/assets/images/vrindaK.png",
         },
         {
@@ -470,7 +462,7 @@ const roleLogos = {
         {
           name: "Aan Narai",
           title: "Alliance University",
-          text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course...",
+          text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX Program...",
           img: "/src/assets/images/Aan.png",
         },
         {
@@ -539,4 +531,4 @@ const roleLogos = {
   );
 };
 
-export default FullStackCourse;
+export default FullStackProgram;

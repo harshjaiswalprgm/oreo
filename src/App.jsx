@@ -50,8 +50,8 @@ import Leadership from "./pages/programs/Leadership"; //   added
 import AdvancedExcel from "./pages/programs/AdvancedExcel"; //   added
 import Accounting from "./pages/programs/Accounting"; //   added
 import Entrepreneurship from "./pages/programs/Entrepreneurship"; //   added
-// import BusinessCommunication from "./pages/programs/BusinessCommunication"; //   added
-// import BusinessLaw from "./pages/programs/businessLaw"; //   added
+import BusinessCommunication from "./pages/programs/BusinessCommunication"; //   added
+import Blaw from "./pages/programs/Blaw"; //   added
 
 // ✅ Scroll to section if route state has scrollTo
 function ScrollHandler() {
@@ -148,8 +148,9 @@ function App() {
        <Route path="/programs/AdvancedExcel" element={<AdvancedExcel />} />
        <Route path="/programs/Accounting" element={<Accounting />} />
        <Route path="/programs/Entrepreneurship" element={<Entrepreneurship />} />
-       {/* <Route path="/programs/BusinessCommunication" element={<BusinessCommunication />} /> */}
-       {/* <Route path="/programs/businessLaw" element={<BusinessLaw/>} /> */}
+
+       <Route path="/programs/Blaw" element={<Blaw/> } />
+       <Route path="/programs/BusinessCommunication" element={<BusinessCommunication />} />
       </Routes>
       <Niche />
 

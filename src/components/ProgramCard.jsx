@@ -370,7 +370,7 @@ const programData = [
   {
     id: 26,
     title: "Business Law",
-    slug: "BusinessLaw",
+    slug: "Blaw",
     category: "Graduates",
     author: "Harsh Jaiswal",
     date: "28 Aug 25",
@@ -471,6 +471,7 @@ const programData = [
   {
     id: 33,
     title: "Business Law",
+    slug: "Blaw",
     category: "Masters",
     author: "Harsh Jaiswal",
     date: "20 Sep 25",
@@ -484,6 +485,7 @@ const programData = [
   {
     id: 34,
     title: "Business Communication",
+    slug: "BusinessCommunication",
     category: "Masters",
     author: "Harsh Jaiswal",
     date: "20 Sep 25",

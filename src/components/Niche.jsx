@@ -57,22 +57,22 @@ export default function Footer() {
               <ul className="space-y-1">
                 <li>
                   <a href="#" className="underline">
-                    Outer ring road
+                   Shree Narayana Tower,  HSR Layout 5th Sector,
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline">
-                    Near Eye Devi Hospital
+                     Outer Ring Rd,
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline">
-                    Beside MRP
+                  Jakkasandra, 1st Block Koramangala,
                   </a>
                 </li>
                 <li>
                   <a href="#" className="underline">
-                    Bengaluru, Karnataka
+                   Bengaluru, Karnataka 560034
                   </a>
                 </li>
               </ul>
@@ -91,7 +91,7 @@ export default function Footer() {
               <p className="font-semibold mb-2">P:</p>
               <p>
                 <a href="tel:+919794545008" className="underline">
-                  +91 9794545008
+                  +91 9620294767
                 </a>
               </p>
             </div>

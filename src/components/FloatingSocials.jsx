@@ -15,7 +15,7 @@ const icons = [
     id: "whatsapp",
     icon: <FaWhatsapp />,
     color: "bg-green-500 hover:bg-green-600",
-    href: "https://wa.me/919429690310",
+    href: "https://wa.me/+919620294767",
     label: "WhatsApp",
   },
   {

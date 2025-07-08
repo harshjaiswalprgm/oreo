@@ -40,7 +40,8 @@ const Navbar = () => {
       if (location.pathname !== "/") {
         if (location.pathname.includes("about")) setActiveLink("about");
         else if (location.pathname.includes("career")) setActiveLink("career");
-        else if (location.pathname.includes("eventHub")) setActiveLink("eventHub");
+        else if (location.pathname.includes("eventHub"))
+          setActiveLink("eventHub");
         return;
       }
 
@@ -116,7 +117,11 @@ const Navbar = () => {
               transition={{ type: "spring", stiffness: 300 }}
               className="w-auto"
             >
-              <img src={logo} alt="Logo" className="h-6 sm:h-7 md:h-7 object-contain" />
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-6 sm:h-7 md:h-7 object-contain"
+              />
             </motion.div>
           </div>
 
@@ -152,13 +157,13 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="px-5 py-2 border border-black text-sm rounded-full font-semibold hover:bg-black hover:text-white transition"
             >
-              Get Started
+              <a href ="https://glowlogics.edmingle.com"> LogIn</a>
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               className="text-sm font-medium text-gray-800 hover:text-black transition"
-            >
-              Sign In
+            > <b>Contact</b>
+
             </motion.button>
           </div>
 
@@ -196,7 +201,10 @@ const Navbar = () => {
               {/* Mobile Header */}
               <div className="flex justify-between items-center mb-6">
                 <img src={logo} alt="Logo" className="h-8 object-contain" />
-                <button className="text-2xl text-black" onClick={() => setIsMobileMenuOpen(false)}>
+                <button
+                  className="text-2xl text-black"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   <FaTimes />
                 </button>
               </div>
@@ -207,7 +215,9 @@ const Navbar = () => {
                   key={index}
                   onClick={() => handleNavClick(link.id)}
                   className={`text-lg font-semibold text-left transition ${
-                    activeLink === link.id ? "text-black font-bold" : "text-gray-800 hover:text-black"
+                    activeLink === link.id
+                      ? "text-black font-bold"
+                      : "text-gray-800 hover:text-black"
                   }`}
                 >
                   {link.name}

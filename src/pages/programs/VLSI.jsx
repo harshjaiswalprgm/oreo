@@ -53,32 +53,31 @@ const roleLogos = {
           VLSI
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+           Become a Job-Ready VLSI Engineer | Master Digital Design, Verilog, RTL Simulation & ASIC/FPGA Implementation
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, Deployment
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Build real-world VLSI design projects using industry-standard tools
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Master Digital Design, Verilog, RTL Coding, Synthesis & FPGA Flow
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Career Mentorship + Hands-on Portfolio for Semiconductor Roles
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Includes resume building, mock interviews & LinkedIn optimization
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Guaranteed Live Cohorts Starting Within the Next 90 Days
+</li>
           </ul>
 
           {/* CTA Buttons */}
@@ -115,33 +114,30 @@ const roleLogos = {
         {/* Right Image */}
         <div className="flex-1 w-full flex justify-center max-w-2xl">
           <img
-            src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740"
+            src="https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNlbWljb25kdWN0b3J8ZW58MHx8MHx8fDA%3D"
             alt="Full Stack Web Dev"
             className="rounded-2xl shadow-xl max-w-xl w-full"
           />
         </div>
       </div>
 
-      {/* WebDev Overview Section */}
+      {/*VLSI Overview Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Course{" "}
+         VLSI Certification Course{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for
-          a project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
+         Glowlogics’ VLSI Design Training Program equips learners with the essential skills needed to design and develop complex integrated circuits used in modern electronic systems. The course covers core concepts such as digital design, Verilog HDL, RTL coding, synthesis, timing analysis, and FPGA/ASIC implementation. Learners will gain hands-on experience with industry-standard tools like Synopsys, Cadence, and Xilinx, working on real-world projects that simulate semiconductor workflows. This program is ideal for electronics, electrical, and computer engineering students or professionals aspiring to become job-ready VLSI design engineers.
+
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+             VLSI Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
               ✅ 100% Money Back Guarantee
@@ -191,10 +187,7 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
-          manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
-          and are often rewarded with substantial pay raises as shown below.
+         The VLSI® Certification can help you launch a rewarding career in the semiconductor and electronics industries, with growing demand across sectors like IT, consumer electronics, automotive, healthcare, and telecommunications. Certified VLSI professionals are equipped with skills in digital design, RTL coding, and hardware implementation—making them highly valuable in chip design and development roles. With the rapid advancement of AI, IoT, and 5G technologies, VLSI experts are in high demand and often receive competitive salaries, global job opportunities, and accelerated career growth.
         </p>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -234,7 +227,7 @@ const roleLogos = {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+           VLSIelopment Certification Course{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
@@ -242,7 +235,7 @@ const roleLogos = {
           <div>
             <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
             <p>
-              The WebDevelopment<sup>®</sup> certification is an essential professional
+              TheVLSIelopment<sup>®</sup> certification is an essential professional
               requirement for senior project manager roles across all
               industries. This course is best suited for: Project Managers,
               Associate/Assistant Project Managers, Team Leads/Team Managers,
@@ -256,7 +249,7 @@ const roleLogos = {
             <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
             <p>
               No prior knowledge or experience is required to attend
-              Glowlogics WebDevelopment Certification Training. To qualify for the WebDevelopment
+              GlowlogicsVLSIelopment Certification Training. To qualify for theVLSIelopment
               exam you should either have:
             </p>
             <ul className="list-disc list-inside mt-2">
@@ -372,25 +365,25 @@ const roleLogos = {
     <div className="bg-white border rounded-lg shadow-md divide-y">
       {[
         {
-          q: "How to get a WebDevelopment® certification?",
+          q: "How to get aVLSIelopment® certification?",
           a: (
             <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
               <li>Meet the eligibility requirements</li>
-              <li>Enroll in an accredited WebDevelopment certification training course</li>
+              <li>Enroll in an accreditedVLSIelopment certification training course</li>
               <li>Meet the exam eligibility requirements</li>
-              <li>Apply for the WebDevelopment exam with PMI</li>
+              <li>Apply for theVLSIelopment exam with PMI</li>
               <li>Pass your exam to earn certification</li>
             </ul>
           )
         },
-        { q: "What are the WebDevelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
+        { q: "What are theVLSIelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
+        { q: "How long is theVLSIelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
         { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
-        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "How to schedule your examination after completingVLSIelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
+        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
 
       ].map((item, idx) => (
         <div key={idx} className="group">

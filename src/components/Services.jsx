@@ -35,11 +35,36 @@ export default function GlowlogicsUltimate() {
         <h2 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Why Choose <span className="text-[#ff6e0c]">Glowlogics</span>?
         </h2>
-        <p className="text-gray-600 text-lg leading-relaxed">
-          At Glowlogics, we’re more than just an edtech company — we’re your partner in growth. Whether you are a student, professional, or institution, our mission is to equip you with real-world skills through industry-relevant programs, expert mentorship, and cutting-edge learning experiences. With a focus on quality, flexibility, and outcomes, we help you unlock your potential and stay ahead in a competitive world.
+        <p className="text-black text-lg leading-relaxed">
+  At Glowlogics, we’re more than just a learning platform — we’re your partner in growth. Whether you are a student, a working professional, or an institution, our mission is to empower you with real-world skills through industry-aligned programs, expert-led mentorship, and immersive, hands-on experiences.
+  We blend innovation with practical learning to help you gain job-ready expertise, build a strong project portfolio, and receive career-focused guidance.
+  With flexible learning paths, globally recognized certifications, and a strong focus on the most in-demand domains — including AI, Web Development, Data Science, Cybersecurity, and Cloud Computing — Glowlogics equips you to thrive in a fast-paced, competitive world and lead with confidence in the future of work.
+</p>
 
+<ul className="list-disc pl-6 text-black mt-4 space-y-2 text-base">
+  <li>
+    Real-time project work and live industry case studies to build strong portfolios.
+  </li>
+  <li>
+    Personalized career support including resume building, mock interviews, and job assistance.
+  </li>
+  <li>
+    Lifetime access to updated course material, tools, and mentorship sessions.
+  </li>
+  <li>
+    Regular workshops, hackathons, and live sessions to boost practical understanding.
+  </li>
+  <li>
+    ISO & MSME certified credentials to enhance your professional credibility.
+  </li>
+  <li>
+    Flexible learning options tailored for students, working professionals, and institutions.
+  </li>
+  <li>
+    Access to an exclusive learner community for networking and peer collaboration.
+  </li>
+</ul>
 
-        </p>
       </motion.div>
 
       {/* Main Content */}

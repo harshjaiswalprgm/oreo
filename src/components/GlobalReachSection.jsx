@@ -1,4 +1,4 @@
-import worldMap from "../assets/images/Blue and Grey World Map Chart Presentation (2).png";
+import worldMap from "../assets/images/JustGlowlogicsThings.png";
 
 const GlobalReachSection = () => {
   return (

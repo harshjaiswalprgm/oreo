@@ -67,7 +67,7 @@ const SupportSection = () => {
               href="tel:+919"
               className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             >
-              +91 9794545008 <FaArrowRight className="ml-1" />
+              +91 9620294767 <FaArrowRight className="ml-1" />
             </a>
           </div>
         </motion.div>
