@@ -145,12 +145,17 @@ const roleLogos = {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
             {[
-              "Get Ahead and Stay Ahead With 35 Contact Hours of Dynamic, Live Virtual Learning",
-              "Gain Hands-on Practice With 12 Simulations, 500+ PMI-Exclusive Questions and a 1500+ Question Bank",
-              "Transform Project Management With AI Through Exclusive Masterclasses on Generative AI",
-              "Access to Cheat Sheet, Study Plans and Exam Application Support from Experts",
-              "Lead the Way in Project Management With India’s Largest PMI Partner",
-              "24x7 Course Assistance",
+              "Get Ahead and Stay Ahead With 50+ Hours of Dynamic, Live Virtual Learning",
+              "3 Portfolio-Driven Capstone Projects for Real-World Readiness",
+              "Flexible Course Access for Working Professionals and Students",
+              "Get Certified with a Course Completion Certificate, Internship Certificate, and Placement Training Certificate – All Included!",
+              "Live Mentorship by Seasoned Industry Professionals",
+              "Assigned Learning Manager for Personalized Support",
+              "Unlimited Lifetime Access to Course Materials",
+              "Globally Validated Certification – Backed by ISO & MSME",
+              "Access All Course Content for an Entire Year",
+              "Comprehensive Career Guidance & Assistance",
+              "Career Prospects Across Industries and Roles",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -378,7 +383,6 @@ const roleLogos = {
         },
         { q: "What are theVLSIelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
         { q: "How long is theVLSIelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
-        { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
         { q: "How to schedule your examination after completingVLSIelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
         { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
         { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },

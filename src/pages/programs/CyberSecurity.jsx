@@ -401,10 +401,7 @@ const FullStackCourse = () => {
                   q: "How long is the Cyber Security elopment certification valid for?",
                   a: "Cyber Security elopment certification is valid for 3 years and requires renewal.",
                 },
-                {
-                  q: "What does the Glowlogics 100% money-back guarantee mean?",
-                  a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
-                },
+
                 {
                   q: "How to schedule your examination after completing Cyber Security elopment certification training?",
                   a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",

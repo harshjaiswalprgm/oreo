@@ -384,9 +384,7 @@ const roleLogos = {
           )
         },
         { q: "What are the WebDevelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
-        { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
-        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
+        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
         { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
         { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
         { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },

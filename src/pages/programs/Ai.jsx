@@ -409,10 +409,7 @@ const FullStackCourse = () => {
                   q: "How long is the Artificial Intelligence certification valid for?",
                   a: "WebDevelopment certification is valid for 3 years and requires renewal.",
                 },
-                {
-                  q: "What does the Glowlogics 100% money-back guarantee mean?",
-                  a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
-                },
+
                 {
                   q: "How to schedule your examination after completing Artificial Intelligence certification training?",
                   a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
