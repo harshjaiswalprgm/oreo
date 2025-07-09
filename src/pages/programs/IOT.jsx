@@ -53,32 +53,31 @@ const roleLogos = {
          IOT
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+           Become a job-ready full-stack developer | Master React, Node.js, MongoDB & APIs
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, Deployment
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Build real-world IoT projects using sensors & microcontrollers
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Master Embedded Systems, IoT Protocols, and Cloud Integration
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Career Mentorship + Showcase Projects on GitHub
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Includes resume review, mock interviews, and LinkedIn guidance
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Guaranteed Live IoT Cohorts Starting Within 90 Days
+</li>
           </ul>
 
           {/* CTA Buttons */}
@@ -126,15 +125,11 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Course{" "}
+          IOT Certification Course{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for
-          a project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
+         Glowlogics IoT training course covers core concepts of hardware, connectivity, and cloud integration required to build smart, connected systems. You will master sensors, microcontrollers (like Arduino and Raspberry Pi), communication protocols (MQTT, Bluetooth, Wi-Fi), and IoT cloud platforms while working on real-world projects. The course emphasizes hands-on experimentation, embedded coding, and data-driven deployment—preparing you to become a job-ready IoT developer.
         </p>
 
         {/* Key Features */}
@@ -149,12 +144,17 @@ const roleLogos = {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
             {[
-              "Get Ahead and Stay Ahead With 35 Contact Hours of Dynamic, Live Virtual Learning",
-              "Gain Hands-on Practice With 12 Simulations, 500+ PMI-Exclusive Questions and a 1500+ Question Bank",
-              "Transform Project Management With AI Through Exclusive Masterclasses on Generative AI",
-              "Access to Cheat Sheet, Study Plans and Exam Application Support from Experts",
-              "Lead the Way in Project Management With India’s Largest PMI Partner",
-              "24x7 Course Assistance",
+              "Get Ahead and Stay Ahead With 50+ Hours of Dynamic, Live Virtual Learning",
+              "3 Portfolio-Driven Capstone Projects for Real-World Readiness",
+              "Flexible Course Access for Working Professionals and Students",
+              "Get Certified with a Course Completion Certificate, Internship Certificate, and Placement Training Certificate – All Included!",
+              "Live Mentorship by Seasoned Industry Professionals",
+              "Assigned Learning Manager for Personalized Support",
+              "Unlimited Lifetime Access to Course Materials",
+              "Globally Validated Certification – Backed by ISO & MSME",
+              "Access All Course Content for an Entire Year",
+              "Comprehensive Career Guidance & Assistance",
+              "Career Prospects Across Industries and Roles",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -169,15 +169,15 @@ const roleLogos = {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "Work breakdown structure",
-              "Project cost estimating",
-              "Resource allocation",
-              "Cost management",
-              "Gantt charts",
-              "Engineering economics",
-              "Mathematical project scheduling models",
-              "Leadership",
-            ].map((skill, index) => (
+  "Sensor integration and calibration",
+  "Microcontroller programming (Arduino, Raspberry Pi)",
+  "IoT communication protocols (MQTT, HTTP, BLE)",
+  "Embedded C/C++ and Python for IoT",
+  "Real-time data monitoring and dashboards",
+  "IoT cloud platforms (AWS IoT, Blynk, Firebase)",
+  "Edge computing and device optimization",
+  "IoT security and firmware updates",
+].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -191,10 +191,7 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
-          manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
-          and are often rewarded with substantial pay raises as shown below.
+          The IoTPro® certification can help you land high-demand roles in industries like smart manufacturing, healthcare, agriculture, logistics, and consumer electronics. IoTPro® certified professionals play a key role in building connected solutions, driving innovation, and improving operational efficiency — often leading to better job opportunities and competitive salary packages, as shown below.
         </p>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
