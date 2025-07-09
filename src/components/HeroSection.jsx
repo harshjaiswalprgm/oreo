@@ -85,11 +85,11 @@ export default function HeroSection() {
             <span className="relative z-10">
               Digital Learning for Smart <br />
               Manufacturing {" "}
-              <span className="text-[#ff6e0c] group-hover:underline underline-offset-4 decoration-[#ff6e0c] transition-all duration-300">
+              <span className="text-[#ff6e0c] group-hover:underline  ">
                 and Innovation
               </span>
             </span>
-            <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span>
+            {/* <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span> */}
           </motion.h1>
 
           {/* ✅ Subtext */}
