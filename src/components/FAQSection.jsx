@@ -33,7 +33,6 @@ const faqs = [
     answer:
       "Head to your profile settings and update your email address there. We'll send a confirmation link to your new address.",
   },
-
 ];
 
 export default function FAQSection() {
@@ -83,7 +82,9 @@ export default function FAQSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Frequently asked questions
         </h2>
-        <p className="mt-3 text-gray-600">Have questions? We are here to help.</p>
+        <p className="mt-3 text-gray-600">
+          Have questions? We are here to help.
+        </p>
         <div className="mt-6 flex flex-col md:flex-row gap-4 items-center justify-center">
           <input
             type="text"
@@ -139,17 +140,7 @@ export default function FAQSection() {
         )}
       </div>
 
-      <div className="text-center mt-12">
-        <div className="flex justify-center gap-2 mb-4">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" className="w-10 h-10 rounded-full" />
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" className="w-10 h-10 rounded-full" />
-          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" className="w-10 h-10 rounded-full" />
-        </div>
-        <h4 className="font-semibold text-lg text-gray-900">Still have questions?</h4>
-        <p className="text-gray-600 mt-1">
-          Can’t find the answer you’re looking for? Please chat with our friendly team.
-        </p>
-      </div>
+      {/*  */}
     </section>
   );
 }

@@ -104,8 +104,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           <p className="text-center">
-            © 2025 The Glowlogics.{" "}
-            <Link to="/legal-terms" className="underline">Legal Terms</Link> |{" "}
+           © GlowLogics Solutions All Rights Reserved{" "}
+            <Link to="/legal-terms" className="underline"> Legal Terms</Link> |{" "}
             <Link to="/privacy-policy" className="underline">Privacy Policy</Link>
           </p>
           <p className="text-center">Website by Glowlogics</p>

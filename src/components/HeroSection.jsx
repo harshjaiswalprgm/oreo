@@ -16,21 +16,26 @@ const imageCards = [
   { img: img5, size: "large", direction: "right" },
 ];
 
-// ✅ Tutor avatars (placeholder)
-const tutorImages = [
-  "https://randomuser.me/api/portraits/women/44.jpg",
-  "https://randomuser.me/api/portraits/men/46.jpg",
-  "https://randomuser.me/api/portraits/women/48.jpg",
-  "https://randomuser.me/api/portraits/men/49.jpg",
-];
-
 // ✅ Course dropdown lists
 const technicalCourses = [
-  "Artificial Intelligence", "Data Science with MI", "Cyber Security & Ethical Hacking", "Web Development full Stack",
-  "Full Stack JAVA", "Cloud Computing", "App Development", "UI/UX", "VLSI", "IOT", "AutoCAD with Self -paced MATLAB",
+  "Artificial Intelligence",
+  "Data Science with MI",
+  "Cyber Security & Ethical Hacking",
+  "Web Development full Stack",
+  "Full Stack JAVA",
+  "Cloud Computing",
+  "App Development",
+  "UI/UX",
+  "VLSI",
+  "IOT",
+  "AutoCAD with Self -paced MATLAB",
 ];
 const nonTechnicalCourses = [
-  "Digital Marketing", "HRM and Finance", "Leadership and Management", "Advanced Excel with Power BI", "Accounting",
+  "Digital Marketing",
+  "HRM and Finance",
+  "Leadership and Management",
+  "Advanced Excel with Power BI",
+  "Accounting",
 ];
 
 // ✅ Framer motion variants
@@ -83,10 +88,10 @@ export default function HeroSection() {
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight relative group"
           >
             <span className="relative z-10">
-              Digital Learning for Smart <br />
-              Manufacturing {" "}
+              Tired of Just Learning? <br />
+              It’s Time to Build and{" "}
               <span className="text-[#ff6e0c] group-hover:underline  ">
-                and Innovation
+                Get Career-Ready!
               </span>
             </span>
             {/* <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span> */}
@@ -97,7 +102,8 @@ export default function HeroSection() {
             variants={fadeUpVariant}
             className="text-base sm:text-lg text-gray-600 mt-4 max-w-xl mx-auto font-medium"
           >
-            Expert tech to elevate your manufacturing. Let’s take your business further.
+            Glowlogics gives you hands-on training, live projects, and a path to
+            paid work. No fluff. Just results.
           </motion.p>
 
           {/* ✅ Dropdown with Start Button */}
@@ -119,37 +125,24 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
-          {/* ✅ CTA Buttons */}
           <motion.div
             variants={fadeUpVariant}
             className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center"
           >
             <button className="bg-black text-white px-6 py-2 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:ring-2 hover:ring-[#FFA500] hover:ring-offset-2">
-              Join now
+              <a
+                href="https://forms.gle/jhJhFcEiMQrGgdub6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
+              >
+                Join now
+              </a>
             </button>
             <button className="flex items-center gap-2 text-black hover:text-[#FFA500] font-medium transition-all duration-300 hover:scale-105">
               <FaPlay className="text-[#FFA500] group-hover:animate-pulse" />
-               <a href="https://www.youtube.com/@Glowlogics">Watch Demo</a>
-
+              <a href="https://www.youtube.com/@Glowlogics">Watch Demo</a>
             </button>
-          </motion.div>
-
-          {/* ✅ Tutor Avatars */}
-          <motion.div
-            variants={fadeUpVariant}
-            className="flex items-center gap-3 mt-6 flex-wrap justify-center"
-          >
-            <div className="flex -space-x-3">
-              {tutorImages.map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt="Tutor"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                />
-              ))}
-            </div>
-            <p className="text-sm text-gray-700 font-medium">More Than 2k+ Tutors</p>
           </motion.div>
         </motion.div>
 
@@ -161,15 +154,28 @@ export default function HeroSection() {
           className="flex flex-col items-center gap-4 mt-12 w-full px-4 sm:hidden"
         >
           {/* Top Small Card */}
-          <motion.div variants={imageCardVariant} className="w-[140px] h-[180px]">
-            <img src={imageCards[2].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+          <motion.div
+            variants={imageCardVariant}
+            className="w-[140px] h-[180px]"
+          >
+            <img
+              src={imageCards[2].img}
+              className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+            />
           </motion.div>
 
           {/* Middle Medium Cards */}
           <div className="flex gap-4">
             {[1, 3].map((index) => (
-              <motion.div key={index} variants={imageCardVariant} className="w-[160px] h-[200px]">
-                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+              <motion.div
+                key={index}
+                variants={imageCardVariant}
+                className="w-[160px] h-[200px]"
+              >
+                <img
+                  src={imageCards[index].img}
+                  className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                />
               </motion.div>
             ))}
           </div>
@@ -177,8 +183,15 @@ export default function HeroSection() {
           {/* Bottom Large Cards */}
           <div className="flex gap-4">
             {[0, 4].map((index) => (
-              <motion.div key={index} variants={imageCardVariant} className="w-[180px] h-[220px]">
-                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
+              <motion.div
+                key={index}
+                variants={imageCardVariant}
+                className="w-[180px] h-[220px]"
+              >
+                <img
+                  src={imageCards[index].img}
+                  className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                />
               </motion.div>
             ))}
           </div>
