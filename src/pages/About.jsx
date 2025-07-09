@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const images = [
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
-  "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+  "https://plus.unsplash.com/premium_photo-1668383778557-d71c562fdb4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWJvdXR8ZW58MHx8MHx8fDA%3D",
+  "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFib3V0fGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJvdXQlMjBjb21wYW55fGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJvdXQlMjBjb21wYW55fGVufDB8fDB8fHww",
+  "https://images.unsplash.com/photo-1676276376140-a4030cc596a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWJvdXQlMjBjb21wYW55fGVufDB8fDB8fHww",
+  "https://media.istockphoto.com/id/896831694/photo/late-evening-business-meeting.jpg?s=612x612&w=0&k=20&c=kfJKxeqoDypu-5CnKlJIN5-JhCBnSnHlZNTVF7oPgZk=",
+  "https://img.freepik.com/free-photo/young-employees-sitting-office-table-using-laptop-team-work-brainstorming-meeting-concept_146671-15624.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+  "https://media.istockphoto.com/id/1263990765/photo/long-term-growth-is-always-the-goal.jpg?s=612x612&w=0&k=20&c=sDn_AXtxsaAUspz1Lf0BBfrBxHhF-TRDetmjrNgNcdE=",
+  "https://media.istockphoto.com/id/626956870/photo/action-plan-concept-the-meeting-at-the-white-office-table.jpg?s=612x612&w=0&k=20&c=vWRfFguamyKJhMXa456HJOCoc1RlG3vB3cEjl-qCXJU=",
+  "https://media.istockphoto.com/id/1491247578/photo/a-mid-adult-man-a-hazop-facilitator-conducting-a-study-of-an-oil-gas-plant-in-a-meeting-room.jpg?s=612x612&w=0&k=20&c=k01UrSDHeUP92eDR-RX8_zxYLCilPYqaW7zeSJvJl9s=",
   // Add more unique images if you want
 ];
 
