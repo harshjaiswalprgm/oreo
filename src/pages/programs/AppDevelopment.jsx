@@ -53,32 +53,31 @@ const roleLogos = {
         App Development
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+            Become a job-ready app developer | Master Android, iOS, Flutter, Firebase & RESTful APIs
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, Deployment
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
+           <li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Build real-world mobile apps from scratch (Android & iOS)
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Master Flutter, Firebase, REST APIs, and App Deployment
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Career mentorship with hands-on app portfolio on GitHub
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Includes resume review, mock interviews & LinkedIn optimization
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Guaranteed live cohorts starting within the next 90 days
+</li>
           </ul>
 
           {/* CTA Buttons */}
@@ -115,33 +114,28 @@ const roleLogos = {
         {/* Right Image */}
         <div className="flex-1 w-full flex justify-center max-w-2xl">
           <img
-            src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740"
+            src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169839.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740"
             alt="Full Stack Web Dev"
             className="rounded-2xl shadow-xl max-w-xl w-full"
           />
         </div>
       </div>
 
-      {/* WebDev Overview Section */}
+      {/*App Development Overview Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Course{" "}
+         App Development Certification Course{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for
-          a project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
-        </p>
+         The Glowlogics App Development training course is designed to equip learners with the core skills required to build high-quality, real-world mobile applications. The course covers essential topics including mobile UI/UX design, cross-platform development using Flutter, backend integration with Firebase, API handling, and app deployment on the Play Store and App Store. With a strong focus on industry-relevant tools and best practices, the program prepares you to confidently build, test, and launch full-fledged Android and iOS applications from scratch.</p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+             App Development Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
                ✅ 100% ISO Verified Internship
@@ -149,12 +143,17 @@ const roleLogos = {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
             {[
-              "Get Ahead and Stay Ahead With 35 Contact Hours of Dynamic, Live Virtual Learning",
-              "Gain Hands-on Practice With 12 Simulations, 500+ PMI-Exclusive Questions and a 1500+ Question Bank",
-              "Transform Project Management With AI Through Exclusive Masterclasses on Generative AI",
-              "Access to Cheat Sheet, Study Plans and Exam Application Support from Experts",
-              "Lead the Way in Project Management With India’s Largest PMI Partner",
-              "24x7 Course Assistance",
+              "Get Ahead and Stay Ahead With 50+ Hours of Dynamic, Live Virtual Learning",
+              "3 Portfolio-Driven Capstone Projects for Real-World Readiness",
+              "Flexible Course Access for Working Professionals and Students",
+              "Get Certified with a Course Completion Certificate, Internship Certificate, and Placement Training Certificate – All Included!",
+              "Live Mentorship by Seasoned Industry Professionals",
+              "Assigned Learning Manager for Personalized Support",
+              "Unlimited Lifetime Access to Course Materials",
+              "Globally Validated Certification – Backed by ISO & MSME",
+              "Access All Course Content for an Entire Year",
+              "Comprehensive Career Guidance & Assistance",
+              "Career Prospects Across Industries and Roles",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -169,15 +168,21 @@ const roleLogos = {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "Work breakdown structure",
-              "Project cost estimating",
-              "Resource allocation",
-              "Cost management",
-              "Gantt charts",
-              "Engineering economics",
-              "Mathematical project scheduling models",
-              "Leadership",
-            ].map((skill, index) => (
+  "Mobile UI/UX Design Principles",
+  "Flutter & Dart Programming",
+  "Android and iOS App Development",
+  "State Management (Provider, BLoC, etc.)",
+  "Backend Integration with Firebase",
+  "RESTful API Development & Integration",
+  "App Deployment on Play Store & App Store",
+  "Version Control using Git & GitHub",
+  "Debugging and Performance Optimization",
+  "Push Notifications & Real-time Database",
+  "Authentication & User Management",
+  "Clean Architecture & Code Reusability",
+  "Agile Development & Collaboration Tools",
+  "Problem-Solving and Logical Thinking"
+].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -191,10 +196,9 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
-          manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
-          and are often rewarded with substantial pay raises as shown below.
+         The App Development<sup>®</sup> certification opens doors to high-demand roles in IT, fintech, healthcare, e-commerce, and other innovative industries. Certified app developers are valued for their ability to design, build, and deploy mobile applications that meet real-world needs across platforms like Android and iOS. With expertise in tools such as Flutter, Firebase, and RESTful APIs, App Development<sup>®</sup> professionals are equipped to deliver seamless user experiences and scalable mobile solutions—often leading to rapid career growth, freelance opportunities, and substantial salary increases.
+
+
         </p>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -234,38 +238,14 @@ const roleLogos = {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+           App Developmentelopment Certification Course{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
           {/* Eligibility */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
-            <p>
-              The WebDevelopment<sup>®</sup> certification is an essential professional
-              requirement for senior project manager roles across all
-              industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
-            </p>
-          </div>
 
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend
-              Glowlogics WebDevelopment Certification Training. To qualify for the WebDevelopment
-              exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
+
+
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -372,25 +352,25 @@ const roleLogos = {
     <div className="bg-white border rounded-lg shadow-md divide-y">
       {[
         {
-          q: "How to get a WebDevelopment® certification?",
+          q: "How to get aApp Developmentelopment® certification?",
           a: (
             <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
               <li>Meet the eligibility requirements</li>
-              <li>Enroll in an accredited WebDevelopment certification training course</li>
+              <li>Enroll in an accreditedApp Developmentelopment certification training course</li>
               <li>Meet the exam eligibility requirements</li>
-              <li>Apply for the WebDevelopment exam with PMI</li>
+              <li>Apply for theApp Developmentelopment exam with PMI</li>
               <li>Pass your exam to earn certification</li>
             </ul>
           )
         },
-        { q: "What are the WebDevelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
-        { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
-        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "What are theApp Development certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
+        { q: "How long is theApp Development certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
+
+        { q: "How to schedule your examination after completingApp Development certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
+        { q: "Do you provide any practice tests as part of theApp Development certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theApp Development certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theApp Development certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+        { q: "Do you provide any practice tests as part of theApp Development certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
 
       ].map((item, idx) => (
         <div key={idx} className="group">
