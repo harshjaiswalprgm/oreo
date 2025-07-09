@@ -308,52 +308,22 @@ const FullStackCourse = () => {
             {[
               {
                 title: "Module 1: Introduction to Web Development",
-                lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
-                ],
-              },
-              {
-                title: "Section 02: Business Environment",
                 lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Section 03: Start the Project",
+                title: "Module 2: Advanced Front-End Technologies",
                 lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Section 04: Plan the Project",
+                title: "Module 3: Back-End Development",
                 lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Section 05: Lead the Project",
+                title: "Module 4: Full Stack Development Integration",
                 lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
+                title: "Module 5: Capstone Project",
                 lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
             ].map((section, index) => (
