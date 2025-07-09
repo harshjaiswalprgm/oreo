@@ -306,9 +306,10 @@ const FullStackCourse = () => {
             <h3 className="text-xl font-semibold mb-4">Course Content</h3>
 
             {[
-              {
+              { 
                 title: "Module 1: Introduction to Web Development",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Basics of HTML, CSS, JavaScript", preview: "#" }],
+                lessons: [{ name: "Setting up your development environment", preview: "#" }],
               },
               {
                 title: "Module 2: Advanced Front-End Technologies",
