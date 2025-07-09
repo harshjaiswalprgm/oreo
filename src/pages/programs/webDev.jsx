@@ -307,7 +307,7 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Web Development",
                 lessons: [
                   {
                     name: "Lesson 01: Course Introduction",
