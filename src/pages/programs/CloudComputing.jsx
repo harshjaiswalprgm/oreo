@@ -147,7 +147,7 @@ const FullStackProgram = () => {
               Cloud Computing Program Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
-              ✅ 100% ISO Verified Internship
+               ✅ 100% ISO Verified Internship
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">

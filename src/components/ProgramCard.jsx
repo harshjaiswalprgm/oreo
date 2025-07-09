@@ -13,7 +13,7 @@ const programData = [
     title: "UI/UX Masterclass",
     slug: "UIUX",
     category: "Crash Course",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-vector/modern-3d-illustration-landing-page-ui-design_145666-1960.jpg",
@@ -27,7 +27,7 @@ const programData = [
     id: 2,
     title: "Power BI",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -42,7 +42,7 @@ const programData = [
     title: "Advance Excel",
     slug: "AdvancedExcel",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -57,7 +57,7 @@ const programData = [
     title: "Digital Marketing",
     slug: "DigitalMarketing",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-photo/search-engine-marketing-composition-design_23-2150923510.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -71,7 +71,7 @@ const programData = [
     title: "Java Fullstack",
      slug: "JavaFullstack",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-photo/writing-code-creating-website-dashboards-programming-help-technology-website-upkeep_27634-1240.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -85,7 +85,7 @@ const programData = [
     title: "Data Science",
     slug: "DataSciences",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-photo/businessman-working-with-business-analytics-data-management-system-computer-online-document-management-metrics-connected-database-corporate-strategy-finance-operations-salesx9_661047-4235.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -99,7 +99,7 @@ const programData = [
     title: "App Development",
      slug: "AppDevelopment",
     category: "Crash Course",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/free-photo/man-working-with-computer-side-view_23-2149930994.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -115,7 +115,7 @@ const programData = [
     title: "Full-Stack Web Dev",
     slug: "webDev", // I Added the slug for routing
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "01 Jun 25",
     image:
       "https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -129,7 +129,7 @@ const programData = [
     title: "AI",
     slug: "Ai",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "15 Sep 25",
     image:
       "https://img.freepik.com/free-vector/ai-futuristic-technology-background_53876-97391.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -143,7 +143,7 @@ const programData = [
     title: "Data Science",
     slug: "DataSciences",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "10 Oct 25",
     image:
       "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169861.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -157,7 +157,7 @@ const programData = [
     title: "Cyber Security",
     slug: "CyberSecurity",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "05 Nov 25",
     image:
       "https://img.freepik.com/free-photo/cyber-security-concept-digital-art_23-2151637765.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -172,7 +172,7 @@ const programData = [
     title: "UI/UX",
     slug: "UIUX",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "01 Oct 25",
     image:
       "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -186,7 +186,7 @@ const programData = [
     title: "Cloud Computing",
     slug: "CloudComputing",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "08 Oct 25",
     image:
       "https://img.freepik.com/premium-photo/creative-square-circuit-button-hologram-with-cloud-icon-dark-wallpaper-technology-cloud-computing-concept-3d-rendering_670147-96675.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -200,7 +200,7 @@ const programData = [
     slug: "VLSI",
     title: "VLSI",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "12 Oct 25",
     image:
       "https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNlbWljb25kdWN0b3J8ZW58MHx8MHx8fDA%3D",
@@ -214,7 +214,7 @@ const programData = [
     title: "IOT",
     slug: "IOT",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "15 Oct 25",
     image:
       "https://img.freepik.com/premium-vector/internet-things-iot_35632-74.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -228,7 +228,7 @@ const programData = [
     title: "AutoCAD",
     slug: "AutoCAD",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "18 Oct 25",
     image:
       "https://img.freepik.com/free-photo/tired-woman-architect-working-modern-cad-program-overtime-sitting-desk-start-up-office-industrial-female-engineer-studying-prototype-idea-pc-showing-cad-software-device-display_482257-13399.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -242,7 +242,7 @@ const programData = [
     title: "Fullstack Java",
     slug: "JavaFullstack",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "20 Oct 25",
     image:
       "https://img.freepik.com/premium-photo/business-man-pushing-touch-screen-interface-java-programming-concept-virtual-machine_1085052-2842.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -256,7 +256,7 @@ const programData = [
     title: "App Development",
     slug: "AppDevelopment",
     category: "BTech",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "23 Oct 25",
     image:
       "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169839.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -272,7 +272,7 @@ const programData = [
     title: "Digital Marketing",
     slug: "DigitalMarketing",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "20 Aug 25",
     image:
       "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
@@ -286,7 +286,7 @@ const programData = [
     title: "Power BI",
     slug: "PowerBi",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "05 Sep 25",
     image:
       "https://img.freepik.com/premium-photo/businessman-hand-pressing-keyboard-with-mock-up-chart-slide-show-presentation-display-laptop_281691-370.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -300,7 +300,7 @@ const programData = [
     title: "HRM & Finance",
     slug: "HRM",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/free-photo/three-business-people-meeting_23-2147626533.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -315,7 +315,7 @@ const programData = [
     title: "Leadership",
     slug: "Leadership",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/premium-photo/business-teamwork-meeting-success-achievement-goal_42957-2564.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -329,7 +329,7 @@ const programData = [
     title: "Advance Excel",
     slug: "AdvancedExcel",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -344,7 +344,7 @@ const programData = [
     title: "Accounting",
     slug: "Accounting",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/free-photo/top-viewtop-view-manager-employee-doing-teamwork-business-office-looking-charts-laptop-display_482257-2443.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -358,7 +358,7 @@ const programData = [
     title: "Entrepreneurship",
     slug: "Entrepreneurship",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/free-photo/businessmen-closing-deal-with-handshake_1098-3793.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -372,7 +372,7 @@ const programData = [
     title: "Business Law",
     slug: "Blaw",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/premium-photo/justice-law-concept-legal-counsel-presents-client-signed-contract-with-gavel-legal-law-legal-having-team-meeting-law-firm-background_265022-79598.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -386,7 +386,7 @@ const programData = [
     title: "Business Communication",
     slug: "BusinessCommunication",
     category: "Graduates",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/premium-photo/justice-law-concept-legal-counsel-presents-client-signed-contract-with-gavel-legal-law-legal-having-team-meeting-law-firm-background_265022-79598.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -402,7 +402,7 @@ const programData = [
     title: "Digital Marketing",
     slug: "DigitalMarketing",
     category: "Masters",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "15 Jul 25",
     image:
       "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
@@ -416,7 +416,7 @@ const programData = [
     title: "HRM & Finance",
     slug: "HRM",
     category: "Masters",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/free-photo/three-business-people-meeting_23-2147626533.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -430,7 +430,7 @@ const programData = [
     title: "Advance Excel",
     slug: "AdvancedExcel",
     category: "Masters",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -445,7 +445,7 @@ const programData = [
     title: "Power BI",
     slug: "PowerBi",
     category: "Masters",
-    author: "Kon hai",
+    author: "Glowlogics Solutions",
     date: "10 Jul 25",
     image:
       "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -458,7 +458,7 @@ const programData = [
     id: 32,
     title: "Entrepreneurship",
     category: "Masters",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
       "https://img.freepik.com/free-photo/businessmen-closing-deal-with-handshake_1098-3793.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -473,7 +473,7 @@ const programData = [
     title: "Business Law",
     slug: "Blaw",
     category: "Masters",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "20 Sep 25",
     image:
       "https://img.freepik.com/free-photo/business-advisor-working-with-documentation_1098-15366.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
@@ -487,7 +487,7 @@ const programData = [
     title: "Business Communication",
     slug: "BusinessCommunication",
     category: "Masters",
-    author: "Harsh Jaiswal",
+    author: "Glowlogics Solutions",
     date: "20 Sep 25",
     image:
       "https://img.freepik.com/premium-photo/cooperation-action-group-young-modern-people-smart-casual-wear-working-together_425904-9440.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
