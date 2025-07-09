@@ -26,7 +26,7 @@ const SupportSection = () => {
         </div>
         <div className="flex-1">
           <img
-            src="https://www.shutterstock.com/shutterstock/photos/2483488709/display_1500/stock-vector-remote-recruitment-colorful-flat-illustration-2483488709.jpg"
+            src="https://static.vecteezy.com/system/resources/previews/008/170/975/non_2x/support-of-help-to-solve-problem-manager-mentorship-or-coaching-to-help-team-success-leadership-to-guide-employee-to-achieve-goal-concept-giant-hand-help-business-people-cross-the-problem-gap-vector.jpg"
             alt="Support Agent"
             className="w-full max-w-md rounded-xl"
           />
@@ -87,7 +87,7 @@ const SupportSection = () => {
               href="mailto:hr@glowlogics.in"
               className="text-blue-600 font-medium hover:underline text-sm flex items-center"
             >
-            hr@glowlogics.in <FaArrowRight className="ml-1" />
+            help@glowlogics.in <FaArrowRight className="ml-1" />
             </a>
           </div>
         </motion.div>

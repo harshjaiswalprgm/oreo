@@ -530,7 +530,7 @@ export default function ProgramShowcase() {
     >
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-black leading-snug">
-          🚀 Transform Your Career with{" "}
+           Transform Your Career with{" "}
           <span className="text-[#ff6e0c]">Top-Tier Programs</span>
         </h2>
 
