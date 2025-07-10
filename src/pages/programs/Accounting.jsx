@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 // import { FaQuoteLeft } from "react-icons/fa";
 
@@ -81,11 +82,13 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-            <button className="bg-[#ff6e0c] border-black text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
-              Enroll now
-            </button>
+            <Link to="https://rzp.io/rzp/GL6k">
+  <button className="bg-[#ff6e0c] border-black text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
+    Enroll now
+  </button>
+</Link>
             <a
-              href="/src/assets/images/DSA in JAVA Syllubus-Glowlogics.pdf"
+              href="/public/ProgramsPDF/Accounts Syllubus-Glowlogics.pdf"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
