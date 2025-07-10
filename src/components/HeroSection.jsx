@@ -130,15 +130,15 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center"
           >
             <button className="bg-black text-white px-6 py-2 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:ring-2 hover:ring-[#FFA500] hover:ring-offset-2">
-              <a
-                href="https://forms.gle/jhJhFcEiMQrGgdub6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
-              >
-                Join now
-              </a>
-            </button>
+  <a
+    href="https://forms.gle/jhJhFcEiMQrGgdub6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300"
+  >
+    Join now
+  </a>
+</button>
             <button className="flex items-center gap-2 text-black hover:text-[#FFA500] font-medium transition-all duration-300 hover:scale-105">
               <FaPlay className="text-[#FFA500] group-hover:animate-pulse" />
               <a href="https://www.youtube.com/@Glowlogics">Watch Demo</a>
