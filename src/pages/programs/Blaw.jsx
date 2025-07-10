@@ -12,34 +12,32 @@ const FullStackCourse = () => {
   //   "Project Management Officer (PMO)",
   // ];
 
-
-const roleLogos = {
-  "Project Director": [
-    "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
-  ],
-  "Senior Project Manager": [
-    "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
-  ],
-  "Team Leads/Team Managers": [
-    "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
-  ],
-  "Project Management Officer (PMO)": [
-    "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
-  ],
-};
-
+  const roleLogos = {
+    "Project Director": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
+    ],
+    "Senior Project Manager": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
+    ],
+    "Team Leads/Team Managers": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
+    ],
+    "Project Management Officer (PMO)": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+    ],
+  };
 
   const [activeRole, setActiveRole] = useState("Project Director");
 
@@ -50,7 +48,7 @@ const roleLogos = {
         {/* Left Content */}
         <div className="flex-1 w-full">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-        Business Law
+            Business Law
           </h1>
           <p className="text-lg text-gray-700 mb-6">
             Become a job-ready full-stack developer | Master React, Node.js,
@@ -96,8 +94,6 @@ const roleLogos = {
             </a>
           </div>
 
-
-
           {/* Rating & Learners */}
           <div className="flex items-center gap-6 mt-6 text-gray-700">
             <div className="flex items-center gap-2">
@@ -130,8 +126,8 @@ const roleLogos = {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for
-          a project management professional. It includes topics such as emerging
+          Glowlogics WebDev training course covers core topics essential for a
+          project management professional. It includes topics such as emerging
           trends, new technologies and practices, and core competencies required
           from a project manager. With an emphasis on strategic and business
           knowledge, the course also highlights the role of a project manager.
@@ -144,7 +140,7 @@ const roleLogos = {
               WebDev Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
-               ✅ 100% ISO Verified Internship
+              ✅ 100% ISO Verified Internship
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
@@ -197,39 +193,41 @@ const roleLogos = {
           and are often rewarded with substantial pay raises as shown below.
         </p>
 
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
-  {/* Designation Column */}
-  <div className="flex flex-col divide-y border-r">
-    {Object.keys(roleLogos).map((role) => (
-      <button
-        key={role}
-        onClick={() => setActiveRole(role)}
-        className={`text-left px-6 py-4 hover:bg-blue-50 transition-all ${
-          activeRole === role
-            ? "text-blue-600 font-semibold bg-blue-50"
-            : "text-gray-800"
-        }`}
-      >
-        {role}
-      </button>
-    ))}
-  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
+          {/* Designation Column */}
+          <div className="flex flex-col divide-y border-r">
+            {Object.keys(roleLogos).map((role) => (
+              <button
+                key={role}
+                onClick={() => setActiveRole(role)}
+                className={`text-left px-6 py-4 hover:bg-blue-50 transition-all ${
+                  activeRole === role
+                    ? "text-blue-600 font-semibold bg-blue-50"
+                    : "text-gray-800"
+                }`}
+              >
+                {role}
+              </button>
+            ))}
+          </div>
 
-  {/* Hiring Companies */}
-  <div className="flex flex-col justify-center items-center px-6 py-4 gap-4">
-    <div className="grid grid-cols-2 gap-4">
-      {(roleLogos[activeRole] || []).map((logo, index) => (
-        <img
-          key={index}
-          src={logo}
-          alt="Company Logo"
-          className="h-10 object-contain max-w-[100px]"
-        />
-      ))}
-    </div>
-    <p className="text-sm text-gray-500 mt-2">Source: Glowlogics Solutions</p>
-  </div>
-</div>
+          {/* Hiring Companies */}
+          <div className="flex flex-col justify-center items-center px-6 py-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">
+              {(roleLogos[activeRole] || []).map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt="Company Logo"
+                  className="h-10 object-contain max-w-[100px]"
+                />
+              ))}
+            </div>
+            <p className="text-sm text-gray-500 mt-2">
+              Source: Glowlogics Solutions
+            </p>
+          </div>
+        </div>
 
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
@@ -242,9 +240,9 @@ const roleLogos = {
           <div>
             <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
             <p>
-              The WebDevelopment<sup>®</sup> certification is an essential professional
-              requirement for senior project manager roles across all
-              industries. This course is best suited for: Project Managers,
+              The WebDevelopment<sup>®</sup> certification is an essential
+              professional requirement for senior project manager roles across
+              all industries. This course is best suited for: Project Managers,
               Associate/Assistant Project Managers, Team Leads/Team Managers,
               Project Executives/Project Engineers, Software Developers, Any
               professional aspiring to be a Project Manager.
@@ -255,9 +253,9 @@ const roleLogos = {
           <div>
             <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
             <p>
-              No prior knowledge or experience is required to attend
-              Glowlogics WebDevelopment Certification Training. To qualify for the WebDevelopment
-              exam you should either have:
+              No prior knowledge or experience is required to attend Glowlogics
+              WebDevelopment Certification Training. To qualify for the
+              WebDevelopment exam you should either have:
             </p>
             <ul className="list-disc list-inside mt-2">
               <li>High school or secondary school diploma…</li>
@@ -366,173 +364,215 @@ const roleLogos = {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-10 items-start">
-  {/* Left: FAQ Section */}
-  <div className="w-full lg:w-2/3">
-    <h2 className="text-3xl font-semibold mb-6">FAQ <span className="text-black">related to </span></h2>
-    <div className="bg-white border rounded-lg shadow-md divide-y">
-      {[
-        {
-          q: "How to get a WebDevelopment® certification?",
-          a: (
-            <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-              <li>Meet the eligibility requirements</li>
-              <li>Enroll in an accredited WebDevelopment certification training course</li>
-              <li>Meet the exam eligibility requirements</li>
-              <li>Apply for the WebDevelopment exam with PMI</li>
-              <li>Pass your exam to earn certification</li>
-            </ul>
-          )
-        },
-        { q: "What are the WebDevelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is the WebDevelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
-        { q: "What does the Glowlogics 100% money-back guarantee mean?", a: "It means you’ll get a full refund if conditions are met and you’re not satisfied." },
-        { q: "How to schedule your examination after completing WebDevelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of the WebDevelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
+          {/* Left: FAQ Section */}
+          <div className="w-full lg:w-2/3">
+            <h2 className="text-3xl font-semibold mb-6">
+              FAQ <span className="text-black">related to </span>
+            </h2>
+            <div className="bg-white border rounded-lg shadow-md divide-y">
+              {[
+                {
+                  q: "How to get a WebDevelopment® certification?",
+                  a: (
+                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
+                      <li>Meet the eligibility requirements</li>
+                      <li>
+                        Enroll in an accredited WebDevelopment certification
+                        training course
+                      </li>
+                      <li>Meet the exam eligibility requirements</li>
+                      <li>Apply for the WebDevelopment exam with PMI</li>
+                      <li>Pass your exam to earn certification</li>
+                    </ul>
+                  ),
+                },
+                {
+                  q: "What are the WebDevelopment certification requirements?",
+                  a: "Eligibility criteria vary, usually requiring education and project experience.",
+                },
+                {
+                  q: "How long is the WebDevelopment certification valid for?",
+                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
+                },
+                {
+                  q: "What does the Glowlogics 100% money-back guarantee mean?",
+                  a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
+                },
+                {
+                  q: "How to schedule your examination after completing WebDevelopment certification training?",
+                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
+                },
+                {
+                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  a: "Yes, we provide full-length mock tests and practice questions.",
+                },
+                {
+                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  a: "Yes, we provide full-length mock tests and practice questions.",
+                },
+                {
+                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  a: "Yes, we provide full-length mock tests and practice questions.",
+                },
+                {
+                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  a: "Yes, we provide full-length mock tests and practice questions.",
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="group">
+                  <button
+                    className="w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-blue-50 transition"
+                    onClick={() =>
+                      setOpenSection(openSection === idx ? null : idx)
+                    }
+                  >
+                    {item.q}
+                    <span className="text-xl">
+                      {openSection === idx ? "−" : "+"}
+                    </span>
+                  </button>
+                  {openSection === idx && (
+                    <div className="px-6 pb-4 text-sm text-gray-700">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
 
-      ].map((item, idx) => (
-        <div key={idx} className="group">
-          <button
-            className="w-full text-left px-6 py-4 font-medium flex justify-between items-center hover:bg-blue-50 transition"
-            onClick={() => setOpenSection(openSection === idx ? null : idx)}
-          >
-            {item.q}
-            <span className="text-xl">{openSection === idx ? "−" : "+"}</span>
-          </button>
-          {openSection === idx && (
-            <div className="px-6 pb-4 text-sm text-gray-700">{item.a}</div>
-          )}
+          {/* Right: Certificates */}
+          <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+            {[
+              "/src/assets/images/Screenshot 2025-07-05 193258.png",
+              "/src/assets/images/Screenshot 2025-07-05 193258.png",
+              "/src/assets/images/Screenshot 2025-07-05 193258.png",
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="border rounded-lg shadow-md overflow-hidden"
+                onMouseMove={(e) => {
+                  const img = document.getElementById(`cert-img-${index}`);
+                  if (img) {
+                    const rect = img.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    img.style.transformOrigin = `${x}% ${y}%`;
+                  }
+                }}
+                onMouseLeave={() => {
+                  const img = document.getElementById(`cert-img-${index}`);
+                  if (img) {
+                    img.style.transformOrigin = "center center";
+                  }
+                }}
+              >
+                <img
+                  id={`cert-img-${index}`}
+                  src={src}
+                  alt={`Certificate ${index + 1}`}
+                  className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-
-  </div>
-
-  {/* Right: Certificates */}
-  <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
-  {[
-    "/src/assets/images/Screenshot 2025-07-05 193258.png",
-    "/src/assets/images/Screenshot 2025-07-05 193258.png",
-    "/src/assets/images/Screenshot 2025-07-05 193258.png",
-  ].map((src, index) => (
-    <div
-      key={index}
-      className="border rounded-lg shadow-md overflow-hidden"
-      onMouseMove={(e) => {
-        const img = document.getElementById(`cert-img-${index}`);
-        if (img) {
-          const rect = img.getBoundingClientRect();
-          const x = ((e.clientX - rect.left) / rect.width) * 100;
-          const y = ((e.clientY - rect.top) / rect.height) * 100;
-          img.style.transformOrigin = `${x}% ${y}%`;
-        }
-      }}
-      onMouseLeave={() => {
-        const img = document.getElementById(`cert-img-${index}`);
-        if (img) {
-          img.style.transformOrigin = "center center";
-        }
-      }}
-    >
-      <img
-        id={`cert-img-${index}`}
-        src={src}
-        alt={`Certificate ${index + 1}`}
-        className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-      />
-    </div>
-  ))}
-</div>
-
-</div>
-<div className="bg-white py-16 overflow-hidden">
-  <h2 className="text-4xl font-bold text-center mb-12 leading-snug">
+       <div className=" py-12 overflow-hidden">
+  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
     Admiration expressed by others regarding our presence.
   </h2>
 
-  <div className="relative w-full space-y-10 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-8 px-8 items-start">
-      {[
-        {
-          name: "Vrinda K",
-          title: "Dayalbagh Educational Institute",
-          text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course...",
-          img: "/src/assets/images/vrindaK.png",
-        },
-        {
-          name: "Smriti Mathuriya",
-          title: "Dayalbagh Educational Institute",
-          text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute...",
-          img: "/src/assets/images/Smrithi.png",
-        },
-        {
-          name: "Aan Narai",
-          title: "Alliance University",
-          text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course...",
-          img: "/src/assets/images/Aan.png",
-        },
-        {
-          name: "Kavya R",
-          title: "Bachelor's in Engineering",
-          text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology...",
-          img: "/src/assets/images/Kavya.png",
-        },
-        {
-          name: "Kulsum Bano",
-          title: "MMICT&MB, 2nd Year",
-          text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program...",
-          img: "/src/assets/images/Kulsum.png",
-        },
-        {
-          name: "Bollepally Jashwanth Varma",
-          title: "Sai Spurthi Institute of Technology, 3rd Year",
-          text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution...",
-          img: "/src/assets/images/CyberUnknown.png",
-        },
-        {
-          name: "Tejaswini.K",
-          title: "Jayaraj Annapackiam College",
-          text: "Hello everyone, I am Tejaswini K I study Computer Science at Jayaraj Annapackiam College...",
-          img: "/src/assets/images/TejasvaniK.png",
-        },
-        {
-          name: "Thotakura Puneeth Sai",
-          title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-          text: "Hi, I'm Thotakura Puneeth Sai, and I’m currently in my 3rd year of B.Tech at Anantha Lakshmi Institute...",
-          img: "/src/assets/images/Thotakura Puneeth Sai .png",
-        },
-        {
-          name: "Preetham",
-          title: "Navkis College of Engnineering",
-          text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering, focusing on practical skill development...",
-          img: "/src/assets/images/pritam.png",
-        },
-      ].map((item, index) => (
-        <div
-          key={index}
-          className="bg-gray-50 rounded-2xl shadow-lg p-8 w-[380px] flex-shrink-0 flex flex-col"
-        >
-          <span className="text-blue-500 text-2xl mb-4">❝</span>
-          <p className="text-gray-800 text-base mb-6 leading-relaxed">{item.text}</p>
-          <div className="flex items-center space-x-4 mt-auto">
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-16 h-16 rounded-full object-cover"
-            />
-            <div>
-              <p className="font-semibold text-lg">{item.name}</p>
-              <p className="text-sm text-gray-500">{item.title}</p>
+  <div className="relative w-full space-y-8 overflow-x-hidden">
+    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+      {[...Array(2)].flatMap(() =>
+        [
+          {
+            name: "Vrinda K",
+            title: "Dayalbagh Educational Institute",
+            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+            img: "/vrindaK.png",
+          },
+          {
+            name: "Smriti Mathuriya",
+            title: "Dayalbagh Educational Institute",
+            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+            img: "/Smrithi.png",
+          },
+          {
+            name: "Aan Narai",
+            title: "Alliance University",
+            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+            img: "/Aan.png",
+          },
+          {
+            name: "Kavya R",
+            title: "Bachelor's in Engineering",
+            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+            img: "/Kavya.png",
+          },
+          {
+            name: "Kulsum Bano",
+            title: "MMICT&MB, 2nd Year",
+            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+            img: "/Kulsum.png",
+          },
+          {
+            name: "Bollepally Jashwanth Varma",
+            title: "Sai Spurthi Institute of Technology, 3rd Year",
+            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+            img: "/CyberUnknown.png",
+          },
+          {
+            name: "Tejaswini.K",
+            title: "Jayaraj Annapackiam College",
+            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+            img: "/TejasvaniK.png",
+          },
+          {
+            name: "Thotakura Puneeth Sai",
+            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+            img: "/Thotakura Puneeth Sai.png",
+          },
+          {
+            name: "Preetham",
+            title: "Navkis College of Engineering",
+            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+            img: "/pritam.png",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+          >
+            <svg
+              className="text-blue-500 text-xl mb-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              width="20"
+              height="20"
+            >
+              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+            </svg>
+            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+            <div className="flex items-center space-x-3 mt-auto">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-14 h-14 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-sm">{item.name}</p>
+                <p className="text-xs text-gray-500">{item.title}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))
+      )}
     </div>
   </div>
 </div>
-
 
       </div>
     </>
