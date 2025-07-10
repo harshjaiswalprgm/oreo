@@ -31,13 +31,13 @@ function About() {
                 title: "Our Approach",
                 text:
                   "At TheLearniverse, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
-                img: "/src/assets/images/ourApproch.jpg",
+                img: "/ourApproch.jpg",
               },
               {
                 title: "Our Vision",
                 text:
                   "To become the world’s most trusted learning ecosystem where individuals from all backgrounds can access quality, future-focused education and transform their potential into excellence.",
-                img: "/src/assets/images/ourVision.jpg",
+                img: "/public/OurMission.jpg",
               },
               {
                 title: "Our Mission",
