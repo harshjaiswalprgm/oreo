@@ -81,9 +81,15 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-            <button className="bg-[#ff6e0c] border-black text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
-              Enroll now
-            </button>
+            <a
+              href="https://rzp.io/rzp/GL6k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#ff6e0c] border-black text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
+                Enroll now
+              </button>
+            </a>
             <a
               href="/public/ProgramsPDF/App Development Syllubus-Glowlogics.pdf"
               download
