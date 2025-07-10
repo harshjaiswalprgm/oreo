@@ -442,39 +442,23 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
-            {[
-              "/Sample Course Completion Certificate- Glowlogics.pdf.png",
-              "/Sample Internship Certificate- Glowlogics.pdf.png",
-              "/Placement Training Certificate - Glowlogics.pdf.png",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="border rounded-lg shadow-md overflow-hidden"
-                onMouseMove={(e) => {
-                  const img = document.getElementById(`cert-img-${index}`);
-                  if (img) {
-                    const rect = img.getBoundingClientRect();
-                    const x = ((e.clientX - rect.left) / rect.width) * 100;
-                    const y = ((e.clientY - rect.top) / rect.height) * 100;
-                    img.style.transformOrigin = `${x}% ${y}%`;
-                  }
-                }}
-                onMouseLeave={() => {
-                  const img = document.getElementById(`cert-img-${index}`);
-                  if (img) {
-                    img.style.transformOrigin = "center center";
-                  }
-                }}
-              >
-                <img
-                  id={`cert-img-${index}`}
-                  src={src}
-                  alt={`Certificate ${index + 1}`}
-                  className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-                />
-              </div>
-            ))}
-          </div>
+  {[
+    "/Sample Course Completion Certificate- Glowlogics.pdf.png",
+    "/Sample Internship Certificate- Glowlogics.pdf.png",
+    "/Placement Training Certificate - Glowlogics.pdf.png",
+  ].map((src, index) => (
+    <div
+      key={index}
+      className="border rounded-lg shadow-md overflow-hidden"
+    >
+      <img
+        src={src}
+        alt={`Certificate ${index + 1}`}
+        className="w-full h-auto object-contain p-2"
+      />
+    </div>
+  ))}
+</div>
         </div>
       <div className=" py-12 overflow-hidden">
   <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
