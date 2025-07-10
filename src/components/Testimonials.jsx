@@ -1,63 +1,74 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
+import vrindaKImg from '../../assets/images/vrindaK.png';
+import smritiImg from '../../assets/images/Smrithi.png';
+import aanImg from '../../assets/images/Aan.png';
+import kavyaImg from '../../assets/images/Kavya.png';
+import kulsumImg from '../../assets/images/Kulsum.png';
+import cyberImg from '../../assets/images/CyberUnknown.png';
+import tejaswiniImg from '../../assets/images/TejasvaniK.png';
+import puneethImg from '../../assets/images/Thotakura Puneeth Sai.png';
+import preethamImg from '../../assets/images/pritam.png';
+
 
 // Testimonial data
 const testimonials = [
   {
     name: "Vrinda K",
     title: "Dayalbagh Educational Institute",
-    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course..",
-    img: "/src/assets/images/vrindaK.png",
+    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+    img: vrindaKImg,
   },
   {
     name: "Smriti Mathuriya",
-    title: "Dayalbagh Educational Institute ",
+    title: "Dayalbagh Educational Institute",
     text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-    img: "/src/assets/images/Smrithi.png",
+    img: smritiImg,
   },
   {
     name: "Aan Narai",
     title: "Alliance University",
-    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics, for making the learning journey so smooth and effective!",
-    img: "/src/assets/images/Aan.png",
+    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+    img: aanImg,
   },
   {
     name: "Kavya R",
     title: "Bachelor's in Engineering",
-    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand, making it easier for students to learn and complete their tasks efficiently. Submitting projects and receiving certificates is seamless through the Glowlogics platform. Many students are also securing internships and getting placed in reputed companies through this program.",
-    img: "/src/assets/images/Kavya.png",
+    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+    img: kavyaImg,
   },
   {
     name: "Kulsum Bano",
-    title: "MMICT&MB, 2nd Year ",
+    title: "MMICT&MB, 2nd Year",
     text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-    img: "/src/assets/images/Kulsum.png",
+    img: kulsumImg,
   },
   {
     name: "Bollepally Jashwanth Varma",
-    title: "Sai Spurthi Institute of Technology, 3rd Year",
-    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment, with hands-on training using tools such as Kali Linux and Metasploit. The instructors were knowledgeable and supportive, making complex concepts easy to understand. The practical projects were engaging and gave me real-world exposure. GlowLogics provided excellent resources and mentorship, making this internship a valuable step in my cybersecurity journey. I highly recommend it to aspiring ethical hackers!",
-    img: "/src/assets/images/CyberUnknown.png",
+    title: "Sai Spurthi Institute of Technology, 3rd Year",
+    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+    img: cyberImg,
   },
   {
     name: "Tejaswini.K",
     title: "Jayaraj Annapackiam College",
-    text: "Hello everyone, I am Tejaswini K I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Gloom, and I’d like to share my experience and how this course helped me. First of all, the course was really well-organized and started with the basics of AI. I truly appreciated how the instructors explained everything in a simple and clear manner— even complex topics felt easy to understand.After completing the course, I feel much more confident about working on AI projects, especially using Python. It also gave me great ideas for my future academic work and internship opportunities.Overall, I’m really happy with this course. Thank you, Glowlogics, for offering such a helpful and beginner-friendly AI course. I would definitely recommend it to other students who are just starting their AI journey. Thank you!",
-    img: "/src/assets/images/TejasvaniK.png",
+    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+    img: tejaswiniImg,
   },
   {
     name: "Thotakura Puneeth Sai",
     title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-    text: "Hi, I'm Thotakura Puneeth Sai, and I’m currently in my 3rd year of B.Tech at Anantha Lakshmi Institute of Technology and Sciences. I recently completed the Cybersecurity & Ethical Hacking course from Glowlogics, and it was an amazing experience. The instructors were very supportive, and the hands-on, real-time classes were top-notch. I gained a lot of practical knowledge and real-world skills that are essential in the cybersecurity field. I highly recommend this course to anyone who wants to learn the real-world applications of ethical hacking and cybersecurity. Thank you to Glowlogics and everyone involved for such a valuable learning experience.",
-    img: "/src/assets/images/Thotakura Puneeth Sai .png",
+    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+    img: puneethImg,
   },
   {
     name: "Preetham",
-    title: "Navkis College of Engnineering",
-    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering, focusing on practical skill development and technical growth. In my final semester, I enrolled in a specialized VLSI course at Glow Logic Solutions, a well-regarded institute in semiconductor and embedded systems. The course covered Verilog/SystemVerilog, FPGA simulation, ASIC design flow, low-power techniques like MTCMOS, and hands-on experience with tools such as Cadence and Synopsys. As part of the program, I completed a design project that strengthened my Verilog skills and deepened my understanding of hardware design. This industry-oriented training has equipped me to contribute effectively in the semiconductor field.",
-    img: "/src/assets/images/pritam.png",
+    title: "Navkis College of Engineering",
+    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+    img: preethamImg,
   },
 ];
+
 
 export default function Testimonials() {
   const loopTestimonials = [...testimonials, ...testimonials]; // Doubled for seamless scroll
