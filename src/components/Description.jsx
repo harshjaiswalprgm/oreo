@@ -31,19 +31,19 @@ function About() {
                 title: "Our Approach",
                 text:
                   "At TheLearniverse, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
-                img: "https://media.istockphoto.com/id/2122148349/photo/writing-an-exam-at-the-university.webp?a=1&b=1&s=612x612&w=0&k=20&c=fJNH1q1N1NJ6IbQTvftt_k6W1ZKOSp10KCSNHnwiTRc=",
+                img: "/src/assets/images/ourApproch.jpg",
               },
               {
                 title: "Our Vision",
                 text:
                   "To become the world’s most trusted learning ecosystem where individuals from all backgrounds can access quality, future-focused education and transform their potential into excellence.",
-                img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D",
+                img: "/src/assets/images/ourVision.jpg",
               },
               {
                 title: "Our Mission",
                 text:
                   "We aim to empower learners and professionals through affordable, innovative, and real-world aligned education experiences — helping them thrive in an ever-evolving global job market.",
-                img: "https://images.unsplash.com/photo-1627556704243-5f0771d90783?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHVuaXZlcnNpdHklMjBzdHVkZW50fGVufDB8fDB8fHww",
+                img: "https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=FbH7i1I3oCXoRfZKFvGj3jMXnsljD8mPmDmvY4IxQuA=",
               },
             ].map((item, i) => (
               <div
