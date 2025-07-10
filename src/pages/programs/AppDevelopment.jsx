@@ -85,7 +85,7 @@ const FullStackCourse = () => {
               Enroll now
             </button>
             <a
-              href="/src/assets/images/DSA in JAVA Syllubus-Glowlogics.pdf"
+              href="/public/ProgramsPDF/App Development Syllubus-Glowlogics.pdf"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
