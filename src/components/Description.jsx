@@ -37,7 +37,7 @@ function About() {
                 title: "Our Vision",
                 text:
                   "To become the world’s most trusted learning ecosystem where individuals from all backgrounds can access quality, future-focused education and transform their potential into excellence.",
-                img: "/public/OurMission.jpg",
+                img: "https://img.freepik.com/premium-photo/text-human-hand_1048944-10059543.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
               },
               {
                 title: "Our Mission",
