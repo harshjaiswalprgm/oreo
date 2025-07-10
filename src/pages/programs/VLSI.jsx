@@ -277,7 +277,7 @@ const roleLogos = {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 01: Course Introduction",
                 lessons: [
                   {
                     name: "Lesson 01: Course Introduction",
