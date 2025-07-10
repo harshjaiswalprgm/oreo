@@ -83,7 +83,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a href="/public/ProgramsPDF/WEB Syllubus-GLOWLOGICS .pdf" download>
+            <a href="/public/ProgramsPDF/WEB Syllubus-GLOWLOGICS.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
