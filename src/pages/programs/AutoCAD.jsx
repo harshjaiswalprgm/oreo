@@ -440,9 +440,9 @@ const FullStackCourse = () => {
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
             {[
-              "/src/assets/images/Screenshot 2025-07-05 193258.png",
-              "/src/assets/images/Screenshot 2025-07-05 193258.png",
-              "/src/assets/images/Screenshot 2025-07-05 193258.png",
+              "/public/Sample Course Completion Certificate- Glowlogics.pdf.png",
+              "/public/Sample Internship Certificate- Glowlogics.pdf.png",
+              "/public/Placement Training Certificate - Glowlogics.pdf.png",
             ].map((src, index) => (
               <div
                 key={index}

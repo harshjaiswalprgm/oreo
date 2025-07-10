@@ -266,7 +266,7 @@ const EventHub = () => {
           className="w-full h-full object-cover"
         >
           <source
-            src="/HackathonVideo.mp4"
+            src="/src/assets/images/HackathonVideo.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
