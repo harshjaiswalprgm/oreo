@@ -191,7 +191,7 @@ export default function About3DMarquee() {
       Collaboration Announcement
     </h2>
     <p className="text-gray-600 leading-relaxed text-lg">
-      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Hyderabad</span>! Together, we aim to provide unparalleled opportunities for
       <span className="font-semibold"> skill development</span> and
       <span className="font-semibold"> career growth</span>.
     </p>
@@ -200,7 +200,7 @@ export default function About3DMarquee() {
     <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
       <img
         src="https://yourdomain.com/dataspace-logo.png"
-        alt="IIT haydrabad logo"
+        alt="IIT Hyderabad logo"
         className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
       />
       <span className="text-xl text-gray-500 font-bold">×</span>
@@ -216,7 +216,7 @@ export default function About3DMarquee() {
   <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
     <img
       src="https://yourdomain.com/dataspace-logo.png"
-      alt="IIT haydrabad logo"
+      alt="IIT Hyderabad logo"
       className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
     />
   </div>
@@ -238,7 +238,7 @@ export default function About3DMarquee() {
       Collaboration Announcement
     </h2>
     <p className="text-gray-600 leading-relaxed text-lg">
-      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Hyderabad</span>! Together, we aim to provide unparalleled opportunities for
       <span className="font-semibold"> skill development</span> and
       <span className="font-semibold"> career growth</span>.
     </p>
@@ -247,7 +247,7 @@ export default function About3DMarquee() {
     <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
       <img
         src="https://yourdomain.com/dataspace-logo.png"
-        alt="IIT haydrabad logo"
+        alt="IIT Hyderabad logo"
         className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
       />
       <span className="text-xl text-gray-500 font-bold">×</span>
@@ -263,7 +263,7 @@ export default function About3DMarquee() {
   <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
     <img
       src="https://yourdomain.com/dataspace-logo.png"
-      alt="IIT haydrabad logo"
+      alt="IIT Hyderabad logo"
       className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
     />
   </div>
@@ -285,7 +285,7 @@ export default function About3DMarquee() {
       Collaboration Announcement
     </h2>
     <p className="text-gray-600 leading-relaxed text-lg">
-      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Hyderabad</span>! Together, we aim to provide unparalleled opportunities for
       <span className="font-semibold"> skill development</span> and
       <span className="font-semibold"> career growth</span>.
     </p>
@@ -294,7 +294,7 @@ export default function About3DMarquee() {
     <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
       <img
         src="https://yourdomain.com/dataspace-logo.png"
-        alt="IIT haydrabad logo"
+        alt="IIT Hyderabad logo"
         className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
       />
       <span className="text-xl text-gray-500 font-bold">×</span>
@@ -310,7 +310,7 @@ export default function About3DMarquee() {
   <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
     <img
       src="https://yourdomain.com/dataspace-logo.png"
-      alt="IIT haydrabad logo"
+      alt="IIT Hyderabad logo"
       className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
     />
   </div>
@@ -332,7 +332,7 @@ export default function About3DMarquee() {
       Collaboration Announcement
     </h2>
     <p className="text-gray-600 leading-relaxed text-lg">
-      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Haydrabad</span>! Together, we aim to provide unparalleled opportunities for
+      We are thrilled to announce our collaboration with <span className="font-semibold text-black">IIT Hyderabad</span>! Together, we aim to provide unparalleled opportunities for
       <span className="font-semibold"> skill development</span> and
       <span className="font-semibold"> career growth</span>.
     </p>
@@ -341,7 +341,7 @@ export default function About3DMarquee() {
     <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
       <img
         src="https://yourdomain.com/dataspace-logo.png"
-        alt="IIT haydrabad logo"
+        alt="IIT Hyderabad logo"
         className="h-10 object-contain hover:scale-105 transition-transform duration-300 shadow-sm"
       />
       <span className="text-xl text-gray-500 font-bold">×</span>
@@ -357,7 +357,7 @@ export default function About3DMarquee() {
   <div className="w-24 h-24 flex-shrink-0 shadow-md rounded-full p-2 bg-white">
     <img
       src="https://yourdomain.com/dataspace-logo.png"
-      alt="IIT haydrabad logo"
+      alt="IIT Hyderabad logo"
       className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
     />
   </div>
