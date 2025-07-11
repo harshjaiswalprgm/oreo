@@ -229,7 +229,7 @@ const EventHub = () => {
         <div className="w-full max-w-6xl p-4 border border-gray-300 rounded-xl bg-white/10 backdrop-blur-sm flex flex-col md:flex-row items-center justify-center gap-6">
           {/* Card 1 */}
           <a
-            href="https://forms.gle/your-form-link-1"
+            href="https://forms.gle/LcrGRk8FaSzgoqkV8"
             target="_blank"
             rel="noopener noreferrer"
             className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
@@ -243,7 +243,7 @@ const EventHub = () => {
 
           {/* Card 2 */}
           <a
-            href="https://forms.gle/your-form-link-2"
+            href="https://forms.gle/gNCR3tfDTEtkjZfx6"
             target="_blank"
             rel="noopener noreferrer"
             className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"

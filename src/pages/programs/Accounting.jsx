@@ -94,7 +94,7 @@ const FullStackCourse = () => {
             </a>
             </Link>
             <a
-              href="/public/ProgramsPDF/Accounts Syllubus-Glowlogics.pdf"
+              href="/ProgramsPDF/ACCOUNTS.pdf"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
