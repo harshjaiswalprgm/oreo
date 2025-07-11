@@ -44,8 +44,7 @@ const FullStackCourse = () => {
             Full-Stack Web Development
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+            Learn to Build Modern Websites and Web Applications from Scratch
           </p>
 
           {/* Benefits */}
