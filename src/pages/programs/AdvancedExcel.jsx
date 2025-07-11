@@ -124,15 +124,15 @@ const FullStackCourse = () => {
         </div>
       </div>
 
-      {/* WebDev Overview Section */}
+      {/* Advance Excel Overview Section */}
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Course{" "}
+          Advance Excel Certification Course{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for a
+          Glowlogics Advance Excel training course covers core topics essential for a
           project management professional. It includes topics such as emerging
           trends, new technologies and practices, and core competencies required
           from a project manager. With an emphasis on strategic and business
@@ -143,7 +143,7 @@ const FullStackCourse = () => {
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+              Advance Excel Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
               ✅ 100% ISO Verified Internship
@@ -193,9 +193,9 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
+          The Advance Excel® certification can help you land lucrative roles in IT,
           manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
+          Advance Excel® certified project managers drive better project performance
           and are often rewarded with substantial pay raises as shown below.
         </p>
 
@@ -238,7 +238,7 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+            Advance Excelelopment Certification Course{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
@@ -246,7 +246,7 @@ const FullStackCourse = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
             <p>
-              The WebDevelopment<sup>®</sup> certification is an essential
+              The Advance Excelelopment<sup>®</sup> certification is an essential
               professional requirement for senior project manager roles across
               all industries. This course is best suited for: Project Managers,
               Associate/Assistant Project Managers, Team Leads/Team Managers,
@@ -260,8 +260,8 @@ const FullStackCourse = () => {
             <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
             <p>
               No prior knowledge or experience is required to attend Glowlogics
-              WebDevelopment Certification Training. To qualify for the
-              WebDevelopment exam you should either have:
+              Advance Excelelopment Certification Training. To qualify for the
+              Advance Excelelopment exam you should either have:
             </p>
             <ul className="list-disc list-inside mt-2">
               <li>High school or secondary school diploma…</li>
@@ -378,50 +378,50 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a WebDevelopment® certification?",
+                  q: "How to get a Advance Excelelopment® certification?",
                   a: (
                     <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
                       <li>Meet the eligibility requirements</li>
                       <li>
-                        Enroll in an accredited WebDevelopment certification
+                        Enroll in an accredited Advance Excelelopment certification
                         training course
                       </li>
                       <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the WebDevelopment exam with PMI</li>
+                      <li>Apply for the Advance Excelelopment exam with PMI</li>
                       <li>Pass your exam to earn certification</li>
                     </ul>
                   ),
                 },
                 {
-                  q: "What are the WebDevelopment certification requirements?",
+                  q: "What are the Advance Excelelopment certification requirements?",
                   a: "Eligibility criteria vary, usually requiring education and project experience.",
                 },
                 {
-                  q: "How long is the WebDevelopment certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
+                  q: "How long is the Advance Excelelopment certification valid for?",
+                  a: "Advance Excelelopment certification is valid for 3 years and requires renewal.",
                 },
                 {
                   q: "What does the Glowlogics 100% money-back guarantee mean?",
                   a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
                 },
                 {
-                  q: "How to schedule your examination after completing WebDevelopment certification training?",
+                  q: "How to schedule your examination after completing Advance Excelelopment certification training?",
                   a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
+                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
               ].map((item, idx) => (
