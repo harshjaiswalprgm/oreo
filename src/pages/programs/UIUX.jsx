@@ -85,6 +85,8 @@ const FullStackProgram = () => {
           <div className="flex flex-wrap gap-4 mb-4">
             <a
               href="https://rzp.io/rzp/GL6k"
+
+
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -455,9 +457,9 @@ const FullStackProgram = () => {
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
             {[
-              "/public/CourseCompletionGlowlogics.png",
-              "/public/InternshipGlowlogics.png",
-              "/public/PlacementGlowlogics.png",
+              "/CourseCompletionGlowlogics.png",
+              "/InternshipGlowlogics.png",
+              "/PlacementGlowlogics.png",
             ].map((src, index) => (
               <div
                 key={index}
