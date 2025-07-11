@@ -1,5 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
+
 import colabImage from "../assets/images/Colab.png";
 import img1 from "../assets/images/img1.png";
 import img2 from "../assets/images/img2.png";
@@ -7,43 +10,39 @@ import img3 from "../assets/images/img3.png";
 import img4 from "../assets/images/img4.png";
 import img5 from "../assets/images/img5.png";
 
-// ✅ Image cards for bottom collage
+// ✅ Image cards
 const imageCards = [
-  { img: img1, size: "large", direction: "left" },
-  { img: img2, size: "medium", direction: "left" },
-  { img: img3, size: "small", direction: "center" },
-  { img: img4, size: "medium", direction: "right" },
-  { img: img5, size: "large", direction: "right" },
+  { img: img1, size: "large" },
+  { img: img2, size: "medium" },
+  { img: img3, size: "small" },
+  { img: img4, size: "medium" },
+  { img: img5, size: "large" },
 ];
 
-// ✅ Course dropdown lists
-const technicalCourses = [
-  "Artificial Intelligence",
-  "Data Science with MI",
-  "Cyber Security & Ethical Hacking",
-  "Web Development full Stack",
-  "Full Stack JAVA",
-  "Cloud Computing",
-  "App Development",
-  "UI/UX",
-  "VLSI",
-  "IOT",
-  "AutoCAD with Self -paced MATLAB",
-];
-const nonTechnicalCourses = [
-  "Digital Marketing",
-  "HRM and Finance",
-  "Leadership and Management",
-  "Advanced Excel with Power BI",
-  "Accounting",
-];
+// ✅ Map course names to routes
+const courseRoutes = {
+  "Artificial Intelligence": "/programs/Ai",
+  "Data Science with MI": "/programs/DataSciences",
+  "Cyber Security & Ethical Hacking": "/programs/CyberSecurity",
+  "Web Development full Stack": "/programs/webDev",
+  "Full Stack JAVA": "/programs/JavaFullstack",
+  "Cloud Computing": "/programs/CloudComputing",
+  "App Development": "/programs/AppDevelopment",
+  "UI/UX": "/programs/UIUX",
+  "VLSI": "/programs/VLSI",
+  "IOT": "/programs/IOT",
+  "AutoCAD with Self -paced MATLAB": "/programs/AutoCAD",
+  "Digital Marketing": "/programs/DigitalMarketing",
+  "HRM and Finance": "/programs/HRM",
+  "Leadership and Management": "/programs/Leadership",
+  "Advanced Excel with Power BI": "/programs/AdvancedExcel",
+  "Accounting": "/programs/Accounting",
+};
 
-// ✅ Framer motion variants
+// ✅ Motion variants
 const containerVariants = {
   hidden: {},
-  show: {
-    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
-  },
+  show: { transition: { staggerChildren: 0.15, delayChildren: 0.2 } },
 };
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -62,8 +61,20 @@ const imageCardVariant = {
   },
 };
 
-// ✅ Main Hero Section Component
+// ✅ Hero Section
 export default function HeroSection() {
+  const navigate = useNavigate();
+  const [selectedCourse, setSelectedCourse] = useState("");
+
+  const handleStartClick = () => {
+    const path = courseRoutes[selectedCourse];
+    if (path) {
+      navigate(path);
+    } else {
+      alert("Please select a course to continue.");
+    }
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.section
@@ -76,7 +87,6 @@ export default function HeroSection() {
         transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
         className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-orange-100 px-4 pt-36 pb-20 font-sans"
       >
-        {/* ✅ Headline Section */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -90,14 +100,12 @@ export default function HeroSection() {
             <span className="relative z-10">
               Tired of Just Learning? <br />
               It’s Time to Build and{" "}
-              <span className="text-[#ff6e0c] group-hover:underline  ">
+              <span className="text-[#ff6e0c] group-hover:underline">
                 Get Career-Ready!
               </span>
             </span>
-            {/* <span className="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-[#ff6e0c] transition-all duration-500"></span> */}
           </motion.h1>
 
-          {/* ✅ Subtext */}
           <motion.p
             variants={fadeUpVariant}
             className="text-base sm:text-lg text-gray-600 mt-4 max-w-xl mx-auto font-medium"
@@ -106,41 +114,47 @@ export default function HeroSection() {
             paid work. No fluff. Just results.
           </motion.p>
 
-          {/* ✅ Dropdown with Start Button */}
+          {/* ✅ Dropdown & Start button */}
           <motion.div
             variants={fadeUpVariant}
             className="mt-6 w-full max-w-md bg-white border border-gray-200 rounded-full flex items-center justify-between px-3 py-1 shadow-md"
           >
-            <select className="bg-transparent text-sm text-gray-700 outline-none w-full h-8 font-medium">
-              <option>Select Courses</option>
-              {technicalCourses.map((course, index) => (
-                <option key={`tech-${index}`}>{course}</option>
-              ))}
-              {nonTechnicalCourses.map((course, index) => (
-                <option key={`nontech-${index}`}>{course}</option>
+            <select
+              value={selectedCourse}
+              onChange={(e) => setSelectedCourse(e.target.value)}
+              className="bg-transparent text-sm text-gray-700 outline-none w-full h-8 font-medium"
+            >
+              <option value="">Select Courses</option>
+              {Object.keys(courseRoutes).map((course, index) => (
+                <option key={index} value={course}>
+                  {course}
+                </option>
               ))}
             </select>
-            <button className="bg-[#FFC107] text-black text-xs font-semibold px-4 py-1 rounded-full ml-2 hover:bg-[#e8b200] transition h-8">
+            <button
+              onClick={handleStartClick}
+              className="bg-[#FFC107] text-black text-xs font-semibold px-4 py-1 rounded-full ml-2 hover:bg-[#e8b200] transition h-8"
+            >
               Start
             </button>
           </motion.div>
 
+          {/* ✅ Buttons */}
           <motion.div
             variants={fadeUpVariant}
             className="flex flex-col sm:flex-row gap-4 mt-6 justify-center items-center"
           >
             <button className="bg-black text-white px-6 py-2 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:ring-2 hover:ring-[#FFA500] hover:ring-offset-2">
-  <a
-    href="https://forms.gle/jhJhFcEiMQrGgdub6"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300"
-  >
-    Join now
-  </a>
-</button>
+              <a
+                href="https://forms.gle/jhJhFcEiMQrGgdub6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join now
+              </a>
+            </button>
             <button className="flex items-center gap-2 text-black hover:text-[#FFA500] font-medium transition-all duration-300 hover:scale-105">
-              <FaPlay className="text-[#FFA500] group-hover:animate-pulse" />
+              <FaPlay className="text-[#FFA500]" />
               <a href="https://www.youtube.com/@Glowlogics">Watch Demo</a>
             </button>
           </motion.div>
@@ -153,51 +167,26 @@ export default function HeroSection() {
           animate="show"
           className="flex flex-col items-center gap-4 mt-12 w-full px-4 sm:hidden"
         >
-          {/* Top Small Card */}
-          <motion.div
-            variants={imageCardVariant}
-            className="w-[140px] h-[180px]"
-          >
-            <img
-              src={imageCards[2].img}
-              className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-            />
+          <motion.div variants={imageCardVariant} className="w-[140px] h-[180px]">
+            <img src={imageCards[2].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
           </motion.div>
-
-          {/* Middle Medium Cards */}
           <div className="flex gap-4">
             {[1, 3].map((index) => (
-              <motion.div
-                key={index}
-                variants={imageCardVariant}
-                className="w-[160px] h-[200px]"
-              >
-                <img
-                  src={imageCards[index].img}
-                  className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                />
+              <motion.div key={index} variants={imageCardVariant} className="w-[160px] h-[200px]">
+                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
               </motion.div>
             ))}
           </div>
-
-          {/* Bottom Large Cards */}
           <div className="flex gap-4">
             {[0, 4].map((index) => (
-              <motion.div
-                key={index}
-                variants={imageCardVariant}
-                className="w-[180px] h-[220px]"
-              >
-                <img
-                  src={imageCards[index].img}
-                  className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                />
+              <motion.div key={index} variants={imageCardVariant} className="w-[180px] h-[220px]">
+                <img src={imageCards[index].img} className="rounded-xl shadow-md object-cover w-full h-full transition-transform duration-500 hover:scale-105" />
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* ✅ Grid layout for tablets and above */}
+        {/* ✅ Grid Layout */}
         <motion.div
           className="hidden sm:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-12 w-full max-w-7xl px-4"
           variants={containerVariants}
@@ -208,7 +197,7 @@ export default function HeroSection() {
             <motion.div
               key={index}
               variants={imageCardVariant}
-              className={`group relative overflow-hidden rounded-xl shadow-md mx-auto transform transition-all duration-500 hover:scale-[1.04] hover:shadow-[0_15px_40px_-5px_rgba(255,110,12,0.4)] ${
+              className={`group relative overflow-hidden rounded-xl shadow-md mx-auto transform transition-all duration-500 hover:scale-[1.04] ${
                 card.size === "large"
                   ? "w-[220px] h-[270px]"
                   : card.size === "medium"
@@ -226,7 +215,7 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
-        {/* ✅ Brand/Collaboration Image */}
+        {/* ✅ Collab Image */}
         <motion.div
           className="w-full flex justify-center mt-12 px-4"
           variants={fadeUpVariant}
