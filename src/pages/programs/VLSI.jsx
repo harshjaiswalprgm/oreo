@@ -92,7 +92,7 @@ const roleLogos = {
               </button>
             </a>
             <a
-              href="/public/ProgramsPDF/WEB Syllubus-GLOWLOGICS .pdf"
+              href="/ProgramsPDF/not there"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">

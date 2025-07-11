@@ -96,7 +96,7 @@ const FullStackCourse = () => {
               </button>
             </a>
             <a
-              href="/public/ProgramsPDF/"
+              href="/ProgramsPDF/"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">

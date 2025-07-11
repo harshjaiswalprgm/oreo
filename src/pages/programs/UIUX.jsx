@@ -93,7 +93,7 @@ const FullStackProgram = () => {
               </button>
             </a>
             <a
-              href="/public/ProgramsPDF/UI_UX Syllubus-Glowlogics.pdf"
+              href="/ProgramsPDF/UIUX.pdf"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
