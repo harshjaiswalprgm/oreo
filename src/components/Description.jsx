@@ -30,7 +30,7 @@ function About() {
               {
                 title: "Our Approach",
                 text:
-                  "At TheLearniverse, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
+                  "At Glowlogics, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
                 img: "/ourApproch.jpg",
               },
               {
@@ -70,7 +70,7 @@ function About() {
 
           {/* CTA Button */}
           <button className="flex uppercase gap-4 items-center px-8 py-4 bg-zinc-900 rounded-full text-white shadow-lg hover:bg-[#6b9e17] transition-all duration-300 group mt-10">
-            Read More
+            Brouchure
             <span className="w-2 h-2 bg-orange-100 rounded-full group-hover:scale-125 transition-transform"></span>
           </button>
         </motion.section>
