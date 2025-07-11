@@ -235,7 +235,7 @@ const EventHub = () => {
             className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
           >
             <img
-              src="/public/Workshopp.png"
+              src="/Workshopp.png"
               alt="Hackathon 1"
               className="w-full h-auto object-cover"
             />
@@ -266,7 +266,7 @@ const EventHub = () => {
           className="w-full h-full object-cover"
         >
           <source
-            src="/src/assets/images/HackathonVideo.mp4"
+            src="/HackathonVideo.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
