@@ -67,7 +67,7 @@ const FullStackCourse = () => {
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              No coding background? No problem we’ll guide you step by step!
+              Guaranteed Live Cohorts in the Next 90 Days
             </li>
           </ul>
 
@@ -117,25 +117,31 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          WebDev Certification Program{" "}
+          WebDev Certification Course{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-5xl">
-          At Glowlogics, we help students grow from beginners to confident web developers through a structured,
-          industry-focused learning experience. You’ll start with the basics like HTML, CSS, and JavaScript,
-          then move on to advanced skills including React, Angular, Node.js, and Express.
-Our approach focuses on real-world application, not just theory. 
-          You’ll work on live projects and practical tasks that mirror what’s expected in today’s job market.
-          Throughout the program, experienced mentors from the industry will guide you, helping you build both skills and confidence.
-Whether you're an engineering or degree student, Glowlogics gives you a clear path to turn your interest 
-          in coding into real career opportunities. Join us and start building professional websites and web applications from scratch.
+          Step into the world of web development with GlowLogics, where we
+          transform aspiring developers into industry-ready professionals. Our
+          comprehensive curriculum is designed to take you from beginner to
+          expert, equipping you with everything you need to build modern,
+          dynamic websites and web applications. Whether you’re starting from
+          scratch or looking to sharpen your skills, our course covers all the
+          essentials — from HTML, CSS, and JavaScript basics to advanced topics
+          like front-end frameworks (React, Angular) and back-end development
+          (Node.js, Express). Through hands-on projects and real-world
+          applications, you’ll gain the practical experience needed to thrive in
+          today’s tech-driven world. Learn from expert instructors with years of
+          industry experience, offering personalized guidance to help you master
+          web development at your own pace. Join GlowLogics today — and turn
+          your passion for coding into a career you’ll love!
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Program Key Features
+              WebDev Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
               ✅ 100% ISO Verified Internship
@@ -148,9 +154,12 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
               "Flexible Course Access for Working Professionals and Students",
               "Get Certified with a Course Completion Certificate, Internship Certificate, and Placement Training Certificate – All Included!",
               "Live Mentorship by Seasoned Industry Professionals",
+              "Assigned Learning Manager for Personalized Support",
               "Unlimited Lifetime Access to Course Materials",
               "Globally Validated Certification – Backed by ISO & MSME",
+              "Access All Course Content for an Entire Year",
               "Comprehensive Career Guidance & Assistance",
+              "Career Prospects Across Industries and Roles",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -165,17 +174,21 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "HTML, CSS, JavaScript Basics",
-              "Responsive Web Design",
-              "React, Angular, or Vue.js Frameworks",
-              "Front-End Tools: Webpack, Babel",
-              "Node.js & Express.js Backend Development",
-              "RESTful API Creation",
-              "SQL & MongoDB Database Management",
-              "Full Stack Integration (Frontend + Backend Connection)",
-              "Authentication & Authorization",
-              "Cloud Deployment (AWS, Heroku)",
-              "Building Real-World Web Applications",
+              "HTML5 & CSS3 Fundamentals",
+              "JavaScript (ES6+) Programming",
+              "Responsive Web Design with Flexbox & Grid",
+              "Version Control using Git & GitHub",
+              "Frontend Frameworks (React.js)",
+              "Backend Development with Node.js & Express.js",
+              "Database Integration with MongoDB",
+              "RESTful API Design & Integration",
+              "Authentication & Authorization (JWT/OAuth)",
+              "Deployment & Hosting (Netlify, Vercel, Render)",
+              "Debugging & Browser Dev Tools",
+              "Basic DevOps & CI/CD Concepts",
+              "State Management (Redux or Context API)",
+              "Project Planning & Agile Workflow",
+              "Portfolio Development & GitHub Project Showcase",
             ].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
@@ -190,14 +203,14 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The Web Development Certification Program at Glowlogics is designed to help you build real, 
-          job-ready web development skills. You’ll learn both frontend and backend technologies
-          while working on real-world projects that reflect what companies expect.
-          Along with hands-on experience, you’ll earn an ISO and MSME-recognized certification
-          that adds genuine value to your profile. The program includes personalized mentor support,
-          lifetime access to learning materials, and career assistance to help you explore opportunities 
-          in industries like tech, finance, healthcare, and beyond. Whether you're just starting
-          out or looking to grow, this program is built to help you move forward confidently.
+          The WebDev® Certification Program empowers you with the skills and
+          hands-on experience needed to thrive in today’s digital economy. From
+          mastering frontend and backend technologies to building real-world
+          projects, you will gain job-ready expertise backed by ISO and
+          MSME-recognized certification. With personalized mentorship, lifetime
+          access to learning resources, and dedicated career support, this
+          program opens doors to exciting roles across tech, finance,
+          healthcare, and more.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -239,37 +252,76 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Web Development Training{" "}
+            WebDevelopment Certification Course{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
+          {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              The WebDevelopment<sup>®</sup> certification is a valuable
+              credential for professionals seeking to build a successful career
+              in web and software development across various industries. This
+              program is ideal for: Aspiring Web Developers, Frontend/Backend
+              Developers, Full Stack Developers, Software Engineers, UI/UX
+              Enthusiasts, Tech Entrepreneurs, and any professional aiming to
+              gain hands-on experience in modern web technologies and
+              frameworks.
+            </p>
+          </div>
+
+          {/* Eligibility */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <p>
+              The WebDevelopment® Certification is open to graduates, final-year
+              students, software developers, team leads, and professionals from
+              any background looking to build or transition into a career in web
+              development. Whether you are a fresher or an experienced
+              professional, this program is designed to equip you with job-ready
+              skills in modern web technologies.
+            </p>
+          </div>
+
+          {/* Pre-requisites */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
+            <p>
+              No prior coding experience is required to join the WebDevelopment®
+              Certification Program. Basic computer literacy and a willingness
+              to learn are all you need. However, familiarity with fundamental
+              programming concepts or HTML/CSS can be helpful but is not
+              mandatory.
+            </p>
+          </div>
+
           {/* Course Content */}
           <div className="mt-8 space-y-3">
-            <h3 className="text-xl font-semibold mb-4">Program Modules</h3>
+            <h3 className="text-xl font-semibold mb-4">Course Content</h3>
 
             {[
               {
                 title: "Module 1: Introduction to Web Development",
                 lessons: [
-                  { name: "Basics of HTML, CSS, JavaScript"},
-                  { name: "Setting up your development environment"},
+                  { name: "Basics of HTML, CSS, JavaScript", preview: "#" },
                 ],
               },
               {
                 title: "Module 2: Advanced Front-End Technologies",
-                lessons: [{ name: "Building responsive websites"}],
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
                 title: "Module 3: Back-End Development",
-                lessons: [{ name: "Node.js, Express.js, RESTful API creation", preview: "#" }],
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
                 title: "Module 4: Full Stack Development Integration",
-                lessons: [{ name: "Connecting front-end and back-end", preview: "#" }],
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
                 title: "Module 5: Capstone Project",
-                lessons: [{ name: "Develop a fully functional web application", preview: "#" }],
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
             ].map((section, index) => (
               <div
@@ -323,47 +375,48 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "Who can join this Web Development Certification program",
-                  a: "Engineering and degree students from any year (1st–4th year) or background can join. No prior coding experience is required..",
+                  q: "How to get a WebDevelopment® certification?",
+                  a: (
+                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
+                      <li>Meet the eligibility requirements</li>
+                      <li>
+                        Enroll in an accredited WebDevelopment certification
+                        training course
+                      </li>
+                      <li>Meet the exam eligibility requirements</li>
+                      <li>Apply for the WebDevelopment exam with PMI</li>
+                      <li>Pass your exam to earn certification</li>
+                    </ul>
                   ),
                 },
                 {
-                  q: "Do I need to know programming before enrolling?",
-                  a: "No. The course starts from basics like HTML, CSS, and JavaScript. We cover both beginner and advanced topics step by step.",
+                  q: "What are the WebDevelopment certification requirements?",
+                  a: "Eligibility criteria vary, usually requiring education and project experience.",
                 },
                 {
-                  q: "What skills will I learn in this program?",
-                  a: "You’ll learn frontend development (HTML, CSS, JavaScript, React), backend development (Node.js, Express), databases (MongoDB, SQL), API creation, project deployment, and building complete websites and apps.",
+                  q: "How long is the WebDevelopment certification valid for?",
+                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
                 },
                 {
-                  q: "How long is the program, and what is the learning mode?",
-                  a: "The course typically runs for 2–3 months with 50+ hours of live or guided learning sessions, including project work. Sessions are conducted online.",
+                  q: "How do I schedule my WebDevelopment® certification exam?",
+                  a: "Once you complete the course, log in to your student portal, select an available exam date or center, and follow the scheduling instructions.",
                 },
                 {
-                  q: "Will I get a certificate after completing the course?",
-                  a: "Yes. You’ll receive an ISO- and MSME-recognized Web Development Certification upon completing training and submitting required projects.",
+                  q: "Do you provide any practice tests as part of the course?",
+                  a: "Yes, the course includes full-length mock tests, topic-wise quizzes, and practice questions to help you prepare thoroughly.",
                 },
                 {
-                  q: "Are there real projects involved?",
-                  a: "Yes. You’ll work on minor and major projects that simulate real-world website and app development tasks.",
+                  q: "Is prior coding experience required for this course?",
+                  a: "No, the course starts with beginner-friendly content. We guide you step by step through the learning path, even if you’ve never coded before.",
                 },
                 {
-                  q: "What kind of career support is provided?",
-                  a: "We offer resume reviews, LinkedIn profile guidance, GitHub portfolio setup help, mock interviews, and placement forwarding to our partner companies.",
+                  q: "What technologies will I learn in this course?",
+                  a: "You'll learn HTML, CSS, JavaScript, React, Node.js, MongoDB, and other essential tools to become a full-stack web developer.",
                 },
                 {
-                  q: "Is there any placement guarantee?",
-                  a: "We provide placement assistance, but actual job offers depend on individual performance, skills, and interview outcomes.",
+                  q: "Do you offer job placement support?",
+                  a: "Yes, we offer resume assistance, portfolio reviews, mock interviews, and placement support through our hiring partners.",
                 },
-                {
-                  q: "What tools or software do I need before starting?",
-                  a: "A laptop with a stable internet connection. You’ll be guided to install free development tools like VS Code, Node.js, and GitHub.",
-                },
-                {
-                  q: "How do I register and pay the course fee?",
-                  a: "You can register through our official Payment link/Company QR Code only. Payment details will be shared after registration confirmation.",
-                },
-
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
@@ -409,7 +462,7 @@ Whether you're an engineering or degree student, Glowlogics gives you a clear pa
         </div>
         <div className=" py-12 overflow-hidden">
           <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-            Hear from Our Learners.
+            Admiration expressed by others regarding our presence.
           </h2>
 
           <div className="relative w-full space-y-8 overflow-x-hidden">
