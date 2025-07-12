@@ -53,30 +53,28 @@ const roleLogos = {
           VLSI
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-           Become a Job-Ready VLSI Engineer | Master Digital Design, Verilog, RTL Simulation & ASIC/FPGA Implementation
+           From Circuit Design to FPGA Programming — Complete VLSI Skillset
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Build real-world VLSI design projects using industry-standard tools
+  ISO-Certified VLSI Training with industry-recognized certification.
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Mentorship from Semiconductor Industry Experts working in MNCs.
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Hands-On Projects including RTL Design, Simulation, and FPGA Implementation.
 </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Master Digital Design, Verilog, RTL Coding, Synthesis & FPGA Flow
+  Exposure to Industry-Standard Tools like Verilog, ModelSim, and Vivado.
 </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Career Mentorship + Hands-on Portfolio for Semiconductor Roles
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Includes resume building, mock interviews & LinkedIn optimization
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Guaranteed Live Cohorts Starting Within the Next 90 Days
+  Project Portfolio Development to showcase real-world skills to recruiters.
 </li>
           </ul>
 
