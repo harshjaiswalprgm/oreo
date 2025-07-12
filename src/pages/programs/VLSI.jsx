@@ -61,6 +61,7 @@ const roleLogos = {
             <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
   ISO-Certified VLSI Course Completion Certificate
+  </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
   Flexible Learning Format: Live Classes with Doubt Clarification
