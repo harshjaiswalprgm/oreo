@@ -383,7 +383,7 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-700">
+           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
   <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
     Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
   </h3>
