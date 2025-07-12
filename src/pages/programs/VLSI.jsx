@@ -53,7 +53,7 @@ const roleLogos = {
           VLSI
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-           Become a Job-Ready VLSI Engineer | Master Digital Design, Verilog, RTL Simulation & ASIC / FPGA Implementation
+           Become a Job-Ready VLSI Engineer | Master Digital Design, Verilog, RTL Simulation & ASIC
           </p>
 
           {/* Benefits */}
