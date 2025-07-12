@@ -44,7 +44,7 @@ const FullStackCourse = () => {
             Full-Stack Web Development
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Learn to Build Modern Websites and Web Applications from Scratch
+            Learn to Build Modern Websites and Web Applications
           </p>
 
           {/* Benefits */}
