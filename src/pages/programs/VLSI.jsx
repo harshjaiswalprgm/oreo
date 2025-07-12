@@ -53,30 +53,29 @@ const roleLogos = {
           VLSI
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-           Become a Job-Ready VLSI Engineer | Master Digital Design, Verilog, RTL Simulation & ASIC
+           Step Into VLSI Engineering with ISO-Certified Training
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Build real-world VLSI design projects using industry-standard tools
+  ISO-Certified VLSI Course Completion Certificate
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Flexible Learning Format: Live Classes with Doubt Clarification
 </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Master Digital Design, Verilog, RTL Coding, Synthesis & FPGA Flow
+  Real-World VLSI Projects for Portfolio Building
 </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Career Mentorship + Hands-on Portfolio for Semiconductor Roles
+  Hands-On Practice with RTL Coding, Simulation, Synthesis, and FPGA Flow
 </li>
 <li className="flex items-start">
   <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Includes resume building, mock interviews & LinkedIn optimization
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Guaranteed Live Cohorts Starting Within the Next 90 Days
+  Resume Building and LinkedIn Profile Guidance
 </li>
           </ul>
 
@@ -131,19 +130,18 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-         VLSI Certification Course{" "}
+         VLSI Certification Program{" "}
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-         Glowlogics’ VLSI Design Training Program equips learners with the essential skills needed to design and develop complex integrated circuits used in modern electronic systems. The course covers core concepts such as digital design, Verilog HDL, RTL coding, synthesis, timing analysis, and FPGA/ASIC implementation. Learners will gain hands-on experience with industry-standard tools like Synopsys, Cadence, and Xilinx, working on real-world projects that simulate semiconductor workflows. This program is ideal for electronics, electrical, and computer engineering students or professionals aspiring to become job-ready VLSI design engineers.
-
+          Glowlogics VLSI Design Training Program is designed to help students and professionals become industry-ready VLSI engineers. The program covers key skills required to design and develop complex integrated circuits used in today’s electronic devices. You’ll learn digital design fundamentals, Verilog HDL, RTL coding, synthesis, timing analysis, and FPGA/ASIC implementation. Along with theory, you’ll gain practical experience using industry-standard tools like Synopsys, Cadence, and Xilinx by working on real-world projects that reflect actual semiconductor workflows. This program is ideal for electronics, electrical, and computer engineering students looking to build a career in VLSI design.
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-             VLSI Course Key Features
+             VLSI Program Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
     ✅ 100% ISO Verified Internship
@@ -151,17 +149,14 @@ const roleLogos = {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
             {[
-              "Get Ahead and Stay Ahead With 50+ Hours of Dynamic, Live Virtual Learning",
-              "3 Portfolio-Driven Capstone Projects for Real-World Readiness",
-              "Flexible Course Access for Working Professionals and Students",
-              "Get Certified with a Course Completion Certificate, Internship Certificate, and Placement Training Certificate – All Included!",
-              "Live Mentorship by Seasoned Industry Professionals",
-              "Assigned Learning Manager for Personalized Support",
-              "Unlimited Lifetime Access to Course Materials",
-              "Globally Validated Certification – Backed by ISO & MSME",
-              "Access All Course Content for an Entire Year",
-              "Comprehensive Career Guidance & Assistance",
-              "Career Prospects Across Industries and Roles",
+              "ISO-Certified Program with Industry Recognition",
+              "Training on Industry-Standard Tools: Synopsys, Cadence, Xilinx",
+              "Hands-On Projects: RTL Design, Simulation, ASIC/FPGA Flow",
+              "Master Verilog HDL, RTL Coding, Synthesis, and Timing Analysis",
+              "Mentorship from Semiconductor Industry Professionals",
+              "Portfolio Development with Real-World VLSI Projects",
+              "Resume Building, LinkedIn Profile Optimization",
+              "Flexible Online Learning with Live Sessions and Doubt Clearing",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-blue-600 text-xl">✔</span>
@@ -176,14 +171,16 @@ const roleLogos = {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "Work breakdown structure",
-              "Project cost estimating",
-              "Resource allocation",
-              "Cost management",
-              "Gantt charts",
-              "Engineering economics",
-              "Mathematical project scheduling models",
-              "Leadership",
+              "VLSI Design Flow Understanding",
+              "MOSFET Theory and Device Scaling",
+              "CMOS Logic Design and Optimization",
+              "Combinational and Sequential Logic Circuit Design",
+              "Verilog HDL Programming for Digital Circuits",
+              "Static Timing Analysis and Power Optimization",
+              "FPGA Programming and Implementation Using Verilog",
+              "Clock Skew, Setup/Hold Time, and Power Reduction Methods",
+               "Knowledge of Advanced VLSI Technologies (FinFETs, 3D ICs)",
+               "Awareness of Industry Trends and Career Paths in VLSI", 
             ].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
@@ -198,7 +195,8 @@ const roleLogos = {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-         The VLSI® Certification can help you launch a rewarding career in the semiconductor and electronics industries, with growing demand across sectors like IT, consumer electronics, automotive, healthcare, and telecommunications. Certified VLSI professionals are equipped with skills in digital design, RTL coding, and hardware implementation—making them highly valuable in chip design and development roles. With the rapid advancement of AI, IoT, and 5G technologies, VLSI experts are in high demand and often receive competitive salaries, global job opportunities, and accelerated career growth.
+        The VLSI® Certification opens doors to a strong career in semiconductor and electronics industries, where demand is growing across IT, consumer tech, automotive, healthcare, and telecom sectors. Certified VLSI professionals gain practical skills in digital design, RTL coding, simulation, and hardware implementation—making them key contributors in chip design and development teams.
+        As technologies like AI, IoT, and 5G continue to expand, skilled VLSI engineers are highly sought after, offering access to competitive salaries, global job opportunities, and faster career growth in leading companies around the world.
         </p>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -238,93 +236,58 @@ const roleLogos = {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-           VLSIelopment Certification Course{" "}
+           VLSI Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
-            <p>
-              TheVLSIelopment<sup>®</sup> certification is an essential professional
-              requirement for senior project manager roles across all
-              industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
-            </p>
-          </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend
-              GlowlogicsVLSIelopment Certification Training. To qualify for theVLSIelopment
-              exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
-
           {/* Course Content */}
           <div className="mt-8 space-y-3">
-            <h3 className="text-xl font-semibold mb-4">Course Content</h3>
+            <h3 className="text-xl font-semibold mb-4">Program Content</h3>
 
             {[
               {
-                title: "Module 01: Course Introduction",
+                title: "Module 1: Introduction to VLSI",
                 lessons: [
                   {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
+                    name: "Overview of VLSI technology",
                   },
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2: MOS Transistor Theory",
+                lessons: [{ name: "MOSFET basics: Structure and operation"}],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: CMOS Technology and Design",
+                lessons: [{ name: "CMOS Inverter: Operation and characteristics"}],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: Combinational Logic Design",
+                lessons: [{ name: "Design and analysis of combinational circuits"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Sequential Logic Design",
+                lessons: [{ name: "Latches, flip-flops, and registers"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: Physical Design and Layout",
+                lessons: [{ name: "Layout design using EDA tools (e.g., Cadence, Synopsys)"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7: Timing and Power Analysis",
+                lessons: [{ name: "Techniques to reduce power consumption: Clock gating, voltage scaling"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 8: Design for Testability (DFT)",
+                lessons: [{ name: "Fault models and automatic test pattern generation (ATPG)"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 9: FPGA Basics and Programming",
+                lessons: [{ name: "FPGA vs ASIC"}],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 10: Industry Trends and Future Scope",
+                lessons: [{ name: "Recent advancements in VLSI (FinFETs, 3D ICs, Quantum Computing)"}],
               },
             ].map((section, index) => (
               <div
