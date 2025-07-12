@@ -555,3 +555,4 @@ const roleLogos = {
 };
 
 export default FullStackCourse;
+Footer
