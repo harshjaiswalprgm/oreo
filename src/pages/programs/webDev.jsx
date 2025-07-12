@@ -290,7 +290,7 @@ const FullStackCourse = () => {
             <p>
               No prior coding experience is required to join the WebDevelopment®
               Certification Program. Basic computer literacy and a willingness
-              to learn are all you need. However, familiarity with fundamental
+              to learn are all you need. However,familiarity with fundamental
               programming concepts or HTML/CSS can be helpful but is not
               mandatory.
             </p>
