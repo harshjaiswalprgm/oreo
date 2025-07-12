@@ -452,39 +452,92 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-          <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
-            {[
-              "/CourseCompletionGlowlogics.png",
-              "/InternshipGlowlogics.png",
-              "/PlacementGlowlogics.png",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="border rounded-lg shadow-md overflow-hidden"
-                onMouseMove={(e) => {
-                  const img = document.getElementById(`cert-img-${index}`);
-                  if (img) {
-                    const rect = img.getBoundingClientRect();
-                    const x = ((e.clientX - rect.left) / rect.width) * 100;
-                    const y = ((e.clientY - rect.top) / rect.height) * 100;
-                    img.style.transformOrigin = `${x}% ${y}%`;
-                  }
+          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
+  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+  </h3>
+
+  {/* Countdown Grid */}
+
+</div> <div
+              id="cert-container"
+              className="border rounded-lg shadow-md overflow-hidden w-full"
+              onMouseMove={(e) => {
+                const img = document.getElementById("cert-img");
+                if (img) {
+                  const rect = img.getBoundingClientRect();
+                  const x = ((e.clientX - rect.left) / rect.width) * 100;
+                  const y = ((e.clientY - rect.top) / rect.height) * 100;
+                  img.style.transformOrigin = `${x}% ${y}%`;
+                }
+              }}
+              onMouseLeave={() => {
+                const img = document.getElementById("cert-img");
+                if (img) {
+                  img.style.transformOrigin = "center center";
+                }
+              }}
+            >
+              <img
+                id="cert-img"
+                src="/CourseCompletionGlowlogics.png"
+                alt="Certificate 1"
+                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+              />
+            </div>
+
+            <div className="flex gap-6 mt-4">
+              <button
+                onClick={() => {
+                  const certificates = [
+                    "/CourseCompletionGlowlogics.png",
+                    "/InternshipGlowlogics.png",
+                    "/PlacementGlowlogics.png",
+                  ];
+                  let currentIndex =
+                    parseInt(
+                      document
+                        .getElementById("cert-img")
+                        .getAttribute("data-index")
+                    ) || 0;
+                  currentIndex =
+                    (currentIndex - 1 + certificates.length) %
+                    certificates.length;
+                  const img = document.getElementById("cert-img");
+                  img.src = certificates[currentIndex];
+                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+                  img.setAttribute("data-index", currentIndex);
                 }}
-                onMouseLeave={() => {
-                  const img = document.getElementById(`cert-img-${index}`);
-                  if (img) {
-                    img.style.transformOrigin = "center center";
-                  }
-                }}
+                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
               >
-                <img
-                  id={`cert-img-${index}`}
-                  src={src}
-                  alt={`Certificate ${index + 1}`}
-                  className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-                />
-              </div>
-            ))}
+                ◀
+              </button>
+
+              <button
+                onClick={() => {
+                  const certificates = [
+                    "/CourseCompletionGlowlogics.png",
+                    "/InternshipGlowlogics.png",
+                    "/PlacementGlowlogics.png",
+                  ];
+                  let currentIndex =
+                    parseInt(
+                      document
+                        .getElementById("cert-img")
+                        .getAttribute("data-index")
+                    ) || 0;
+                  currentIndex = (currentIndex + 1) % certificates.length;
+                  const img = document.getElementById("cert-img");
+                  img.src = certificates[currentIndex];
+                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+                  img.setAttribute("data-index", currentIndex);
+                }}
+                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+              >
+                ▶
+              </button>
+            </div>
           </div>
         </div>
         <div className=" py-12 overflow-hidden">
