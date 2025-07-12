@@ -17,6 +17,58 @@ const images = [
   // Add more unique images if you want
 ];
 
+// const placementData = [
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+//   {
+//     name: "Harsh",
+//     company: "Glowlogics",
+//     placed: "6 Students",
+//     img: "/pasportsize.jpg",
+//   },
+
+// ];
+
 export default function About3DMarquee() {
   const [speed, setSpeed] = useState(35);
 
@@ -137,6 +189,40 @@ export default function About3DMarquee() {
             </div>
           </div>
 
+          {/* <div className="w-full  py-12 px-4">
+            <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+              🎓 Our Placed Students
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {placementData.map((student, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden relative hover:shadow-2xl transition duration-300"
+                  initial={{ y: index % 2 === 0 ? -20 : 20 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                >
+                  <div className="h-48 w-full overflow-hidden">
+                    <img
+                      src={student.img}
+                      alt={student.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h2 className="text-lg font-semibold">{student.name}</h2>
+                    <p className="text-sm text-gray-600">
+                      Placed at <strong>{student.company}</strong>
+                    </p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      {student.placed}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div> */}
+
           <div className="mt-20">
             <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl flex flex-col md:flex-row items-center">
               {/* Text Content */}
@@ -174,7 +260,7 @@ export default function About3DMarquee() {
         </div>
       </div>
 
-<div className="relative max-w-6xl mx-auto p-6 pt-20 my-20 shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out rounded-xl flex flex-col md:flex-row items-center gap-10">
+      <div className="relative max-w-6xl mx-auto p-6 pt-20 my-20 shadow-xl border border-gray-300 bg-white hover:shadow-2xl transition duration-500 ease-in-out rounded-xl flex flex-col md:flex-row items-center gap-10">
         {/* Floating Poster Image - increased size */}
         <div className="absolute -top-14 left-6 w-48 md:w-60 shadow-lg rounded-lg bg-white p-2 hover:scale-95 transition-transform duration-300">
           <img
@@ -190,16 +276,24 @@ export default function About3DMarquee() {
         {/* Center Content */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2">
-        Glowlogics × E-Cell IIT Hyderabad
+            Glowlogics × E-Cell IIT Hyderabad
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-          We’ve partnered with {" "}
+            We’ve partnered with{" "}
             <span className="font-semibold text-black">
               E-Cell IIT Hyderabad
+            </span>{" "}
+            to promote innovation, entrepreneurship, and industry-relevant
+            learning.{" "}
+            <span className="font-semibold">
+              {" "}
+              This collaboration will open doors for impactful events,{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold">
+              mentorship, and growth opportunities for students across India.
             </span>
-          {" "}  to promote innovation, entrepreneurship, and industry-relevant learning.{" "}
-            <span className="font-semibold">  This collaboration will open doors for impactful events,  </span> and{" "}
-            <span className="font-semibold">mentorship, and growth opportunities for students across India.</span>.
+            .
           </p>
         </div>
 
@@ -229,16 +323,24 @@ export default function About3DMarquee() {
         {/* Center Content */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2">
-        Glowlogics × IIT Bombay Techfest
+            Glowlogics × IIT Bombay Techfest
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-           Excited to announce our collaboration with {" "}
+            Excited to announce our collaboration with{" "}
             <span className="font-semibold text-black">
-               IIT Bombay Techfest!
+              IIT Bombay Techfest!
+            </span>{" "}
+            Together, we aim to foster{" "}
+            <span className="font-semibold">
+              {" "}
+              innovation, boost skill development,{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold">
+              and unlock new career opportunities for students and tech
+              enthusiasts across India.
             </span>
-          {" "}  Together, we aim to foster{" "}
-            <span className="font-semibold"> innovation, boost skill development, </span> and{" "}
-            <span className="font-semibold">and unlock new career opportunities for students and tech enthusiasts across India.</span>.
+            .
           </p>
         </div>
 
