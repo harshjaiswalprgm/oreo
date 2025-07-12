@@ -6,25 +6,25 @@ const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
   const roleLogos = {
-    "Project Director": [
+    "Career Paths": [
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
       "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
     ],
-    "Senior Project Manager": [
+    "Full Stack Web Developer": [
       "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
       "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
       "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
     ],
-    "Team Leads/Team Managers": [
+    "Software Engineer (Web Technologies)": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
     ],
-    "Project Management Officer (PMO)": [
+    "MERN Stack Developer": [
       "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
       "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
