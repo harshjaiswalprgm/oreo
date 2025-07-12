@@ -32,7 +32,7 @@ import EventHub from "./pages/EventHub"; //   added
 //////////////////////////////////////////////////////////////////////////////////
 
 
-import WebDev from "./pages/programs/webDev";
+// import WebDev from "./pages/programs/webDev";
 // import VLSI from "./pages/programs/VLSI";
 import UIUX from "./pages/programs/UIUX";
 import Ai from "./pages/programs/Ai";
@@ -129,7 +129,7 @@ function App() {
   <Route path="/legal-terms" element={<LegalTerms />} />
 
   {/* 📘 Program Pages */}
-  <Route path="/programs/webDev" element={<WebDev />} />
+  {/* <Route path="/programs/webDev" element={<WebDev />} /> */}
   {/* <Route path="/programs/VLSI" element={<VLSI />} /> */}
   <Route path="/programs/UIUX" element={<UIUX />} />
   <Route path="/programs/Ai" element={<Ai />} />
