@@ -59,7 +59,7 @@ const FullStackCourse = () => {
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
+              Career Mentorship + GitHub Portfolio and ...
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
