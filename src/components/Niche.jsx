@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -32,31 +33,67 @@ export default function Footer() {
               <div>
                 <p className="font-semibold mb-1">S:</p>
                 <ul className="space-y-1">
-                  <li><a href="#" className="underline">Instagram</a></li>
-                  <li><a href="#" className="underline">Behance</a></li>
-                  <li><a href="#" className="underline">Facebook</a></li>
-                  <li><a href="#" className="underline">LinkedIn</a></li>
+                  <li>
+                    <a href="https://www.instagram.com/glowlogics/" className="underline">
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                     LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                     WhatsApp
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-semibold mb-1">L:</p>
+                <p className="font-semibold mb-1">A:</p>
                 <ul className="space-y-1 break-words">
-                  <li><a href="#" className="underline">Shree Narayana Tower, HSR Layout</a></li>
-                  <li><a href="#" className="underline">Outer Ring Rd</a></li>
-                  <li><a href="#" className="underline">Jakkasandra, 1st Block Koramangala</a></li>
-                  <li><a href="#" className="underline">Bengaluru, Karnataka 560034</a></li>
+                  <li>
+                    <a href="#" className="underline">
+                      Shree Narayana Tower, HSR Layout
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Outer Ring Rd
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Jakkasandra, 1st Block Koramangala
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Bengaluru, Karnataka 560034
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-semibold mb-1">E:</p>
-                <a href="mailto:hr@glowlogics.in" className="underline">hr@glowlogics.in</a>
+                <p className="font-semibold mb-1">M:</p>
+                <a href="mailto:hr@glowlogics.in" className="underline">
+                  hr@glowlogics.in
+                </a>
               </div>
 
               <div>
                 <p className="font-semibold mb-1">P:</p>
-                <a href="tel:+919620294767" className="underline">+91 9620294767</a>
+                <a href="tel:+919620294767" className="underline">
+                  +91 9620294767
+                </a>
               </div>
             </div>
 
@@ -64,12 +101,36 @@ export default function Footer() {
             <div className="space-y-4">
               <p className="font-semibold mb-1">M:</p>
               <ul className="space-y-1">
-                <li><a href="#" className="underline">Home</a></li>
-                <li><a href="#" className="underline">Services</a></li>
-                <li><a href="#" className="underline">Our Work</a></li>
-                <li><a href="#" className="underline">About Us</a></li>
-                <li><a href="#" className="underline">Insights</a></li>
-                <li><a href="#" className="underline">Contact Us</a></li>
+                <li>
+                  <a href="#" className="underline">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Programs
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Career
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    EventHub
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -77,10 +138,26 @@ export default function Footer() {
             <div className="space-y-4">
               <p className="font-semibold mb-1">Explore:</p>
               <ul className="space-y-1">
-                <li><a href="#" className="underline">Careers</a></li>
-                <li><a href="#" className="underline">Blog</a></li>
-                <li><a href="#" className="underline">Partners</a></li>
-                <li><a href="#" className="underline">Press Kit</a></li>
+                <li>
+                  <a href="#" className="underline">
+                    Latest Tech Trends
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Career Tips
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Industry Insights
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="underline">
+                    Learning Resources
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -104,9 +181,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           <p className="text-center">
-           © GlowLogics Solutions All Rights Reserved{" "}
-            <Link to="/legal-terms" className="underline"> Legal Terms</Link> |{" "}
-            <Link to="/privacy-policy" className="underline">Privacy Policy</Link>
+            © GlowLogics Solutions All Rights Reserved{" "}
+            <Link to="/legal-terms" className="underline">
+              {" "}
+              Legal Terms
+            </Link>{" "}
+            |{" "}
+            <Link to="/privacy-policy" className="underline">
+              Privacy Policy
+            </Link>
           </p>
           <p className="text-center">Website by Glowlogics</p>
         </div>

@@ -252,7 +252,7 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+           Web Development Certification Program {" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
@@ -271,30 +271,6 @@ const FullStackCourse = () => {
             </p>
           </div>
 
-          {/* Eligibility */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
-            <p>
-              The WebDevelopment® Certification is open to graduates, final-year
-              students, software developers, team leads, and professionals from
-              any background looking to build or transition into a career in web
-              development. Whether you are a fresher or an experienced
-              professional, this program is designed to equip you with job-ready
-              skills in modern web technologies.
-            </p>
-          </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior coding experience is required to join the WebDevelopment®
-              Certification Program. Basic computer literacy and a willingness
-              to learn are all you need. However, familiarity with fundamental
-              programming concepts or HTML/CSS can be helpful but is not
-              mandatory.
-            </p>
-          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

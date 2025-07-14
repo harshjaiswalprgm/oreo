@@ -245,38 +245,20 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Cyber Security elopment Certification Course{" "}
+            Cyber Security Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The Cyber Security elopment<sup>®</sup> certification is an essential
-              professional requirement for senior project manager roles across
-              all industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
+              Cyber Security<sup>®</sup> (AIPro) is the practice of protecting systems, networks, and data from digital threats, unauthorized access, and cyberattacks. This program is designed to provide learners with a solid foundation in security principles, ethical hacking, network defense, cryptography, and risk management. Through hands-on labs and real-world scenarios, participants will learn how to detect vulnerabilities, respond to incidents, and implement robust security measures. Ideal for students, IT professionals, and anyone interested in securing the digital world, this program prepares you for careers in cybersecurity, ethical hacking, and information security management.
+
+
             </p>
           </div>
 
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              Cyber Security elopment Certification Training. To qualify for the
-              Cyber Security elopment exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

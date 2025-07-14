@@ -238,37 +238,18 @@ const roleLogos = {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-           VLSIelopment Certification Course{" "}
+           VLSI Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+           {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              TheVLSIelopment<sup>®</sup> certification is an essential professional
-              requirement for senior project manager roles across all
-              industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
-            </p>
-          </div>
+              VLSI<sup>®</sup>  (Very-Large-Scale Integration) is the process of creating integrated circuits by combining thousands to millions of transistors onto a single chip. It is a key technology behind modern electronics, enabling the development of compact, high-performance devices such as smartphones, computers, and embedded systems. VLSI design plays a crucial role in advancing semiconductor technology and is foundational to fields like embedded systems, IoT, and artificial intelligence.
 
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend
-              GlowlogicsVLSIelopment Certification Training. To qualify for theVLSIelopment
-              exam you should either have:
+
             </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
           </div>
 
           {/* Course Content */}

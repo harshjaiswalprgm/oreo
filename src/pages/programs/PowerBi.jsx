@@ -244,11 +244,19 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Power BI elopment Certification Course{" "}
+            Power BI Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              Power BI<sup>®</sup>  is a powerful business analytics tool developed by Microsoft that enables users to visualize data, share insights, and make informed decisions through interactive dashboards and reports. This program is designed to help learners understand the complete data analysis lifecycle — from data collection and cleaning to modeling, visualization, and storytelling. Whether you are a beginner or a professional looking to enhance your data skills, the Power BI program equips you with the knowledge to turn raw data into actionable insights, making it a valuable asset for careers in business intelligence, data analysis, and decision-making.
+
+
+            </p>
+          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

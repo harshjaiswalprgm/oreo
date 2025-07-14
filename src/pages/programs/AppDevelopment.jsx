@@ -259,11 +259,20 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            App Developmentelopment Certification Course{" "}
+            App Development Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+
+          {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              App Development<sup>®</sup>  is the process of creating software applications that run on mobile devices such as smartphones and tablets. This program is designed to teach learners how to build both Android and iOS apps using popular tools and frameworks like Flutter, React Native, Kotlin, and Swift. From UI/UX design principles to backend integration and API handling, the course covers the complete app development lifecycle. Through hands-on projects and real-world use cases, participants will gain the skills needed to create user-friendly, high-performing mobile applications, preparing them for careers in tech startups, product development, and freelance app design.
+
+            </p>
+          </div>
+
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
