@@ -246,41 +246,17 @@ const FullStackProgram = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            UIUXelopment Certification Program{" "}
+            UIUX Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+           {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The UIUX® Certification can open doors to creative and high-paying
-              roles across industries like IT, finance, healthcare, e-commerce,
-              and digital media. Certified UI/UX designers are skilled in
-              crafting user-friendly, visually engaging digital experiences that
-              drive business success. With companies placing a strong emphasis
-              on customer experience, UIUX® certified professionals are in high
-              demand — often rewarded with career growth, global opportunities,
-              and competitive salaries in today’s design-driven world.
+              UI/UX<sup>®</sup> Design refers to the process of enhancing user satisfaction by improving the usability, accessibility, and overall interaction experience with a digital product. UI (User Interface) design focuses on the visual elements — such as layouts, colors, typography, and interactive components — ensuring the product is visually appealing and easy to navigate. UX (User Experience) design, on the other hand, is centered around understanding user behavior and designing seamless, intuitive experiences that solve real problems. Together, UI and UX create products that are not only functional but also enjoyable to use.
             </p>
           </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              UIUXelopment Certification Training. To qualify for the
-              UIUXelopment exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
-
           {/* Program Content */}
           <div className="mt-8 space-y-3">
             <h3 className="text-xl font-semibold mb-4">Program Content</h3>

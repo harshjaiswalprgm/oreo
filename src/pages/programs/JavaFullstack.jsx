@@ -81,7 +81,7 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-           <a
+            <a
               href="https://rzp.io/rzp/GL6k"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,10 +90,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/JAVA.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/JAVA.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -258,11 +255,27 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Java FullStackelopment Certification Course{" "}
+            Java FullStack Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              Java Full Stack<sup>®</sup> Development is a comprehensive program
+              that covers both front-end and back-end development using Java and
+              related technologies. This course equips learners with the skills
+              to build complete, end-to-end web applications — starting from
+              designing responsive user interfaces to developing robust
+              server-side logic and managing databases. With hands-on training
+              in tools like HTML, CSS, JavaScript, Java, Spring Boot, and SQL,
+              the program prepares you to handle real-world development
+              projects. Ideal for aspiring developers, this program opens doors
+              to exciting career opportunities in software development, web
+              applications, and enterprise solutions.
+            </p>
+          </div>
 
           {/* Pre-requisites */}
 
@@ -441,14 +454,15 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">10 Aug 2025</span>
-  </h3>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">10 Aug 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -474,7 +488,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {

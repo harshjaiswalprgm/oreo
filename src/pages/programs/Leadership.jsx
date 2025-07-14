@@ -248,11 +248,16 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Leadershipelopment Certification Course{" "}
+            Leadership Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+        {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              Leadership<sup>®</sup> is the ability to inspire, influence, and guide individuals or teams toward achieving a common goal. This program is designed to equip learners with essential leadership skills such as strategic thinking, effective communication, team management, decision-making, and emotional intelligence. Whether you are preparing for a managerial role or aiming to lead with confidence in your current position, the Leadership Program helps you develop the mindset and capabilities needed to lead with purpose, drive innovation, and create a positive impact within any organization or community.</p>
+          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

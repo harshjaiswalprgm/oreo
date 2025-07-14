@@ -232,7 +232,9 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
+
             WebDevelopment Certification Program{" "}
+
             <span className="font-bold">Curriculum</span>
           </h2>
 

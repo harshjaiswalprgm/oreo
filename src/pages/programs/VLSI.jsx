@@ -5,12 +5,6 @@ import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
 
 
 const roleLogos = {
@@ -240,6 +234,16 @@ const roleLogos = {
            VLSI Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
+           {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              VLSI<sup>®</sup>  (Very-Large-Scale Integration) is the process of creating integrated circuits by combining thousands to millions of transistors onto a single chip. It is a key technology behind modern electronics, enabling the development of compact, high-performance devices such as smartphones, computers, and embedded systems. VLSI design plays a crucial role in advancing semiconductor technology and is foundational to fields like embedded systems, IoT, and artificial intelligence.
+
+
+            </p>
+          </div>
+
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

@@ -234,46 +234,37 @@ const FullStackCourse = () => {
             </p>
           </div>
         </div>
-
+        <div>
+          <br></br>
+        </div>
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            WebDevelopment Certification Course{" "}
+            Accounting Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
-
-          {/* Eligibility */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The WebDevelopment<sup>®</sup> certification is an essential
-              professional requirement for senior project manager roles across
-              all industries. This course is best suited for: Project Managers,
-              Associate/Assistant Project Managers, Team Leads/Team Managers,
-              Project Executives/Project Engineers, Software Developers, Any
-              professional aspiring to be a Project Manager.
+              Accounting<sup>®</sup> is the systematic process of recording,
+              analyzing, and reporting financial transactions to help businesses
+              make informed decisions. This program is designed to provide
+              learners with a strong foundation in financial and managerial
+              accounting, covering key topics such as journal entries, ledger
+              management, balance sheets, profit & loss statements, taxation,
+              and budgeting. With hands-on training in popular tools like Tally,
+              Excel, and GST filing software, the course prepares you for
+              real-world accounting tasks in corporate, startup, or freelance
+              environments. Ideal for students, business owners, and finance
+              professionals, this program builds the essential skills needed for
+              a successful career in accounting and finance.
             </p>
-          </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              WebDevelopment Certification Training. To qualify for the
-              WebDevelopment exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
           </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
-            <h3 className="text-xl font-semibold mb-4">Course Content</h3>
+            {/* <h3 className="text-xl font-semibold mb-4">Course Content</h3> */}
 
             {[
               {

@@ -251,39 +251,26 @@ const FullStackProgram = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Cloud Computingelopment Certification Program{" "}
+            Cloud Computing Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              TheCloud Computingelopment<sup>®</sup> certification is an
-              essential professional requirement for senior project manager
-              roles across all industries. This Program is best suited for:
-              Project Managers, Associate/Assistant Project Managers, Team
-              Leads/Team Managers, Project Executives/Project Engineers,
-              Software Developers, Any professional aspiring to be a Project
-              Manager.
+              Cloud Computing<sup>®</sup> is the delivery of computing
+              services—such as storage, processing power, databases, and
+              software—over the internet, enabling flexible, scalable, and
+              cost-effective IT solutions. This program is designed to help
+              learners understand the fundamentals of cloud infrastructure,
+              deployment models (IaaS, PaaS, SaaS), virtualization, cloud
+              security, and popular platforms like Amazon Web Services (AWS),
+              Microsoft Azure, and Google Cloud Platform (GCP). With a strong
+              focus on practical skills and real-world applications, this course
+              prepares you for in-demand roles in cloud architecture, DevOps,
+              and cloud administration.
             </p>
-          </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend
-              GlowlogicsCloud Computingelopment Certification Training. To
-              qualify for theCloud Computingelopment exam you should either
-              have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
           </div>
 
           {/* Program Content */}
