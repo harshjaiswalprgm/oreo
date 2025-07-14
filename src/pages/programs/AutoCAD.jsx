@@ -368,48 +368,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a AutoCADelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accreditedAutoCADelopment certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for theAutoCADelopment exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the AutoCAD certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the AutoCAD certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
-                },
-                {
-                  q: "How to schedule your examination after completing AutoCAD certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the AutoCAD certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the AutoCAD certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the AutoCAD certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the AutoCAD certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this AutoCAD Certification Program?",
+    "a": "Engineering and degree students from any year or background can join. No prior design or drafting experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is designed for beginners and covers everything from basic drawing tools to advanced AutoCAD features."
+  },
+  {
+    "q": "How long is the AutoCAD certification valid for?",
+    "a": "The AutoCAD Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn 2D drafting, 3D modeling, blueprint reading, layer management, dimensioning, annotations, and working on real-world AutoCAD projects."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 1–2 months with 30+ hours of live interactive classes, weekly doubt-clearing sessions, and project-based learning."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized AutoCAD Certification after successfully completing training and submitting required project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance, including resume building and interview preparation. Final job offers depend on your performance and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

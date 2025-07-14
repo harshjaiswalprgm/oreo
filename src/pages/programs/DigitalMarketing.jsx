@@ -354,34 +354,37 @@ const FullStackCourse = () => {
               {[
 
                 {
-                  q: "What are the Digital Marketing certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the Digital Marketing certification valid for?",
-                  a: "Digital Marketing  certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing Digital Marketing certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Digital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Digital Marketing Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior marketing experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is designed for beginners and covers both the fundamentals and advanced concepts of digital marketing step by step."
+  },
+  {
+    "q": "How long is the Digital Marketing certification valid for?",
+    "a": "The Digital Marketing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn social media marketing, SEO, Google Ads, content marketing, email marketing, analytics, and how to manage real-world marketing campaigns."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 1–2 months with 30+ hours of live interactive classes, weekly doubt-clearing sessions, and project-based learning."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Digital Marketing Certification after successfully completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance, including interview preparation and resume support. Final job offers depend on individual performance and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
