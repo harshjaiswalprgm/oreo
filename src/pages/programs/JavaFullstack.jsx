@@ -285,54 +285,63 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Java",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  { name: "Java basics, syntax, and control structures." },
+                  { name: "Object-Oriented Programming (OOP) concepts." },
+                  { name: "Arrays and Strings" },
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2. Array manipulation techniques",
+                lessons: [
+                  { name: "Strings and string operations." },
+                  { name: "Multi-dimensional arrays." },
+                  { name: "Linked Lists" },
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3. Singly, doubly, and circular linked lists",
+                lessons: [
+                  {
+                    name: "Implementation and operations (insertion, deletion, traversal).",
+                  },
+                  { name: "Stacks and Queues" },
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 4. Stack operations using arrays and linked lists",
+                lessons: [
+                  { name: "Queue and priority queue implementation." },
+                  { name: "Circular queues and dequeues." },
+                  { name: "Hashing" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "5. Hash tables and hash functions",
+                lessons: [
+                  { name: "Open addressing and chaining techniques." },
+                  { name: "Collision resolution." },
+                  { name: "Trees" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 6. Binary trees, binary search trees, and balanced trees",
+                lessons: [
+                  { name: "Tree traversals (preorder, inorder, postorder)." },
+                  { name: "Advanced trees: AVL, red-black trees, B-trees." },
+                  { name: "Heaps" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7. Binary heaps and heap operations",
+                lessons: [
+                  { name: "Priority queues using heaps." },
+                  { name: "Heapify algorithm and its applications" },
+                  { name: "Graphs" },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -358,7 +367,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -368,7 +377,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

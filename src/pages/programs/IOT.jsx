@@ -272,55 +272,66 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to IoT What is IoT?",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "Definition and scope of IoT"},
+                  {name: "Evolution of IoT and its impact on industries"},
+                  {name: "Applications of IOT "},
+                  {name: "Smart homes, cities, healthcare, agriculture, and industrial IoT· IoT in transportation and logistics"},
+                  {name: "IOT Ecosystem Overview"},
+                  {name: "Devices, networks, platforms, and analytics"},
+                  {name: "IoT architecture: device, gateway, cloud, and application layers"},
+
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2: Sensors and Actuators Introduction to Sensors",
+                lessons: [
+                  { name: "Types of sensors: temperature, proximity, pressure, humidity, andmore"},
+                  { name: "Role of sensors in IoT systems"},
+                  { name: "Sensor interfacing with IoT devices"},
+                  { name: "Different types of actuators and their working"},
+                  { name: "Use of actuators in controlling devices"},
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: IoT Networking & Communication ProtocolsConnectivity in IoT",
+                lessons: [
+                  { name: "Overview of IoT communication protocols"},
+                  { name: "Device-to-device, device-to-cloud, device-to-gateway communication"},
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: IoT Platforms Popular IoT Platforms",
+                lessons: [
+                  { name: "Arduino, Raspberry Pi, and ESP8266"},
+                  { name: "Commercial platforms: AWS IoT, Google Cloud IoT, MicrosoftAzure IoT"},
+                  { name: "IoT Device Management"},
+                  { name: "Device registration, authentication, and management"},
+                  { name: "Over-the-air (OTA) updates"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Data Handling and Cloud Integration DataCollection in IoT",
+                lessons: [
+                  { name: "Data acquisition from IoT devices"},
+                  { name: "Streaming vs batch data processing"},
+                  { name: "Cloud Computing for IoT"},
+                  { name: "Role of cloud platforms in IoT"},
+                  { name: "Storing, processing, and analyzing IoT data in the cloud"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: IoT Data Analytics & AI Data Analytics for IoT",
+                lessons: [
+                  { name: "Introduction to big data and analytics in IoT"},
+                  { name: "Real-time vs batch analytics for IoT"},
+                  { name: "AI and Machine Learning in IoT"},
+                  { name: "Predictive maintenance, smart automation, and AI-driveninsights"},
+                  { name: "Machine learning models for IoT applications"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -345,7 +356,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -355,7 +366,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

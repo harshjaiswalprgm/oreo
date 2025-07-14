@@ -260,13 +260,21 @@ const FullStackCourse = () => {
             HRM Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
- {/* Defeniation */}
+          {/* Defeniation */}
           <div>
             <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-         Human Resource Management<sup>®</sup> (HRM) is the strategic approach to effectively managing people within an organization to help the business gain a competitive advantage. This program is designed to provide learners with a deep understanding of core HR functions such as recruitment, employee engagement, performance management, payroll, labor laws, and compliance. It also focuses on developing soft skills like communication, leadership, and conflict resolution. Whether you are aspiring to enter the HR field or aiming to upskill, this program equips you with the practical knowledge and tools to become a proficient HR professional capable of driving organizational growth.
-
-
+              Human Resource Management<sup>®</sup> (HRM) is the strategic
+              approach to effectively managing people within an organization to
+              help the business gain a competitive advantage. This program is
+              designed to provide learners with a deep understanding of core HR
+              functions such as recruitment, employee engagement, performance
+              management, payroll, labor laws, and compliance. It also focuses
+              on developing soft skills like communication, leadership, and
+              conflict resolution. Whether you are aspiring to enter the HR
+              field or aiming to upskill, this program equips you with the
+              practical knowledge and tools to become a proficient HR
+              professional capable of driving organizational growth.
             </p>
           </div>
 
@@ -276,54 +284,86 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
-                lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
-                ],
+                title: "Module 1.Introduction to HR Management",
+                lessons: [],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2. Recruitment and Selection Process",
+                lessons: [],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3. Employee Engagement and Retention",
+                lessons: [],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4.Performance Management Systems",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5.Compensation and Benefits Management",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6.Labor Laws and Employment Regulations",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 7. Organizational Development and Change Management",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 8.Organizational Development and Change Management",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 9. Training and Development Strategies",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 10. Employee Well-being and Work-Life Balance",
+                lessons: [],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 11. Introduction to Financial Management",
+                lessons: [],
+              },
+              {
+                title: "Module 12. Financial Planning & Budgeting Techniques",
+                lessons: [],
+              },
+              {
+                title: "Module 13. Financial Statement Analysis",
+                lessons: [],
+              },
+              {
+                title: "Module 14. Corporate Finance & Capital Budgeting",
+                lessons: [],
+              },
+              {
+                title: "Module 15. Investment & Portfolio Management",
+                lessons: [],
+              },
+              {
+                title: "16. Risk Management & Insurance",
+                lessons: [],
+              },
+              {
+                title: "17. Taxation and Financial Compliance",
+                lessons: [],
+              },
+              {
+                title: "18. Cost Accounting & Management Accounting",
+                lessons: [],
+              },
+              {
+                title: "19. Auditing and Internal Control Systems",
+                lessons: [],
+              },
+              {
+                title: "20. International Finance and Currency Management",
+                lessons: [],
               },
             ].map((section, index) => (
               <div

@@ -286,55 +286,83 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1. Introduction to Digital Marketing",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name:"Overview of Digital Marketing landscape "},
+                  {name:"Key marketing channels"},
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2. Search Engine Optimization (SEO)",
+                lessons: [
+                  {name:"On-page and off-page SEO techniques "},
+                  {name:"Keyword research and optimization"},
+                ],
+              },
+             {
+                title: "Module 3. Social Media Marketing (SMM)",
+                lessons: [
+                  {name:"Strategies for Facebook, Instagram, LinkedIn, and Twitter "},
+                  {name:"Running effective social media ads"},
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4. Pay-Per-Click (PPC) Advertising",
+                lessons: [
+                  {name:"Google Ads and Bing Ads campaign management "},
+                  {name:"Tracking ROI and optimizing campaigns"},
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5. Email Marketing",
+                lessons: [
+                  {name:"Building and nurturing email lists "},
+                  {name:"Designing effective email campaigns"},
+                ],
+              },
+               {
+                title: "Module 6. Web Analytics",
+                lessons: [
+                  {name:"Understanding Google Analytics "},
+                  {name:"Measuring and optimizing digital campaigns"},
+                ],
+              },
+               {
+                title: "Module 7. Affiliate Marketing",
+                lessons: [
+                  {name:"Understanding affiliate networks and partnerships."},
+                  {name:"Strategies for scaling affiliate programs."},
+                ],
+              },
+               {
+                title: "Module 8. E-commerce Marketing",
+                lessons: [
+                  {name:"Digital strategies for driving sales in e-commerce. "},
+                  {name:"Product listings, ads, and optimizing the customer journey."},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 9. Mobile Marketing",
+                lessons: [
+                  {name:"Introduction to mobile marketing strategies. "},
+                  {name:"Mobile apps, SMS, and push notifications."},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 10. Lead Generation and Conversion Optimization",
+                lessons: [
+                  {name:"Techniques for generating leads and converting them into sales. "},
+                  {name:"Techniques for generating leads and converting them into"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 12. Digital Marketing Tools",
+                lessons: [
+                  {name:"Overview of industry-leading tools like Google Analytics, SEMrush, HubSpot, and more. "},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}

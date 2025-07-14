@@ -321,31 +321,36 @@ const FullStackCourse = () => {
               {
                 title: "Module 6: Physical Design and Layout",
                 lessons: [
-                  {name: "Introduction to physical design steps"},
-                  {name: "Partitioning"},
-                  {name: "Floorplanning"},
-                  {name: "Placement and routing"},
-                  {name: "Design rule checks (DRC)"},
-                  {name: "Layout design using EDA tools (e.g., Cadence, Synopsys)"},
+                  { name: "Introduction to physical design steps" },
+                  { name: "Partitioning" },
+                  { name: "Floorplanning" },
+                  { name: "Placement and routing" },
+                  { name: "Design rule checks (DRC)" },
+                  {
+                    name: "Layout design using EDA tools (e.g., Cadence, Synopsys)",
+                  },
                 ],
               },
               {
                 title: "Module 7: Timing and Power Analysis",
                 lessons: [
-                  {name: "Clock distribution and skew"},
-                  {name: "Setup and hold time analysis"},
-                  {name: "Power dissipation in digital circuits"},
-                  {name: "Techniques to reduce power consumption: Clock gating, voltage scaling"},
-
+                  { name: "Clock distribution and skew" },
+                  { name: "Setup and hold time analysis" },
+                  { name: "Power dissipation in digital circuits" },
+                  {
+                    name: "Techniques to reduce power consumption: Clock gating, voltage scaling",
+                  },
                 ],
               },
               {
                 title: "Module 8: Design for Testability (DFT)",
                 lessons: [
-                  {name: "Importance of testability in VLSI"},
-                  {name: "Scan chains and boundary-scan design"},
-                  {name: "Built-in self-test (BIST) techniques"},
-                  {name: "Fault models and automatic test pattern generation (ATPG)"},
+                  { name: "Importance of testability in VLSI" },
+                  { name: "Scan chains and boundary-scan design" },
+                  { name: "Built-in self-test (BIST) techniques" },
+                  {
+                    name: "Fault models and automatic test pattern generation (ATPG)",
+                  },
                 ],
               },
               {
@@ -355,17 +360,18 @@ const FullStackCourse = () => {
                   { name: "FPGA vs ASIC" },
                   { name: "Basic programming of FPGA using Verilog" },
                   { name: "Implementing digital circuits on FPGA" },
-
                 ],
               },
               {
                 title: "Module 10: Industry Trends and Future Scope",
                 lessons: [
-
-                    {name: "Recent advancements in VLSI (FinFETs, 3D ICs, Quantum Computing)"},
-                    {name: "Industry demands and career opportunities in VLSI"},
-                    {name: "Future trends: IoT, AI accelerators, and automotive VLSI"},
-
+                  {
+                    name: "Recent advancements in VLSI (FinFETs, 3D ICs, Quantum Computing)",
+                  },
+                  { name: "Industry demands and career opportunities in VLSI" },
+                  {
+                    name: "Future trends: IoT, AI accelerators, and automotive VLSI",
+                  },
                 ],
               },
             ].map((section, index) => (
@@ -392,17 +398,17 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
                           >
-                            Preview
+
                           </a>
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
