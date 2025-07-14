@@ -338,27 +338,39 @@ const roleLogos = {
   <div className="w-full lg:w-2/3">
     <h2 className="text-3xl font-semibold mb-6">FAQ <span className="text-black">related to </span></h2>
     <div className="bg-white border rounded-lg shadow-md divide-y">
-      {[
-        {
-          q: "How to get aVLSIelopment® certification?",
-          a: (
-            <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-              <li>Meet the eligibility requirements</li>
-              <li>Enroll in an accreditedVLSIelopment certification training course</li>
-              <li>Meet the exam eligibility requirements</li>
-              <li>Apply for theVLSIelopment exam with PMI</li>
-              <li>Pass your exam to earn certification</li>
-            </ul>
-          )
-        },
-        { q: "What are theVLSIelopment certification requirements?", a: "Eligibility criteria vary, usually requiring education and project experience." },
-        { q: "How long is theVLSIelopment certification valid for?", a: "WebDevelopment certification is valid for 3 years and requires renewal." },
-        { q: "How to schedule your examination after completingVLSIelopment certification training?", a: "Log in to PMI, select an exam center/date, and follow the scheduling steps." },
-        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-        { q: "Do you provide any practice tests as part of theVLSIelopment certification course?", a: "Yes, we provide full-length mock tests and practice questions." },
-
+              {[
+                {
+    "q": "Who can join this VLSI Certification Program?",
+    "a": "Engineering and degree students from ECE, EEE, CSE, or related backgrounds can join. No prior VLSI experience is required."
+  },
+  {
+    "q": "Do I need to know programming before enrolling?",
+    "a": "No. This course focuses on hardware design using Verilog and RTL coding, not general programming. We cover everything from basics to advanced VLSI concepts."
+  },
+  {
+    "q": "How long is the VLSI certification valid for?",
+    "a": "The VLSI Certification from Glowlogics is valid for a lifetime and is ISO- and MSME-recognized."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn Digital Logic Design, Verilog HDL, RTL Coding, ASIC Design Flow, FPGA Implementation, Static Timing Analysis, and working with industry tools like Synopsys and Cadence."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course typically runs for 2–3 months with 90+ hours of live or guided learning sessions, including project work. Sessions are conducted online with mentor support."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized VLSI Certification upon successfully completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance for VLSI-related roles. Actual job offers depend on your performance, skills, and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed."
+  },
       ].map((item, idx) => (
         <div key={idx} className="group">
           <button

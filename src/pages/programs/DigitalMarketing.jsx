@@ -353,23 +353,6 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get aDigital Marketingelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accreditedDigital Marketing
-                        certification training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>
-                        Apply for theDigital Marketing exam with PMI
-                      </li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
                   q: "What are the Digital Marketing certification requirements?",
                   a: "Eligibility criteria vary, usually requiring education and project experience.",
                 },

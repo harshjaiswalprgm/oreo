@@ -336,15 +336,15 @@ const FullStackCourse = () => {
                 },
                 {
                   q: "How long is the WebDevelopment certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
+                  a: "WebDevelopment certification is valid for Lifetime.",
                 },
                 {
                   q: "What skills will I learn in this course?",
                   a: "You’ll learn frontend development (HTML, CSS, JavaScript, React), backend development (Node.js, Express), databases (MongoDB, SQL), API creation, project deployment, and building complete websites and apps.",
                 },
                 {
-                  q: " How long is the course, and what is the learning mode?",
-                  a: "The course typically runs for 2–3 months with 90+ hours of live or guided learning sessions, including project work. Sessions are conducted online.",
+                  q: " How long is the program, and what is the learning mode?",
+                  a: "The course typically runs for 2–3 months with 60+ hours of live or guided learning sessions, including project work. Sessions are conducted online.",
                 },
                 {
                   q: "Will I get a certificate after completing the course?",

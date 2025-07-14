@@ -361,49 +361,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a Leadership® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited Leadership certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the Leadership exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the Leadership certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the Leadership certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing Leadership certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Leadership certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Leadership certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Leadership certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Leadership certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Leadership & Management Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior experience in leadership or management is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. The program is designed for beginners and covers both fundamental and advanced leadership and management skills."
+  },
+  {
+    "q": "How long is the Leadership & Management certification valid for?",
+    "a": "The certification is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn people management, team leadership, communication strategies, decision-making, project management basics, and organizational behavior."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course typically runs for 1–2 months. It is completely self-paced with recorded sessions and reading materials. Live classes are not part of this program."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. Upon completing all modules and assessments, you’ll receive an ISO- and MSME-recognized Leadership & Management Certification."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance for management-related roles, but final job offers depend on individual skills, performance, and interviews."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
