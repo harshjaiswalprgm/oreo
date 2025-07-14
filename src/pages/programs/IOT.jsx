@@ -81,7 +81,7 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-           <a
+            <a
               href="https://rzp.io/rzp/GL6k"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,10 +90,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/IOT.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/IOT.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -247,38 +244,25 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            IOT Certification Course{" "}
+            IOT Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The IOT<sup>®</sup> certification is a vital credential for
-              professionals aiming to grow into senior project management roles
-              across diverse industries. It is especially beneficial for Project
-              Managers, Associate or Assistant Project Managers, Team Leads and
-              Managers, Project Executives, Project Engineers, Software
-              Developers, and any professional aspiring to become a Project
-              Manager. This certification provides the essential skills,
-              industry recognition, and confidence needed to lead and manage
-              projects effectively in today’s dynamic work environment.
-            </p>
-          </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              IOT<sup>®</sup> Certification Training. However, to qualify for
-              the IOT<sup>®</sup> exam, candidates should meet at least one of
-              the following criteria: a secondary degree (high school diploma,
-              associate’s degree, or global equivalent) with relevant project
-              management experience, or a four-year degree with fewer hours of
-              experience. This ensures that participants are adequately prepared
-              to understand and apply the concepts covered in the certification.
+              Internet of Things<sup>®</sup> (IoT) refers to the network of
+              interconnected devices that collect, exchange, and act on data
+              using embedded sensors, software, and connectivity. This program
+              is designed to introduce learners to the core concepts of IoT,
+              including hardware interfacing, cloud integration, real-time data
+              monitoring, and automation. From smart homes and wearable tech to
+              industrial automation and smart cities, IoT is transforming how
+              the world operates. Through hands-on projects and real-world
+              applications, this program equips you with the technical skills
+              and practical knowledge needed to build and manage intelligent
+              connected systems.
             </p>
           </div>
 
@@ -288,55 +272,66 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to IoT What is IoT?",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "Definition and scope of IoT"},
+                  {name: "Evolution of IoT and its impact on industries"},
+                  {name: "Applications of IOT "},
+                  {name: "Smart homes, cities, healthcare, agriculture, and industrial IoT· IoT in transportation and logistics"},
+                  {name: "IOT Ecosystem Overview"},
+                  {name: "Devices, networks, platforms, and analytics"},
+                  {name: "IoT architecture: device, gateway, cloud, and application layers"},
+
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2: Sensors and Actuators Introduction to Sensors",
+                lessons: [
+                  { name: "Types of sensors: temperature, proximity, pressure, humidity, andmore"},
+                  { name: "Role of sensors in IoT systems"},
+                  { name: "Sensor interfacing with IoT devices"},
+                  { name: "Different types of actuators and their working"},
+                  { name: "Use of actuators in controlling devices"},
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: IoT Networking & Communication ProtocolsConnectivity in IoT",
+                lessons: [
+                  { name: "Overview of IoT communication protocols"},
+                  { name: "Device-to-device, device-to-cloud, device-to-gateway communication"},
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: IoT Platforms Popular IoT Platforms",
+                lessons: [
+                  { name: "Arduino, Raspberry Pi, and ESP8266"},
+                  { name: "Commercial platforms: AWS IoT, Google Cloud IoT, MicrosoftAzure IoT"},
+                  { name: "IoT Device Management"},
+                  { name: "Device registration, authentication, and management"},
+                  { name: "Over-the-air (OTA) updates"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Data Handling and Cloud Integration DataCollection in IoT",
+                lessons: [
+                  { name: "Data acquisition from IoT devices"},
+                  { name: "Streaming vs batch data processing"},
+                  { name: "Cloud Computing for IoT"},
+                  { name: "Role of cloud platforms in IoT"},
+                  { name: "Storing, processing, and analyzing IoT data in the cloud"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: IoT Data Analytics & AI Data Analytics for IoT",
+                lessons: [
+                  { name: "Introduction to big data and analytics in IoT"},
+                  { name: "Real-time vs batch analytics for IoT"},
+                  { name: "AI and Machine Learning in IoT"},
+                  { name: "Predictive maintenance, smart automation, and AI-driveninsights"},
+                  { name: "Machine learning models for IoT applications"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -361,7 +356,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -371,7 +366,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
@@ -444,15 +439,16 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
-  </h3>
+          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">3 Aug 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -478,7 +474,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {
@@ -533,102 +528,101 @@ const FullStackCourse = () => {
           </div>
         </div>
         <div className=" py-12 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-    Admiration expressed by others regarding our presence.
-  </h2>
+          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+            Admiration expressed by others regarding our presence.
+          </h2>
 
-  <div className="relative w-full space-y-8 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-      {[...Array(2)].flatMap(() =>
-        [
-          {
-            name: "Vrinda K",
-            title: "Dayalbagh Educational Institute",
-            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-            img: "/vrindaK.png",
-          },
-          {
-            name: "Smriti Mathuriya",
-            title: "Dayalbagh Educational Institute",
-            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-            img: "/Smrithi.png",
-          },
-          {
-            name: "Aan Narai",
-            title: "Alliance University",
-            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-            img: "/Aan.png",
-          },
-          {
-            name: "Kavya R",
-            title: "Bachelor's in Engineering",
-            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-            img: "/Kavya.png",
-          },
-          {
-            name: "Kulsum Bano",
-            title: "MMICT&MB, 2nd Year",
-            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-            img: "/Kulsum.png",
-          },
-          {
-            name: "Bollepally Jashwanth Varma",
-            title: "Sai Spurthi Institute of Technology, 3rd Year",
-            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-            img: "/CyberUnknown.png",
-          },
-          {
-            name: "Tejaswini.K",
-            title: "Jayaraj Annapackiam College",
-            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-            img: "/TejasvaniK.png",
-          },
-          {
-            name: "Thotakura Puneeth Sai",
-            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-            img: "/Thotakura Puneeth Sai.png",
-          },
-          {
-            name: "Preetham",
-            title: "Navkis College of Engineering",
-            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-            img: "/pritam.png",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-          >
-            <svg
-              className="text-blue-500 text-xl mb-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-            </svg>
-            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-            <div className="flex items-center space-x-3 mt-auto">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-sm">{item.name}</p>
-                <p className="text-xs text-gray-500">{item.title}</p>
-              </div>
+          <div className="relative w-full space-y-8 overflow-x-hidden">
+            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+              {[...Array(2)].flatMap(() =>
+                [
+                  {
+                    name: "Vrinda K",
+                    title: "Dayalbagh Educational Institute",
+                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+                    img: "/vrindaK.png",
+                  },
+                  {
+                    name: "Smriti Mathuriya",
+                    title: "Dayalbagh Educational Institute",
+                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+                    img: "/Smrithi.png",
+                  },
+                  {
+                    name: "Aan Narai",
+                    title: "Alliance University",
+                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+                    img: "/Aan.png",
+                  },
+                  {
+                    name: "Kavya R",
+                    title: "Bachelor's in Engineering",
+                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+                    img: "/Kavya.png",
+                  },
+                  {
+                    name: "Kulsum Bano",
+                    title: "MMICT&MB, 2nd Year",
+                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+                    img: "/Kulsum.png",
+                  },
+                  {
+                    name: "Bollepally Jashwanth Varma",
+                    title: "Sai Spurthi Institute of Technology, 3rd Year",
+                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+                    img: "/CyberUnknown.png",
+                  },
+                  {
+                    name: "Tejaswini.K",
+                    title: "Jayaraj Annapackiam College",
+                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+                    img: "/TejasvaniK.png",
+                  },
+                  {
+                    name: "Thotakura Puneeth Sai",
+                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+                    img: "/Thotakura Puneeth Sai.png",
+                  },
+                  {
+                    name: "Preetham",
+                    title: "Navkis College of Engineering",
+                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+                    img: "/pritam.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+                  >
+                    <svg
+                      className="text-blue-500 text-xl mb-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+                    </svg>
+                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+                    <div className="flex items-center space-x-3 mt-auto">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <div>
+                        <p className="font-semibold text-sm">{item.name}</p>
+                        <p className="text-xs text-gray-500">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
             </div>
           </div>
-        ))
-      )}
-    </div>
-  </div>
-</div>
-
+        </div>
       </div>
     </>
   );

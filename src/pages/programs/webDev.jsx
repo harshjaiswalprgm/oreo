@@ -63,7 +63,7 @@ const FullStackCourse = () => {
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-             Hands-On Web Development Training with Industry Mentors
+              Hands-On Web Development Training with Industry Mentors
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
@@ -121,15 +121,18 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-5xl">
-          At Glowlogics, we help students grow from beginners to confident web developers through a structured,
-          industry-focused learning experience. You’ll start with the basics like HTML, CSS, and JavaScript, 
-          then move on to advanced skills including React, Angular, Node.js, and Express.
-          Our approach focuses on real-world application, not just theory. You’ll work on live projects and 
-          practical tasks that mirror what’s expected in today’s job market. Throughout the program, experienced 
-          mentors from the industry will guide you, helping you build both skills and confidence.
-          Whether you're an engineering or degree student, Glowlogics gives you a clear path to turn your
-          interest in coding into real career opportunities. Join us and start building professional websites 
-          and web applications from scratch.
+          At Glowlogics, we help students grow from beginners to confident web
+          developers through a structured, industry-focused learning experience.
+          You’ll start with the basics like HTML, CSS, and JavaScript, then move
+          on to advanced skills including React, Angular, Node.js, and Express.
+          Our approach focuses on real-world application, not just theory.
+          You’ll work on live projects and practical tasks that mirror what’s
+          expected in today’s job market. Throughout the program, experienced
+          mentors from the industry will guide you, helping you build both
+          skills and confidence. Whether you are an engineering or degree
+          student, Glowlogics gives you a clear path to turn your interest in
+          coding into real career opportunities. Join us and start building
+          professional websites and web applications from scratch.
         </p>
 
         {/* Key Features */}
@@ -183,14 +186,17 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The Web Develpopment Certification Program at Glowlogics is designed to help you build real,
-           job-ready web development skills. You’ll learn both frontend and backend technologies while working
-            on real-world projects that reflect what companies expect. Along with hands-on experience, 
-            you’ll earn an ISO and MSME-recognized certification that adds genuine value to your profile. 
-            The program includes personalized mentor support, lifetime access to learning materials,
-            and career assistance to help you explore opportunities in industries like tech, finance, healthcare,
-            and beyond. Whether you're just starting out or looking to grow, this program is built to help you move
-            forward confidently.
+          The Web Develpopment Certification Program at Glowlogics is designed
+          to help you build real, job-ready web development skills. You’ll learn
+          both frontend and backend technologies while working on real-world
+          projects that reflect what companies expect. Along with hands-on
+          experience, you’ll earn an ISO and MSME-recognized certification that
+          adds genuine value to your profile. The program includes personalized
+          mentor support, lifetime access to learning materials, and career
+          assistance to help you explore opportunities in industries like tech,
+          finance, healthcare, and beyond. Whether you are just starting out or
+          looking to grow, this program is built to help you move forward
+          confidently.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -240,13 +246,14 @@ const FullStackCourse = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The WebDevelopment Certification is for students who want 
-              to learn how websites and web applications are actually built and used in real companies. 
-              Whether you’re interested in becoming a web developer, software engineer, full stack developer,
-              or starting your own tech project — this course teaches you both frontend and backend skills step by step.
-              You’ll work on real projects, learn the latest tools, and get practical experience that helps
-              you build a strong career in web development.
-              frameworks.
+              The WebDevelopment Certification is for students who want to learn
+              how websites and web applications are actually built and used in
+              real companies. Whether you’re interested in becoming a web
+              developer, software engineer, full stack developer, or starting
+              your own tech project — this course teaches you both frontend and
+              backend skills step by step. You’ll work on real projects, learn
+              the latest tools, and get practical experience that helps you
+              build a strong career in web development. frameworks.
             </p>
           </div>
 
@@ -257,23 +264,41 @@ const FullStackCourse = () => {
             {[
               {
                 title: "Module 1: Introduction to Web Development",
-                lessons: [ { name: "Setting up your development environment"}],
+                lessons: [
+                  { name: "Basics of HTML, CSS, JavaScript" },
+                  { name: "Setting up your development environment" },
+                ],
               },
               {
                 title: "Module 2: Advanced Front-End Technologies",
-                lessons: [{ name: "Front-end tools (Webpack, Babel)" }],
+
+                lessons: [
+                  { name: "Building responsive websites" },
+                  { name: "JavaScript frameworks (React, Angular, or Vue.js)" },
+                  { name: "Front-end tools (Webpack, Babel)" },
+                ],
               },
               {
                 title: "Module 3: Back-End Development",
-                lessons: [{ name: "Node.js, Express.js, RESTful API creation"}],
+                lessons: [
+                  { name: "Introduction to server-side programming" },
+                  { name: "Node.js, Express.js, RESTful API creation" },
+                  { name: "Database management (SQL, MongoDB)" },
+                ],
               },
               {
                 title: "Module 4: Full Stack Development Integration",
-                lessons: [{ name: "Connecting front-end and back-end"}],
+                lessons: [
+                  { name: "Connecting front-end and back-end" },
+                  { name: "Authentication & authorization" },
+                  { name: "Deployment using cloud services (AWS, Heroku)" },
+                ],
               },
               {
                 title: "Module 5: Capstone Project",
-                lessons: [{ name: "Develop a fully functional web application"}],
+                lessons: [
+                  { name: "Develop a fully functional web application" },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -299,7 +324,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -309,7 +334,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
@@ -382,15 +407,16 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
-  </h3>
+          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">3 Aug 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -416,7 +442,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {

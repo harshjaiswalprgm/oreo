@@ -77,7 +77,7 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-           <a
+            <a
               href="https://rzp.io/rzp/GL6k"
               target="_blank"
               rel="noopener noreferrer"
@@ -86,10 +86,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/AI.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/AI.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -149,7 +146,7 @@ const FullStackCourse = () => {
               Artificial Intelligence Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
-               ✅ 100% ISO Verified Internship
+              ✅ 100% ISO Verified Internship
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-gray-700">
@@ -203,7 +200,16 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-         The AIPro® Certification Program offers a comprehensive pathway to mastering real-world artificial intelligence skills that are in high demand across industries. Learners gain hands-on experience with machine learning, deep learning, NLP, and computer vision through practical projects and expert mentorship. The program also includes resume support, GitHub portfolio building, and job readiness training — helping you stand out in the job market. With lifetime access to learning resources, AI-powered learning paths, and a globally recognized certification, you’ll be equipped to lead innovation and unlock high-growth career opportunities in today is data-driven world.
+          The AIPro® Certification Program offers a comprehensive pathway to
+          mastering real-world artificial intelligence skills that are in high
+          demand across industries. Learners gain hands-on experience with
+          machine learning, deep learning, NLP, and computer vision through
+          practical projects and expert mentorship. The program also includes
+          resume support, GitHub portfolio building, and job readiness training
+          — helping you stand out in the job market. With lifetime access to
+          learning resources, AI-powered learning paths, and a globally
+          recognized certification, you’ll be equipped to lead innovation and
+          unlock high-growth career opportunities in today is data-driven world.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -245,7 +251,7 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Artificial Intelligence Certification Course{" "}
+            Artificial Intelligence Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
@@ -263,28 +269,7 @@ const FullStackCourse = () => {
               algorithms, and real-world applications.
             </p>
           </div>
-          {/* Eligibility */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
-            <p>
-              The AIPro<sup>®</sup> Certification is open to graduates,
-              final-year students, software professionals, data enthusiasts, and
-              individuals from technical or analytical backgrounds. A basic
-              understanding of mathematics, logic, or programming is helpful but
-              not mandatory. Anyone with a keen interest in artificial
-              intelligence and a passion for innovation is welcome to join.
-            </p>
-          </div>
 
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              There are no mandatory prerequisites to enroll in the AIPro® Certification Program by Glowlogics. The course is beginner-friendly and suitable for learners from both technical and non-technical backgrounds. While prior knowledge of basic mathematics, statistics, or Python can be helpful, it is not required. To earn the certification, learners must complete all course modules, actively participate in live sessions, and successfully complete hands-on AI projects and assessments.
-
-
-            </p>
-          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -398,11 +383,13 @@ const FullStackCourse = () => {
                     <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
                       <li>Meet the eligibility requirements</li>
                       <li>
-                        Enroll in an accredited Artificial Intelligence certification
-                        training course
+                        Enroll in an accredited Artificial Intelligence
+                        certification training course
                       </li>
                       <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the Artificial Intelligence exam with PMI</li>
+                      <li>
+                        Apply for the Artificial Intelligence exam with PMI
+                      </li>
                       <li>Pass your exam to earn certification</li>
                     </ul>
                   ),
@@ -465,14 +452,15 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
-  </h3>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">3 Aug 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -498,7 +486,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {
@@ -552,102 +539,102 @@ const FullStackCourse = () => {
             </div>
           </div>
         </div>
-       <div className=" py-12 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-    Admiration expressed by others regarding our presence.
-  </h2>
+        <div className=" py-12 overflow-hidden">
+          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+            Admiration expressed by others regarding our presence.
+          </h2>
 
-  <div className="relative w-full space-y-8 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-      {[...Array(2)].flatMap(() =>
-        [
-          {
-            name: "Vrinda K",
-            title: "Dayalbagh Educational Institute",
-            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-            img: "/vrindaK.png",
-          },
-          {
-            name: "Smriti Mathuriya",
-            title: "Dayalbagh Educational Institute",
-            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-            img: "/Smrithi.png",
-          },
-          {
-            name: "Aan Narai",
-            title: "Alliance University",
-            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-            img: "/Aan.png",
-          },
-          {
-            name: "Kavya R",
-            title: "Bachelor's in Engineering",
-            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-            img: "/Kavya.png",
-          },
-          {
-            name: "Kulsum Bano",
-            title: "MMICT&MB, 2nd Year",
-            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-            img: "/Kulsum.png",
-          },
-          {
-            name: "Bollepally Jashwanth Varma",
-            title: "Sai Spurthi Institute of Technology, 3rd Year",
-            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-            img: "/CyberUnknown.png",
-          },
-          {
-            name: "Tejaswini.K",
-            title: "Jayaraj Annapackiam College",
-            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-            img: "/TejasvaniK.png",
-          },
-          {
-            name: "Thotakura Puneeth Sai",
-            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-            img: "/Thotakura Puneeth Sai.png",
-          },
-          {
-            name: "Preetham",
-            title: "Navkis College of Engineering",
-            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-            img: "/pritam.png",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-          >
-            <svg
-              className="text-blue-500 text-xl mb-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-            </svg>
-            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-            <div className="flex items-center space-x-3 mt-auto">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-sm">{item.name}</p>
-                <p className="text-xs text-gray-500">{item.title}</p>
-              </div>
+          <div className="relative w-full space-y-8 overflow-x-hidden">
+            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+              {[...Array(2)].flatMap(() =>
+                [
+                  {
+                    name: "Vrinda K",
+                    title: "Dayalbagh Educational Institute",
+                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+                    img: "/vrindaK.png",
+                  },
+                  {
+                    name: "Smriti Mathuriya",
+                    title: "Dayalbagh Educational Institute",
+                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+                    img: "/Smrithi.png",
+                  },
+                  {
+                    name: "Aan Narai",
+                    title: "Alliance University",
+                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+                    img: "/Aan.png",
+                  },
+                  {
+                    name: "Kavya R",
+                    title: "Bachelor's in Engineering",
+                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+                    img: "/Kavya.png",
+                  },
+                  {
+                    name: "Kulsum Bano",
+                    title: "MMICT&MB, 2nd Year",
+                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+                    img: "/Kulsum.png",
+                  },
+                  {
+                    name: "Bollepally Jashwanth Varma",
+                    title: "Sai Spurthi Institute of Technology, 3rd Year",
+                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+                    img: "/CyberUnknown.png",
+                  },
+                  {
+                    name: "Tejaswini.K",
+                    title: "Jayaraj Annapackiam College",
+                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+                    img: "/TejasvaniK.png",
+                  },
+                  {
+                    name: "Thotakura Puneeth Sai",
+                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+                    img: "/Thotakura Puneeth Sai.png",
+                  },
+                  {
+                    name: "Preetham",
+                    title: "Navkis College of Engineering",
+                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+                    img: "/pritam.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+                  >
+                    <svg
+                      className="text-blue-500 text-xl mb-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+                    </svg>
+                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+                    <div className="flex items-center space-x-3 mt-auto">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <div>
+                        <p className="font-semibold text-sm">{item.name}</p>
+                        <p className="text-xs text-gray-500">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
             </div>
           </div>
-        ))
-      )}
-    </div>
-  </div>
-</div>
+        </div>
       </div>
     </>
   );

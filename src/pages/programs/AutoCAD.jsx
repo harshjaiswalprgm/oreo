@@ -247,26 +247,19 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            AutoCADelopment Certification Course{" "}
+            AutoCAD Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
-
-          {/* Pre-requisites */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              No prior knowledge or experience is required to attend the
-              Glowlogics AutoCAD<sup>®</sup> Certification Training. The course
-              is designed to take learners from beginner to advanced levels.
-              However, to qualify for the AutoCAD<sup>®</sup> certification
-              exam, candidates are recommended to have a basic understanding of
-              design principles or a keen interest in technical drawing and
-              drafting. This helps ensure a smoother learning curve and better
-              grasp of the tools and techniques covered in the training.
+              AutoCAD<sup>®</sup> is a leading computer-aided design (CAD) software used by architects, engineers, and designers to create precise 2D and 3D drawings. This program is designed to equip learners with essential drafting and modeling skills using AutoCAD’s powerful tools and features. Participants will learn to create technical drawings, floor plans, mechanical parts, and electrical schematics with accuracy and efficiency. Through hands-on projects and industry-relevant exercises, the course prepares you for real-world applications in architecture, engineering, construction, and manufacturing fields.
+
             </p>
           </div>
+
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -442,14 +435,15 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">11 Aug 2025 </span>
-  </h3>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">11 Aug 2025 </span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -475,7 +469,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {

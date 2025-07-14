@@ -352,6 +352,7 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
+
                 {
                   q: "What are the Digital Marketing certification requirements?",
                   a: "Eligibility criteria vary, usually requiring education and project experience.",

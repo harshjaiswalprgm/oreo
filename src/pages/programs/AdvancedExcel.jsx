@@ -237,39 +237,19 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Advance Excelelopment Certification Course{" "}
+            Advance Excel Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+           {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The Advance Excelelopment<sup>®</sup> certification is an
-              essential professional requirement for senior project manager
-              roles across all industries. This course is best suited for:
-              Project Managers, Associate/Assistant Project Managers, Team
-              Leads/Team Managers, Project Executives/Project Engineers,
-              Software Developers, Any professional aspiring to be a Project
-              Manager.
-            </p>
+             Advance Excelel<sup>®</sup>  is a specialized program designed to enhance your spreadsheet skills for data analysis, reporting, and automation. This course goes beyond the basics, covering advanced functions and formulas, pivot tables, data validation, conditional formatting, dashboards, and Excel automation using macros and VBA. Whether you are working in finance, marketing, HR, or operations, this program helps you handle large datasets efficiently, make data-driven decisions, and present insights clearly. Ideal for professionals and students alike, Advanced Excel is a must-have skill for today’s data-driven workplace.
+
+ </p>
           </div>
 
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              Advance Excelelopment Certification Training. To qualify for the
-              Advance Excelelopment exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">

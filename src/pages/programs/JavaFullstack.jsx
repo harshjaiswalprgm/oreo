@@ -81,7 +81,7 @@ const FullStackCourse = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
-           <a
+            <a
               href="https://rzp.io/rzp/GL6k"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,10 +90,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/JAVA.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/JAVA.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -258,11 +255,27 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Java FullStackelopment Certification Course{" "}
+            Java FullStack Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
+            <p>
+              Java Full Stack<sup>®</sup> Development is a comprehensive program
+              that covers both front-end and back-end development using Java and
+              related technologies. This course equips learners with the skills
+              to build complete, end-to-end web applications — starting from
+              designing responsive user interfaces to developing robust
+              server-side logic and managing databases. With hands-on training
+              in tools like HTML, CSS, JavaScript, Java, Spring Boot, and SQL,
+              the program prepares you to handle real-world development
+              projects. Ideal for aspiring developers, this program opens doors
+              to exciting career opportunities in software development, web
+              applications, and enterprise solutions.
+            </p>
+          </div>
 
           {/* Pre-requisites */}
 
@@ -272,54 +285,63 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Java",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  { name: "Java basics, syntax, and control structures." },
+                  { name: "Object-Oriented Programming (OOP) concepts." },
+                  { name: "Arrays and Strings" },
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2. Array manipulation techniques",
+                lessons: [
+                  { name: "Strings and string operations." },
+                  { name: "Multi-dimensional arrays." },
+                  { name: "Linked Lists" },
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3. Singly, doubly, and circular linked lists",
+                lessons: [
+                  {
+                    name: "Implementation and operations (insertion, deletion, traversal).",
+                  },
+                  { name: "Stacks and Queues" },
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 4. Stack operations using arrays and linked lists",
+                lessons: [
+                  { name: "Queue and priority queue implementation." },
+                  { name: "Circular queues and dequeues." },
+                  { name: "Hashing" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "5. Hash tables and hash functions",
+                lessons: [
+                  { name: "Open addressing and chaining techniques." },
+                  { name: "Collision resolution." },
+                  { name: "Trees" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title:
+                  "Module 6. Binary trees, binary search trees, and balanced trees",
+                lessons: [
+                  { name: "Tree traversals (preorder, inorder, postorder)." },
+                  { name: "Advanced trees: AVL, red-black trees, B-trees." },
+                  { name: "Heaps" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7. Binary heaps and heap operations",
+                lessons: [
+                  { name: "Priority queues using heaps." },
+                  { name: "Heapify algorithm and its applications" },
+                  { name: "Graphs" },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -345,7 +367,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -355,7 +377,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
@@ -429,14 +451,15 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">10 Aug 2025</span>
-  </h3>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">10 Aug 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -462,7 +485,6 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {

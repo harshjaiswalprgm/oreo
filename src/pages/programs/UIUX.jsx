@@ -85,8 +85,6 @@ const FullStackProgram = () => {
           <div className="flex flex-wrap gap-4 mb-4">
             <a
               href="https://rzp.io/rzp/GL6k"
-
-
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,10 +92,7 @@ const FullStackProgram = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/UIUX.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/UIUX.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -246,96 +241,118 @@ const FullStackProgram = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            UIUXelopment Certification Program{" "}
+            UIUX Certification Program{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
 
-          {/* Eligibility */}
+          {/* Defeniation */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">Eligibility</h3>
+            <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              The UIUX® Certification can open doors to creative and high-paying
-              roles across industries like IT, finance, healthcare, e-commerce,
-              and digital media. Certified UI/UX designers are skilled in
-              crafting user-friendly, visually engaging digital experiences that
-              drive business success. With companies placing a strong emphasis
-              on customer experience, UIUX® certified professionals are in high
-              demand — often rewarded with career growth, global opportunities,
-              and competitive salaries in today’s design-driven world.
+              UI/UX<sup>®</sup> Design refers to the process of enhancing user
+              satisfaction by improving the usability, accessibility, and
+              overall interaction experience with a digital product. UI (User
+              Interface) design focuses on the visual elements — such as
+              layouts, colors, typography, and interactive components — ensuring
+              the product is visually appealing and easy to navigate. UX (User
+              Experience) design, on the other hand, is centered around
+              understanding user behavior and designing seamless, intuitive
+              experiences that solve real problems. Together, UI and UX create
+              products that are not only functional but also enjoyable to use.
             </p>
           </div>
-
-          {/* Pre-requisites */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Pre-requisites</h3>
-            <p>
-              No prior knowledge or experience is required to attend Glowlogics
-              UIUXelopment Certification Training. To qualify for the
-              UIUXelopment exam you should either have:
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>High school or secondary school diploma…</li>
-            </ul>
-            <a href="#" className="text-blue-600 mt-2 inline-block">
-              Read More
-            </a>
-          </div>
-
           {/* Program Content */}
           <div className="mt-8 space-y-3">
             <h3 className="text-xl font-semibold mb-4">Program Content</h3>
 
             {[
               {
-                title: "Section 01: Program Introduction",
+                title: "Module 1: Introduction to UI/UX Design",
                 lessons: [
-                  {
-                    name: "Lesson 01: Program Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+
+                    {name: "Overview of User Interface (UI) and User Experience (UX)"},
+                    {name: "Importance of UI/UX in product development"},
+                    {name: "Design thinking process and methodologies"},
+                    {name: "Understanding human-centered design"},
+                    {name: "Industry tools overview: Figma, Sketch, Adobe XD"},
+
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2: Research and User-Centered Design",
+                lessons: [
+                  { name: "User research methods (interviews, surveys, focus groups)" },
+                  { name: "Creating user personas and empathy maps" },
+                  { name: "Journey mapping and identifying user pain points" },
+                  { name: "Competitive analysis and market research" },
+                  { name: "Conducting usability studies and feedback collection" },
+
+
+
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: UX Design Principles",
+                lessons: [
+                  { name: "Principles of user-centered design" },
+                  { name: "Information architecture and navigation design" },
+                  { name: "Wireframing basics: low-fidelity to high-fidelity wireframes" },
+                  { name: "Building user flows and task flows" },
+                  { name: "Content strategy for UX" },
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: UI Design Fundamentals",
+                lessons: [
+                  { name: "Visual design principles (layout, color theory, typography)" },
+                  { name: "Grid systems and responsive design" },
+                  { name: "Creating UI patterns (buttons, forms, icons)" },
+                  { name: "Designing for mobile and web interfaces" },
+                  { name: "Accessibility in UI design: creating inclusive interfaces" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Prototyping and Interaction Design",
+                lessons: [
+                  { name: "Prototyping tools: Figma, Adobe XD, Sketch" },
+                  { name: "Creating interactive prototypes" },
+                  { name: "Microinteractions and animations in UI" },
+                  { name: "Testing prototypes with users" },
+                  { name: "Feedback iteration and refinement of designs" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: Advanced UX Techniques",
+                lessons: [
+                  { name: "Designing for different platforms (mobile, web, tablets)" },
+                  { name: "Design Systems: creating a cohesive and scalable design system" },
+                  { name: "UX writing: the importance of microcopy in guiding users" },
+                  { name: "Designing for voice, gestures, and other emerging interfaces" },
+
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7: User Testing and Feedback",
+                lessons: [
+                  { name: "Conducting usability tests and heuristic evaluation" },
+                  { name: "A/B testing for design decisions" },
+                  { name: "Analyzing user feedback and refining designs" },
+                  { name: "Metrics to measure UX success (conversion rates, task success)" },
+
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 8: Portfolio Building and Career Preparation",
+                lessons: [
+                  { name: "Assembling your UI/UX portfolio" },
+                  { name: "Presenting design work effectively to stakeholders" },
+                  { name: "Job roles in UI/UX design" },
+                  { name: "Interview preparation for UI/UX roles" },
+                  { name: "Freelancing vs. in-house opportunities" },
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -360,7 +377,7 @@ const FullStackProgram = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -370,7 +387,7 @@ const FullStackProgram = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>
@@ -444,14 +461,15 @@ const FullStackProgram = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">Nov 2025</span>
-  </h3>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">Nov 2025</span>
+              </h3>
 
-  {/* Countdown Grid */}
-
-</div> <div
+              {/* Countdown Grid */}
+            </div>{" "}
+            <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -477,7 +495,6 @@ const FullStackProgram = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
-
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {
@@ -531,103 +548,102 @@ const FullStackProgram = () => {
             </div>
           </div>
         </div>
-       <div className=" py-12 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-    Admiration expressed by others regarding our presence.
-  </h2>
+        <div className=" py-12 overflow-hidden">
+          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+            Admiration expressed by others regarding our presence.
+          </h2>
 
-  <div className="relative w-full space-y-8 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-      {[...Array(2)].flatMap(() =>
-        [
-          {
-            name: "Vrinda K",
-            title: "Dayalbagh Educational Institute",
-            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-            img: "/vrindaK.png",
-          },
-          {
-            name: "Smriti Mathuriya",
-            title: "Dayalbagh Educational Institute",
-            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-            img: "/Smrithi.png",
-          },
-          {
-            name: "Aan Narai",
-            title: "Alliance University",
-            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-            img: "/Aan.png",
-          },
-          {
-            name: "Kavya R",
-            title: "Bachelor's in Engineering",
-            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-            img: "/Kavya.png",
-          },
-          {
-            name: "Kulsum Bano",
-            title: "MMICT&MB, 2nd Year",
-            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-            img: "/Kulsum.png",
-          },
-          {
-            name: "Bollepally Jashwanth Varma",
-            title: "Sai Spurthi Institute of Technology, 3rd Year",
-            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-            img: "/CyberUnknown.png",
-          },
-          {
-            name: "Tejaswini.K",
-            title: "Jayaraj Annapackiam College",
-            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-            img: "/TejasvaniK.png",
-          },
-          {
-            name: "Thotakura Puneeth Sai",
-            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-            img: "/Thotakura Puneeth Sai.png",
-          },
-          {
-            name: "Preetham",
-            title: "Navkis College of Engineering",
-            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-            img: "/pritam.png",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-          >
-            <svg
-              className="text-blue-500 text-xl mb-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-            </svg>
-            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-            <div className="flex items-center space-x-3 mt-auto">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-sm">{item.name}</p>
-                <p className="text-xs text-gray-500">{item.title}</p>
-              </div>
+          <div className="relative w-full space-y-8 overflow-x-hidden">
+            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+              {[...Array(2)].flatMap(() =>
+                [
+                  {
+                    name: "Vrinda K",
+                    title: "Dayalbagh Educational Institute",
+                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+                    img: "/vrindaK.png",
+                  },
+                  {
+                    name: "Smriti Mathuriya",
+                    title: "Dayalbagh Educational Institute",
+                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+                    img: "/Smrithi.png",
+                  },
+                  {
+                    name: "Aan Narai",
+                    title: "Alliance University",
+                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+                    img: "/Aan.png",
+                  },
+                  {
+                    name: "Kavya R",
+                    title: "Bachelor's in Engineering",
+                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+                    img: "/Kavya.png",
+                  },
+                  {
+                    name: "Kulsum Bano",
+                    title: "MMICT&MB, 2nd Year",
+                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+                    img: "/Kulsum.png",
+                  },
+                  {
+                    name: "Bollepally Jashwanth Varma",
+                    title: "Sai Spurthi Institute of Technology, 3rd Year",
+                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+                    img: "/CyberUnknown.png",
+                  },
+                  {
+                    name: "Tejaswini.K",
+                    title: "Jayaraj Annapackiam College",
+                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+                    img: "/TejasvaniK.png",
+                  },
+                  {
+                    name: "Thotakura Puneeth Sai",
+                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+                    img: "/Thotakura Puneeth Sai.png",
+                  },
+                  {
+                    name: "Preetham",
+                    title: "Navkis College of Engineering",
+                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+                    img: "/pritam.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+                  >
+                    <svg
+                      className="text-blue-500 text-xl mb-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+                    </svg>
+                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+                    <div className="flex items-center space-x-3 mt-auto">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <div>
+                        <p className="font-semibold text-sm">{item.name}</p>
+                        <p className="text-xs text-gray-500">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
             </div>
           </div>
-        ))
-      )}
-    </div>
-  </div>
-</div>
-
+        </div>
       </div>
     </>
   );
