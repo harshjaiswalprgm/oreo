@@ -17,11 +17,11 @@ const SupportSection = () => {
         <div className="flex-1 space-y-4">
           <p className="text-sm font-semibold text-gray-500 uppercase">Support</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Glowlogics Solutions Academic <br className="hidden md:block" />
-            Support
+            Student Support <br className="hidden md:block" />
+           Glowlogics Solutions
           </h2>
           <p className="text-gray-500 text-lg">
-            Get better help from our best support hr@glowlogics. We’re here to guide you through every step.
+            For any questions or guidance, connect with our support team at help@glowlogics.com. We’re here to help you succeed.
           </p>
         </div>
         <div className="flex-1">

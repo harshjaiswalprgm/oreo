@@ -83,7 +83,7 @@ export default function About3DMarquee() {
       <div className="py-24 px-4 text-center overflow-hidden relative">
         <div className="max-w-4xl mx-auto mb-14">
           <p className="text-sm text-orange-600 font-semibold uppercase tracking-widest mb-2">
-            Joined over 100,000 happy students
+            Joined over 90,000 happy students
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
             Where Ambition Meets Opportunity
@@ -127,19 +127,16 @@ export default function About3DMarquee() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
             <div>
               <h2 className="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
-                Our mission is to empower talents to build innovative products
-                that positively impact society
+               Our mission is simple: help you build projects and skills that aren’t just for marks, but for real impact.
               </h2>
             </div>
             <div className="space-y-4">
               <h4 className="font-semibold text-lg">Our core strength</h4>
               <p className="text-gray-600">
-                Lies in our expertise in identifying and selecting top talents.
+                From hidden potential to industry ready professionals,we guide every step.
               </p>
               <p className="text-gray-600">
-                At our company, we possess extensive and varied expertise honed
-                through our experience in discovering talents in specific
-                niches.
+                At Glowlogics, we’re here to help students like you unlock skills that match today’s industry needs.
               </p>
             </div>
           </div>
@@ -151,10 +148,9 @@ export default function About3DMarquee() {
                 Our story ↓
               </h5>
               <p className="text-gray-600">
-                Glowlogics started five years ago with a small team of four
-                people. Initially, we focused on Full-Stack JavaScript
-                development and gradually expanded to full-cycle development
-                with diverse expertise.
+              Glowlogics Solutions was created to make learning feel real again. We saw too many students finish courses but feel lost when facing actual industry challenges. That’s why we designed programs that focus not just on teaching but on building real skills, real portfolios, and real confidence.
+              From our first batch of learners to now partnering with institutions like E-Cell IIT Hyderabad, our focus has always been the same: help individuals grow, get hired, and stay relevant in an ever-changing job market.
+              At Glowlogics, it’s not just about certificates it’s about creating real stories of growth, success, and transformation.
               </p>
               <button className="text-red-500 font-semibold mt-2 hover:underline">
                 Read more →
@@ -176,11 +172,11 @@ export default function About3DMarquee() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="bg-gray-50 py-8 px-4 rounded-xl shadow">
-              <h3 className="text-4xl font-bold mb-2">5000+</h3>
+              <h3 className="text-4xl font-bold mb-2">7000+</h3>
               <p className="text-gray-600">Students already enrolled</p>
             </div>
             <div className="bg-gray-50 py-8 px-4 rounded-xl shadow">
-              <h3 className="text-4xl font-bold mb-2">20000+</h3>
+              <h3 className="text-4xl font-bold mb-2">28000+</h3>
               <p className="text-gray-600">Delivered projects</p>
             </div>
             <div className="bg-gray-50 py-8 px-4 rounded-xl shadow">
@@ -234,12 +230,10 @@ export default function About3DMarquee() {
                     className="w-6 h-6 mb-2"
                   />
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                    Want to shape the future of learning?
+                    Want to be part of something that changes how people learn?
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    You’ll collaborate with a passionate, experienced, and
-                    globally distributed team dedicated to building a
-                    world-class, innovative platform.
+                   Collaborate with a skilled, enthusiastic team building a platform used by learners worldwide.
                   </p>
                   <button className="px-6 py-3 bg-black text-white rounded-full shadow hover:bg-gray-900 transition">
                     Join us now!
@@ -370,16 +364,19 @@ export default function About3DMarquee() {
         {/* Center Content */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2">
-            ICFAI University, Hyderabad
+            Canara Engineering College
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            We are thrilled to announce our collaboration with{" "}
+            We’re proud to announce our official collaboration with Canara Engineering College 
+            through a signed MoU. Together, we aim to empower and educate 1000+ students with 
+            industry-relevant skills, real-world projects, and career-focused training designed 
+            to bridge the gap between {" "}
             <span className="font-semibold text-black">
-              ICFAI University, Hyderabad
+              Canara Engineering College
             </span>
-            . We aim to provide unparalleled opportunities for{" "}
-            <span className="font-semibold">skill development</span> and{" "}
-            <span className="font-semibold">career growth</span>.
+             and career-focused training designed to bridge the gap between for{" "}
+            <span className="font-semibold">academics and </span> and{" "}
+            <span className="font-semibold">professional success.</span>.
           </p>
         </div>
 
