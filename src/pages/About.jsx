@@ -369,7 +369,7 @@ export default function About3DMarquee() {
           <p className="text-gray-600 leading-relaxed text-lg">
             We’re proud to announce our official collaboration with 
             <span className="font-semibold text-black">
-              Canara Engineering College, Managlore 
+               Canara Engineering College, Managlore 
             </span>
             through a signed MoU. Together, we aim to empower and educate 1000+ students with 
             industry-relevant skills, real-world projects, and career-focused training designed 
