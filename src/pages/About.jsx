@@ -364,17 +364,16 @@ export default function About3DMarquee() {
         {/* Center Content */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-2">
-            Canara Engineering College
+            Glowlogics × Canara Engineering College
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            We’re proud to announce our official collaboration with Canara Engineering College 
+            We’re proud to announce our official collaboration with 
+            <span className="font-semibold text-black">
+              Canara Engineering College, Managlore 
+            </span>
             through a signed MoU. Together, we aim to empower and educate 1000+ students with 
             industry-relevant skills, real-world projects, and career-focused training designed 
             to bridge the gap between {" "}
-            <span className="font-semibold text-black">
-              Canara Engineering College
-            </span>
-             and career-focused training designed to bridge the gap between for{" "}
             <span className="font-semibold">academics and </span> and{" "}
             <span className="font-semibold">professional success.</span>.
           </p>
