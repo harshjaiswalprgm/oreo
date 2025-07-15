@@ -9,52 +9,52 @@ const faqs = [
       "Glowlogics is an ISO and MSME-certified Software training company offering industry-relevant training programs, internships, and placement assistance in both technical and non-technical domains..",
   },
   {
-    question: "Who can join these programs?",
+    question: "Who can join these Programs?",
     answer:
       "Engineering, management, commerce, and general degree students from 1st year to final year, as well as working professionals looking to upskill, can enroll.",
   },
   {
-    question: "Are Glowlogics certificates valid?",
+    question: "Are Glowlogics Certificates valid?",
     answer:
       "Yes. Glowlogics certifications are ISO and MSME-recognized, which means they hold value for placements, higher studies, and professional growth. ",
   },
   {
-    question: "What is your refund policy?",
+    question: "What is your Refund policy?",
     answer:
       "Glowlogics follows a no-refund policy once the program has been initiated, as per ISO compliance. We encourage all students to review program details carefully before registering.",
   },
   {
-    question: "Do you provide live classes or only recorded content?",
+    question: "Do you provide Live classes or only Recorded content?",
     answer:
       "We offer both options: Live interactive classes with mentors for select programs, Self-paced learning with mentor support for others.",
   },
   {
-    question: "How does placement assistance work?",
+    question: "How does Placement Assistance work?",
     answer:
       "Placement assistance includes:Resume building,LinkedIn profile optimization,Direct referrals to hiring partners and MNCs, While we assist with placement, job offers depend on the student’s performance and skills.",
   },
   {
-    question: "Are the mentors industry professionals?",
+    question: "Are the Mentors Industry Professionals?",
     answer:
       "Yes. Our mentors come from companies like TCS, Cognizant, Capgemini, and other leading organizations, ensuring practical exposure and real-world insights.",
   },
   {
-    question: "How do I register for a course?",
+    question: "How do I Register for a Program?",
     answer:
       "You can register using our official Registration link or through Company QR Code only",
   },
   {
-    question: "Do I get internship opportunities through Glowlogics?",
+    question: "Do I get Internship Opportunities through Glowlogics?",
     answer:
       "Yes. Most of our programs include an internship component with real-world projects, weekly mentor guidance, and project submission requirements.",
   },
   {
-    question: "What are the payment methods available?",
+    question: "What are the Payment methods available?",
     answer:
       "You can pay via UPI, Google Pay, PhonePe, Paytm, or direct bank transfer. Company QR code and account details are shared after registration.",
   },
   {
-    question: "Can I enroll while studying in college?",
+    question: "Can I Enroll while studying in college?",
     answer:
       "Absolutely. Our programs are structured keeping students' academic schedules in mind, making them flexible for both college students and working professionals.",
   },
