@@ -28,21 +28,21 @@ function About() {
           <div className="space-y-12">
             {[
               {
-                title: "Our Approach",
+                title: "Who We Are",
                 text:
-                  "At Glowlogics, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
+                  "Glowlogics Solutions is a government-recognized MSME and proudly certified under the Startup India initiative. We offer ISO-certified internship and training programs designed to bridge the gap between academic knowledge and industry demands. As official collaborators with Techfest, IIT Bombay, and E-Cell, IIT Hyderabad, we actively conduct nationwide hackathons, workshops, and innovation challenges to equip students with cutting-edge skills. Our commitment is to deliver practical, hands-on learning experiences that not only enhance technical know-how but also build confidence and job-readiness among today’s youth.",
                 img: "/ourApproch.jpg",
               },
               {
                 title: "Our Vision",
                 text:
-                  "To become the world’s most trusted learning ecosystem where individuals from all backgrounds can access quality, future-focused education and transform their potential into excellence.",
+                  "At Glowlogics, our vision is to democratize access to quality education and skill development, making it both affordable and effective. We aim to be a catalyst for change in the education ecosystem by enabling individuals from all walks of life to harness their potential, adapt to evolving industries, and thrive in the digital age. Through strategic partnerships and real-time learning modules, we envision a future where no learner is left behind.",
                 img: "https://img.freepik.com/premium-photo/text-human-hand_1048944-10059543.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
               },
               {
                 title: "Our Mission",
                 text:
-                  "We aim to empower learners and professionals through affordable, innovative, and real-world aligned education experiences — helping them thrive in an ever-evolving global job market.",
+                  "Our mission is to empower students and young professionals with industry-aligned, practical skills that prepare them for the real world. By offering a wide range of internship programs, technical bootcamps, and project-based training, we strive to ensure a seamless transition from classroom education to corporate employment. Our goal is to not just train, but to mentor and guide every learner toward meaningful, long-term career success.",
                 img: "https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=FbH7i1I3oCXoRfZKFvGj3jMXnsljD8mPmDmvY4IxQuA=",
               },
             ].map((item, i) => (
