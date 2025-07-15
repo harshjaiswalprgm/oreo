@@ -371,7 +371,7 @@ export default function About3DMarquee() {
             <span className="font-semibold text-black">
                Canara Engineering College, Managlore 
             </span>
-            through a signed MoU. Together, we aim to empower and educate 1000+ students with 
+              through a signed MoU. Together, we aim to empower and educate 1000+ students with 
             industry-relevant skills, real-world projects, and career-focused training designed 
             to bridge the gap between {" "}
             <span className="font-semibold">academics and </span> and{" "}
