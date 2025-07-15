@@ -87,31 +87,31 @@ function About() {
 
   <div className="grid md:grid-cols-[1fr_3fr_2fr] gap-10 md:gap-16 text-base md:text-lg items-start">
     <div className="font-semibold text-xl md:text-2xl">
-      What you can expect:
+     What You’ll Experience with Glowlogics
     </div>
 
     {/* POINTS AS BOLD LIST ITEMS */}
     <div className="space-y-6 text-justify">
       {[
         {
-          heading: "🤝 Passionate Collaboration",
+          heading: "→ Collaborative Learning Environment",
           desc:
-            "We work with learners, professionals, and organizations determined to grow in a digital world.",
+            "Learn alongside passionate students, professionals, and industry mentors committed to growth in today’s digital-first world.",
         },
         {
-          heading: "🎯 Real-World Application",
+          heading: "→ Skills You Can Actually Use",
           desc:
-            "Our content bridges the gap between theory and hands-on skills you'll actually use.",
+            "Our programs focus on practical,real-world applications not just theory. Build skills and projects that directly apply to your career.",
         },
         {
-          heading: "📚 Expert-Led Learning",
+          heading: "→ Guidance from Industry Experts",
           desc:
-            "Courses are guided by industry leaders and seasoned mentors for top-tier quality.",
+            "Gain insights from experienced professionals and mentors from top MNCs, ensuring you learn what’s relevant and in-demand.",
         },
         {
-          heading: "💼 Career-Focused Growth",
+          heading: "→ Career-Driven Training",
           desc:
-            "Every lesson, project, and experience is built to boost your employability and results.",
+            "Everything you do with us from Training to projects is designed with employability in mind, helping you stand out in interviews and job placements.",
         },
       ].map((point, i) => (
         <motion.div

@@ -108,7 +108,7 @@ export default function Image3DSlider() {
    <div
   className="carousel-wrapper bg-orange-100 ">
   <h2 className="carousel-heading">
-    Fuel Your Ambitions with Industry-Leading Online Programs
+    Step Into the Industry with Confidence and Certification
   </h2>
   <p className="carousel-description">
     Learn in-demand tools and strategies to elevate your career from anywhere.

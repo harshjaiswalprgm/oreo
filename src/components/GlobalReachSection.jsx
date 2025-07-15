@@ -8,8 +8,7 @@ const GlobalReachSection = () => {
       </h2>
 
       <p className="text-gray-500 text-lg mb-10">
-        At TheLearniverse, your learning journey is tailored, hands-on, and
-        supported by a vibrant community.
+        From Learning to Earning — Students Trust Glowlogics to Bridge the Gap
       </p>
 
       <div className="overflow-hidden w-full max-w-5xl mx-auto">

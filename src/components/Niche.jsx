@@ -111,7 +111,7 @@ export default function Footer() {
               <div>
                 <p className="font-semibold mb-1">M:</p>
                 <a href="mailto:hr@glowlogics.in" className="underline">
-                  hr@glowlogics.in
+                  help@glowlogics.in
                 </a>
               </div>
 
@@ -225,7 +225,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           <p className="text-center">
-            © GlowLogics Solutions All Rights Reserved{" "}
+            © 2023 Glowlogics Solutions Pvt. Ltd. All Rights Reserved{" "}
             <button
               onClick={() => handleNavClick("legal-terms")}
               className="underline"
@@ -240,7 +240,7 @@ export default function Footer() {
               Privacy Policy
             </button>
           </p>
-          <p className="text-center">Website by Glowlogics</p>
+          <p className="text-center">Website by Glowlogics | Connecting Skills to Careers.</p>
         </div>
       </div>
     </section>
