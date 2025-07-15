@@ -264,55 +264,85 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Power BI",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "What is Power BI?"},
+                  {name: "Power BI vs Excel vs Tableau"},
+                  {name: "Components: Power BI Desktop, Service, and Mobile App"},
+                  {name: "Data Analytics Flow with Power BI"},
+                  {name: "Use cases in business and industry"},
                 ],
               },
-              {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 2: Getting Started with Power BI Desktop",
+                lessons: [
+                  {name: "Interface overview"},
+                  {name: "Connecting to various data sources (Excel, CSV, Web, SQL)"},
+                  {name: "Data load vs direct query"},
+                  {name: "Basic data transformation"},
+                ],
               },
-              {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 3: Power Query Editor (ETL)",
+                lessons: [
+                  {name: "Cleaning & transforming data"},
+                  {name: "Removing errors, duplicates"},
+                  {name: "Column splitting, merging, and data typing"},
+                  {name: "Using applied steps and query folding"},
+                  {name: "Data profiling and quality checks"},
+                ],
               },
-              {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: " Module 4: Data Modeling",
+                lessons: [
+                  {name: "Star schema vs snowflake schema"},
+                  {name: "Creating relationships between tables"},
+                  {name: "Primary & foreign keys"},
+                  {name: "Understanding cardinality and cross filter direction"},
+                  {name: "Normalization vs denormalization"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 5: DAX (Data Analysis Expressions)",
+                lessons: [
+                  {name: "Calculated columns vs measures"},
+                  {name: "Basic DAX functions: SUM, COUNT, DISTINCTCOUNT"},
+                  {name: "Logical functions: IF, SWITCH"},
+                  {name: "Time intelligence: YTD, MTD, SAMEPERIODLASTYEAR"},
+                  {name: "Aggregation and filter functions"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 6: Visualizations ",
+                lessons: [
+                  {name: "Bar, line, pie, waterfall, gauge, combo charts"},
+                  {name: "Slicers, cards, KPIs, matrix, table"},
+                  {name: "Custom visuals and marketplace"},
+                  {name: "Conditional formatting and drill-downs"},
+                  {name: "Best practices for dashboards"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 7: Power BI Service (Cloud)",
+                lessons: [
+                  {name: "Publishing reports to Power BI Service"},
+                  {name: "Creating and sharing dashboards"},
+                  {name: "Workspaces, datasets, reports, and apps"},
+                  {name: "Scheduled data refresh"},
+                  {name: "Row-level security basics"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 8: Power BI Project + Case Study",
+                lessons: [
+                  {name: "End-to-end dashboard creation using a business dataset"},
+                  {name: "Applying ETL, modeling, DAX, and visuals"},
+                  {name: "Workspaces, datasets, reports, and apps"},
+                  {name: "Storytelling with data"},
+                  {name: "Client presentation practice"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -337,7 +367,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -347,7 +377,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

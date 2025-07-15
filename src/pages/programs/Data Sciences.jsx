@@ -273,54 +273,93 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Python for Data Science",
+                lessons: [
+                  { name: "Introduction to Python, Jupyter Notebooks" },
+                  { name: "Data types, variables, operators" },
+                  { name: "Control structures (if, for, while)" },
+                  { name: "Functions, lambda expressions" },
+                  {
+                    name: "Data structures: Lists, tuples, sets, dictionaries",
+                  },
+                  {
+                    name: "Libraries: NumPy & Pandas (basic data manipulation)",
+                  },
+                ],
+              },
+
+              {
+                title: "Module 2: Statistics & Probability",
                 lessons: [
                   {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
+                    name: "Descriptive statistics: Mean, median, mode, variance, standard deviation",
+                  },
+                  {
+                    name: "Probability basics: Independent vs. dependent events",
+                  },
+                  { name: "Normal distribution, skewness, and kurtosis" },
+                  {
+                    name: "Hypothesis testing, p-values, confidence intervals",
                   },
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: Data Visualization",
+                lessons: [
+                  {
+                    name: "Using Matplotlib: Line plots, bar charts, histograms",
+                  },
+                  { name: "Using Seaborn: Heatmaps, pair plots, violin plots" },
+                  { name: "Plot styling and customization" },
+                  { name: "Telling stories with data visuals" },
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: Exploratory Data Analysis (EDA)",
+                lessons: [
+                  {
+                    name: "Data cleaning: Handling nulls, duplicates, outliers",
+                  },
+                  { name: "Feature engineering basics" },
+                  { name: "Correlation analysis" },
+                  {
+                    name: "Case study: EDA on a real dataset (Titanic, Iris, or custom)",
+                  },
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: " Module 5: SQL & Data Handling",
+                lessons: [
+                  { name: "SQL basics: SELECT, WHERE, GROUP BY, JOIN" },
+                  { name: "Querying datasets from SQLite/MySQL" },
+                  {
+                    name: "Integration of SQL with Python via sqlite3 or SQLAlchemy",
+                  },
+                  { name: "Hands-on querying real-world datasets" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: " Module 6: Machine Learning Algorithms",
+                lessons: [
+                  { name: "ML pipeline overview: Supervised vs Unsupervised" },
+                  { name: "Linear & Logistic Regression" },
+                  { name: "Decision Trees & Random Forest" },
+                  { name: "K-Means Clustering" },
+                  {
+                    name: "Model evaluation: Confusion matrix, accuracy, recall, precision, F1-score",
+                  },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7: Deep Learning Fundamentals",
+                lessons: [
+                  { name: "Introduction to Neural Networks" },
+                  { name: "TensorFlow/Keras basics" },
+                  {
+                    name: "Building a simple neural network (image or text dataset)",
+                  },
+                  { name: "Overfitting & regularization concepts" },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -346,7 +385,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -356,7 +395,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

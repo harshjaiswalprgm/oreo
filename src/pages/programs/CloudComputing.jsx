@@ -279,55 +279,79 @@ const FullStackProgram = () => {
 
             {[
               {
-                title: "Section 01: Program Introduction",
+                title: "Module 1. Introduction to Cloud Computing",
                 lessons: [
-                  {
-                    name: "Lesson 01: Program Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "Fundamentals of cloud computing"},
+                  {name: "History and evolution of cloud services"},
+                  {name: "Understanding IaaS, PaaS, SaaS models"},
+                  {name: "Public, private, and hybrid clouds"},
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2. Cloud Service Providers",
+                lessons: [
+                  {name: "AWS (Amazon Web Services)"},
+                  {name: "Microsoft Azure"},
+                  {name: "Google Cloud Platform (GCP)"},
+                  {name: "Overview of each provider’s strengths and offerings"},
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3. Cloud Infrastructure Management",
+                lessons: [
+                  {name: "Virtualization technologies"},
+                  {name: "Virtual Machines, Containers, and Serverless Computing"},
+                  {name: "Networking in the cloud (VPCs, DNS, Load Balancers)"},
+                  {name: "Storage Solutions (S3, EBS, Azure Blob, Google Cloud)"},
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4. Cloud Security",
+                lessons: [
+                  {name: "Identity and Access Management (IAM"},
+                  {name: "Encryption and Data Security in the cloud"},
+                  {name: "Securing cloud infrastructure (firewalls, security groups"},
+                  {name: "Disaster recovery and backup strategies"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5. Cloud Automation & DevOps ",
+                lessons: [
+                  {name: "Introduction to DevOps and its role in cloud computing"},
+                  {name: "Continuous Integration/Continuous Deployment (CI/CD) "},
+                  {name: "Automation tools: Terraform, Ansible, Jenkins, AWS CloudFormation"},
+                  {name: "Monitoring cloud infrastructure with tools like CloudWatch, Azure Monitor"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6. Database Management in the Cloud",
+                lessons: [
+                  {name: "Managed Databases (RDS, DynamoDB, CosmosDB, Cloud SQL)"},
+                  {name: "NoSQL vs. SQL databases in cloud environments"},
+                  {name: "Database scaling and management strategies"},
+
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7. Cloud Architecture Design ",
+                lessons: [
+                  {name: "Designing scalable, fault-tolerant cloud architectures"},
+                  {name: "Microservices architecture and container orchestration with Kubernetes"},
+                  {name: "Best practices for cloud resource management"},
+                  {name: "Multi-cloud and hybrid cloud strategies"},
+
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 8. Real-World Applications ",
+                lessons: [
+                  {name: "Building and deploying web applications in the cloud"},
+                  {name: "Migrating on-premise infrastructure to the cloud"},
+                  {name: "Cloud-native development and serverless architectures"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -352,7 +376,7 @@ const FullStackProgram = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -362,7 +386,7 @@ const FullStackProgram = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

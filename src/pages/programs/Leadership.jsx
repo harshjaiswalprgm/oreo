@@ -95,14 +95,14 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/"
+            {/* <a
+              href="/public/ProgramsPDF/"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
-            </a>
+            </a> */}
           </div>
 
           {/* Rating & Learners */}
@@ -276,43 +276,43 @@ const FullStackCourse = () => {
               },
               {
                 title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
               {
                 title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                lessons: [{ name: "Preview coming soon" }],
               },
             ].map((section, index) => (
               <div

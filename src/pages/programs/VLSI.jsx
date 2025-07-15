@@ -435,17 +435,17 @@ const FullStackCourse = () => {
                         training course
                       </li>
                       <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for theVLSIelopment exam with PMI</li>
+                      <li>Apply for the VLSI exam with PMI</li>
                       <li>Pass your exam to earn certification</li>
                     </ul>
                   ),
                 },
                 {
-                  q: "What are theVLSIelopment certification requirements?",
+                  q: "What are the VLSI certification requirements?",
                   a: "Eligibility criteria vary, usually requiring education and project experience.",
                 },
                 {
-                  q: "How long is theVLSIelopment certification valid for?",
+                  q: "How long is the VLSI certification valid for?",
                   a: "WebDevelopment certification is valid for 3 years and requires renewal.",
                 },
                 {
@@ -453,19 +453,19 @@ const FullStackCourse = () => {
                   a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of theVLSIelopment certification course?",
+                  q: "Do you provide any practice tests as part of the VLSI certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of theVLSIelopment certification course?",
+                  q: "Do you provide any practice tests as part of the VLSI certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of theVLSIelopment certification course?",
+                  q: "Do you provide any practice tests as part of the VLSI certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of theVLSIelopment certification course?",
+                  q: "Do you provide any practice tests as part of the VLSI certification course?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
               ].map((item, idx) => (

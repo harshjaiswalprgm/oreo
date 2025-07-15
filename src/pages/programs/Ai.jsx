@@ -277,55 +277,80 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Python for AI",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                {name: "Python Basics: Variables, Data Types, Lists, Tuples, Dictionaries"},
+                {name: "Functions, Conditional Statements, and Loops"},
+                {name: "Hands-on: Basic Python programs for AI tasks"},
+
                 ],
               },
-              {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+
+               {
+                title: "Module 2: Data Handling & Visualization Libraries",
+                lessons: [
+                {name: "Introduction to Numpy & Pandas"},
+                {name: "Data Cleaning and Manipulation"},
+                {name: "Visualization with Matplotlib & Seaborn"},
+                {name: "Hands-on: Building charts and plots with real datasets"},
+                ],
               },
-              {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 3: Math & Stats for Machine Learning",
+                lessons: [
+                {name: "Basic Linear Algebra: Vectors, Matrices"},
+                {name: "Statistics: Mean, Median, Mode, Dispersion"},
+                {name: "Probability Concepts: Central Tendency, Gaussian Distribution"},
+                {name: "Hands-on: Data analysis using Python"},
+                ],
               },
-              {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 4: Supervised Machine Learning",
+                lessons: [
+                {name: "Linear & Logistic Regression"},
+                {name: "Decision Trees and Support Vector Machines (SVM)"},
+                {name: "Real-world Case Study Implementation using Scikit-learn"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 5: Unsupervised Learning & Clustering",
+                lessons: [
+                {name: "K-Means Clustering and Elbow Method"},
+                {name: "Distance Metrics: Euclidean & Manhattan"},
+                {name: "Practical Project: Customer Segmentation"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 6: Introduction to Deep Learning",
+                lessons: [
+                {name: "Neural Networks: Basics and Architecture"},
+                {name: "Keras & TensorFlow for Model Building"},
+                {name: "Real-life Application: Text Classification"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+
+               {
+                title: "Module 7: NLP & Text Processing",
+                lessons: [
+                {name: "Sentiment Analysis, Tokenization, Stemming"},
+                {name: "Text Classification with Naïve Bayes"},
+                {name: "Chatbot & Recommendation System Concepts"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 8: CNNs & Image Analysis (Optional/Advanced)",
+                lessons: [
+                {name: "Grayscale vs Binary Images"},
+                {name: "Filters, Kernels, and CNN Architecture"},
+                {name: "Mini project: Image classification basics"},
+
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -350,7 +375,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -360,7 +385,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

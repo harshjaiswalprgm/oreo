@@ -255,11 +255,18 @@ const FullStackCourse = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              AutoCAD<sup>®</sup> is a leading computer-aided design (CAD) software used by architects, engineers, and designers to create precise 2D and 3D drawings. This program is designed to equip learners with essential drafting and modeling skills using AutoCAD’s powerful tools and features. Participants will learn to create technical drawings, floor plans, mechanical parts, and electrical schematics with accuracy and efficiency. Through hands-on projects and industry-relevant exercises, the course prepares you for real-world applications in architecture, engineering, construction, and manufacturing fields.
-
+              AutoCAD<sup>®</sup> is a leading computer-aided design (CAD)
+              software used by architects, engineers, and designers to create
+              precise 2D and 3D drawings. This program is designed to equip
+              learners with essential drafting and modeling skills using
+              AutoCAD’s powerful tools and features. Participants will learn to
+              create technical drawings, floor plans, mechanical parts, and
+              electrical schematics with accuracy and efficiency. Through
+              hands-on projects and industry-relevant exercises, the course
+              prepares you for real-world applications in architecture,
+              engineering, construction, and manufacturing fields.
             </p>
           </div>
-
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -267,54 +274,100 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: AutoCAD Basics & Interface",
                 lessons: [
+                  { name: "Introduction to AutoCAD & its industry relevance" },
                   {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
+                    name: "Navigating the interface, workspace, and UI customization",
+                  },
+                  { name: "AutoCAD coordinate system and drawing settings" },
+                  {
+                    name: "Fundamental drawing commands (line, circle, rectangle, arc)",
                   },
                 ],
               },
+
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 2: 2D Drawing & Modifications",
+                lessons: [
+                  {
+                    name: "Drawing techniques: polyline, spline, fillet, chamfer",
+                  },
+                  {
+                    name: "Modify tools: trim, extend, offset, rotate, mirror, scale",
+                  },
+                  {
+                    name: "Object snaps, layers, line types, colors, and properties",
+                  },
+                  {
+                    name: "Annotation: text, dimensioning, leaders, and hatching",
+                  },
+                ],
               },
+
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 3: Advanced 2D Techniques",
+                lessons: [
+                  { name: "Blocks and dynamic blocks with attributes" },
+                  { name: "External references (Xrefs) and group usage" },
+                  { name: "Parametric constraints for design precision" },
+                  { name: "Template creation and design reuse techniques" },
+                ],
               },
+
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: 3D Modeling & Visualization",
+                lessons: [
+                  { name: "Introduction to 3D modeling in AutoCAD" },
+                  {
+                    name: "Creating and editing 3D solids, surfaces, and meshes",
+                  },
+                  {
+                    name: "Visualizing models using UCS, views, and visual styles",
+                  },
+                  { name: "Materials, rendering basics, and lighting setup" },
+                ],
               },
+
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Layouts, Plotting & Output",
+                lessons: [
+                  { name: "Model space vs. paper space" },
+                  { name: "Creating viewports, title blocks, and layouts" },
+                  { name: "Plotting/printing configurations and scale setup" },
+                  { name: "Exporting to PDF/DWG/DXF" },
+                ],
               },
+
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: Industry Applications",
+                lessons: [
+                  {
+                    name: "Architecture: Floor plans, sections, and elevation drawings",
+                  },
+                  {
+                    name: "Mechanical: Machine components, assemblies, isometric views",
+                  },
+                  {
+                    name: "Electrical: Circuit layouts, symbols, and panel diagrams",
+                  },
+                  {
+                    name: "Civil: Site plans, contour mapping, and infrastructure layouts",
+                  },
+                ],
               },
+
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7: MATLAB Essentials for Design Engineers",
+                lessons: [
+                  { name: "Introduction to MATLAB and its GUI" },
+                  { name: "Basic syntax, variables, and scripts" },
+                  { name: "Working with vectors, matrices, and functions" },
+                  { name: "Plotting 2D/3D graphs and basic signal processing" },
+                  {
+                    name: "Simple AutoCAD data import/export using MATLAB (conceptual overview)",
+                  },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -340,7 +393,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -350,7 +403,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

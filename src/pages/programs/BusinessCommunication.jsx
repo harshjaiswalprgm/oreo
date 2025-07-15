@@ -90,14 +90,14 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
+            {/* <a
               href="/src/assets/images/DSA in JAVA Syllubus-Glowlogics.pdf"
               download
             >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
-            </a>
+            </a> */}
           </div>
 
           {/* Rating & Learners */}
@@ -262,52 +262,11 @@ const FullStackCourse = () => {
                 title: "Section 01: Course Introduction",
                 lessons: [
                   {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
+                    name: "Lesson 01: Course Introduction"
                   },
                 ],
               },
-              {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -332,7 +291,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -342,7 +301,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

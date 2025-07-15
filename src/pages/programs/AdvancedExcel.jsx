@@ -257,55 +257,116 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Advanced Excel",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "Review of Excel basics (functions, formulas, shortcuts)"},
+                  {name: "Introduction to Excel’s advanced features and tools"},
+                  {name: "Importance of Advanced Excel skills in various industries"},
+
                 ],
               },
-              {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+
+               {
+                title: "Module 2: Advanced Formulas and Functions",
+                lessons: [
+                  {name: "Logical Functions: IF, AND, OR, IFERROR, SWITCH"},
+                  {name: "Lookup and Reference Functions: VLOOKUP, HLOOKUP, INDEXMATCH, XLOOKUP"},
+                  {name: "Text Functions: CONCATENATE, TEXT, LEFT, RIGHT, MID, FIND, SEARCH"},
+                  {name: "Date and Time Functions: DATE, EOMONTH, NETWORKDAYS, WORKDAY, TIME"},
+                  {name: "Array Formulas: Using Array Functions (TRANSPOSE, SEQUENCE) Conditional Functions: SUMIF, COUNTIF, AVERAGEIF, SUMIFS, COUNTIFS"},
+
+                ],
               },
-              {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 3: Data Validation, Auditing, and Protection",
+                lessons: [
+                  {name: "Data Validation (Custom Lists, Drop-downs, Data Restrictions)"},
+                  {name: "Data Auditing (Trace Precedents/Dependents, Evaluate Formulas)"},
+                  {name: "Protecting Worksheets and Workbooks (Password Protection, Cell Locking)"},
+                  {name: "Conditional Formatting: Advanced Formatting Rules"},
+
+                ],
               },
-              {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 4: Data Analysis Tools",
+                lessons: [
+                  {name: "Sorting and Filtering Data"},
+                  {name: "Advanced Filtering (Custom Filters, Filter by Color, Filter with Formulas)"},
+                  {name: "Subtotals and Grouping Data"},
+                  {name: "Data Tables: One-variable and Two-variable Data Tables"},
+                  {name: "Scenario Manager and Goal Seek"},
+                  {name: "What-If Analysis"},
+                  {name: "Forecasting Techniques in Excel"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 5: Pivot Tables and Pivot Charts",
+                lessons: [
+                  {name: "Creating and Formatting Pivot Tables"},
+                  {name: "Customizing Pivot Table Layouts"},
+                  {name: "Calculated Fields and Items in Pivot Tables"},
+                  {name: "Grouping Data in Pivot Tables"},
+                  {name: "Pivot Charts: Visualizing Pivot Table Data"},
+                  {name: "Slicers and Timelines for Interactive Reporting"},
+                  {name: "Creating Dashboards using Pivot Tables"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 6: Power Query and Power Pivot",
+                lessons: [
+                  {name: "Introduction to Power Query: Importing and Transforming Data"},
+                  {name: "Data Cleaning and Shaping with Power Query"},
+                  {name: "Merging and Appending Data"},
+                  {name: "Introduction to Power Pivot: Building Data Models"},
+                  {name: "Working with DAX (Data Analysis Expressions) in Power Pivot"},
+                  {name: "Creating Relationships Between Tables in Power Pivot"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 7: Power Query and Power Pivot",
+                lessons: [
+                  {name: "Introduction to Power Query: Importing and Transforming Data"},
+                  {name: "Data Cleaning and Shaping with Power Query"},
+                  {name: "Merging and Appending Data"},
+                  {name: "Introduction to Power Pivot: Building Data Models"},
+                  {name: "Working with DAX (Data Analysis Expressions) in Power Pivot"},
+                  {name: "Creating Relationships Between Tables in Power Pivot"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 8: Advanced Charting and Visualization",
+                lessons: [
+                  {name: "Creating Dynamic Charts (Interactive Charts, Combo Charts)"},
+                  {name: "Using Sparklines for Data Visualization"},
+                  {name: "Advanced Chart Techniques: Waterfall, Gantt, Thermometer Charts"},
+                  {name: "Creating Custom Charts and Templates"},
+                  {name: "Using Conditional Formatting in Charts"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+
+               {
+                title: "Module 9: Automation with Macros and VBA",
+                lessons: [
+                  {name: "Introduction to Macros: Recording, Editing, and Running Macros"},
+                  {name: "Understanding VBA (Visual Basic for Applications)"},
+                  {name: "Writing Simple VBA Code to Automate Tasks"},
+                  {name: "Working with Variables, Loops, and Conditional Statements in VBA"},
+                  {name: "Automating Repetitive Tasks with VBA"},
+                  {name: "Debugging and Error Handling in VBA"},
+                  {name: "Creating Custom Functions and User-Defined Forms"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+               {
+                title: "Module 10: Reporting and Dashboards",
+                lessons: [
+                  {name: "Creating Interactive Reports"},
+                  {name: "Designing Dashboards for Data Presentation"},
+                  {name: "Using Form Controls (Buttons, Checkboxes, Dropdowns) for Interactivity"},
+                  {name: "Linking Charts, Pivot Tables, and Data Visualizations"},
+                  {name: "Best Practices for Data Presentation and Storytelling with Excel"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
+
             ].map((section, index) => (
               <div
                 key={index}
@@ -330,7 +391,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -340,7 +401,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

@@ -64,7 +64,7 @@ const FullStackCourse = () => {
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, 
+              Master Frontend, Backend, APIs,
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2" />
@@ -268,54 +268,87 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Introduction to Accounting",
                 lessons: [
+                  { name: "Overview of Accounting Principles" },
+                  { name: "Accounting Terminology and Concepts" },
+                  { name: "Double-Entry Bookkeeping System" },
+                  { name: "Types of Accounts: Assets, Liabilities, Equity" },
+                ],
+              },
+
+              {
+                title: "Module 2: Financial Statements",
+                lessons: [
+                  { name: "Understanding Income Statements" },
+                  { name: "Balance Sheets and Cash Flow Statements" },
+                  { name: "Preparing Financial Statements" },
+                  { name: "Analyzing Financial Performance" },
+                ],
+              },
+              {
+                title: "Module 3: Accounting Cycle",
+                lessons: [
+                  { name: "Recording Transactions" },
+                  { name: "Journal Entries and Ledgers" },
+                  { name: "Adjusting Entries and Trial Balance" },
                   {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
+                    name: "Closing Accounts and Preparing Financial Statements",
                   },
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 4: Managing Accounts Payable & Receivable",
+                lessons: [
+                  { name: "Introduction to Accounts Payable/Receivable" },
+                  { name: "Managing Cash Flow" },
+                  { name: "Invoicing and Billing Procedures" },
+                  { name: "Reconciliation of Accounts" },
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 5: Payroll Accounting",
+                lessons: [
+                  { name: "Understanding Payroll Processing" },
+                  { name: "Calculating Employee Wages and Deductions" },
+                  { name: "Accounting for Employee Benefits and Taxes" },
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 6: Taxation and Compliance",
+                lessons: [
+                  { name: "Overview of Taxation Systems" },
+                  { name: "Accounting for VAT, GST, and other taxes" },
+                  { name: "Preparing and Filing Tax Returns" },
+                  { name: "Regulatory Compliance and Auditing" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 7: Budgeting and Forecasting",
+                lessons: [
+                  { name: "Budgeting Techniques" },
+                  { name: "Financial Forecasting Models" },
+                  { name: "Monitoring Budget Performance" },
+                  { name: "Variance Analysis" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 8: Accounting Software Training",
+                lessons: [
+                  {
+                    name: "Introduction to Popular Accounting Software (QuickBooks, Tally, etc.)",
+                  },
+                  { name: "Managing Financial Data with Software" },
+                  { name: "Automating Financial Processes" },
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon", preview: "#" }],
+                title: "Module 9: Financial Analysis and Reporting",
+                lessons: [
+                  { name: "Techniques for Analyzing Financial Datan" },
+                  { name: "Creating Reports for Management and Investors" },
+                  { name: "Ratio Analysis and Key Financial Indicators" },
+                ],
               },
             ].map((section, index) => (
               <div
@@ -341,7 +374,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                           <a
                             href={lesson.preview}
                             className="text-blue-600 font-medium"
@@ -351,7 +384,7 @@ const FullStackCourse = () => {
                           {lesson.time && (
                             <span className="text-gray-500">{lesson.time}</span>
                           )}
-                        </div>
+                        </div> */}
                       </div>
                     ))}
                   </div>

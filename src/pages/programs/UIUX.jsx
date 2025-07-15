@@ -405,47 +405,47 @@ const FullStackProgram = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a UIUXelopment® certification?",
+                  q: "How to get a UIUX ® certification?",
                   a: (
                     <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
                       <li>Meet the eligibility requirements</li>
                       <li>
-                        Enroll in an accredited UIUXelopment certification
+                        Enroll in an accredited UIUX  certification
                         training Program
                       </li>
                       <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the UIUXelopment exam with PMI</li>
+                      <li>Apply for the UIUX  exam with PMI</li>
                       <li>Pass your exam to earn certification</li>
                     </ul>
                   ),
                 },
                 {
-                  q: "What are the UIUXelopment certification requirements?",
+                  q: "What are the UIUX  certification requirements?",
                   a: "Eligibility criteria vary, usually requiring education and project experience.",
                 },
                 {
-                  q: "How long is the UIUXelopment certification valid for?",
-                  a: "UIUXelopment certification is valid for 3 years and requires renewal.",
+                  q: "How long is the UIUX  certification valid for?",
+                  a: "UIUX  certification is valid for 3 years and requires renewal.",
                 },
 
                 {
-                  q: "How to schedule your examination after completing UIUXelopment certification training?",
+                  q: "How to schedule your examination after completing UIUX  certification training?",
                   a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
+                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
+                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
+                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
+                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
                   a: "Yes, we provide full-length mock tests and practice questions.",
                 },
               ].map((item, idx) => (
