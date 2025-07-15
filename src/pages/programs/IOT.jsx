@@ -384,49 +384,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a IOT® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited IOT certification training
-                        course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the IOT exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the IOT certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the IOT certification valid for?",
-                  a: "IOT certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing IOT certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the IOT certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the IOT certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the IOT certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the IOT certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this IoT Certification Program?",
+    "a": "Engineering and degree students from any year or background can join. No prior coding or IoT experience is required."
+  },
+  {
+    "q": "Do I need to know programming before enrolling?",
+    "a": "No. The course starts from IoT fundamentals and covers programming basics as needed, including Arduino, sensors, and IoT platforms."
+  },
+  {
+    "q": "How long is the IoT certification valid for?",
+    "a": "The IoT Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn IoT architecture, working with sensors and actuators, Arduino and Raspberry Pi basics, data communication, cloud integration, and project deployment."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course typically runs for 2–3 months with 60+ hours of live interactive classes, doubt-clearing sessions, and hands-on project work."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized IoT Certification after successfully completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance for IoT-related roles. Final job offers depend on your performance, skills, and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

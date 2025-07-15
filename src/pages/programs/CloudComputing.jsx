@@ -404,50 +404,37 @@ const FullStackProgram = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a Cloud Computingelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accreditedCloud Computingelopment
-                        certification training Program
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>
-                        Apply for the Cloud Computingelopment exam with PMI
-                      </li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the Cloud Computingelopment certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is theCloud Computingelopment certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
-                },
-                {
-                  q: "How to schedule your examination after completingCloud Computingelopment certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theCloud Computingelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theCloud Computingelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theCloud Computingelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theCloud Computingelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Cloud Computing Certification Program?",
+    "a": "Engineering and degree students from any year or background can join. No prior cloud or coding experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is beginner-friendly and covers cloud computing basics to advanced topics step by step."
+  },
+  {
+    "q": "How long is the Cloud Computing certification valid for?",
+    "a": "The Cloud Computing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn cloud fundamentals, AWS, Azure, cloud deployment, virtualization, DevOps basics, storage solutions, and security practices."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 2–3 months with 60+ hours of live interactive classes, doubt-clearing sessions, and hands-on cloud project work."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Cloud Computing Certification after completing the course and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance including interview preparation and resume support. Final job offers depend on your skills and interview performance."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

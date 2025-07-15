@@ -427,38 +427,38 @@ const FullStackCourse = () => {
                     </ul>
                   ),
                 },
-                {
-                  q: "What are the Data science certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the Data science certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
-                },
-                {
-                  q: "How to schedule your examination after completing Data science certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Data science certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the course?",
-                  a: "Yes, the course includes full-length mock tests, topic-wise quizzes, and practice questions to help you prepare thoroughly.",
-                },
-                {
-                  q: "Is prior coding experience required for this course?",
-                  a: "No, the course starts with beginner-friendly content. We guide you step by step through the learning path, even if you’ve never coded before.",
-                },
-                {
-                  q: "What technologies will I learn in this course?",
-                  a: "You'll learn HTML, CSS, JavaScript, React, Node.js, MongoDB, and other essential tools to become a full-stack web developer.",
-                },
-                {
-                  q: "Do you offer job placement support?",
-                  a: "Yes, we offer resume assistance, portfolio reviews, mock interviews, and placement support through our hiring partners.",
-                },
+               {
+    "q": "Who can join this Data Science Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior coding or data science experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program starts from the basics and covers both beginner and advanced data science concepts, making it suitable for all learners."
+  },
+  {
+    "q": "How long is the Data Science certification valid for?",
+    "a": "The Data Science Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn Python programming, data analysis, machine learning, data visualization, SQL, and real-world project implementation using tools like Pandas, NumPy, and Scikit-learn."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 2–3 months with 90+ hours of live interactive classes, weekly doubt-clearing sessions, and hands-on project work."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Data Science Certification after successfully completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance with resume building, interview preparation, and referrals. Final job offers depend on your skills and interview performance."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

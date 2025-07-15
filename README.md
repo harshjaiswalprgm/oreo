@@ -2,7 +2,7 @@
 
 Welcome to the official repository of **Glowlogics Solutions**! This is our primary digital platform where we showcase our educational programs, host interactive workshops, and engage with learners and tech enthusiasts across the globe.
 
----
+----
 
 ## 🚀 Overview
 
@@ -52,11 +52,15 @@ Our website is built using modern technologies:
 
 ## ⚠️ Legal Notice
 
-> 🚫 **Do Not Copy or Reuse This Code**
+🚫 Do Not Copy, Distribute, or Reuse This Code
 
-This repository contains proprietary content and source code developed by **Glowlogics Solutions**. The entire codebase and all visual assets are protected by **copyright and intellectual property laws**.
+This repository contains proprietary source code, designs, and content developed exclusively by Glowlogics Solutions. All materials—including but not limited to code, visual assets, written content, and structure—are protected under applicable copyright, trademark, and intellectual property laws.
 
-You are **not permitted** to reuse, redistribute, or modify any part of this repository for commercial or personal use without **prior written permission**.
+You are strictly prohibited from copying, reproducing, modifying, distributing, or using any part of this repository for personal, educational, or commercial purposes without prior written consent from Glowlogics Solutions.
+
+Unauthorized use may result in legal action under relevant laws.
+
+If you wish to seek permission or discuss licensing opportunities, please contact us at [your email or contact method].
 
 ---
 

@@ -269,26 +269,27 @@ const FullStackProgram = () => {
               {
                 title: "Module 1: Introduction to UI/UX Design",
                 lessons: [
-
-                    {name: "Overview of User Interface (UI) and User Experience (UX)"},
-                    {name: "Importance of UI/UX in product development"},
-                    {name: "Design thinking process and methodologies"},
-                    {name: "Understanding human-centered design"},
-                    {name: "Industry tools overview: Figma, Sketch, Adobe XD"},
-
+                  {
+                    name: "Overview of User Interface (UI) and User Experience (UX)",
+                  },
+                  { name: "Importance of UI/UX in product development" },
+                  { name: "Design thinking process and methodologies" },
+                  { name: "Understanding human-centered design" },
+                  { name: "Industry tools overview: Figma, Sketch, Adobe XD" },
                 ],
               },
               {
                 title: "Module 2: Research and User-Centered Design",
                 lessons: [
-                  { name: "User research methods (interviews, surveys, focus groups)" },
+                  {
+                    name: "User research methods (interviews, surveys, focus groups)",
+                  },
                   { name: "Creating user personas and empathy maps" },
                   { name: "Journey mapping and identifying user pain points" },
                   { name: "Competitive analysis and market research" },
-                  { name: "Conducting usability studies and feedback collection" },
-
-
-
+                  {
+                    name: "Conducting usability studies and feedback collection",
+                  },
                 ],
               },
               {
@@ -296,7 +297,9 @@ const FullStackProgram = () => {
                 lessons: [
                   { name: "Principles of user-centered design" },
                   { name: "Information architecture and navigation design" },
-                  { name: "Wireframing basics: low-fidelity to high-fidelity wireframes" },
+                  {
+                    name: "Wireframing basics: low-fidelity to high-fidelity wireframes",
+                  },
                   { name: "Building user flows and task flows" },
                   { name: "Content strategy for UX" },
                 ],
@@ -304,11 +307,15 @@ const FullStackProgram = () => {
               {
                 title: "Module 4: UI Design Fundamentals",
                 lessons: [
-                  { name: "Visual design principles (layout, color theory, typography)" },
+                  {
+                    name: "Visual design principles (layout, color theory, typography)",
+                  },
                   { name: "Grid systems and responsive design" },
                   { name: "Creating UI patterns (buttons, forms, icons)" },
                   { name: "Designing for mobile and web interfaces" },
-                  { name: "Accessibility in UI design: creating inclusive interfaces" },
+                  {
+                    name: "Accessibility in UI design: creating inclusive interfaces",
+                  },
                 ],
               },
               {
@@ -324,35 +331,45 @@ const FullStackProgram = () => {
               {
                 title: "Module 6: Advanced UX Techniques",
                 lessons: [
-                  { name: "Designing for different platforms (mobile, web, tablets)" },
-                  { name: "Design Systems: creating a cohesive and scalable design system" },
-                  { name: "UX writing: the importance of microcopy in guiding users" },
-                  { name: "Designing for voice, gestures, and other emerging interfaces" },
-
+                  {
+                    name: "Designing for different platforms (mobile, web, tablets)",
+                  },
+                  {
+                    name: "Design Systems: creating a cohesive and scalable design system",
+                  },
+                  {
+                    name: "UX writing: the importance of microcopy in guiding users",
+                  },
+                  {
+                    name: "Designing for voice, gestures, and other emerging interfaces",
+                  },
                 ],
               },
               {
                 title: "Module 7: User Testing and Feedback",
                 lessons: [
-                  { name: "Conducting usability tests and heuristic evaluation" },
+                  {
+                    name: "Conducting usability tests and heuristic evaluation",
+                  },
                   { name: "A/B testing for design decisions" },
                   { name: "Analyzing user feedback and refining designs" },
-                  { name: "Metrics to measure UX success (conversion rates, task success)" },
-
+                  {
+                    name: "Metrics to measure UX success (conversion rates, task success)",
+                  },
                 ],
               },
               {
                 title: "Module 8: Portfolio Building and Career Preparation",
                 lessons: [
                   { name: "Assembling your UI/UX portfolio" },
-                  { name: "Presenting design work effectively to stakeholders" },
+                  {
+                    name: "Presenting design work effectively to stakeholders",
+                  },
                   { name: "Job roles in UI/UX design" },
                   { name: "Interview preparation for UI/UX roles" },
                   { name: "Freelancing vs. in-house opportunities" },
                 ],
               },
-
-
             ].map((section, index) => (
               <div
                 key={index}
@@ -405,48 +422,36 @@ const FullStackProgram = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a UIUX ® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited UIUX  certification
-                        training Program
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the UIUX  exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
+                  q: "Who can join this UI/UX Certification Program?",
+                  a: "Engineering, design, and degree students from any year or background can join. No prior coding or design experience is required.",
                 },
                 {
-                  q: "What are the UIUX  certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
+                  q: "Do I need to know programming before enrolling?",
+                  a: "No. This course focuses on user interface and user experience design fundamentals, not programming. We cover tools like Figma, Adobe XD, and design principles from scratch.",
                 },
                 {
-                  q: "How long is the UIUX  certification valid for?",
-                  a: "UIUX  certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing UIUX  certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
+                  q: "How long is the UI/UX certification valid for?",
+                  a: "The UI/UX Certification from Glowlogics is valid for a lifetime and is ISO- and MSME-recognized.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn user research, wireframing, prototyping, UI design, UX fundamentals, color theory, typography, and working with tools like Figma and Adobe XD.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "The course typically runs for 1–2 months with 30+ hours of live or guided learning sessions, including project work. Sessions are conducted online.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized UI/UX Certification after successfully completing the training and submitting your project.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the UIUX  certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance for UI/UX-related roles, but final job offers depend on individual performance, skills, and interviews.",
+                },
+                {
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed.",
                 },
               ].map((item, idx) => (
                 <div key={idx} className="group">
