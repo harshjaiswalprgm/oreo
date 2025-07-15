@@ -1,12 +1,19 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-
 export default function Footer() {
   const location = useLocation();
   const navigate = useNavigate();
 
   const handleNavClick = (id) => {
-    if (id === "career" || id === "about" || id === "eventhub") {
+    const routePages = [
+      "career",
+      "about",
+      "eventhub",
+      "legal-terms",
+      "privacy-policy",
+    ];
+
+    if (routePages.includes(id)) {
       navigate(`/${id}`);
     } else if (location.pathname === "/") {
       const section = document.getElementById(id);
@@ -50,7 +57,10 @@ export default function Footer() {
                 <p className="font-semibold mb-1">S:</p>
                 <ul className="space-y-1">
                   <li>
-                    <a href="https://www.instagram.com/glowlogics/" className="underline">
+                    <a
+                      href="https://www.instagram.com/glowlogics/"
+                      className="underline"
+                    >
                       Instagram
                     </a>
                   </li>
@@ -113,16 +123,58 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Column 2: Menu (Updated with Routing) */}
+            {/* Column 2: Menu */}
             <div className="space-y-4">
               <p className="font-semibold mb-1">M:</p>
               <ul className="space-y-1">
-                <li><button onClick={() => handleNavClick("home")} className="underline text-left">Home</button></li>
-                <li><button onClick={() => handleNavClick("programs")} className="underline text-left">Programs</button></li>
-                <li><button onClick={() => handleNavClick("services")} className="underline text-left">Services</button></li>
-                <li><button onClick={() => handleNavClick("career")} className="underline text-left">Career</button></li>
-                <li><button onClick={() => handleNavClick("about")} className="underline text-left">About</button></li>
-                <li><button onClick={() => handleNavClick("eventhub")} className="underline text-left">EventHub</button></li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("home")}
+                    className="underline text-left"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("programs")}
+                    className="underline text-left"
+                  >
+                    Programs
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("services")}
+                    className="underline text-left"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("career")}
+                    className="underline text-left"
+                  >
+                    Career
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("about")}
+                    className="underline text-left"
+                  >
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavClick("eventhub")}
+                    className="underline text-left"
+                  >
+                    EventHub
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -174,11 +226,17 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           <p className="text-center">
             © GlowLogics Solutions All Rights Reserved{" "}
-            <button onClick={() => handleNavClick("legal-terms")} className="underline">
+            <button
+              onClick={() => handleNavClick("legal-terms")}
+              className="underline"
+            >
               Legal Terms
             </button>{" "}
             |{" "}
-            <button onClick={() => handleNavClick("privacy-policy")} className="underline">
+            <button
+              onClick={() => handleNavClick("privacy-policy")}
+              className="underline"
+            >
               Privacy Policy
             </button>
           </p>
