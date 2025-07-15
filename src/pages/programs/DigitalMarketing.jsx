@@ -51,32 +51,31 @@ const FullStackCourse = () => {
             Digital Marketing
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready digital marketer | Master SEO, Google Ads, Social
-            Media Marketing, Analytics & Content Strategy
+           Become a job-ready digital marketer | Master SEO, Google Ads, Social Media Marketing, Analytics & Content Strategy
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Work on real-world digital marketing campaigns from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master SEO, Google Ads, Meta Ads, Analytics & Content Strategy
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career mentorship with hands-on portfolio and case studies
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews & LinkedIn optimization
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed live cohorts starting within the next 90 days
-            </li>
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Work on real-world digital marketing campaigns from scratch
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Master SEO, Google Ads, Meta Ads, Analytics & Content Strategy
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Career mentorship with hands-on portfolio and case studies
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Includes resume review, mock interviews & LinkedIn optimization
+</li>
+<li className="flex items-start">
+  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+  Guaranteed live cohorts starting within the next 90 days
+</li>
           </ul>
 
           {/* CTA Buttons */}
@@ -90,7 +89,10 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a href="/ProgramsPDF/DigitalMarketingGlowlogics.pdf" download>
+            <a
+              href="/ProgramsPDF/DigitalMarketingGlowlogics.pdf"
+              download
+            >
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -129,17 +131,7 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          The Glowlogics Digital Marketing training course is designed to equip
-          learners with the core skills needed to create and manage impactful
-          digital marketing campaigns across various platforms. The course
-          covers essential topics including SEO, Google Ads, Meta (Facebook &
-          Instagram) Ads, content marketing, email marketing, and web analytics.
-          With a strong focus on industry-relevant tools like Google Analytics,
-          Canva, and HubSpot, the program prepares you to drive traffic,
-          generate leads, and optimize ROI for real-world businesses. Whether
-          you are aiming for agency roles, freelance projects, or in-house
-          marketing positions, this course will help you become a job-ready
-          digital marketer.
+          The Glowlogics Digital Marketing training course is designed to equip learners with the core skills needed to create and manage impactful digital marketing campaigns across various platforms. The course covers essential topics including SEO, Google Ads, Meta (Facebook & Instagram) Ads, content marketing, email marketing, and web analytics. With a strong focus on industry-relevant tools like Google Analytics, Canva, and HubSpot, the program prepares you to drive traffic, generate leads, and optimize ROI for real-world businesses. Whether you are aiming for agency roles, freelance projects, or in-house marketing positions, this course will help you become a job-ready digital marketer.
         </p>
 
         {/* Key Features */}
@@ -179,22 +171,22 @@ const FullStackCourse = () => {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-              "Search Engine Optimization (SEO)",
-              "Google Ads & Pay-Per-Click (PPC) Advertising",
-              "Social Media Marketing (Facebook, Instagram, LinkedIn)",
-              "Content Marketing Strategy & Copywriting",
-              "Email Marketing & Automation Tools",
-              "Google Analytics & Data-Driven Insights",
-              "Meta Ads Manager (Facebook & Instagram Ads)",
-              "Influencer & Affiliate Marketing",
-              "Landing Page Optimization & A/B Testing",
-              "Marketing Funnel Creation & Lead Generation",
-              "E-commerce Marketing Strategies",
-              "Campaign Tracking & ROI Measurement",
-              "Marketing Automation Tools (HubSpot, Mailchimp, etc.)",
-              "Canva & Visual Content Creation",
-              "Digital Marketing Strategy & Brand Positioning",
-            ].map((skill, index) => (
+  "Search Engine Optimization (SEO)",
+  "Google Ads & Pay-Per-Click (PPC) Advertising",
+  "Social Media Marketing (Facebook, Instagram, LinkedIn)",
+  "Content Marketing Strategy & Copywriting",
+  "Email Marketing & Automation Tools",
+  "Google Analytics & Data-Driven Insights",
+  "Meta Ads Manager (Facebook & Instagram Ads)",
+  "Influencer & Affiliate Marketing",
+  "Landing Page Optimization & A/B Testing",
+  "Marketing Funnel Creation & Lead Generation",
+  "E-commerce Marketing Strategies",
+  "Campaign Tracking & ROI Measurement",
+  "Marketing Automation Tools (HubSpot, Mailchimp, etc.)",
+  "Canva & Visual Content Creation",
+  "Digital Marketing Strategy & Brand Positioning"
+].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -208,18 +200,7 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The Digital Marketing<sup>®</sup> certification offers a wide range of
-          benefits for aspiring marketers and professionals looking to advance
-          their careers. It empowers you with in-demand skills in SEO, Google
-          Ads, Meta Ads, content creation, email marketing, and analytics—making
-          you job-ready for roles in IT, e-commerce, healthcare, fintech, and
-          more. With a globally recognized credential, you will gain a
-          competitive edge in the job market, unlock freelance and remote work
-          opportunities, and build a strong personal brand. The certification
-          also enhances your ability to drive measurable results for businesses,
-          ultimately leading to faster career growth and increased earning
-          potential.
-        </p>
+        The Digital Marketing<sup>®</sup> certification offers a wide range of benefits for aspiring marketers and professionals looking to advance their careers. It empowers you with in-demand skills in SEO, Google Ads, Meta Ads, content creation, email marketing, and analytics—making you job-ready for roles in IT, e-commerce, healthcare, fintech, and more. With a globally recognized credential, you will gain a competitive edge in the job market, unlock freelance and remote work opportunities, and build a strong personal brand. The certification also enhances your ability to drive measurable results for businesses, ultimately leading to faster career growth and increased earning potential.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
           {/* Designation Column */}
           <div className="flex flex-col divide-y border-r">
@@ -259,26 +240,11 @@ const FullStackCourse = () => {
         <div className="bg-white text-gray-800 p-6 space-y-6">
           {/* Title */}
           <h2 className="text-2xl font-semibold">
-            Digital Marketing Certification Program{" "}
+            Digital Marketing elopment Certification Course{" "}
             <span className="font-bold">Curriculum</span>
           </h2>
-          {/* Defeniation */}
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Definition</h3>
-            <p>
-              Digital Marketing<sup>®</sup> is the art of identifying
-              opportunities, taking calculated risks, and building innovative
-              solutions that create value. This program is designed to empower
-              aspiring entrepreneurs with the mindset, skills, and tools needed
-              to launch and grow successful ventures. It covers key areas such
-              as business planning, market research, financial modeling,
-              fundraising, branding, and growth strategies. Through real-world
-              case studies, mentorship, and hands-on projects, learners will
-              gain the confidence and practical experience to turn their ideas
-              into scalable businesses and become future-ready leaders in the
-              startup ecosystem.
-            </p>
-          </div>
+
+          {/* Eligibility */}
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -286,83 +252,55 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Module 1. Introduction to Digital Marketing",
+                title: "Section 01: Course Introduction",
                 lessons: [
-                  {name:"Overview of Digital Marketing landscape "},
-                  {name:"Key marketing channels"},
+                  {
+                    name: "Lesson 01: Course Introduction",
+                    time: "09:49",
+                    preview: "#",
+                  },
                 ],
               },
               {
-                title: "Module 2. Search Engine Optimization (SEO)",
-                lessons: [
-                  {name:"On-page and off-page SEO techniques "},
-                  {name:"Keyword research and optimization"},
-                ],
-              },
-             {
-                title: "Module 3. Social Media Marketing (SMM)",
-                lessons: [
-                  {name:"Strategies for Facebook, Instagram, LinkedIn, and Twitter "},
-                  {name:"Running effective social media ads"},
-                ],
+                title: "Section 02: Business Environment",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Module 4. Pay-Per-Click (PPC) Advertising",
-                lessons: [
-                  {name:"Google Ads and Bing Ads campaign management "},
-                  {name:"Tracking ROI and optimizing campaigns"},
-                ],
+                title: "Section 03: Start the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Module 5. Email Marketing",
-                lessons: [
-                  {name:"Building and nurturing email lists "},
-                  {name:"Designing effective email campaigns"},
-                ],
-              },
-               {
-                title: "Module 6. Web Analytics",
-                lessons: [
-                  {name:"Understanding Google Analytics "},
-                  {name:"Measuring and optimizing digital campaigns"},
-                ],
-              },
-               {
-                title: "Module 7. Affiliate Marketing",
-                lessons: [
-                  {name:"Understanding affiliate networks and partnerships."},
-                  {name:"Strategies for scaling affiliate programs."},
-                ],
-              },
-               {
-                title: "Module 8. E-commerce Marketing",
-                lessons: [
-                  {name:"Digital strategies for driving sales in e-commerce. "},
-                  {name:"Product listings, ads, and optimizing the customer journey."},
-                ],
+                title: "Section 04: Plan the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Module 9. Mobile Marketing",
-                lessons: [
-                  {name:"Introduction to mobile marketing strategies. "},
-                  {name:"Mobile apps, SMS, and push notifications."},
-                ],
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Module 10. Lead Generation and Conversion Optimization",
-                lessons: [
-                  {name:"Techniques for generating leads and converting them into sales. "},
-                  {name:"Techniques for generating leads and converting them into"},
-                ],
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
               {
-                title: "Module 12. Digital Marketing Tools",
-                lessons: [
-                  {name:"Overview of industry-leading tools like Google Analytics, SEMrush, HubSpot, and more. "},
-
-                ],
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
               },
-
+              {
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
+              },
+              {
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
+              },
+              {
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
+              },
+              {
+                title: "Section 05: Lead the Project",
+                lessons: [{ name: "Preview coming soon", preview: "#" }],
+              },
             ].map((section, index) => (
               <div
                 key={index}
@@ -414,50 +352,39 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-                {
-                  q: "How to get aDigital Marketingelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accreditedDigital Marketing certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for theDigital Marketing exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the Digital Marketing certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the Digital Marketing certification valid for?",
-                  a: "Digital Marketing  certification is valid for 3 years and requires renewal.",
-                },
 
                 {
-                  q: "How to schedule your examination after completing Digital Marketing certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Digital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theDigital Marketing certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Digital Marketing Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior marketing experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is designed for beginners and covers both the fundamentals and advanced concepts of digital marketing step by step."
+  },
+  {
+    "q": "How long is the Digital Marketing certification valid for?",
+    "a": "The Digital Marketing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn social media marketing, SEO, Google Ads, content marketing, email marketing, analytics, and how to manage real-world marketing campaigns."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 1–2 months with 30+ hours of live interactive classes, weekly doubt-clearing sessions, and project-based learning."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Digital Marketing Certification after successfully completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance, including interview preparation and resume support. Final job offers depend on individual performance and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
@@ -482,16 +409,15 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-                Next cohort starts on{" "}
-                <span className="text-black font-bold">3 Aug 2025</span>
-              </h3>
+         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+           <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
+  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+  </h3>
 
-              {/* Countdown Grid */}
-            </div>{" "}
-            <div
+  {/* Countdown Grid */}
+
+</div> <div
               id="cert-container"
               className="border rounded-lg shadow-md overflow-hidden w-full"
               onMouseMove={(e) => {
@@ -517,6 +443,7 @@ const FullStackCourse = () => {
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
             </div>
+
             <div className="flex gap-6 mt-4">
               <button
                 onClick={() => {
@@ -571,101 +498,102 @@ const FullStackCourse = () => {
           </div>
         </div>
         <div className=" py-12 overflow-hidden">
-          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-            Admiration expressed by others regarding our presence.
-          </h2>
+  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+    Admiration expressed by others regarding our presence.
+  </h2>
 
-          <div className="relative w-full space-y-8 overflow-x-hidden">
-            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-              {[...Array(2)].flatMap(() =>
-                [
-                  {
-                    name: "Vrinda K",
-                    title: "Dayalbagh Educational Institute",
-                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-                    img: "/vrindaK.png",
-                  },
-                  {
-                    name: "Smriti Mathuriya",
-                    title: "Dayalbagh Educational Institute",
-                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-                    img: "/Smrithi.png",
-                  },
-                  {
-                    name: "Aan Narai",
-                    title: "Alliance University",
-                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-                    img: "/Aan.png",
-                  },
-                  {
-                    name: "Kavya R",
-                    title: "Bachelor's in Engineering",
-                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-                    img: "/Kavya.png",
-                  },
-                  {
-                    name: "Kulsum Bano",
-                    title: "MMICT&MB, 2nd Year",
-                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-                    img: "/Kulsum.png",
-                  },
-                  {
-                    name: "Bollepally Jashwanth Varma",
-                    title: "Sai Spurthi Institute of Technology, 3rd Year",
-                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-                    img: "/CyberUnknown.png",
-                  },
-                  {
-                    name: "Tejaswini.K",
-                    title: "Jayaraj Annapackiam College",
-                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-                    img: "/TejasvaniK.png",
-                  },
-                  {
-                    name: "Thotakura Puneeth Sai",
-                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-                    img: "/Thotakura Puneeth Sai.png",
-                  },
-                  {
-                    name: "Preetham",
-                    title: "Navkis College of Engineering",
-                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-                    img: "/pritam.png",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-                  >
-                    <svg
-                      className="text-blue-500 text-xl mb-2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                      fill="currentColor"
-                      width="20"
-                      height="20"
-                    >
-                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-                    </svg>
-                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-                    <div className="flex items-center space-x-3 mt-auto">
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        className="w-14 h-14 rounded-full object-cover"
-                      />
-                      <div>
-                        <p className="font-semibold text-sm">{item.name}</p>
-                        <p className="text-xs text-gray-500">{item.title}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))
-              )}
+  <div className="relative w-full space-y-8 overflow-x-hidden">
+    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+      {[...Array(2)].flatMap(() =>
+        [
+          {
+            name: "Vrinda K",
+            title: "Dayalbagh Educational Institute",
+            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+            img: "/vrindaK.png",
+          },
+          {
+            name: "Smriti Mathuriya",
+            title: "Dayalbagh Educational Institute",
+            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+            img: "/Smrithi.png",
+          },
+          {
+            name: "Aan Narai",
+            title: "Alliance University",
+            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+            img: "/Aan.png",
+          },
+          {
+            name: "Kavya R",
+            title: "Bachelor's in Engineering",
+            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+            img: "/Kavya.png",
+          },
+          {
+            name: "Kulsum Bano",
+            title: "MMICT&MB, 2nd Year",
+            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+            img: "/Kulsum.png",
+          },
+          {
+            name: "Bollepally Jashwanth Varma",
+            title: "Sai Spurthi Institute of Technology, 3rd Year",
+            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+            img: "/CyberUnknown.png",
+          },
+          {
+            name: "Tejaswini.K",
+            title: "Jayaraj Annapackiam College",
+            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+            img: "/TejasvaniK.png",
+          },
+          {
+            name: "Thotakura Puneeth Sai",
+            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+            img: "/Thotakura Puneeth Sai.png",
+          },
+          {
+            name: "Preetham",
+            title: "Navkis College of Engineering",
+            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+            img: "/pritam.png",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+          >
+            <svg
+              className="text-blue-500 text-xl mb-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              width="20"
+              height="20"
+            >
+              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+            </svg>
+            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+            <div className="flex items-center space-x-3 mt-auto">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-14 h-14 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-sm">{item.name}</p>
+                <p className="text-xs text-gray-500">{item.title}</p>
+              </div>
             </div>
           </div>
-        </div>
+        ))
+      )}
+    </div>
+  </div>
+</div>
+
       </div>
     </>
   );

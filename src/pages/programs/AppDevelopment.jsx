@@ -380,52 +380,38 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-                {
-                  q: "How to get aApp Developmentelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accreditedApp Developmentelopment
-                        certification training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>
-                        Apply for theApp Developmentelopment exam with PMI
-                      </li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are theApp Development certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is theApp Development certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completingApp Development certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theApp Development certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theApp Development certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theApp Development certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of theApp Development certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+                  {
+    "q": "Who can join this App Development Certification Program?",
+    "a": "Engineering and degree students from any year or background can join. No prior coding or app development experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is designed for beginners and covers everything from basic programming to building fully functional mobile apps."
+  },
+  {
+    "q": "How long is the App Development certification valid for?",
+    "a": "The App Development Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn mobile app development using Flutter or Android Studio, UI/UX design basics, API integration, backend setup, and app deployment."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 2–3 months with 60+ hours of live interactive classes, project work, and weekly doubt-clearing sessions."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized App Development Certification after completing the training and submitting project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance, including resume building and interview preparation. Final job offers depend on your performance and skills."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

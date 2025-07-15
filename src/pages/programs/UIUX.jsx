@@ -404,50 +404,38 @@ const FullStackProgram = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-                {
-                  q: "How to get a UIUXelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited UIUXelopment certification
-                        training Program
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the UIUXelopment exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the UIUXelopment certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the UIUXelopment certification valid for?",
-                  a: "UIUXelopment certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing UIUXelopment certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the UIUXelopment certification Program?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+                 {
+    "q": "Who can join this UI/UX Certification Program?",
+    "a": "Engineering, design, and degree students from any year or background can join. No prior coding or design experience is required."
+  },
+  {
+    "q": "Do I need to know programming before enrolling?",
+    "a": "No. This course focuses on user interface and user experience design fundamentals, not programming. We cover tools like Figma, Adobe XD, and design principles from scratch."
+  },
+  {
+    "q": "How long is the UI/UX certification valid for?",
+    "a": "The UI/UX Certification from Glowlogics is valid for a lifetime and is ISO- and MSME-recognized."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn user research, wireframing, prototyping, UI design, UX fundamentals, color theory, typography, and working with tools like Figma and Adobe XD."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course typically runs for 1–2 months with 30+ hours of live or guided learning sessions, including project work. Sessions are conducted online."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized UI/UX Certification after successfully completing the training and submitting your project."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance for UI/UX-related roles, but final job offers depend on individual performance, skills, and interviews."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

@@ -365,49 +365,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a Power BI elopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited  Power BI  certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the  Power BI  exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are thePower BI certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is thePower BI certification valid for?",
-                  a: " Power BI   certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completingPower BI certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of thePower BI certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Power BI  certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Power BI  certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Power BI  certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Power BI Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior technical or coding experience is required."
+  },
+  {
+    "q": "Do I need to know programming before enrolling?",
+    "a": "No. Power BI focuses on data visualization, business intelligence, and analytics. We start from the basics, including data handling, dashboards, and report creation."
+  },
+  {
+    "q": "How long is the Power BI certification valid for?",
+    "a": "The Power BI Certification provided by Glowlogics is valid for a lifetime and is ISO- and MSME-recognized."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn data visualization, Power Query, DAX formulas, dashboard building, report automation, data modeling, and publishing reports using Power BI Service."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course typically runs for 20–25 hours spread over 1–1.5 months, delivered through live online classes along with project-based learning."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Power BI Certification upon completing training and submitting your project work."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance and interview support, but actual job offers depend on your performance, skills, and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button

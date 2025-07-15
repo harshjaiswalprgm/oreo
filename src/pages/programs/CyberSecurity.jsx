@@ -367,49 +367,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a Cyber Security elopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited Cyber Security elopment certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the Cyber Security elopment exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
-                },
-                {
-                  q: "What are the Cyber Security elopment certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
-                },
-                {
-                  q: "How long is the Cyber Security elopment certification valid for?",
-                  a: "Cyber Security elopment certification is valid for 3 years and requires renewal.",
-                },
-
-                {
-                  q: "How to schedule your examination after completing Cyber Security elopment certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Cyber Security elopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Cyber Security elopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Cyber Security elopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Cyber Security elopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
+    "q": "Who can join this Cyber Security Certification Program?",
+    "a": "Engineering, management, and degree students from any year or background can join. No prior cyber security experience is required."
+  },
+  {
+    "q": "Do I need any specific background before enrolling?",
+    "a": "No. This program is designed for beginners and covers both basic and advanced cyber security concepts from scratch."
+  },
+  {
+    "q": "How long is the Cyber Security certification valid for?",
+    "a": "The Cyber Security Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
+  },
+  {
+    "q": "What skills will I learn in this course?",
+    "a": "You’ll learn network security, ethical hacking, penetration testing, cryptography, malware analysis, and real-world cyber threat handling."
+  },
+  {
+    "q": "How long is the course, and what is the learning mode?",
+    "a": "The course runs for 2–3 months with 60+ hours of live interactive classes, weekly doubt-clearing sessions, and hands-on project work."
+  },
+  {
+    "q": "Will I get a certificate after completing the course?",
+    "a": "Yes. You’ll receive an ISO- and MSME-recognized Cyber Security Certification after successfully completing training and submitting required projects."
+  },
+  {
+    "q": "Is there any placement guarantee?",
+    "a": "We provide placement assistance for cyber security roles. Final job offers depend on your skills, performance, and interview results."
+  },
+  {
+    "q": "How do I register and pay the course fee?",
+    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
+  },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
