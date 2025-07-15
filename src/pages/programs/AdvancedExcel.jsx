@@ -241,15 +241,22 @@ const FullStackCourse = () => {
             <span className="font-bold">Curriculum</span>
           </h2>
 
-           {/* Defeniation */}
+          {/* Defeniation */}
           <div>
             <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-             Advance Excelel<sup>®</sup>  is a specialized program designed to enhance your spreadsheet skills for data analysis, reporting, and automation. This course goes beyond the basics, covering advanced functions and formulas, pivot tables, data validation, conditional formatting, dashboards, and Excel automation using macros and VBA. Whether you are working in finance, marketing, HR, or operations, this program helps you handle large datasets efficiently, make data-driven decisions, and present insights clearly. Ideal for professionals and students alike, Advanced Excel is a must-have skill for today’s data-driven workplace.
-
- </p>
+              Advance Excelel<sup>®</sup> is a specialized program designed to
+              enhance your spreadsheet skills for data analysis, reporting, and
+              automation. This course goes beyond the basics, covering advanced
+              functions and formulas, pivot tables, data validation, conditional
+              formatting, dashboards, and Excel automation using macros and VBA.
+              Whether you are working in finance, marketing, HR, or operations,
+              this program helps you handle large datasets efficiently, make
+              data-driven decisions, and present insights clearly. Ideal for
+              professionals and students alike, Advanced Excel is a must-have
+              skill for today’s data-driven workplace.
+            </p>
           </div>
-
 
           {/* Course Content */}
           <div className="mt-8 space-y-3">
@@ -259,114 +266,160 @@ const FullStackCourse = () => {
               {
                 title: "Module 1: Introduction to Advanced Excel",
                 lessons: [
-                  {name: "Review of Excel basics (functions, formulas, shortcuts)"},
-                  {name: "Introduction to Excel’s advanced features and tools"},
-                  {name: "Importance of Advanced Excel skills in various industries"},
-
+                  {
+                    name: "Review of Excel basics (functions, formulas, shortcuts)",
+                  },
+                  {
+                    name: "Introduction to Excel’s advanced features and tools",
+                  },
+                  {
+                    name: "Importance of Advanced Excel skills in various industries",
+                  },
                 ],
               },
 
-               {
+              {
                 title: "Module 2: Advanced Formulas and Functions",
                 lessons: [
-                  {name: "Logical Functions: IF, AND, OR, IFERROR, SWITCH"},
-                  {name: "Lookup and Reference Functions: VLOOKUP, HLOOKUP, INDEXMATCH, XLOOKUP"},
-                  {name: "Text Functions: CONCATENATE, TEXT, LEFT, RIGHT, MID, FIND, SEARCH"},
-                  {name: "Date and Time Functions: DATE, EOMONTH, NETWORKDAYS, WORKDAY, TIME"},
-                  {name: "Array Formulas: Using Array Functions (TRANSPOSE, SEQUENCE) Conditional Functions: SUMIF, COUNTIF, AVERAGEIF, SUMIFS, COUNTIFS"},
-
+                  { name: "Logical Functions: IF, AND, OR, IFERROR, SWITCH" },
+                  {
+                    name: "Lookup and Reference Functions: VLOOKUP, HLOOKUP, INDEXMATCH, XLOOKUP",
+                  },
+                  {
+                    name: "Text Functions: CONCATENATE, TEXT, LEFT, RIGHT, MID, FIND, SEARCH",
+                  },
+                  {
+                    name: "Date and Time Functions: DATE, EOMONTH, NETWORKDAYS, WORKDAY, TIME",
+                  },
+                  {
+                    name: "Array Formulas: Using Array Functions (TRANSPOSE, SEQUENCE) Conditional Functions: SUMIF, COUNTIF, AVERAGEIF, SUMIFS, COUNTIFS",
+                  },
                 ],
               },
-               {
+              {
                 title: "Module 3: Data Validation, Auditing, and Protection",
                 lessons: [
-                  {name: "Data Validation (Custom Lists, Drop-downs, Data Restrictions)"},
-                  {name: "Data Auditing (Trace Precedents/Dependents, Evaluate Formulas)"},
-                  {name: "Protecting Worksheets and Workbooks (Password Protection, Cell Locking)"},
-                  {name: "Conditional Formatting: Advanced Formatting Rules"},
-
+                  {
+                    name: "Data Validation (Custom Lists, Drop-downs, Data Restrictions)",
+                  },
+                  {
+                    name: "Data Auditing (Trace Precedents/Dependents, Evaluate Formulas)",
+                  },
+                  {
+                    name: "Protecting Worksheets and Workbooks (Password Protection, Cell Locking)",
+                  },
+                  { name: "Conditional Formatting: Advanced Formatting Rules" },
                 ],
               },
-               {
+              {
                 title: "Module 4: Data Analysis Tools",
                 lessons: [
-                  {name: "Sorting and Filtering Data"},
-                  {name: "Advanced Filtering (Custom Filters, Filter by Color, Filter with Formulas)"},
-                  {name: "Subtotals and Grouping Data"},
-                  {name: "Data Tables: One-variable and Two-variable Data Tables"},
-                  {name: "Scenario Manager and Goal Seek"},
-                  {name: "What-If Analysis"},
-                  {name: "Forecasting Techniques in Excel"},
+                  { name: "Sorting and Filtering Data" },
+                  {
+                    name: "Advanced Filtering (Custom Filters, Filter by Color, Filter with Formulas)",
+                  },
+                  { name: "Subtotals and Grouping Data" },
+                  {
+                    name: "Data Tables: One-variable and Two-variable Data Tables",
+                  },
+                  { name: "Scenario Manager and Goal Seek" },
+                  { name: "What-If Analysis" },
+                  { name: "Forecasting Techniques in Excel" },
                 ],
               },
-               {
+              {
                 title: "Module 5: Pivot Tables and Pivot Charts",
                 lessons: [
-                  {name: "Creating and Formatting Pivot Tables"},
-                  {name: "Customizing Pivot Table Layouts"},
-                  {name: "Calculated Fields and Items in Pivot Tables"},
-                  {name: "Grouping Data in Pivot Tables"},
-                  {name: "Pivot Charts: Visualizing Pivot Table Data"},
-                  {name: "Slicers and Timelines for Interactive Reporting"},
-                  {name: "Creating Dashboards using Pivot Tables"},
+                  { name: "Creating and Formatting Pivot Tables" },
+                  { name: "Customizing Pivot Table Layouts" },
+                  { name: "Calculated Fields and Items in Pivot Tables" },
+                  { name: "Grouping Data in Pivot Tables" },
+                  { name: "Pivot Charts: Visualizing Pivot Table Data" },
+                  { name: "Slicers and Timelines for Interactive Reporting" },
+                  { name: "Creating Dashboards using Pivot Tables" },
                 ],
               },
-               {
+              {
                 title: "Module 6: Power Query and Power Pivot",
                 lessons: [
-                  {name: "Introduction to Power Query: Importing and Transforming Data"},
-                  {name: "Data Cleaning and Shaping with Power Query"},
-                  {name: "Merging and Appending Data"},
-                  {name: "Introduction to Power Pivot: Building Data Models"},
-                  {name: "Working with DAX (Data Analysis Expressions) in Power Pivot"},
-                  {name: "Creating Relationships Between Tables in Power Pivot"},
+                  {
+                    name: "Introduction to Power Query: Importing and Transforming Data",
+                  },
+                  { name: "Data Cleaning and Shaping with Power Query" },
+                  { name: "Merging and Appending Data" },
+                  { name: "Introduction to Power Pivot: Building Data Models" },
+                  {
+                    name: "Working with DAX (Data Analysis Expressions) in Power Pivot",
+                  },
+                  {
+                    name: "Creating Relationships Between Tables in Power Pivot",
+                  },
                 ],
               },
-               {
+              {
                 title: "Module 7: Power Query and Power Pivot",
                 lessons: [
-                  {name: "Introduction to Power Query: Importing and Transforming Data"},
-                  {name: "Data Cleaning and Shaping with Power Query"},
-                  {name: "Merging and Appending Data"},
-                  {name: "Introduction to Power Pivot: Building Data Models"},
-                  {name: "Working with DAX (Data Analysis Expressions) in Power Pivot"},
-                  {name: "Creating Relationships Between Tables in Power Pivot"},
+                  {
+                    name: "Introduction to Power Query: Importing and Transforming Data",
+                  },
+                  { name: "Data Cleaning and Shaping with Power Query" },
+                  { name: "Merging and Appending Data" },
+                  { name: "Introduction to Power Pivot: Building Data Models" },
+                  {
+                    name: "Working with DAX (Data Analysis Expressions) in Power Pivot",
+                  },
+                  {
+                    name: "Creating Relationships Between Tables in Power Pivot",
+                  },
                 ],
               },
-               {
+              {
                 title: "Module 8: Advanced Charting and Visualization",
                 lessons: [
-                  {name: "Creating Dynamic Charts (Interactive Charts, Combo Charts)"},
-                  {name: "Using Sparklines for Data Visualization"},
-                  {name: "Advanced Chart Techniques: Waterfall, Gantt, Thermometer Charts"},
-                  {name: "Creating Custom Charts and Templates"},
-                  {name: "Using Conditional Formatting in Charts"},
+                  {
+                    name: "Creating Dynamic Charts (Interactive Charts, Combo Charts)",
+                  },
+                  { name: "Using Sparklines for Data Visualization" },
+                  {
+                    name: "Advanced Chart Techniques: Waterfall, Gantt, Thermometer Charts",
+                  },
+                  { name: "Creating Custom Charts and Templates" },
+                  { name: "Using Conditional Formatting in Charts" },
                 ],
               },
 
-               {
+              {
                 title: "Module 9: Automation with Macros and VBA",
                 lessons: [
-                  {name: "Introduction to Macros: Recording, Editing, and Running Macros"},
-                  {name: "Understanding VBA (Visual Basic for Applications)"},
-                  {name: "Writing Simple VBA Code to Automate Tasks"},
-                  {name: "Working with Variables, Loops, and Conditional Statements in VBA"},
-                  {name: "Automating Repetitive Tasks with VBA"},
-                  {name: "Debugging and Error Handling in VBA"},
-                  {name: "Creating Custom Functions and User-Defined Forms"},
+                  {
+                    name: "Introduction to Macros: Recording, Editing, and Running Macros",
+                  },
+                  { name: "Understanding VBA (Visual Basic for Applications)" },
+                  { name: "Writing Simple VBA Code to Automate Tasks" },
+                  {
+                    name: "Working with Variables, Loops, and Conditional Statements in VBA",
+                  },
+                  { name: "Automating Repetitive Tasks with VBA" },
+                  { name: "Debugging and Error Handling in VBA" },
+                  { name: "Creating Custom Functions and User-Defined Forms" },
                 ],
               },
-               {
+              {
                 title: "Module 10: Reporting and Dashboards",
                 lessons: [
-                  {name: "Creating Interactive Reports"},
-                  {name: "Designing Dashboards for Data Presentation"},
-                  {name: "Using Form Controls (Buttons, Checkboxes, Dropdowns) for Interactivity"},
-                  {name: "Linking Charts, Pivot Tables, and Data Visualizations"},
-                  {name: "Best Practices for Data Presentation and Storytelling with Excel"},
+                  { name: "Creating Interactive Reports" },
+                  { name: "Designing Dashboards for Data Presentation" },
+                  {
+                    name: "Using Form Controls (Buttons, Checkboxes, Dropdowns) for Interactivity",
+                  },
+                  {
+                    name: "Linking Charts, Pivot Tables, and Data Visualizations",
+                  },
+                  {
+                    name: "Best Practices for Data Presentation and Storytelling with Excel",
+                  },
                 ],
               },
-
             ].map((section, index) => (
               <div
                 key={index}
@@ -419,51 +472,36 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-                  q: "How to get a Advance Excelelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited Advance Excelelopment
-                        certification training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the Advance Excelelopment exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
+                  q: "Who can join this Advanced Excel Certification Program?",
+                  a: "Engineering, management, commerce, and degree students from any year or background can join. No prior experience in Excel is required.",
                 },
                 {
-                  q: "What are the Advance Excelelopment certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
+                  q: "Do I need any specific background before enrolling?",
+                  a: "No. The program is beginner-friendly and starts from Excel basics, gradually moving into advanced tools and functions.",
                 },
                 {
-                  q: "How long is the Advance Excelelopment certification valid for?",
-                  a: "Advance Excelelopment certification is valid for 3 years and requires renewal.",
+                  q: "How long is the Advanced Excel certification valid for?",
+                  a: "The Advanced Excel Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime.",
                 },
                 {
-                  q: "What does the Glowlogics 100% money-back guarantee mean?",
-                  a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn data analysis, advanced formulas, pivot tables, charts, dashboard creation, macros, and Excel automation techniques.",
                 },
                 {
-                  q: "How to schedule your examination after completing Advance Excelelopment certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "This is a self-paced program with recorded content and mentor support. You can complete it within 1–2 months based on your own schedule.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized Advanced Excel Certification after submitting your project work.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance including resume review and job referrals. Final offers depend on your skills and interview outcomes.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the Advance Excelelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation.",
                 },
               ].map((item, idx) => (
                 <div key={idx} className="group">
@@ -490,7 +528,7 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-gray-200">
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-6 max-w-md mx-auto text-center border border-orange-600">
               <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
                 Self placed{" "}
                 <span className="text-black font-bold">Classess</span>

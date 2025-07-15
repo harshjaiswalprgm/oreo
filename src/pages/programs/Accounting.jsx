@@ -401,52 +401,38 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
+
                 {
-                  q: "How to get a WebDevelopment® certification?",
-                  a: (
-                    <ul className="list-disc pl-5 space-y-1 mt-2 text-gray-700">
-                      <li>Meet the eligibility requirements</li>
-                      <li>
-                        Enroll in an accredited WebDevelopment certification
-                        training course
-                      </li>
-                      <li>Meet the exam eligibility requirements</li>
-                      <li>Apply for the WebDevelopment exam with PMI</li>
-                      <li>Pass your exam to earn certification</li>
-                    </ul>
-                  ),
+                  q: "Who can join this Accounting Certification Program?",
+                  a: "Commerce, management, engineering, and degree students from any year or background can join. No prior accounting experience is required.",
                 },
                 {
-                  q: "What are the WebDevelopment certification requirements?",
-                  a: "Eligibility criteria vary, usually requiring education and project experience.",
+                  q: "Do I need any specific background before enrolling?",
+                  a: "No. This program starts from the basics and gradually covers advanced accounting concepts, making it suitable for beginners.",
                 },
                 {
-                  q: "How long is the WebDevelopment certification valid for?",
-                  a: "WebDevelopment certification is valid for 3 years and requires renewal.",
+                  q: "How long is the Accounting certification valid for?",
+                  a: "The Accounting Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime.",
                 },
                 {
-                  q: "What does the Glowlogics 100% money-back guarantee mean?",
-                  a: "It means you’ll get a full refund if conditions are met and you’re not satisfied.",
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn financial accounting, Tally software, GST filing, payroll management, financial statements preparation, and business taxation basics.",
                 },
                 {
-                  q: "How to schedule your examination after completing WebDevelopment certification training?",
-                  a: "Log in to PMI, select an exam center/date, and follow the scheduling steps.",
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "The course runs for 2–3 months with 60+ hours of live interactive classes, mentor-led doubt-clearing sessions, and real-world project work.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized Accounting Certification after completing training and submitting required project work.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance including resume review, interview preparation, and referrals. Final job offers depend on your skills and performance.",
                 },
                 {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
-                },
-                {
-                  q: "Do you provide any practice tests as part of the WebDevelopment certification course?",
-                  a: "Yes, we provide full-length mock tests and practice questions.",
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed.",
                 },
               ].map((item, idx) => (
                 <div key={idx} className="group">
