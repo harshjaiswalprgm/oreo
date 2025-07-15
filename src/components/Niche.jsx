@@ -1,7 +1,30 @@
-import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (id) => {
+    const routePages = [
+      "career",
+      "about",
+      "eventhub",
+      "legal-terms",
+      "privacy-policy",
+    ];
+
+    if (routePages.includes(id)) {
+      navigate(`/${id}`);
+    } else if (location.pathname === "/") {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      navigate("/", { state: { scrollTo: id } });
+    }
+  };
+
   return (
     <section className="w-full bg-[#ff6e0c] text-black px-6 md:px-16 py-16 font-sans">
       <div className="max-w-7xl mx-auto">
@@ -34,13 +57,16 @@ export default function Footer() {
                 <p className="font-semibold mb-1">S:</p>
                 <ul className="space-y-1">
                   <li>
-                    <a href="https://www.instagram.com/glowlogics/" className="underline">
+                    <a
+                      href="https://www.instagram.com/glowlogics/"
+                      className="underline"
+                    >
                       Instagram
                     </a>
                   </li>
                   <li>
                     <a href="#" className="underline">
-                     LinkedIn
+                      LinkedIn
                     </a>
                   </li>
                   <li>
@@ -50,7 +76,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="#" className="underline">
-                     WhatsApp
+                      WhatsApp
                     </a>
                   </li>
                 </ul>
@@ -102,34 +128,52 @@ export default function Footer() {
               <p className="font-semibold mb-1">M:</p>
               <ul className="space-y-1">
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("home")}
+                    className="underline text-left"
+                  >
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("programs")}
+                    className="underline text-left"
+                  >
                     Programs
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("services")}
+                    className="underline text-left"
+                  >
                     Services
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("career")}
+                    className="underline text-left"
+                  >
                     Career
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("about")}
+                    className="underline text-left"
+                  >
                     About
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="underline">
+                  <button
+                    onClick={() => handleNavClick("eventhub")}
+                    className="underline text-left"
+                  >
                     EventHub
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -182,14 +226,19 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           <p className="text-center">
             © GlowLogics Solutions All Rights Reserved{" "}
-            <Link to="/legal-terms" className="underline">
-              {" "}
+            <button
+              onClick={() => handleNavClick("legal-terms")}
+              className="underline"
+            >
               Legal Terms
-            </Link>{" "}
+            </button>{" "}
             |{" "}
-            <Link to="/privacy-policy" className="underline">
+            <button
+              onClick={() => handleNavClick("privacy-policy")}
+              className="underline"
+            >
               Privacy Policy
-            </Link>
+            </button>
           </p>
           <p className="text-center">Website by Glowlogics</p>
         </div>
