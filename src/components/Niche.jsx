@@ -240,7 +240,7 @@ export default function Footer() {
 
             {/* Column 3: Explore */}
             <div className="space-y-4">
-              <p className="font-semibold mb-1">Explore more:</p>
+              <p className="font-semibold mb-1">Explore:</p>
               <ul className="space-y-1">
                 <li>
                   <a href="#" className="underline">
