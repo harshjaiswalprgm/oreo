@@ -152,9 +152,14 @@ export default function About3DMarquee() {
               From our first batch of learners to now partnering with institutions like E-Cell IIT Hyderabad, our focus has always been the same: help individuals grow, get hired, and stay relevant in an ever-changing job market.
               At Glowlogics, it’s not just about certificates it’s about creating real stories of growth, success, and transformation.
               </p>
-              <button className="text-red-500 font-semibold mt-2 hover:underline">
-                Read more →
-              </button>
+             <a
+  href="https://www.youtube.com/@Glowlogics"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-red-500 font-semibold mt-2 hover:underline inline-block"
+>
+  Read more →
+</a>
             </div>
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
               <iframe
@@ -225,9 +230,9 @@ export default function About3DMarquee() {
               <div className="w-full md:w-1/2 p-8 md:p-12">
                 <div className="mb-4">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Noun_Project_logo.svg/512px-Noun_Project_logo.svg.png" // Replace with your logo if needed
+                    src="https://img.freepik.com/free-vector/business-team-putting-together-jigsaw-puzzle-isolated-flat-vector-illustration-cartoon-partners-working-connection-teamwork-partnership-cooperation-concept_74855-9814.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740" // Replace with your logo if needed
                     alt="Glowlogics"
-                    className="w-6 h-6 mb-2"
+                    className="w-25 h-20 mb-2"
                   />
                   <h3 className="text-2xl md:text-3xl font-bold mb-4">
                     Want to be part of something that changes how people learn?
@@ -367,12 +372,12 @@ export default function About3DMarquee() {
             Glowlogics × Canara Engineering College
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            We’re proud to announce our official collaboration with 
+            We’re proud to announce our official collaboration with
             <span className="font-semibold text-black">
-               Canara Engineering College, Managlore 
+               Canara Engineering College, Managlore
             </span>
-              through a signed MoU. Together, we aim to empower and educate 1000+ students with 
-            industry-relevant skills, real-world projects, and career-focused training designed 
+              through a signed MoU. Together, we aim to empower and educate 1000+ students with
+            industry-relevant skills, real-world projects, and career-focused training designed
             to bridge the gap between {" "}
             <span className="font-semibold">academics and </span> and{" "}
             <span className="font-semibold">professional success.</span>.
