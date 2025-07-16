@@ -565,17 +565,23 @@ export default function ProgramShowcase() {
                     alt={prog.title}
                     className="rounded-lg h-full w-full object-cover"
                   />
-                 {["Entrepreneurship", "Business Law", "Business Communication"].includes(prog.title) ? (
-  <span className="absolute top-2 left-2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded">
-    COMING SOON
-  </span>
-) : (
-  ["BTech", "Masters", "Graduates"].includes(prog.category) && (
-    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-      LIVE
-    </span>
-  )
-)}
+                  {[
+                    "Entrepreneurship",
+                    "Business Law",
+                    "Business Communication",
+                  ].includes(prog.title) ? (
+                    <span className="absolute top-2 left-2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded">
+                      COMING SOON
+                    </span>
+                  ) : (
+                    ["BTech", "Masters", "Graduates"].includes(
+                      prog.category
+                    ) && (
+                      <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                        LIVE
+                      </span>
+                    )
+                  )}
                 </div>
                 <h3 className="text-lg font-semibold mb-1">{prog.title}</h3>
                 <p className="text-sm text-gray-500 mb-2">{prog.desc}</p>

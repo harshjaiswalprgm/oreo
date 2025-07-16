@@ -31,13 +31,13 @@ function About() {
                 title: "Who We Are",
                 text:
                   "Glowlogics Solutions is a government-recognized MSME and proudly certified under the Startup India initiative. We offer ISO-certified internship and training programs designed to bridge the gap between academic knowledge and industry demands. As official collaborators with Techfest, IIT Bombay, and E-Cell, IIT Hyderabad, we actively conduct nationwide hackathons, workshops, and innovation challenges to equip students with cutting-edge skills. Our commitment is to deliver practical, hands-on learning experiences that not only enhance technical know-how but also build confidence and job-readiness among today’s youth.",
-                img: "/ourApproch.jpg",
+                img: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ycG9yYXRlfGVufDB8fDB8fHww",
               },
               {
                 title: "Our Vision",
                 text:
                   "At Glowlogics, our vision is to democratize access to quality education and skill development, making it both affordable and effective. We aim to be a catalyst for change in the education ecosystem by enabling individuals from all walks of life to harness their potential, adapt to evolving industries, and thrive in the digital age. Through strategic partnerships and real-time learning modules, we envision a future where no learner is left behind.",
-                img: "https://img.freepik.com/premium-photo/text-human-hand_1048944-10059543.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+                img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fGNvcnBvcmF0ZXxlbnwwfHwwfHx8MA%3D%3D",
               },
               {
                 title: "Our Mission",
