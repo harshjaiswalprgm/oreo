@@ -299,7 +299,7 @@ const programData = [
   {
     id: 22,
     title: "Leadership & Managment",
-    slug: "Leadership & Management",
+    slug: "Leadership",
     category: "Graduates",
     author: "Selfbased",
     date: "",

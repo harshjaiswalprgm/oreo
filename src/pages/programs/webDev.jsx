@@ -408,7 +408,8 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-            <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600">
+           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+
               <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
                 Next cohort starts on{" "}
                 <span className="text-black font-bold">3 Aug 2025</span>
@@ -441,6 +442,9 @@ const FullStackCourse = () => {
                 alt="Certificate 1"
                 className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
               />
+            </div>
+            <div>
+              <b></b>
             </div>
             <div className="flex gap-6 mt-4">
               <button
