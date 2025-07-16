@@ -49,8 +49,8 @@ export default function TermsAndConditions() {
             <li>{`These Terms and any dispute or claim relating to it, or its enforceability, shall be governed by and construed in accordance with the laws of India.`}</li>
             <li>{`All disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in Mangalore, Karnataka.`}</li>
             <li>{`All concerns or communications relating to these Terms must be communicated to us using the contact information provided on this website.`}</li>
-            <li>{`In case of any refunds approved by Glowlogics Solutions private limited, it will take 7 days for the refund to be processed to you.`}</li>
-            <li>{`It will take 7 days for the refund to be credited to you in original method.`}</li>
+            <li>{`In case of any refunds approved by Glowlogics Solutions private limited, it will take 14-17 working days for the refund to be processed to you.`}</li>
+            <li>{`It will take 14-17 working days for the refund to be credited to you in original method.`}</li>
           </ul>
         </div>
 

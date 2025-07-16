@@ -10,14 +10,14 @@ const jobOpenings = [
     category: "Sales",
     company: "Glowlogics",
     companyLevel: "Mid-Level",
-    exp: "1-3 years",
+    exp: "Freshers, 1-3 years",
     ctc: "₹4-6 LPA",
     description: "Responsible for inbound/outbound sales calls, product demos, and closing leads."
   },
   {
     id: 2,
     title: "Marketing Specialist",
-    location: "Bangalore, Bangalore, Kolkata",
+    location: "Bangalore, Bangalore,",
     category: "Marketing",
     company: "Glowlogics",
     companyLevel: "Entry-Level",
@@ -32,7 +32,7 @@ const jobOpenings = [
     category: "Marketing",
     company: "Glowlogics",
     companyLevel: "Mid-Level",
-    exp: "2+ years",
+    exp: "0-2 years",
     ctc: "₹4.5-7 LPA",
     description: "Develop and execute branding strategies to increase product visibility and equity."
   },

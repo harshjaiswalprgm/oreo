@@ -28,21 +28,21 @@ function About() {
           <div className="space-y-12">
             {[
               {
-                title: "Our Approach",
+                title: "Who We Are",
                 text:
-                  "At Glowlogics, our approach is simple: we empower your growth. We believe in making complex topics clear and practical, ensuring every course equips you with the skills you need to succeed. With real-world projects, personalized mentorship, and a driven community — you build confidence and transform your potential into success.",
+                  "Glowlogics Solutions is a government-recognized MSME and proudly certified under the Startup India initiative. We offer ISO-certified internship and training programs designed to bridge the gap between academic knowledge and industry demands. As official collaborators with Techfest, IIT Bombay, and E-Cell, IIT Hyderabad, we actively conduct nationwide hackathons, workshops, and innovation challenges to equip students with cutting-edge skills. Our commitment is to deliver practical, hands-on learning experiences that not only enhance technical know-how but also build confidence and job-readiness among today’s youth.",
                 img: "/ourApproch.jpg",
               },
               {
                 title: "Our Vision",
                 text:
-                  "To become the world’s most trusted learning ecosystem where individuals from all backgrounds can access quality, future-focused education and transform their potential into excellence.",
+                  "At Glowlogics, our vision is to democratize access to quality education and skill development, making it both affordable and effective. We aim to be a catalyst for change in the education ecosystem by enabling individuals from all walks of life to harness their potential, adapt to evolving industries, and thrive in the digital age. Through strategic partnerships and real-time learning modules, we envision a future where no learner is left behind.",
                 img: "https://img.freepik.com/premium-photo/text-human-hand_1048944-10059543.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
               },
               {
                 title: "Our Mission",
                 text:
-                  "We aim to empower learners and professionals through affordable, innovative, and real-world aligned education experiences — helping them thrive in an ever-evolving global job market.",
+                  "Our mission is to empower students and young professionals with industry-aligned, practical skills that prepare them for the real world. By offering a wide range of internship programs, technical bootcamps, and project-based training, we strive to ensure a seamless transition from classroom education to corporate employment. Our goal is to not just train, but to mentor and guide every learner toward meaningful, long-term career success.",
                 img: "https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=FbH7i1I3oCXoRfZKFvGj3jMXnsljD8mPmDmvY4IxQuA=",
               },
             ].map((item, i) => (
@@ -87,31 +87,31 @@ function About() {
 
   <div className="grid md:grid-cols-[1fr_3fr_2fr] gap-10 md:gap-16 text-base md:text-lg items-start">
     <div className="font-semibold text-xl md:text-2xl">
-      What you can expect:
+     What You’ll Experience with Glowlogics
     </div>
 
     {/* POINTS AS BOLD LIST ITEMS */}
     <div className="space-y-6 text-justify">
       {[
         {
-          heading: "🤝 Passionate Collaboration",
+          heading: "→ Collaborative Learning Environment",
           desc:
-            "We work with learners, professionals, and organizations determined to grow in a digital world.",
+            "Learn alongside passionate students, professionals, and industry mentors committed to growth in today’s digital-first world.",
         },
         {
-          heading: "🎯 Real-World Application",
+          heading: "→ Skills You Can Actually Use",
           desc:
-            "Our content bridges the gap between theory and hands-on skills you'll actually use.",
+            "Our programs focus on practical,real-world applications not just theory. Build skills and projects that directly apply to your career.",
         },
         {
-          heading: "📚 Expert-Led Learning",
+          heading: "→ Guidance from Industry Experts",
           desc:
-            "Courses are guided by industry leaders and seasoned mentors for top-tier quality.",
+            "Gain insights from experienced professionals and mentors from top MNCs, ensuring you learn what’s relevant and in-demand.",
         },
         {
-          heading: "💼 Career-Focused Growth",
+          heading: "→ Career-Driven Training",
           desc:
-            "Every lesson, project, and experience is built to boost your employability and results.",
+            "Everything you do with us from Training to projects is designed with employability in mind, helping you stand out in interviews and job placements.",
         },
       ].map((point, i) => (
         <motion.div
