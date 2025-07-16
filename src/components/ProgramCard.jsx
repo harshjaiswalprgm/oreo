@@ -23,19 +23,19 @@ const programData = [
     popupTitle: "Start Your UI/UX Design Journey Today!",
   },
 
-  {
-    id: 2,
-    title: "Power BI",
-    category: "Crash Course",
-    author: "📅 Next Batch Starting Soon",
-    date: "August 2025",
-    image:
-      "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
-    desc: "Turn data into powerful insights with Power BI",
-    details:
-      "Learn data visualization, dashboards, DAX formulas, and real-time reporting. Build projects that help businesses make smarter decisions using data.",
-    popupTitle: "Become a Certified Power BI Analyst",
-  },
+  // {
+  //   id: 2,
+  //   title: "Power BI",
+  //   category: "Crash Course",
+  //   author: "📅 Next Batch Starting Soon",
+  //   date: "August 2025",
+  //   image:
+  //     "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+  //   desc: "Turn data into powerful insights with Power BI",
+  //   details:
+  //     "Learn data visualization, dashboards, DAX formulas, and real-time reporting. Build projects that help businesses make smarter decisions using data.",
+  //   popupTitle: "Become a Certified Power BI Analyst",
+  // },
 
   {
     id: 3,
@@ -440,20 +440,20 @@ const programData = [
     popupTitle: "Learn Advanced Excel at Your Own Pace",
   },
 
-  {
-    id: 31,
-    title: "Power BI",
-    slug: "PowerBi",
-    category: "Masters",
-    author: "📅 Next Batch Starting Soon",
-    date: "August 2025",
-    image:
-      "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
-    desc: "Turn data into powerful insights with Power BI",
-    details:
-      "Learn data visualization, dashboards, DAX formulas, and real-time reporting. Build projects that help businesses make smarter decisions using data.",
-    popupTitle: "Become a Certified Power BI Analyst",
-  },
+  // {
+  //   id: 31,
+  //   title: "Power BI",
+  //   slug: "PowerBi",
+  //   category: "Masters",
+  //   author: "📅 Next Batch Starting Soon",
+  //   date: "August 2025",
+  //   image:
+  //     "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+  //   desc: "Turn data into powerful insights with Power BI",
+  //   details:
+  //     "Learn data visualization, dashboards, DAX formulas, and real-time reporting. Build projects that help businesses make smarter decisions using data.",
+  //   popupTitle: "Become a Certified Power BI Analyst",
+  // },
   {
     id: 32,
     title: "Entrepreneurship",
