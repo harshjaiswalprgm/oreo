@@ -8,7 +8,9 @@ const GlobalReachSection = () => {
       </h2>
 
       <p className="text-gray-500 text-lg mb-10">
-        From Learning to Earning — Students Trust Glowlogics to Bridge the Gap
+
+        At Glowlogics Solutions, your learning journey is tailored, hands-on, and
+        supported by a vibrant community.
       </p>
 
       <div className="overflow-hidden w-full max-w-5xl mx-auto">

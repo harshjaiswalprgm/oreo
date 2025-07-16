@@ -21,7 +21,9 @@ const SupportSection = () => {
            Glowlogics Solutions
           </h2>
           <p className="text-gray-500 text-lg">
-            For any questions or guidance, connect with our support team at help@glowlogics.com. We’re here to help you succeed.
+
+            Get better help from our best support help@glowlogics.in We’re here to guide you through every step.
+
           </p>
         </div>
         <div className="flex-1">

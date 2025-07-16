@@ -54,7 +54,7 @@ export default function Footer() {
             {/* Column 1: Contact Info */}
             <div className="space-y-4">
               <div>
-                <p className="font-semibold mb-1">S:</p>
+                <p className="font-semibold mb-1">Social Media:</p>
                 <ul className="space-y-1">
                   <li>
                     <a
@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <p className="font-semibold mb-1">A:</p>
+                <p className="font-semibold mb-1 text-base">Branch 1: Bengaluru</p>
                 <ul className="space-y-1 break-words">
                   <li>
                     <a href="#" className="underline">
@@ -109,23 +109,83 @@ export default function Footer() {
               </div>
 
               <div>
-                <p className="font-semibold mb-1">M:</p>
+                <p className="font-semibold mb-1">Mail:</p>
                 <a href="mailto:hr@glowlogics.in" className="underline">
                   help@glowlogics.in
                 </a>
               </div>
 
               <div>
-                <p className="font-semibold mb-1">P:</p>
+                <p className="font-semibold mb-1">Phone no.:</p>
                 <a href="tel:+919620294767" className="underline">
                   +91 9620294767
                 </a>
               </div>
             </div>
 
-            {/* Column 2: Menu */}
+
+
+            {/* Column 4: Branch 2 */}
+            <div>
+              <div>
+                <p className="font-semibold mb-1 text-base">Branch 2: Mangaluru</p>
+                <ul className="space-y-1 break-words">
+                  <li>
+                    <a href="#" className="underline">
+                      1st floor, Ekka complex,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      4-59/9, nagori, Shanthi Nagar,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Mangaluru,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Karnataka 575002
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <br />
+              </div>
+
+              {/* <div>
+                <p className="font-semibold mb-1 text-base">Branch 3:</p>
+                <ul className="space-y-1 break-words">
+                  <li>
+                    <a href="#" className="underline">
+                      1st floor, Ekka complex,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      4-59/9, nagori, Shanthi Nagar,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Mangaluru,
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="underline">
+                      Karnataka 575002
+                    </a>
+                  </li>
+                </ul>
+              </div> */}
+
+            </div>
+             {/* Column 2: Menu */}
             <div className="space-y-4">
-              <p className="font-semibold mb-1">M:</p>
+              <p className="font-semibold mb-1">Pages:</p>
               <ul className="space-y-1">
                 <li>
                   <button
@@ -180,7 +240,7 @@ export default function Footer() {
 
             {/* Column 3: Explore */}
             <div className="space-y-4">
-              <p className="font-semibold mb-1">Explore:</p>
+              <p className="font-semibold mb-1">Explore more:</p>
               <ul className="space-y-1">
                 <li>
                   <a href="#" className="underline">
@@ -203,21 +263,6 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            {/* Column 4: Newsletter */}
-            <div className="text-center sm:text-left">
-              <p className="font-semibold mb-2">Subscribe to our newsletter:</p>
-              <form className="flex flex-col gap-2 w-full max-w-xs mx-auto sm:mx-0">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none text-sm"
-                />
-                <button className="px-4 py-2 bg-black text-white text-xs rounded-md hover:bg-gray-800">
-                  Subscribe
-                </button>
-              </form>
             </div>
           </div>
         </div>
