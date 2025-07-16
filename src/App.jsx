@@ -13,7 +13,6 @@ import Niche from "./components/Niche";
 import SectionOne from "./components/SectionOne";
 import Testimonial from "./components/Testimonials";
 import Background from "./components/Background";
-import CustomCursor from "./components/CustomCursor";
 import Image3DSlider from "./components/Image3DSlider";
 import FloatingSocials from "./components/FloatingSocials";
 import GlobalReachSection from "./components/GlobalReachSection";
@@ -27,10 +26,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"; // added
 import LegalTerms from "./pages/LegalTerms"; //  added
 import EventHub from "./pages/EventHub"; //   added
 
-
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
-
 
 import WebDev from "./pages/programs/webDev";
 import VLSI from "./pages/programs/VLSI";
@@ -103,7 +100,6 @@ function HomePage() {
       <SectionOne />
 
       {/* <Niche /> */}
-
     </>
   );
 }
@@ -112,44 +108,52 @@ function HomePage() {
 function App() {
   return (
     <div className="w-full min-h-screen text-black">
-      <CustomCursor />
       <Background />
       <ScrollToTop />
       <Navbar />
       <ScrollToTopOnLoad />
       <ScrollHandler />
 
-     <Routes>
-  {/* 🌐 Static Pages */}
-  <Route path="/" element={<HomePage />} />
-  <Route path="/career" element={<Career />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/eventHub" element={<EventHub />} />
-  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-  <Route path="/legal-terms" element={<LegalTerms />} />
+      <Routes>
+        {/* 🌐 Static Pages */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/eventHub" element={<EventHub />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/legal-terms" element={<LegalTerms />} />
 
-  {/* 📘 Program Pages */}
-  <Route path="/programs/webDev" element={<WebDev />} />
-  <Route path="/programs/VLSI" element={<VLSI />} />
-  <Route path="/programs/UIUX" element={<UIUX />} />
-  <Route path="/programs/Ai" element={<Ai />} />
-  <Route path="/programs/DataSciences" element={<DataSciences />} />
-  <Route path="/programs/CyberSecurity" element={<CyberSecurity />} />
-  <Route path="/programs/CloudComputing" element={<CloudComputing />} />
-  <Route path="/programs/IOT" element={<IOT />} />
-  <Route path="/programs/AutoCAD" element={<AutoCAD />} />
-  <Route path="/programs/JavaFullstack" element={<JavaFullstack />} />
-  <Route path="/programs/AppDevelopment" element={<AppDevelopment />} />
-  <Route path="/programs/DigitalMarketing" element={<DigitalMarketing />} />
-  <Route path="/programs/PowerBi" element={<PowerBi />} />
-  <Route path="/programs/HRM" element={<HRM />} />
-  <Route path="/programs/Leadership" element={<Leadership />} />
-  <Route path="/programs/AdvancedExcel" element={<AdvancedExcel />} />
-  <Route path="/programs/Accounting" element={<Accounting />} />
-  <Route path="/programs/Entrepreneurship" element={<Entrepreneurship />} />
-  <Route path="/programs/BusinessCommunication" element={<BusinessCommunication />} />
-  <Route path="/programs/Blaw" element={<Blaw />} />
-</Routes>
+        {/* 📘 Program Pages */}
+        <Route path="/programs/webDev" element={<WebDev />} />
+        <Route path="/programs/VLSI" element={<VLSI />} />
+        <Route path="/programs/UIUX" element={<UIUX />} />
+        <Route path="/programs/Ai" element={<Ai />} />
+        <Route path="/programs/DataSciences" element={<DataSciences />} />
+        <Route path="/programs/CyberSecurity" element={<CyberSecurity />} />
+        <Route path="/programs/CloudComputing" element={<CloudComputing />} />
+        <Route path="/programs/IOT" element={<IOT />} />
+        <Route path="/programs/AutoCAD" element={<AutoCAD />} />
+        <Route path="/programs/JavaFullstack" element={<JavaFullstack />} />
+        <Route path="/programs/AppDevelopment" element={<AppDevelopment />} />
+        <Route
+          path="/programs/DigitalMarketing"
+          element={<DigitalMarketing />}
+        />
+        <Route path="/programs/PowerBi" element={<PowerBi />} />
+        <Route path="/programs/HRM" element={<HRM />} />
+        <Route path="/programs/Leadership" element={<Leadership />} />
+        <Route path="/programs/AdvancedExcel" element={<AdvancedExcel />} />
+        <Route path="/programs/Accounting" element={<Accounting />} />
+        <Route
+          path="/programs/Entrepreneurship"
+          element={<Entrepreneurship />}
+        />
+        <Route
+          path="/programs/BusinessCommunication"
+          element={<BusinessCommunication />}
+        />
+        <Route path="/programs/Blaw" element={<Blaw />} />
+      </Routes>
       <Niche />
 
       <FloatingSocials />
