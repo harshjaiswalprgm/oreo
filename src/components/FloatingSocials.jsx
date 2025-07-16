@@ -97,13 +97,25 @@ const FloatingSocials = () => {
 
         {/* Main Toggle Button */}
         <motion.button
-          whileTap={{ scale: 0.9 }}
-          onClick={toggleMenu}
-          className="bg-black dark:bg-white dark:text-black text-white p-4 rounded-full shadow-xl transition-all"
-          aria-label="Toggle social icons"
-        >
-          {isOpen ? <FaTimes className="text-xl" /> : <FaPlus className="text-xl" />}
-        </motion.button>
+  whileTap={{ scale: 0.9 }}
+  onClick={toggleMenu}
+  className="relative bg-black dark:bg-white dark:text-black text-white p-4 rounded-full shadow-xl transition-all animate-bounce hover:scale-105"
+  aria-label="Toggle social icons"
+>
+  {/* Tooltip */}
+  {!isOpen && (
+    <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap dark:bg-white dark:text-black">
+      Connect with us!
+    </span>
+  )}
+
+  {/* Icon */}
+  {isOpen ? (
+    <FaTimes className="text-xl" />
+  ) : (
+    <FaPlus className="text-xl animate-pulse" />
+  )}
+</motion.button>
       </div>
     </div>
   );

@@ -225,37 +225,46 @@ const EventHub = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center">
-        <div className="w-full max-w-6xl p-4 border border-gray-300 rounded-xl bg-white/10 backdrop-blur-sm flex flex-col md:flex-row items-center justify-center gap-6">
-          {/* Card 1 */}
-          <a
-            href="https://forms.gle/LcrGRk8FaSzgoqkV8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
-          >
-            <img
-              src="/Workshopp.png"
-              alt="Hackathon 1"
-              className="w-full h-auto object-cover"
-            />
-          </a>
+     <div className="w-full flex justify-center">
+  <div className="w-full max-w-6xl p-4 border border-gray-300 rounded-xl bg-white/10 backdrop-blur-sm flex flex-col md:flex-row items-center justify-center gap-6">
+    {/* Card 1 */}
+    <div className="relative w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200">
+      <a
+        href="https://forms.gle/LcrGRk8FaSzgoqkV8"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/Workshopp.png"
+          alt="Workshop"
+          className="w-full h-auto object-cover"
+        />
+        <button className="absolute bottom-4 left-4 px-4 py-2 bg-orange-500 text-white text-sm font-semibold rounded-full shadow-lg hover:bg-orange-600 transition duration-300">
+          Register Now
+        </button>
+      </a>
+    </div>
 
-          {/* Card 2 */}
-          <a
-            href="https://forms.gle/gNCR3tfDTEtkjZfx6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200"
-          >
-            <img
-              src="https://media.istockphoto.com/id/1189767041/vector/hackathon-signs-round-design-template-thin-line-icon-concept-vector.jpg?s=612x612&w=0&k=20&c=DW-btIjpNjItFfk35N4KvrMkoGoqd1rEPwb_uV9IZEU="
-              alt="Hackathon 2"
-              className="w-full h-auto object-cover"
-            />
-          </a>
-        </div>
-      </div>
+    {/* Card 2 */}
+    <div className="relative w-[90%] md:w-[650px] rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 border border-gray-200">
+      <a
+        href="https://forms.gle/gNCR3tfDTEtkjZfx6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://media.istockphoto.com/id/1189767041/vector/hackathon-signs-round-design-template-thin-line-icon-concept-vector.jpg?s=612x612&w=0&k=20&c=DW-btIjpNjItFfk35N4KvrMkoGoqd1rEPwb_uV9IZEU="
+          alt="Hackathon"
+          className="w-full h-auto object-cover"
+        />
+        <button className="absolute bottom-4 left-4 px-4 py-2 bg-orange-500 text-white text-sm font-semibold rounded-full shadow-lg hover:bg-orange-600 transition duration-300">
+          Register Now
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
 
       <div className="w-full h-screen overflow-hidden rounded-[40px] shadow-2xl">
         <video
