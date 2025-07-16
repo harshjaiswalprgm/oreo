@@ -8,7 +8,9 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-const clickSound = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-fast-double-click-on-mouse-275.wav");
+const clickSound = new Audio(
+  "https://assets.mixkit.co/sfx/preview/mixkit-fast-double-click-on-mouse-275.wav"
+);
 
 const icons = [
   {
@@ -21,7 +23,8 @@ const icons = [
   {
     id: "instagram",
     icon: <FaInstagram />,
-    color: "bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:opacity-90",
+    color:
+      "bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:opacity-90",
     href: "https://instagram.com/glowlogics",
     label: "Instagram",
   },
@@ -97,25 +100,24 @@ const FloatingSocials = () => {
 
         {/* Main Toggle Button */}
         <motion.button
-  whileTap={{ scale: 0.9 }}
-  onClick={toggleMenu}
-  className="relative bg-black dark:bg-white dark:text-black text-white p-4 rounded-full shadow-xl transition-all animate-bounce hover:scale-105"
-  aria-label="Toggle social icons"
->
-  {/* Tooltip */}
-  {!isOpen && (
-    <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap dark:bg-white dark:text-black">
-      Connect with us!
-    </span>
-  )}
+          whileTap={{ scale: 0.9 }}
+          onClick={toggleMenu}
+          className="relative bg-black dark:bg-white dark:text-black text-white p-4 rounded-full shadow-xl transition-all animate-bounce hover:scale-105"
+          aria-label="Toggle social icons"
+        >
+          {/* Tooltip */}
+          {!isOpen && (
+            <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-black  text-white text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap dark:bg-white dark:text-black">
+             <b>Connect with Us!</b>            </span>
+          )}
 
-  {/* Icon */}
-  {isOpen ? (
-    <FaTimes className="text-xl" />
-  ) : (
-    <FaPlus className="text-xl animate-pulse" />
-  )}
-</motion.button>
+          {/* Icon */}
+          {isOpen ? (
+            <FaTimes className="text-xl" />
+          ) : (
+            <FaPlus className="text-xl animate-pulse" />
+          )}
+        </motion.button>
       </div>
     </div>
   );
