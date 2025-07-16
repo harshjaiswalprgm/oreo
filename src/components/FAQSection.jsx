@@ -4,34 +4,59 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "Is there a free trial available?",
+    question: "What is Glowlogics Solutions?",
     answer:
-      "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call.",
+      "Glowlogics is an ISO and MSME-certified Software training company offering industry-relevant training programs, internships, and placement assistance in both technical and non-technical domains..",
   },
   {
-    question: "Can I change my plan later?",
+    question: "Who can join these Programs?",
     answer:
-      "Absolutely! You can upgrade or downgrade your plan anytime from your account settings.",
+      "Engineering, management, commerce, and general degree students from 1st year to final year, as well as working professionals looking to upskill, can enroll.",
   },
   {
-    question: "What is your cancellation policy?",
+    question: "Are Glowlogics Certificates valid?",
     answer:
-      "You can cancel your subscription at any time, and your access will continue until the end of your billing cycle.You can cancel your subscription at any time, and your access will continue until the end of your billing cycle.You can cancel your subscription at any time, and your access will continue until the end of your billing cycle. ",
+      "Yes. Glowlogics certifications are ISO and MSME-recognized, which means they hold value for placements, higher studies, and professional growth. ",
   },
   {
-    question: "Can other info be added to an invoice?",
+    question: "What is your Refund policy?",
     answer:
-      "Yes, you can add company details, tax ID, and other info directly from the billing section.",
+      "Glowlogics follows a no-refund policy once the program has been initiated, as per ISO compliance. We encourage all students to review program details carefully before registering.",
   },
   {
-    question: "How does billing work?",
+    question: "Do you provide Live classes or only Recorded content?",
     answer:
-      "We bill you monthly or annually based on your chosen plan. You'll get an invoice via email and in your dashboard.",
+      "We offer both options: Live interactive classes with mentors for select programs, Self-paced learning with mentor support for others.",
   },
   {
-    question: "How do I change my account email?",
+    question: "How does Placement Assistance work?",
     answer:
-      "Head to your profile settings and update your email address there. We'll send a confirmation link to your new address.",
+      "Placement assistance includes:Resume building,LinkedIn profile optimization,Direct referrals to hiring partners and MNCs, While we assist with placement, job offers depend on the student’s performance and skills.",
+  },
+  {
+    question: "Are the Mentors Industry Professionals?",
+    answer:
+      "Yes. Our mentors come from companies like TCS, Cognizant, Capgemini, and other leading organizations, ensuring practical exposure and real-world insights.",
+  },
+  {
+    question: "How do I Register for a Program?",
+    answer:
+      "You can register using our official Registration link or through Company QR Code only",
+  },
+  {
+    question: "Do I get Internship Opportunities through Glowlogics?",
+    answer:
+      "Yes. Most of our programs include an internship component with real-world projects, weekly mentor guidance, and project submission requirements.",
+  },
+  {
+    question: "What are the Payment methods available?",
+    answer:
+      "You can pay via UPI, Google Pay, PhonePe, Paytm, or direct bank transfer. Company QR code and account details are shared after registration.",
+  },
+  {
+    question: "Can I Enroll while studying in college?",
+    answer:
+      "Absolutely. Our programs are structured keeping students' academic schedules in mind, making them flexible for both college students and working professionals.",
   },
 ];
 

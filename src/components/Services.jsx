@@ -33,35 +33,33 @@ export default function GlowlogicsUltimate() {
         className="lg:w-1/3 w-full z-10"
       >
         <h2 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">
-          Why Choose <span className="text-[#ff6e0c]">Glowlogics</span>?
+          Why <span className="text-[#ff6e0c]">Glowlogics Solutions </span>?
         </h2>
         <p className="text-black text-lg leading-relaxed">
-  At Glowlogics, we’re more than just a learning platform — we’re your partner in growth. Whether you are a student, a working professional, or an institution, our mission is to empower you with real-world skills through industry-aligned programs, expert-led mentorship, and immersive, hands-on experiences.
-  We blend innovation with practical learning to help you gain job-ready expertise, build a strong project portfolio, and receive career-focused guidance.
-  With flexible learning paths, globally recognized certifications, and a strong focus on the most in-demand domains — including AI, Web Development, Data Science, Cybersecurity, and Cloud Computing — Glowlogics equips you to thrive in a fast-paced, competitive world and lead with confidence in the future of work.
+  At Glowlogics, we help students, graduates, and working professionals turn skills into real careers. Our ISO- and MSME-certified programs are designed to bridge the gap between learning and hiring. Whether you're aiming for IT, electronics, or business roles, our training is built around what companies actually look for.
 </p>
 
 <ul className="list-disc pl-6 text-black mt-4 space-y-2 text-base">
   <li>
-    Real-time project work and live industry case studies to build strong portfolios.
+    ✅ Industry-Certified Programs: ISO & MSME-recognized certifications trusted by employers.
   </li>
   <li>
-    Personalized career support including resume building, mock interviews, and job assistance.
+   ✅ Live Projects & Case Studies: Build real-world skills with portfolio-worthy projects.
+   </li>
+  <li>
+    ✅ Dedicated Career Support: Resume building, LinkedIn profile guidance, mock interviews, and placement help.
   </li>
   <li>
-    Lifetime access to updated course material, tools, and mentorship sessions.
+    ✅ Lifetime Learning Access: Stay updated with evolving tech through lifetime course access.
   </li>
   <li>
-    Regular workshops, hackathons, and live sessions to boost practical understanding.
+    ✅ National Hackathons & Workshops: Exclusive events in collaboration with E-Cell IIT Hyderabad & Techfest IIT Bombay.
   </li>
   <li>
-    ISO & MSME certified credentials to enhance your professional credibility.
+    ✅ Flexible Programs: Options for engineering students, graduates.
   </li>
   <li>
-    Flexible learning options tailored for students, working professionals, and institutions.
-  </li>
-  <li>
-    Access to an exclusive learner community for networking and peer collaboration.
+    ✅ Strong Learner Community: Connect with mentors, peers, and hiring companies.
   </li>
 </ul>
 
