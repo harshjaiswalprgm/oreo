@@ -23,20 +23,6 @@ const programData = [
     popupTitle: "Start Your UI/UX Design Journey Today!",
   },
 
-  // {
-  //   id: 2,
-  //   title: "Power BI",
-  //   category: "Crash Course",
-  //   author: "📅 Next Batch Starting Soon",
-  //   date: "August 2025",
-  //   image:
-  //     "https://img.freepik.com/free-photo/busy-woman-working-night-front-computer-taking-notes-writing-notebook-annual-reports-checking-financial-project-focused-employee-using-technology-network-wireless-doing-overtime-job_482257-13382.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
-  //   desc: "Turn data into powerful insights with Power BI",
-  //   details:
-  //     "Learn data visualization, dashboards, DAX formulas, and real-time reporting. Build projects that help businesses make smarter decisions using data.",
-  //   popupTitle: "Become a Certified Power BI Analyst",
-  // },
-
   {
     id: 3,
     title: "Advance Excel",
@@ -69,7 +55,7 @@ const programData = [
   {
     id: 5,
     title: "Java Fullstack",
-     slug: "JavaFullstack",
+    slug: "JavaFullstack",
     category: "Crash Course",
     author: "📅 This Batch Is Now Live",
     date: "2 June 25",
@@ -97,7 +83,7 @@ const programData = [
   {
     id: 7,
     title: "App Development",
-     slug: "AppDevelopment",
+    slug: "AppDevelopment",
     category: "Crash Course",
     author: "📅 This Batch Is Now Live",
     date: "8 June 25",
@@ -530,7 +516,7 @@ export default function ProgramShowcase() {
     >
       <div className="max-w-8xl mx-auto">
         <h2 className="text-4xl font-bold mb-10 text-black leading-snug">
-           Transform Your Career with{" "}
+          Transform Your Career with{" "}
           <span className="text-[#ff6e0c]">Top-Tier Programs</span>
         </h2>
 
@@ -579,13 +565,17 @@ export default function ProgramShowcase() {
                     alt={prog.title}
                     className="rounded-lg h-full w-full object-cover"
                   />
-                  {["BTech", "Masters", "Graduates"].includes(
-                    prog.category
-                  ) && (
-                    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
-                      LIVE
-                    </span>
-                  )}
+                 {["Entrepreneurship", "Business Law", "Business Communication"].includes(prog.title) ? (
+  <span className="absolute top-2 left-2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded">
+    COMING SOON
+  </span>
+) : (
+  ["BTech", "Masters", "Graduates"].includes(prog.category) && (
+    <span className="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+      LIVE
+    </span>
+  )
+)}
                 </div>
                 <h3 className="text-lg font-semibold mb-1">{prog.title}</h3>
                 <p className="text-sm text-gray-500 mb-2">{prog.desc}</p>
