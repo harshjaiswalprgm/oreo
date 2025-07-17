@@ -97,7 +97,7 @@ export default function HeroSection() {
         >
           <motion.h1
             variants={fadeUpVariant}
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight relative group"
+            className=" sm:text-4xl md:text-5xl text-lg text-gray-900 leading-tight relative group"
           >
             <span className="relative z-10">
               Tired of Just Learning? <br />
