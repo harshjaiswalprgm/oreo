@@ -45,7 +45,25 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  /* font-family: 'Inter', sans-serif; */
+
 }
+
+/*//////////////////////////////////////////////////////////////////*/
+                 /*Font*/
+/*//////////////////////////////////////////////////////////////////*/
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 
 .animate-marquee {
   animation: marquee 40s linear infinite;
@@ -70,6 +88,8 @@ body, html {
 }
 body {
   background-color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
 @layer utilities {
   .animate-marquee {

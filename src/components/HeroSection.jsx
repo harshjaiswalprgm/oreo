@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
+import '../index.css';
+
 
 import colabImage from "../assets/images/Colab.png";
 import img1 from "../assets/images/img1.png";
