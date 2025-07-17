@@ -95,14 +95,6 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            {/* <a
-              href="/public/ProgramsPDF/"
-              download
-            >
-              <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
-                Download brochure
-              </button>
-            </a> */}
           </div>
 
           {/* Rating & Learners */}
@@ -265,55 +257,66 @@ const FullStackCourse = () => {
 
             {[
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 1: Understanding Leadership and Management",
                 lessons: [
-                  {
-                    name: "Lesson 01: Course Introduction",
-                    time: "09:49",
-                    preview: "#",
-                  },
+                  {name: "Self Leadership"},
+                  {name: "Leadership Theories and Styles"},
+                  {name: "Interpersonal Skills and Leadership"},
+                  {name: "Lesson Summary"},
+                ],
+              },
+
+              {
+                title: "Module2: Team Building, Conflict Management, and Mentoring",
+                lessons: [
+                  {name: "Team Building, Conflict Management, and Mentoring"},
+                  {name: "Conflict Management and Counselling"},
+                  {name: "Leadership in Mentoring and Coaching"},
                 ],
               },
               {
-                title: "Section 02: Business Environment",
-                lessons: [{ name: "Preview coming soon" }],
+                title: "Section 01: Course Introduction",
+                lessons: [
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                ],
               },
               {
-                title: "Section 03: Start the Project",
-                lessons: [{ name: "Preview coming soon" }],
+                title: "Section 01: Course Introduction",
+                lessons: [
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                ],
               },
               {
-                title: "Section 04: Plan the Project",
-                lessons: [{ name: "Preview coming soon" }],
+                title: "Section 01: Course Introduction",
+                lessons: [
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                ],
               },
               {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
+                title: "Section 01: Course Introduction",
+                lessons: [
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Lesson 01: Course Introduction"},
+                ],
               },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
-              {
-                title: "Section 05: Lead the Project",
-                lessons: [{ name: "Preview coming soon" }],
-              },
+
+
+
             ].map((section, index) => (
               <div
                 key={index}

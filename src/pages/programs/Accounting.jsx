@@ -6,13 +6,6 @@ import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
-
   const roleLogos = {
     "Project Director": [
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
@@ -52,33 +45,32 @@ const FullStackCourse = () => {
             Accounting
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+            Become a job-ready accounting professional | Master Tally, Excel, QuickBooks, Financial Reporting & Taxation
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs,
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
-          </ul>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Learn real-world accounting concepts through hands-on projects
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Master tools like Excel, Tally, QuickBooks & Financial Analysis
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Career Mentorship + Build a strong Accounting Portfolio
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Includes resume review, mock interviews, and LinkedIn guidance
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Guaranteed Live Cohorts in the Next 90 Days
+  </li>
+</ul>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
@@ -132,18 +124,16 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for a
-          project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
+         Glowlogics AccountingPro training course covers core topics essential for a professional in the field of accounting and finance. It includes subjects such as emerging financial trends, new technologies and tools, regulatory practices, and the core competencies required from an accounting professional. With an emphasis on strategic thinking and business acumen, the course also highlights the evolving role of accountants in todays dynamic landscape.
+
+
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+              Accounting Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
               ✅ 100% ISO Verified Internship
@@ -193,10 +183,7 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
-          manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
-          and are often rewarded with substantial pay raises as shown below.
+        The AccountingPro® certification can help you land lucrative roles in finance, auditing, consulting, government, and other dynamic industries. AccountingPro® certified professionals drive greater financial accuracy and compliance, and are often rewarded with substantial pay raises as shown below.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -374,17 +361,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        {/* <div className="flex items-center gap-4">
-                          <a
-                            href={lesson.preview}
-                            className="text-blue-600 font-medium"
-                          >
-                            Preview
-                          </a>
-                          {lesson.time && (
-                            <span className="text-gray-500">{lesson.time}</span>
-                          )}
-                        </div> */}
+
                       </div>
                     ))}
                   </div>
@@ -401,7 +378,6 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-
                 {
                   q: "Who can join this Accounting Certification Program?",
                   a: "Commerce, management, engineering, and degree students from any year or background can join. No prior accounting experience is required.",
@@ -459,8 +435,7 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
-
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
               <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
                 Next cohort starts on{" "}
                 <span className="text-black font-bold">4 Sep 2025</span>

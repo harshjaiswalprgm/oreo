@@ -319,7 +319,7 @@ const FullStackCourse = () => {
                 ],
               },
               {
-                title: "5. Hash tables and hash functions",
+                title: "Module 5. Hash tables and hash functions",
                 lessons: [
                   { name: "Open addressing and chaining techniques." },
                   { name: "Collision resolution." },
