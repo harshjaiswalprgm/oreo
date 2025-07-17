@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-10 mb-16">
           {/* Left Section */}
           <div className="w-full lg:w-1/3 mb-10 lg:mb-0">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
               Glowlogics <br /> Solutions
             </h2>
 

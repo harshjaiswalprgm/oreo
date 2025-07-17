@@ -63,7 +63,7 @@ const imageCardVariant = {
   },
 };
 
-// ✅ Hero Section
+// ✅ Hero Section-
 export default function HeroSection() {
   const navigate = useNavigate();
   const [selectedCourse, setSelectedCourse] = useState("");
