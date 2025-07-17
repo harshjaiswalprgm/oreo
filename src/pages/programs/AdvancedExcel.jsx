@@ -5,12 +5,6 @@ import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
 
   const roleLogos = {
     "Project Director": [
@@ -51,33 +45,32 @@ const FullStackCourse = () => {
             Advance Excel
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+           Become a job-ready Excel expert | Master Advanced Excel, Pivot Tables, Dashboards, Power Query & Automation
           </p>
 
           {/* Benefits */}
-          <ul className="space-y-3 text-gray-800 mb-6">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs, Deployment
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
-          </ul>
+         <ul className="space-y-3 text-gray-800 mb-6">
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Work on real-world Excel projects from scratch
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Master Advanced Excel, Pivot Tables, Dashboards, and Power Query
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Career Mentorship + Build a professional Excel project portfolio
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Includes resume review, mock interviews, and LinkedIn guidance
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Guaranteed Live Cohorts in the Next 90 Days
+  </li>
+</ul>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">

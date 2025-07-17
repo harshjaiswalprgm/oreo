@@ -5,12 +5,6 @@ import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
 
   const roleLogos = {
     "Project Director": [
@@ -275,46 +269,29 @@ const FullStackCourse = () => {
                 ],
               },
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 4 : Situational Awareness, Servant Leadership and Emotional Intelligence",
                 lessons: [
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
+                  {name: "Situational Awareness, Servant Leadership & Emotional Intelligence- "},
+                  {name: "Situational Leadership"},
+                  {name: "Servant Leadership"},
+                  {name: "Emotional Intelligence in Leadership"},
+                  {name: "Emotional Intelligence and Empathy"},
                 ],
               },
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 5 : Change Management and Roleplay Sessions",
                 lessons: [
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                ],
+                  {name: "Leadership and Change Management"},
+                  {name: "Roleplay Sessions"},
+                  {name: "Lesson Summary"},
+                   ],
               },
               {
-                title: "Section 01: Course Introduction",
+                title: "Module 6 : Second Assessment",
                 lessons: [
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                ],
+                  {name: "Leadership and Management Styles."},
+                 ],
               },
-              {
-                title: "Section 01: Course Introduction",
-                lessons: [
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                  {name: "Lesson 01: Course Introduction"},
-                ],
-              },
-
 
 
             ].map((section, index) => (
