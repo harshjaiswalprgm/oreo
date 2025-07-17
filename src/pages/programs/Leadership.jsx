@@ -318,17 +318,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        <div className="flex items-center gap-4">
-                          <a
-                            href={lesson.preview}
-                            className="text-blue-600 font-medium"
-                          >
-                            Preview
-                          </a>
-                          {lesson.time && (
-                            <span className="text-gray-500">{lesson.time}</span>
-                          )}
-                        </div>
+
                       </div>
                     ))}
                   </div>
