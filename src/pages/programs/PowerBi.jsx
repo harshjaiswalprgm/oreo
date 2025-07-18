@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
+import RoadmapFlow from "/RoadmapFlow.png";
 // import { FaQuoteLeft } from "react-icons/fa";
 
 const FullStackCourse = () => {
@@ -416,6 +417,20 @@ const FullStackCourse = () => {
             ))}
           </div>
         </div>
+         <div>
+                  <br></br>
+                </div>
+                <div className="overflow-hidden w-full max-w-5xl mx-auto rounded-lg shadow-md">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">
+                    Your 5-Step Career Roadmap with Glowlogics
+                  </h2>
+
+                  <img
+                    src={RoadmapFlow}
+                    alt="World map with student locations"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-105 w-full h-auto"
+                  />
+                </div>
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-10 items-start">
           {/* Left: FAQ Section */}
           <div className="w-full lg:w-2/3">

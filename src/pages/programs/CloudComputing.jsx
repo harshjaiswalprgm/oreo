@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
+import RoadmapFlow from "/RoadmapFlow.png";
 // import { FaQuoteLeft } from "react-icons/fa";
 
 const FullStackProgram = () => {
@@ -14,13 +15,13 @@ const FullStackProgram = () => {
 
   const roleLogos = {
     "Cloud Engineer –  Starting Salary (India): ₹5 – ₹9 LPA": [
-     "data:image/png;base64,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",
+      "data:image/png;base64,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",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1mfxOyRFkqOsS2bqbAv6Jme5aZst5647elBXv3sNokwJNbq3Wohed1XLWWg&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjl7XELiAxlFFuJltyWm6Th6inOxlVzxc7MMrSSbAJyYiszxgXSb41DDrv8Q&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR10Fz15vjWryAGF7LWpwGCBpDyAiBOpgW5o3r--4GHkybcmtt0q5FI7cavs&s",
     ],
     "DevOps Engineer - Starting Salary (India): ₹6 – ₹10 LPA": [
-     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUnTw99fm9fVevBAnkSKTEI5XV_T9LbhKusHHYOdxLt2w6vvDTX-15ZO6uw&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpsGe5iEJob0dcSB5w9P5aWFjriI1hp0gyk5BlsAn303UpqPqoxUUqNhUuZ0&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
@@ -281,77 +282,101 @@ const FullStackProgram = () => {
               {
                 title: "Module 1. Introduction to Cloud Computing",
                 lessons: [
-                  {name: "Fundamentals of cloud computing"},
-                  {name: "History and evolution of cloud services"},
-                  {name: "Understanding IaaS, PaaS, SaaS models"},
-                  {name: "Public, private, and hybrid clouds"},
+                  { name: "Fundamentals of cloud computing" },
+                  { name: "History and evolution of cloud services" },
+                  { name: "Understanding IaaS, PaaS, SaaS models" },
+                  { name: "Public, private, and hybrid clouds" },
                 ],
               },
               {
                 title: "Module 2. Cloud Service Providers",
                 lessons: [
-                  {name: "AWS (Amazon Web Services)"},
-                  {name: "Microsoft Azure"},
-                  {name: "Google Cloud Platform (GCP)"},
-                  {name: "Overview of each provider’s strengths and offerings"},
+                  { name: "AWS (Amazon Web Services)" },
+                  { name: "Microsoft Azure" },
+                  { name: "Google Cloud Platform (GCP)" },
+                  {
+                    name: "Overview of each provider’s strengths and offerings",
+                  },
                 ],
               },
               {
                 title: "Module 3. Cloud Infrastructure Management",
                 lessons: [
-                  {name: "Virtualization technologies"},
-                  {name: "Virtual Machines, Containers, and Serverless Computing"},
-                  {name: "Networking in the cloud (VPCs, DNS, Load Balancers)"},
-                  {name: "Storage Solutions (S3, EBS, Azure Blob, Google Cloud)"},
+                  { name: "Virtualization technologies" },
+                  {
+                    name: "Virtual Machines, Containers, and Serverless Computing",
+                  },
+                  {
+                    name: "Networking in the cloud (VPCs, DNS, Load Balancers)",
+                  },
+                  {
+                    name: "Storage Solutions (S3, EBS, Azure Blob, Google Cloud)",
+                  },
                 ],
               },
               {
                 title: "Module 4. Cloud Security",
                 lessons: [
-                  {name: "Identity and Access Management (IAM"},
-                  {name: "Encryption and Data Security in the cloud"},
-                  {name: "Securing cloud infrastructure (firewalls, security groups"},
-                  {name: "Disaster recovery and backup strategies"},
+                  { name: "Identity and Access Management (IAM" },
+                  { name: "Encryption and Data Security in the cloud" },
+                  {
+                    name: "Securing cloud infrastructure (firewalls, security groups",
+                  },
+                  { name: "Disaster recovery and backup strategies" },
                 ],
               },
               {
                 title: "Module 5. Cloud Automation & DevOps ",
                 lessons: [
-                  {name: "Introduction to DevOps and its role in cloud computing"},
-                  {name: "Continuous Integration/Continuous Deployment (CI/CD) "},
-                  {name: "Automation tools: Terraform, Ansible, Jenkins, AWS CloudFormation"},
-                  {name: "Monitoring cloud infrastructure with tools like CloudWatch, Azure Monitor"},
+                  {
+                    name: "Introduction to DevOps and its role in cloud computing",
+                  },
+                  {
+                    name: "Continuous Integration/Continuous Deployment (CI/CD) ",
+                  },
+                  {
+                    name: "Automation tools: Terraform, Ansible, Jenkins, AWS CloudFormation",
+                  },
+                  {
+                    name: "Monitoring cloud infrastructure with tools like CloudWatch, Azure Monitor",
+                  },
                 ],
               },
               {
                 title: "Module 6. Database Management in the Cloud",
                 lessons: [
-                  {name: "Managed Databases (RDS, DynamoDB, CosmosDB, Cloud SQL)"},
-                  {name: "NoSQL vs. SQL databases in cloud environments"},
-                  {name: "Database scaling and management strategies"},
-
+                  {
+                    name: "Managed Databases (RDS, DynamoDB, CosmosDB, Cloud SQL)",
+                  },
+                  { name: "NoSQL vs. SQL databases in cloud environments" },
+                  { name: "Database scaling and management strategies" },
                 ],
               },
               {
                 title: "Module 7. Cloud Architecture Design ",
                 lessons: [
-                  {name: "Designing scalable, fault-tolerant cloud architectures"},
-                  {name: "Microservices architecture and container orchestration with Kubernetes"},
-                  {name: "Best practices for cloud resource management"},
-                  {name: "Multi-cloud and hybrid cloud strategies"},
-
+                  {
+                    name: "Designing scalable, fault-tolerant cloud architectures",
+                  },
+                  {
+                    name: "Microservices architecture and container orchestration with Kubernetes",
+                  },
+                  { name: "Best practices for cloud resource management" },
+                  { name: "Multi-cloud and hybrid cloud strategies" },
                 ],
               },
               {
                 title: "Module 8. Real-World Applications ",
                 lessons: [
-                  {name: "Building and deploying web applications in the cloud"},
-                  {name: "Migrating on-premise infrastructure to the cloud"},
-                  {name: "Cloud-native development and serverless architectures"},
-
+                  {
+                    name: "Building and deploying web applications in the cloud",
+                  },
+                  { name: "Migrating on-premise infrastructure to the cloud" },
+                  {
+                    name: "Cloud-native development and serverless architectures",
+                  },
                 ],
               },
-
             ].map((section, index) => (
               <div
                 key={index}
@@ -395,6 +420,20 @@ const FullStackProgram = () => {
             ))}
           </div>
         </div>
+         <div>
+                  <br></br>
+                </div>
+                <div className="overflow-hidden w-full max-w-5xl mx-auto rounded-lg shadow-md">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">
+                    Your 5-Step Career Roadmap with Glowlogics
+                  </h2>
+
+                  <img
+                    src={RoadmapFlow}
+                    alt="World map with student locations"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-105 w-full h-auto"
+                  />
+                </div>
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-10 items-start">
           {/* Left: FAQ Section */}
           <div className="w-full lg:w-2/3">
@@ -404,37 +443,37 @@ const FullStackProgram = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-    "q": "Who can join this Cloud Computing Certification Program?",
-    "a": "Engineering and degree students from any year or background can join. No prior cloud or coding experience is required."
-  },
-  {
-    "q": "Do I need any specific background before enrolling?",
-    "a": "No. This program is beginner-friendly and covers cloud computing basics to advanced topics step by step."
-  },
-  {
-    "q": "How long is the Cloud Computing certification valid for?",
-    "a": "The Cloud Computing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
-  },
-  {
-    "q": "What skills will I learn in this course?",
-    "a": "You’ll learn cloud fundamentals, AWS, Azure, cloud deployment, virtualization, DevOps basics, storage solutions, and security practices."
-  },
-  {
-    "q": "How long is the course, and what is the learning mode?",
-    "a": "The course runs for 2–3 months with 60+ hours of live interactive classes, doubt-clearing sessions, and hands-on cloud project work."
-  },
-  {
-    "q": "Will I get a certificate after completing the course?",
-    "a": "Yes. You’ll receive an ISO- and MSME-recognized Cloud Computing Certification after completing the course and submitting your project work."
-  },
-  {
-    "q": "Is there any placement guarantee?",
-    "a": "We provide placement assistance including interview preparation and resume support. Final job offers depend on your skills and interview performance."
-  },
-  {
-    "q": "How do I register and pay the course fee?",
-    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed."
-  },
+                  q: "Who can join this Cloud Computing Certification Program?",
+                  a: "Engineering and degree students from any year or background can join. No prior cloud or coding experience is required.",
+                },
+                {
+                  q: "Do I need any specific background before enrolling?",
+                  a: "No. This program is beginner-friendly and covers cloud computing basics to advanced topics step by step.",
+                },
+                {
+                  q: "How long is the Cloud Computing certification valid for?",
+                  a: "The Cloud Computing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime.",
+                },
+                {
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn cloud fundamentals, AWS, Azure, cloud deployment, virtualization, DevOps basics, storage solutions, and security practices.",
+                },
+                {
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "The course runs for 2–3 months with 60+ hours of live interactive classes, doubt-clearing sessions, and hands-on cloud project work.",
+                },
+                {
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized Cloud Computing Certification after completing the course and submitting your project work.",
+                },
+                {
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance including interview preparation and resume support. Final job offers depend on your skills and interview performance.",
+                },
+                {
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared after your registration is confirmed.",
+                },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
@@ -460,115 +499,128 @@ const FullStackProgram = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-  <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
-    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-      Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
-    </h3>
-  </div>
+            <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+                Next cohort starts on{" "}
+                <span className="text-black font-bold">3 Aug 2025</span>
+              </h3>
+            </div>
 
-  {/* Certificate Image with Hover Zoom */}
-  <div
-    id="cert-container"
-    className="border rounded-lg shadow-md overflow-hidden w-full"
-    onMouseMove={(e) => {
-      const img = document.getElementById("cert-img");
-      if (img) {
-        const rect = img.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-        img.style.transformOrigin = `${x}% ${y}%`;
-      }
-    }}
-    onMouseLeave={() => {
-      const img = document.getElementById("cert-img");
-      if (img) {
-        img.style.transformOrigin = "center center";
-      }
-    }}
-  >
-    <img
-      id="cert-img"
-      src="/CourseCompletionGlowlogics.png"
-      alt="Certificate 1"
-      data-index="0"
-      className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-      onClick={() => {
-        const modal = document.getElementById("cert-modal");
-        modal.style.display = "flex";
-      }}
-    />
-  </div>
+            {/* Certificate Image with Hover Zoom */}
+            <div
+              id="cert-container"
+              className="border rounded-lg shadow-md overflow-hidden w-full"
+              onMouseMove={(e) => {
+                const img = document.getElementById("cert-img");
+                if (img) {
+                  const rect = img.getBoundingClientRect();
+                  const x = ((e.clientX - rect.left) / rect.width) * 100;
+                  const y = ((e.clientY - rect.top) / rect.height) * 100;
+                  img.style.transformOrigin = `${x}% ${y}%`;
+                }
+              }}
+              onMouseLeave={() => {
+                const img = document.getElementById("cert-img");
+                if (img) {
+                  img.style.transformOrigin = "center center";
+                }
+              }}
+            >
+              <img
+                id="cert-img"
+                src="/CourseCompletionGlowlogics.png"
+                alt="Certificate 1"
+                data-index="0"
+                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+                onClick={() => {
+                  const modal = document.getElementById("cert-modal");
+                  modal.style.display = "flex";
+                }}
+              />
+            </div>
 
-  {/* Certificate Navigation Buttons */}
-  <div className="flex gap-6 mt-4">
-    <button
-      onClick={() => {
-        const certificates = [
-          "/CourseCompletionGlowlogics.png",
-          "/InternshipGlowlogics.png",
-          "/PlacementGlowlogics.png",
-        ];
-        let currentIndex =
-          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
-        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
-        const img = document.getElementById("cert-img");
-        img.src = certificates[currentIndex];
-        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-        img.setAttribute("data-index", currentIndex);
-        document.getElementById("modal-img").src = certificates[currentIndex];
-      }}
-      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-    >
-      ◀
-    </button>
+            {/* Certificate Navigation Buttons */}
+            <div className="flex gap-6 mt-4">
+              <button
+                onClick={() => {
+                  const certificates = [
+                    "/CourseCompletionGlowlogics.png",
+                    "/InternshipGlowlogics.png",
+                    "/PlacementGlowlogics.png",
+                  ];
+                  let currentIndex =
+                    parseInt(
+                      document
+                        .getElementById("cert-img")
+                        .getAttribute("data-index")
+                    ) || 0;
+                  currentIndex =
+                    (currentIndex - 1 + certificates.length) %
+                    certificates.length;
+                  const img = document.getElementById("cert-img");
+                  img.src = certificates[currentIndex];
+                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+                  img.setAttribute("data-index", currentIndex);
+                  document.getElementById("modal-img").src =
+                    certificates[currentIndex];
+                }}
+                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+              >
+                ◀
+              </button>
 
-    <button
-      onClick={() => {
-        const certificates = [
-          "/CourseCompletionGlowlogics.png",
-          "/InternshipGlowlogics.png",
-          "/PlacementGlowlogics.png",
-        ];
-        let currentIndex =
-          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
-        currentIndex = (currentIndex + 1) % certificates.length;
-        const img = document.getElementById("cert-img");
-        img.src = certificates[currentIndex];
-        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-        img.setAttribute("data-index", currentIndex);
-        document.getElementById("modal-img").src = certificates[currentIndex];
-      }}
-      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-    >
-      ▶
-    </button>
-  </div>
+              <button
+                onClick={() => {
+                  const certificates = [
+                    "/CourseCompletionGlowlogics.png",
+                    "/InternshipGlowlogics.png",
+                    "/PlacementGlowlogics.png",
+                  ];
+                  let currentIndex =
+                    parseInt(
+                      document
+                        .getElementById("cert-img")
+                        .getAttribute("data-index")
+                    ) || 0;
+                  currentIndex = (currentIndex + 1) % certificates.length;
+                  const img = document.getElementById("cert-img");
+                  img.src = certificates[currentIndex];
+                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+                  img.setAttribute("data-index", currentIndex);
+                  document.getElementById("modal-img").src =
+                    certificates[currentIndex];
+                }}
+                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+              >
+                ▶
+              </button>
+            </div>
 
-  {/* Fullscreen Popup Modal */}
-  <div
-    id="cert-modal"
-    className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
-    style={{ display: "none" }}
-  >
-    <div className="relative max-w-4xl w-full">
-      <button
-        onClick={() => {
-          document.getElementById("cert-modal").style.display = "none";
-        }}
-        className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
-      >
-        ✕ Close
-      </button>
-      <img
-        id="modal-img"
-        src="/CourseCompletionGlowlogics.png"
-        alt="Full Certificate"
-        className="w-full h-auto object-contain rounded-lg"
-      />
-    </div>
-  </div>
-</div>
-
+            {/* Fullscreen Popup Modal */}
+            <div
+              id="cert-modal"
+              className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
+              style={{ display: "none" }}
+            >
+              <div className="relative max-w-4xl w-full">
+                <button
+                  onClick={() => {
+                    document.getElementById("cert-modal").style.display =
+                      "none";
+                  }}
+                  className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
+                >
+                  ✕ Close
+                </button>
+                <img
+                  id="modal-img"
+                  src="/CourseCompletionGlowlogics.png"
+                  alt="Full Certificate"
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div className=" py-12 overflow-hidden">
           <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
