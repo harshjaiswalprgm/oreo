@@ -26,16 +26,16 @@ const FullStackCourse = () => {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
     ],
     "Data Analyst  - Starting Salary (India): ₹4 – ₹7 LPA": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9K8eaqkEKLNFWf7fzbQAca3McYHsdkvpKMtXwLKgEB_hDmtMn61N2v0DEgA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKP2CNJ_0aX4DAuhMIOmzxvMXUE8adsc5v8z44BExycJHV6oFEDsB1a1HmNA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXESL8W6aoDD3CHdJhAz5rmb-MbmKKvvuatyvydeY-fxSHcDheXyKvmYG2W0A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD75Ew8D4llFJk_ZTfQVFS8PwxlhVYwES4SOUQqTcmZtHPw5Pz42sC1coMWQ&s",
     ],
     "Data Visualization Specialist - Starting Salary (India): ₹4.5 – ₹8 LPA": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_P85o6q5b2clTlqYUhvgVMIdgUu6MqvzfBISHBirSsS0R7uJwK3u1Fd1bB-U&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQ2ed2DEYUtBqM5QFnRlUDyMc6naNQ7ZqTLQ3pdl1WOk8NHom7ffKz3ub-g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ywGfT6BXzPfdxnmFPHu9WagIC7E_Dz9XlHiCyKOO0jjcX-iktawn2T41-4Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSze0EO7gJyuZJ7-LbrCiBH60WrvWTeLenF82OZdK0kaNvhnmmReIiMQFZvRg&s",
     ],
   };
 

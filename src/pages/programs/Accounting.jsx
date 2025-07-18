@@ -26,10 +26,10 @@ const FullStackCourse = () => {
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
     ],
     "Financial Analyst (Entry-Level) – Starting Salary (India): ₹4 – ₹7 LPA": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_P85o6q5b2clTlqYUhvgVMIdgUu6MqvzfBISHBirSsS0R7uJwK3u1Fd1bB-U&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQ2ed2DEYUtBqM5QFnRlUDyMc6naNQ7ZqTLQ3pdl1WOk8NHom7ffKz3ub-g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ywGfT6BXzPfdxnmFPHu9WagIC7E_Dz9XlHiCyKOO0jjcX-iktawn2T41-4Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSze0EO7gJyuZJ7-LbrCiBH60WrvWTeLenF82OZdK0kaNvhnmmReIiMQFZvRg&s",
     ],
   };
 
