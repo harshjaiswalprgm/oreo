@@ -20,7 +20,7 @@ const FullStackCourse = () => {
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR10Fz15vjWryAGF7LWpwGCBpDyAiBOpgW5o3r--4GHkybcmtt0q5FI7cavs&s",
     ],
     "Business Intelligence Analyst  - Starting Salary (India): ₹5 – ₹8 LPA": [
-     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUnTw99fm9fVevBAnkSKTEI5XV_T9LbhKusHHYOdxLt2w6vvDTX-15ZO6uw&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpsGe5iEJob0dcSB5w9P5aWFjriI1hp0gyk5BlsAn303UpqPqoxUUqNhUuZ0&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
@@ -57,26 +57,27 @@ const FullStackCourse = () => {
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
-           <li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Work on real-world Power BI projects using business datasets
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Master Power BI, DAX, Data Modeling, Dashboards & Visualizations
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Career mentorship with hands-on analytics portfolio and case studies
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Includes resume review, mock interviews & LinkedIn optimization
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Guaranteed live cohorts starting within the next 90 days
-</li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Work on real-world Power BI projects using business datasets
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Master Power BI, DAX, Data Modeling, Dashboards & Visualizations
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Career mentorship with hands-on analytics portfolio and case
+              studies
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Includes resume review, mock interviews & LinkedIn optimization
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Guaranteed live cohorts starting within the next 90 days
+            </li>
           </ul>
 
           {/* CTA Buttons */}
@@ -90,10 +91,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/PowerBIGlowlogics.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/PowerBIGlowlogics.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -132,7 +130,16 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-        The Glowlogics Power BI training course is designed to equip learners with the core skills needed to analyze, visualize, and communicate data-driven insights effectively. The course covers essential topics including Power BI Desktop, DAX (Data Analysis Expressions), data modeling, interactive dashboards, Power Query, and real-time analytics. With hands-on projects and business use cases, learners gain practical experience in building dynamic visualizations and reports that drive strategic decision-making. Whether you are aiming for roles in business intelligence, data analysis, or reporting, this course will help you become a job-ready Power BI professional.
+          The Glowlogics Power BI training course is designed to equip learners
+          with the core skills needed to analyze, visualize, and communicate
+          data-driven insights effectively. The course covers essential topics
+          including Power BI Desktop, DAX (Data Analysis Expressions), data
+          modeling, interactive dashboards, Power Query, and real-time
+          analytics. With hands-on projects and business use cases, learners
+          gain practical experience in building dynamic visualizations and
+          reports that drive strategic decision-making. Whether you are aiming
+          for roles in business intelligence, data analysis, or reporting, this
+          course will help you become a job-ready Power BI professional.
         </p>
 
         {/* Key Features */}
@@ -172,22 +179,22 @@ const FullStackCourse = () => {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-  "Data Analysis and Visualization with Power BI",
-  "Building Interactive Dashboards and Reports",
-  "Data Modeling and Relationships",
-  "DAX (Data Analysis Expressions) Formulas",
-  "Power Query for Data Transformation",
-  "Connecting to Multiple Data Sources (Excel, SQL, Web, etc.)",
-  "Data Cleaning and Preparation Techniques",
-  "Time Intelligence and KPI Tracking",
-  "Custom Visuals and Advanced Charting",
-  "Real-Time Data and Live Dashboards",
-  "Publishing and Sharing Reports on Power BI Service",
-  "Row-Level Security and Permissions Management",
-  "Power BI Desktop vs Power BI Service",
-  "Integrating Power BI with Excel and Microsoft 365",
-  "Business Intelligence Best Practices and Storytelling with Data"
-].map((skill, index) => (
+              "Data Analysis and Visualization with Power BI",
+              "Building Interactive Dashboards and Reports",
+              "Data Modeling and Relationships",
+              "DAX (Data Analysis Expressions) Formulas",
+              "Power Query for Data Transformation",
+              "Connecting to Multiple Data Sources (Excel, SQL, Web, etc.)",
+              "Data Cleaning and Preparation Techniques",
+              "Time Intelligence and KPI Tracking",
+              "Custom Visuals and Advanced Charting",
+              "Real-Time Data and Live Dashboards",
+              "Publishing and Sharing Reports on Power BI Service",
+              "Row-Level Security and Permissions Management",
+              "Power BI Desktop vs Power BI Service",
+              "Integrating Power BI with Excel and Microsoft 365",
+              "Business Intelligence Best Practices and Storytelling with Data",
+            ].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -201,9 +208,17 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-         The Power BI<sup>®</sup> certification offers a wide range of benefits for aspiring data analysts, business intelligence professionals, and anyone looking to advance in data-driven roles. It equips you with in-demand skills in data visualization, dashboard creation, DAX, and data modeling—making you job-ready for roles in IT, finance, healthcare, e-commerce, and more. With this globally recognized credential, you will gain a competitive edge in the job market, unlock opportunities in business analysis, reporting, and consulting, and stand out as a data-savvy decision-maker. The certification enhances your ability to turn raw data into actionable insights, leading to faster career growth and increased earning potential.
-
-
+          The Power BI<sup>®</sup> certification offers a wide range of benefits
+          for aspiring data analysts, business intelligence professionals, and
+          anyone looking to advance in data-driven roles. It equips you with
+          in-demand skills in data visualization, dashboard creation, DAX, and
+          data modeling—making you job-ready for roles in IT, finance,
+          healthcare, e-commerce, and more. With this globally recognized
+          credential, you will gain a competitive edge in the job market, unlock
+          opportunities in business analysis, reporting, and consulting, and
+          stand out as a data-savvy decision-maker. The certification enhances
+          your ability to turn raw data into actionable insights, leading to
+          faster career growth and increased earning potential.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
           {/* Designation Column */}
@@ -252,9 +267,17 @@ const FullStackCourse = () => {
           <div>
             <h3 className="text-xl font-semibold mb-2">Definition</h3>
             <p>
-              Power BI<sup>®</sup>  is a powerful business analytics tool developed by Microsoft that enables users to visualize data, share insights, and make informed decisions through interactive dashboards and reports. This program is designed to help learners understand the complete data analysis lifecycle — from data collection and cleaning to modeling, visualization, and storytelling. Whether you are a beginner or a professional looking to enhance your data skills, the Power BI program equips you with the knowledge to turn raw data into actionable insights, making it a valuable asset for careers in business intelligence, data analysis, and decision-making.
-
-
+              Power BI<sup>®</sup> is a powerful business analytics tool
+              developed by Microsoft that enables users to visualize data, share
+              insights, and make informed decisions through interactive
+              dashboards and reports. This program is designed to help learners
+              understand the complete data analysis lifecycle — from data
+              collection and cleaning to modeling, visualization, and
+              storytelling. Whether you are a beginner or a professional looking
+              to enhance your data skills, the Power BI program equips you with
+              the knowledge to turn raw data into actionable insights, making it
+              a valuable asset for careers in business intelligence, data
+              analysis, and decision-making.
             </p>
           </div>
 
@@ -266,83 +289,90 @@ const FullStackCourse = () => {
               {
                 title: "Module 1: Introduction to Power BI",
                 lessons: [
-                  {name: "What is Power BI?"},
-                  {name: "Power BI vs Excel vs Tableau"},
-                  {name: "Components: Power BI Desktop, Service, and Mobile App"},
-                  {name: "Data Analytics Flow with Power BI"},
-                  {name: "Use cases in business and industry"},
+                  { name: "What is Power BI?" },
+                  { name: "Power BI vs Excel vs Tableau" },
+                  {
+                    name: "Components: Power BI Desktop, Service, and Mobile App",
+                  },
+                  { name: "Data Analytics Flow with Power BI" },
+                  { name: "Use cases in business and industry" },
                 ],
               },
-               {
+              {
                 title: "Module 2: Getting Started with Power BI Desktop",
                 lessons: [
-                  {name: "Interface overview"},
-                  {name: "Connecting to various data sources (Excel, CSV, Web, SQL)"},
-                  {name: "Data load vs direct query"},
-                  {name: "Basic data transformation"},
+                  { name: "Interface overview" },
+                  {
+                    name: "Connecting to various data sources (Excel, CSV, Web, SQL)",
+                  },
+                  { name: "Data load vs direct query" },
+                  { name: "Basic data transformation" },
                 ],
               },
-               {
+              {
                 title: "Module 3: Power Query Editor (ETL)",
                 lessons: [
-                  {name: "Cleaning & transforming data"},
-                  {name: "Removing errors, duplicates"},
-                  {name: "Column splitting, merging, and data typing"},
-                  {name: "Using applied steps and query folding"},
-                  {name: "Data profiling and quality checks"},
+                  { name: "Cleaning & transforming data" },
+                  { name: "Removing errors, duplicates" },
+                  { name: "Column splitting, merging, and data typing" },
+                  { name: "Using applied steps and query folding" },
+                  { name: "Data profiling and quality checks" },
                 ],
               },
-               {
+              {
                 title: " Module 4: Data Modeling",
                 lessons: [
-                  {name: "Star schema vs snowflake schema"},
-                  {name: "Creating relationships between tables"},
-                  {name: "Primary & foreign keys"},
-                  {name: "Understanding cardinality and cross filter direction"},
-                  {name: "Normalization vs denormalization"},
+                  { name: "Star schema vs snowflake schema" },
+                  { name: "Creating relationships between tables" },
+                  { name: "Primary & foreign keys" },
+                  {
+                    name: "Understanding cardinality and cross filter direction",
+                  },
+                  { name: "Normalization vs denormalization" },
                 ],
               },
-               {
+              {
                 title: "Module 5: DAX (Data Analysis Expressions)",
                 lessons: [
-                  {name: "Calculated columns vs measures"},
-                  {name: "Basic DAX functions: SUM, COUNT, DISTINCTCOUNT"},
-                  {name: "Logical functions: IF, SWITCH"},
-                  {name: "Time intelligence: YTD, MTD, SAMEPERIODLASTYEAR"},
-                  {name: "Aggregation and filter functions"},
+                  { name: "Calculated columns vs measures" },
+                  { name: "Basic DAX functions: SUM, COUNT, DISTINCTCOUNT" },
+                  { name: "Logical functions: IF, SWITCH" },
+                  { name: "Time intelligence: YTD, MTD, SAMEPERIODLASTYEAR" },
+                  { name: "Aggregation and filter functions" },
                 ],
               },
-               {
+              {
                 title: "Module 6: Visualizations ",
                 lessons: [
-                  {name: "Bar, line, pie, waterfall, gauge, combo charts"},
-                  {name: "Slicers, cards, KPIs, matrix, table"},
-                  {name: "Custom visuals and marketplace"},
-                  {name: "Conditional formatting and drill-downs"},
-                  {name: "Best practices for dashboards"},
+                  { name: "Bar, line, pie, waterfall, gauge, combo charts" },
+                  { name: "Slicers, cards, KPIs, matrix, table" },
+                  { name: "Custom visuals and marketplace" },
+                  { name: "Conditional formatting and drill-downs" },
+                  { name: "Best practices for dashboards" },
                 ],
               },
-               {
+              {
                 title: "Module 7: Power BI Service (Cloud)",
                 lessons: [
-                  {name: "Publishing reports to Power BI Service"},
-                  {name: "Creating and sharing dashboards"},
-                  {name: "Workspaces, datasets, reports, and apps"},
-                  {name: "Scheduled data refresh"},
-                  {name: "Row-level security basics"},
+                  { name: "Publishing reports to Power BI Service" },
+                  { name: "Creating and sharing dashboards" },
+                  { name: "Workspaces, datasets, reports, and apps" },
+                  { name: "Scheduled data refresh" },
+                  { name: "Row-level security basics" },
                 ],
               },
-               {
+              {
                 title: "Module 8: Power BI Project + Case Study",
                 lessons: [
-                  {name: "End-to-end dashboard creation using a business dataset"},
-                  {name: "Applying ETL, modeling, DAX, and visuals"},
-                  {name: "Workspaces, datasets, reports, and apps"},
-                  {name: "Storytelling with data"},
-                  {name: "Client presentation practice"},
+                  {
+                    name: "End-to-end dashboard creation using a business dataset",
+                  },
+                  { name: "Applying ETL, modeling, DAX, and visuals" },
+                  { name: "Workspaces, datasets, reports, and apps" },
+                  { name: "Storytelling with data" },
+                  { name: "Client presentation practice" },
                 ],
               },
-
             ].map((section, index) => (
               <div
                 key={index}
@@ -395,37 +425,37 @@ const FullStackCourse = () => {
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
                 {
-    "q": "Who can join this Power BI Certification Program?",
-    "a": "Engineering, management, and degree students from any year or background can join. No prior technical or coding experience is required."
-  },
-  {
-    "q": "Do I need to know programming before enrolling?",
-    "a": "No. Power BI focuses on data visualization, business intelligence, and analytics. We start from the basics, including data handling, dashboards, and report creation."
-  },
-  {
-    "q": "How long is the Power BI certification valid for?",
-    "a": "The Power BI Certification provided by Glowlogics is valid for a lifetime and is ISO- and MSME-recognized."
-  },
-  {
-    "q": "What skills will I learn in this course?",
-    "a": "You’ll learn data visualization, Power Query, DAX formulas, dashboard building, report automation, data modeling, and publishing reports using Power BI Service."
-  },
-  {
-    "q": "How long is the course, and what is the learning mode?",
-    "a": "The course typically runs for 20–25 hours spread over 1–1.5 months, delivered through live online classes along with project-based learning."
-  },
-  {
-    "q": "Will I get a certificate after completing the course?",
-    "a": "Yes. You’ll receive an ISO- and MSME-recognized Power BI Certification upon completing training and submitting your project work."
-  },
-  {
-    "q": "Is there any placement guarantee?",
-    "a": "We provide placement assistance and interview support, but actual job offers depend on your performance, skills, and interview results."
-  },
-  {
-    "q": "How do I register and pay the course fee?",
-    "a": "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed."
-  },
+                  q: "Who can join this Power BI Certification Program?",
+                  a: "Engineering, management, and degree students from any year or background can join. No prior technical or coding experience is required.",
+                },
+                {
+                  q: "Do I need to know programming before enrolling?",
+                  a: "No. Power BI focuses on data visualization, business intelligence, and analytics. We start from the basics, including data handling, dashboards, and report creation.",
+                },
+                {
+                  q: "How long is the Power BI certification valid for?",
+                  a: "The Power BI Certification provided by Glowlogics is valid for a lifetime and is ISO- and MSME-recognized.",
+                },
+                {
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn data visualization, Power Query, DAX formulas, dashboard building, report automation, data modeling, and publishing reports using Power BI Service.",
+                },
+                {
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "The course typically runs for 20–25 hours spread over 1–1.5 months, delivered through live online classes along with project-based learning.",
+                },
+                {
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized Power BI Certification upon completing training and submitting your project work.",
+                },
+                {
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance and interview support, but actual job offers depend on your performance, skills, and interview results.",
+                },
+                {
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared once your registration is confirmed.",
+                },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
@@ -450,192 +480,213 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+  <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+      Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+    </h3>
+  </div>
 
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-      Next cohort starts on<span className="text-black font-bold">3 Aug 2025</span>
-  </h3>
+  {/* Certificate Image with Hover Zoom */}
+  <div
+    id="cert-container"
+    className="border rounded-lg shadow-md overflow-hidden w-full"
+    onMouseMove={(e) => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        const rect = img.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+      }
+    }}
+    onMouseLeave={() => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        img.style.transformOrigin = "center center";
+      }
+    }}
+  >
+    <img
+      id="cert-img"
+      src="/CourseCompletionGlowlogics.png"
+      alt="Certificate 1"
+      data-index="0"
+      className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+      onClick={() => {
+        const modal = document.getElementById("cert-modal");
+        modal.style.display = "flex";
+      }}
+    />
+  </div>
 
-  {/* Countdown Grid */}
+  {/* Certificate Navigation Buttons */}
+  <div className="flex gap-6 mt-4">
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ◀
+    </button>
 
-</div> <div
-              id="cert-container"
-              className="border rounded-lg shadow-md overflow-hidden w-full"
-              onMouseMove={(e) => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  const rect = img.getBoundingClientRect();
-                  const x = ((e.clientX - rect.left) / rect.width) * 100;
-                  const y = ((e.clientY - rect.top) / rect.height) * 100;
-                  img.style.transformOrigin = `${x}% ${y}%`;
-                }
-              }}
-              onMouseLeave={() => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  img.style.transformOrigin = "center center";
-                }
-              }}
-            >
-              <img
-                id="cert-img"
-                src="/CourseCompletionGlowlogics.png"
-                alt="Certificate 1"
-                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-              />
-            </div>
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex + 1) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ▶
+    </button>
+  </div>
 
-            <div className="flex gap-6 mt-4">
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex =
-                    (currentIndex - 1 + certificates.length) %
-                    certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ◀
-              </button>
-
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex = (currentIndex + 1) % certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ▶
-              </button>
-            </div>
-          </div>
-        </div>
-       <div className=" py-12 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-    Admiration expressed by others regarding our presence.
-  </h2>
-
-  <div className="relative w-full space-y-8 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-      {[...Array(2)].flatMap(() =>
-        [
-          {
-            name: "Vrinda K",
-            title: "Dayalbagh Educational Institute",
-            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-            img: "/vrindaK.png",
-          },
-          {
-            name: "Smriti Mathuriya",
-            title: "Dayalbagh Educational Institute",
-            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-            img: "/Smrithi.png",
-          },
-          {
-            name: "Aan Narai",
-            title: "Alliance University",
-            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-            img: "/Aan.png",
-          },
-          {
-            name: "Kavya R",
-            title: "Bachelor's in Engineering",
-            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-            img: "/Kavya.png",
-          },
-          {
-            name: "Kulsum Bano",
-            title: "MMICT&MB, 2nd Year",
-            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-            img: "/Kulsum.png",
-          },
-          {
-            name: "Bollepally Jashwanth Varma",
-            title: "Sai Spurthi Institute of Technology, 3rd Year",
-            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-            img: "/CyberUnknown.png",
-          },
-          {
-            name: "Tejaswini.K",
-            title: "Jayaraj Annapackiam College",
-            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-            img: "/TejasvaniK.png",
-          },
-          {
-            name: "Thotakura Puneeth Sai",
-            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-            img: "/Thotakura Puneeth Sai.png",
-          },
-          {
-            name: "Preetham",
-            title: "Navkis College of Engineering",
-            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-            img: "/pritam.png",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-          >
-            <svg
-              className="text-blue-500 text-xl mb-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-            </svg>
-            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-            <div className="flex items-center space-x-3 mt-auto">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-sm">{item.name}</p>
-                <p className="text-xs text-gray-500">{item.title}</p>
-              </div>
-            </div>
-          </div>
-        ))
-      )}
+  {/* Fullscreen Popup Modal */}
+  <div
+    id="cert-modal"
+    className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
+    style={{ display: "none" }}
+  >
+    <div className="relative max-w-4xl w-full">
+      <button
+        onClick={() => {
+          document.getElementById("cert-modal").style.display = "none";
+        }}
+        className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
+      >
+        ✕ Close
+      </button>
+      <img
+        id="modal-img"
+        src="/CourseCompletionGlowlogics.png"
+        alt="Full Certificate"
+        className="w-full h-auto object-contain rounded-lg"
+      />
     </div>
   </div>
 </div>
 
+        </div>
+        <div className=" py-12 overflow-hidden">
+          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+            Admiration expressed by others regarding our presence.
+          </h2>
+
+          <div className="relative w-full space-y-8 overflow-x-hidden">
+            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+              {[...Array(2)].flatMap(() =>
+                [
+                  {
+                    name: "Vrinda K",
+                    title: "Dayalbagh Educational Institute",
+                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+                    img: "/vrindaK.png",
+                  },
+                  {
+                    name: "Smriti Mathuriya",
+                    title: "Dayalbagh Educational Institute",
+                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+                    img: "/Smrithi.png",
+                  },
+                  {
+                    name: "Aan Narai",
+                    title: "Alliance University",
+                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+                    img: "/Aan.png",
+                  },
+                  {
+                    name: "Kavya R",
+                    title: "Bachelor's in Engineering",
+                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+                    img: "/Kavya.png",
+                  },
+                  {
+                    name: "Kulsum Bano",
+                    title: "MMICT&MB, 2nd Year",
+                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+                    img: "/Kulsum.png",
+                  },
+                  {
+                    name: "Bollepally Jashwanth Varma",
+                    title: "Sai Spurthi Institute of Technology, 3rd Year",
+                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+                    img: "/CyberUnknown.png",
+                  },
+                  {
+                    name: "Tejaswini.K",
+                    title: "Jayaraj Annapackiam College",
+                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+                    img: "/TejasvaniK.png",
+                  },
+                  {
+                    name: "Thotakura Puneeth Sai",
+                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+                    img: "/Thotakura Puneeth Sai.png",
+                  },
+                  {
+                    name: "Preetham",
+                    title: "Navkis College of Engineering",
+                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+                    img: "/pritam.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+                  >
+                    <svg
+                      className="text-blue-500 text-xl mb-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+                    </svg>
+                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+                    <div className="flex items-center space-x-3 mt-auto">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <div>
+                        <p className="font-semibold text-sm">{item.name}</p>
+                        <p className="text-xs text-gray-500">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
