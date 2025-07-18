@@ -268,9 +268,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full bg-[#ff6e0c] py-4 px-2">
-
-        </div>
+        <div className="w-full bg-[#ff6e0c] py-4 px-2"></div>
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           {/* Left Side - Copyright */}
@@ -311,8 +309,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }
