@@ -23,7 +23,7 @@ const OfferPopup = () => {
     Referral Offer
   </h2>
   <p className="text-sm md:text-base mb-4 text-gray-700 dark:text-gray-300">
-    <strong>New here?</strong> Sign up now and enjoy <strong>33% off</strong> on your first purchase.
+    <strong>New here?</strong> Sign up now and enjoy <strong>33% off</strong> on your first enrollment.
   </p>
 
   <h3 className="text-lg font-semibold mt-4 text-black dark:text-white">
