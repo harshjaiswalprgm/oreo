@@ -300,7 +300,7 @@ const programData = [
     id: 22,
     title: "Leadership & Managment",
     slug: "Leadership",
-    category: "Graduates",
+    category: "Crash Course",
     author: "Selfbased",
     date: "",
     image:
