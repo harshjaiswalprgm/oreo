@@ -4,7 +4,11 @@ const OfferPopup = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    setShowPopup(true);
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5 * 60 * 1000); // 5 minutes = 300,000 milliseconds
+
+    return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
 
   const handleClose = () => {
@@ -61,7 +65,7 @@ const OfferPopup = () => {
         {/* Right Image */}
         <div className="w-full md:w-1/2 hidden md:block">
           <img
-            src="https://img.freepik.com/free-vector/business-person-using-social-media-referral-strategy-online-getting-new-product-consumers-through-internet-customer-review-interaction-management-flat-illustration_74855-20465.jpg?t=st=1752919698~exp=1752923298~hmac=f6d52349aacaef6f73724982218d88a271db66f44b6922bb9434729df51043cb&w=740" // Replace with your actual image path
+            src="https://img.freepik.com/free-vector/business-person-using-social-media-referral-strategy-online-getting-new-product-consumers-through-internet-customer-review-interaction-management-flat-illustration_74855-20465.jpg"
             alt="Welcome Offer"
             className="h-full w-full object-cover"
           />
