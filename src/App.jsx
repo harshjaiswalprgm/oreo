@@ -15,6 +15,8 @@ import Testimonial from "./components/Testimonials";
 import Background from "./components/Background";
 import Image3DSlider from "./components/Image3DSlider";
 import FloatingSocials from "./components/FloatingSocials";
+import OfferPopup from "./components/OfferPopup";
+import GlowlogicsChatbot from "./components/GlowlogicsChatbot";
 import GlobalReachSection from "./components/GlobalReachSection";
 import HeroSection from "./components/HeroSection";
 //////////////////////////////////////////////////////////////////////////////////
@@ -156,7 +158,11 @@ function App() {
       </Routes>
       <Niche />
 
+
+      <OfferPopup />
       <FloatingSocials />
+       <GlowlogicsChatbot />
+
     </div>
   );
 }

@@ -14,6 +14,22 @@ const clickSound = new Audio(
 
 const icons = [
   {
+    id: "googleform",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="white"
+        viewBox="0 0 24 24"
+        className="w-5 h-5"
+      >
+        <path d="M3 2a1 1 0 0 1 1-1h11l6 6v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2zm13 1.5V8h4.5L16 3.5zM6 12.75a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H6zm0-3a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H6zm0 6a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H6z" />
+      </svg>
+    ),
+    color: "bg-purple-600 hover:bg-purple-700",
+    href: "https://forms.gle/YOUR_FORM_LINK", // <-- Replace with actual form URL
+    label: "Help",
+  },
+  {
     id: "whatsapp",
     icon: <FaWhatsapp />,
     color: "bg-green-500 hover:bg-green-600",
@@ -36,6 +52,7 @@ const icons = [
     label: "LinkedIn",
   },
 ];
+
 
 const FloatingSocials = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,8 +79,9 @@ const FloatingSocials = () => {
           {isOpen &&
             icons.map((item, index) => {
               const angle = isMobile
-                ? (index + 1) * (Math.PI / 2.5) // staggered upward
-                : Math.PI / 1.5 + (index * Math.PI) / 6.5; // spread more toward left
+  ? Math.PI / 4 + (index * Math.PI) / 5 // better vertical spread
+  : Math.PI / 1.8 + (index * Math.PI) / 6.5;
+
 
               const x = Math.cos(angle) * radius;
               const y = Math.sin(angle) * -radius;
