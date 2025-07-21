@@ -8,21 +8,19 @@ const jobOpenings = [
     title: "Inside Sales Representative",
     location: "Bangalore, Bangalore, Kolkata",
     category: "Sales",
-    company: "Glowlogics",
-    companyLevel: "Mid-Level",
-    exp: "Freshers, 1-3 years",
-    ctc: "₹4-6 LPA",
+    companyLevel: "Entry-Level/Mid-Level",
+    exp: "Freshers, 0-2 years",
+    ctc: "₹4-7 LPA",
     description: "Responsible for inbound/outbound sales calls, product demos, and closing leads."
   },
   {
     id: 2,
     title: "Marketing Specialist",
-    location: "Bangalore, Bangalore,",
+    location: "Bangalore, Mangalore,",
     category: "Marketing",
-    company: "Glowlogics",
     companyLevel: "Entry-Level",
     exp: "0-2 years",
-    ctc: "₹3-5 LPA",
+    ctc: "₹3-4 LPA",
     description: "Assist in executing campaigns, managing SEO/SEM, and analyzing market trends."
   },
   {
@@ -30,10 +28,9 @@ const jobOpenings = [
     title: "Brand Marketing",
     location: "Work from Home",
     category: "Marketing",
-    company: "Glowlogics",
     companyLevel: "Mid-Level",
-    exp: "0-2 years",
-    ctc: "₹4.5-7 LPA",
+    exp: "Still Studing or Part Time 0-1 years",
+    ctc: "upto ₹15,000 per mmonth",
     description: "Develop and execute branding strategies to increase product visibility and equity."
   },
   {
@@ -41,21 +38,19 @@ const jobOpenings = [
     title: "Manager Sales",
     location: "Bangalore",
     category: "Sales",
-    company: "Glowlogics",
     companyLevel: "Senior-Level",
-    exp: "5+ years",
-    ctc: "₹10-15 LPA",
+    exp: "3+ years",
+    ctc: "₹6-8 LPA",
     description: "Lead the sales team, drive KPIs, manage strategic clients and revenue pipelines."
   },
   {
     id: 5,
     title: "Manager Marketing",
-    location: "Bangalore, Kolkata, Bangalore",
+    location: "Bangalore",
     category: "Marketing",
-    company: "Glowlogics",
     companyLevel: "Senior-Level",
-    exp: "5+ years",
-    ctc: "₹10-14 LPA",
+    exp: "2+ years",
+    ctc: "₹5-7 LPA",
     description: "Head the marketing team, define GTM strategy, monitor performance."
   },
   {
@@ -63,7 +58,6 @@ const jobOpenings = [
     title: "Campus Ambassador",
     location: "Work from Home",
     category: "Marketing",
-    company: "Glowlogics",
     companyLevel: "Internship",
     exp: "Fresher",
     ctc: "Performance Based",
@@ -74,7 +68,6 @@ const jobOpenings = [
     title: "B2B Sales",
     location: "Bangalore and Bangalore",
     category: "Sales",
-    company: "Glowlogics",
     companyLevel: "Mid-Level",
     exp: "2-4 years",
     ctc: "₹5-8 LPA",
@@ -148,7 +141,7 @@ export default function Career() {
     {
       title: "Google",
       img: "data:image/jpeg;base64,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",
-      rating: "4.6/5 – reviews",
+      rating: "4.7/5 – reviews",
       platform: "Google Map"
     },
     {
