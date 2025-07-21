@@ -1,42 +1,36 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
+import RoadmapFlow from "/RoadmapFlow.png";
 // import { FaQuoteLeft } from "react-icons/fa";
 
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
-
   const roleLogos = {
-    "Project Director": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
+    "Accountant – Starting Salary (India): ₹3 – ₹5.5 LPA": [
+      "data:image/png;base64,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",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1mfxOyRFkqOsS2bqbAv6Jme5aZst5647elBXv3sNokwJNbq3Wohed1XLWWg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjl7XELiAxlFFuJltyWm6Th6inOxlVzxc7MMrSSbAJyYiszxgXSb41DDrv8Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR10Fz15vjWryAGF7LWpwGCBpDyAiBOpgW5o3r--4GHkybcmtt0q5FI7cavs&s",
     ],
-    "Senior Project Manager": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
+    "Accounts Executive –  Starting Salary (India): ₹3 – ₹5 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUnTw99fm9fVevBAnkSKTEI5XV_T9LbhKusHHYOdxLt2w6vvDTX-15ZO6uw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpsGe5iEJob0dcSB5w9P5aWFjriI1hp0gyk5BlsAn303UpqPqoxUUqNhUuZ0&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
     ],
-    "Team Leads/Team Managers": [
+    "Tax Assistant –  Starting Salary (India): ₹3 – ₹5.5 LPA": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
     ],
-    "Project Management Officer (PMO)": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+    "Financial Analyst (Entry-Level) – Starting Salary (India): ₹4 – ₹7 LPA": [
+       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_P85o6q5b2clTlqYUhvgVMIdgUu6MqvzfBISHBirSsS0R7uJwK3u1Fd1bB-U&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQ2ed2DEYUtBqM5QFnRlUDyMc6naNQ7ZqTLQ3pdl1WOk8NHom7ffKz3ub-g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ywGfT6BXzPfdxnmFPHu9WagIC7E_Dz9XlHiCyKOO0jjcX-iktawn2T41-4Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSze0EO7gJyuZJ7-LbrCiBH60WrvWTeLenF82OZdK0kaNvhnmmReIiMQFZvRg&s",
     ],
   };
 
@@ -52,33 +46,32 @@ const FullStackCourse = () => {
             Accounting
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-            Become a job-ready full-stack developer | Master React, Node.js,
-            MongoDB & APIs
+            Become a job-ready accounting professional | Master Tally, Excel, QuickBooks, Financial Reporting & Taxation
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Build real-world projects from scratch
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Master Frontend, Backend, APIs,
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Career Mentorship + GitHub Portfolio
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Includes resume review, mock interviews, and LinkedIn guidance
-            </li>
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-              Guaranteed Live Cohorts in the Next 90 Days
-            </li>
-          </ul>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Learn real-world accounting concepts through hands-on projects
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Master tools like Excel, Tally, QuickBooks & Financial Analysis
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Career Mentorship + Build a strong Accounting Portfolio
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Includes resume review, mock interviews, and LinkedIn guidance
+  </li>
+  <li className="flex items-start">
+    <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+    Guaranteed Live Cohorts in the Next 90 Days
+  </li>
+</ul>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 mb-4">
@@ -132,18 +125,16 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          Glowlogics WebDev training course covers core topics essential for a
-          project management professional. It includes topics such as emerging
-          trends, new technologies and practices, and core competencies required
-          from a project manager. With an emphasis on strategic and business
-          knowledge, the course also highlights the role of a project manager.
+         Glowlogics AccountingPro training course covers core topics essential for a professional in the field of accounting and finance. It includes subjects such as emerging financial trends, new technologies and tools, regulatory practices, and the core competencies required from an accounting professional. With an emphasis on strategic thinking and business acumen, the course also highlights the evolving role of accountants in todays dynamic landscape.
+
+
         </p>
 
         {/* Key Features */}
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <h3 className="text-2xl font-semibold">
-              WebDev Course Key Features
+              Accounting Course Key Features
             </h3>
             <span className="text-green-700 text-sm bg-green-100 border border-green-400 rounded-full px-4 py-1 flex items-center gap-2">
               ✅ 100% ISO Verified Internship
@@ -193,10 +184,7 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-          The WebDev® certification can help you land lucrative roles in IT,
-          manufacturing, finance, healthcare, and other exciting industries.
-          WebDev® certified project managers drive better project performance
-          and are often rewarded with substantial pay raises as shown below.
+        The AccountingPro® certification can help you land lucrative roles in finance, auditing, consulting, government, and other dynamic industries. AccountingPro® certified professionals drive greater financial accuracy and compliance, and are often rewarded with substantial pay raises as shown below.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
@@ -374,17 +362,7 @@ const FullStackCourse = () => {
                         className="flex justify-between items-center text-sm py-1"
                       >
                         <span>{lesson.name}</span>
-                        {/* <div className="flex items-center gap-4">
-                          <a
-                            href={lesson.preview}
-                            className="text-blue-600 font-medium"
-                          >
-                            Preview
-                          </a>
-                          {lesson.time && (
-                            <span className="text-gray-500">{lesson.time}</span>
-                          )}
-                        </div> */}
+
                       </div>
                     ))}
                   </div>
@@ -393,6 +371,20 @@ const FullStackCourse = () => {
             ))}
           </div>
         </div>
+         <div>
+                  <br></br>
+                </div>
+                <div className="overflow-hidden w-full max-w-5xl mx-auto rounded-lg shadow-md">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">
+                    Your 5-Step Career Roadmap with Glowlogics
+                  </h2>
+
+                  <img
+                    src={RoadmapFlow}
+                    alt="World map with student locations"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-105 w-full h-auto"
+                  />
+                </div>
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-10 items-start">
           {/* Left: FAQ Section */}
           <div className="w-full lg:w-2/3">
@@ -401,7 +393,6 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-
                 {
                   q: "Who can join this Accounting Certification Program?",
                   a: "Commerce, management, engineering, and degree students from any year or background can join. No prior accounting experience is required.",
@@ -459,93 +450,115 @@ const FullStackCourse = () => {
 
           {/* Right: Certificates */}
           <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+  <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+      Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+    </h3>
+  </div>
 
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-                Next cohort starts on{" "}
-                <span className="text-black font-bold">4 Sep 2025</span>
-              </h3>
+  {/* Certificate Image with Hover Zoom */}
+  <div
+    id="cert-container"
+    className="border rounded-lg shadow-md overflow-hidden w-full"
+    onMouseMove={(e) => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        const rect = img.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+      }
+    }}
+    onMouseLeave={() => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        img.style.transformOrigin = "center center";
+      }
+    }}
+  >
+    <img
+      id="cert-img"
+      src="/CourseCompletionGlowlogics.png"
+      alt="Certificate 1"
+      data-index="0"
+      className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+      onClick={() => {
+        const modal = document.getElementById("cert-modal");
+        modal.style.display = "flex";
+      }}
+    />
+  </div>
 
-              {/* Countdown Grid */}
-            </div>{" "}
-            <div
-              id="cert-container"
-              className="border rounded-lg shadow-md overflow-hidden w-full"
-              onMouseMove={(e) => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  const rect = img.getBoundingClientRect();
-                  const x = ((e.clientX - rect.left) / rect.width) * 100;
-                  const y = ((e.clientY - rect.top) / rect.height) * 100;
-                  img.style.transformOrigin = `${x}% ${y}%`;
-                }
-              }}
-              onMouseLeave={() => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  img.style.transformOrigin = "center center";
-                }
-              }}
-            >
-              <img
-                id="cert-img"
-                src="/CourseCompletionGlowlogics.png"
-                alt="Certificate 1"
-                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-              />
-            </div>
-            <div className="flex gap-6 mt-4">
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex =
-                    (currentIndex - 1 + certificates.length) %
-                    certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ◀
-              </button>
+  {/* Certificate Navigation Buttons */}
+  <div className="flex gap-6 mt-4">
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ◀
+    </button>
 
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex = (currentIndex + 1) % certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ▶
-              </button>
-            </div>
-          </div>
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex + 1) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ▶
+    </button>
+  </div>
+
+  {/* Fullscreen Popup Modal */}
+  <div
+    id="cert-modal"
+    className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
+    style={{ display: "none" }}
+  >
+    <div className="relative max-w-4xl w-full">
+      <button
+        onClick={() => {
+          document.getElementById("cert-modal").style.display = "none";
+        }}
+        className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
+      >
+        ✕ Close
+      </button>
+      <img
+        id="modal-img"
+        src="/CourseCompletionGlowlogics.png"
+        alt="Full Certificate"
+        className="w-full h-auto object-contain rounded-lg"
+      />
+    </div>
+  </div>
+</div>
+
         </div>
         <div className=" py-12 overflow-hidden">
           <h2 className="text-3xl font-bold text-center mb-10 leading-snug">

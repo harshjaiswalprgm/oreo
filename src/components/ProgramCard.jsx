@@ -300,7 +300,7 @@ const programData = [
     id: 22,
     title: "Leadership & Managment",
     slug: "Leadership",
-    category: "Graduates",
+    category: "Crash Course",
     author: "Selfbased",
     date: "",
     image:
@@ -342,7 +342,7 @@ const programData = [
   {
     id: 25,
     title: "Entrepreneurship",
-    slug: "Entrepreneurship",
+    // slug: "Entrepreneurship",
     category: "Graduates",
     author: "Batch will be Live Soon!",
     date: "",
@@ -356,7 +356,7 @@ const programData = [
   {
     id: 26,
     title: "Business Law",
-    slug: "Blaw",
+    // slug: "Blaw",
     category: "Graduates",
     author: "Batch will be Live Soon!",
     date: "",
@@ -370,7 +370,7 @@ const programData = [
   {
     id: 27,
     title: "Business Communication",
-    slug: "BusinessCommunication",
+    // slug: "BusinessCommunication",
     category: "Graduates",
     author: "Glowlogics Solutions",
     date: "28 Aug 25",
@@ -457,7 +457,7 @@ const programData = [
   {
     id: 33,
     title: "Business Law",
-    slug: "Blaw",
+    // slug: "Blaw",
     category: "Masters",
     author: "Batch will be Live Soon!",
     date: "20 Sep 25",
@@ -471,7 +471,7 @@ const programData = [
   {
     id: 34,
     title: "Business Communication",
-    slug: "BusinessCommunication",
+    // slug: "BusinessCommunication",
     category: "Masters",
     author: "Batch will be Live Soon!",
     date: "",

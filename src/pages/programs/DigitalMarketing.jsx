@@ -5,37 +5,30 @@ import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
-
   const roleLogos = {
-    "Project Director": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
+    "Digital Marketing Executive –  Starting Salary (India): ₹3 – ₹5.5 LPA": [
+      "data:image/png;base64,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",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1mfxOyRFkqOsS2bqbAv6Jme5aZst5647elBXv3sNokwJNbq3Wohed1XLWWg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjl7XELiAxlFFuJltyWm6Th6inOxlVzxc7MMrSSbAJyYiszxgXSb41DDrv8Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR10Fz15vjWryAGF7LWpwGCBpDyAiBOpgW5o3r--4GHkybcmtt0q5FI7cavs&s",
     ],
-    "Senior Project Manager": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
+    "Social Media Manager - Starting Salary (India): ₹3.5 – ₹6 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUnTw99fm9fVevBAnkSKTEI5XV_T9LbhKusHHYOdxLt2w6vvDTX-15ZO6uw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpsGe5iEJob0dcSB5w9P5aWFjriI1hp0gyk5BlsAn303UpqPqoxUUqNhUuZ0&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
     ],
-    "Team Leads/Team Managers": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
+    "SEO Specialist – Starting Salary (India): ₹3 – ₹5.5 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9K8eaqkEKLNFWf7fzbQAca3McYHsdkvpKMtXwLKgEB_hDmtMn61N2v0DEgA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKP2CNJ_0aX4DAuhMIOmzxvMXUE8adsc5v8z44BExycJHV6oFEDsB1a1HmNA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXESL8W6aoDD3CHdJhAz5rmb-MbmKKvvuatyvydeY-fxSHcDheXyKvmYG2W0A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD75Ew8D4llFJk_ZTfQVFS8PwxlhVYwES4SOUQqTcmZtHPw5Pz42sC1coMWQ&s",
     ],
-    "Project Management Officer (PMO)": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+    "Performance Marketing Analyst – Starting Salary (India): ₹4 – ₹7 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_P85o6q5b2clTlqYUhvgVMIdgUu6MqvzfBISHBirSsS0R7uJwK3u1Fd1bB-U&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQ2ed2DEYUtBqM5QFnRlUDyMc6naNQ7ZqTLQ3pdl1WOk8NHom7ffKz3ub-g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ywGfT6BXzPfdxnmFPHu9WagIC7E_Dz9XlHiCyKOO0jjcX-iktawn2T41-4Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSze0EO7gJyuZJ7-LbrCiBH60WrvWTeLenF82OZdK0kaNvhnmmReIiMQFZvRg&s",
     ],
   };
 
@@ -51,31 +44,32 @@ const FullStackCourse = () => {
             Digital Marketing
           </h1>
           <p className="text-lg text-gray-700 mb-6">
-           Become a job-ready digital marketer | Master SEO, Google Ads, Social Media Marketing, Analytics & Content Strategy
+            Become a job-ready digital marketer | Master SEO, Google Ads, Social
+            Media Marketing, Analytics & Content Strategy
           </p>
 
           {/* Benefits */}
           <ul className="space-y-3 text-gray-800 mb-6">
             <li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Work on real-world digital marketing campaigns from scratch
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Master SEO, Google Ads, Meta Ads, Analytics & Content Strategy
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Career mentorship with hands-on portfolio and case studies
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Includes resume review, mock interviews & LinkedIn optimization
-</li>
-<li className="flex items-start">
-  <FaCheckCircle className="text-green-500 mt-1 mr-2" />
-  Guaranteed live cohorts starting within the next 90 days
-</li>
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Work on real-world digital marketing campaigns from scratch
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Master SEO, Google Ads, Meta Ads, Analytics & Content Strategy
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Career mentorship with hands-on portfolio and case studies
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Includes resume review, mock interviews & LinkedIn optimization
+            </li>
+            <li className="flex items-start">
+              <FaCheckCircle className="text-green-500 mt-1 mr-2" />
+              Guaranteed live cohorts starting within the next 90 days
+            </li>
           </ul>
 
           {/* CTA Buttons */}
@@ -89,10 +83,7 @@ const FullStackCourse = () => {
                 Enroll now
               </button>
             </a>
-            <a
-              href="/ProgramsPDF/DigitalMarketingGlowlogics.pdf"
-              download
-            >
+            <a href="/ProgramsPDF/DigitalMarketingGlowlogics.pdf" download>
               <button className="border border-black text-black px-6 py-2 rounded-lg hover:bg-white transition">
                 Download brochure
               </button>
@@ -131,7 +122,17 @@ const FullStackCourse = () => {
           <span className="font-bold text-black">Overview</span>
         </h2>
         <p className="text-gray-600 mb-8 max-w-3xl">
-          The Glowlogics Digital Marketing training course is designed to equip learners with the core skills needed to create and manage impactful digital marketing campaigns across various platforms. The course covers essential topics including SEO, Google Ads, Meta (Facebook & Instagram) Ads, content marketing, email marketing, and web analytics. With a strong focus on industry-relevant tools like Google Analytics, Canva, and HubSpot, the program prepares you to drive traffic, generate leads, and optimize ROI for real-world businesses. Whether you are aiming for agency roles, freelance projects, or in-house marketing positions, this course will help you become a job-ready digital marketer.
+          The Glowlogics Digital Marketing training course is designed to equip
+          learners with the core skills needed to create and manage impactful
+          digital marketing campaigns across various platforms. The course
+          covers essential topics including SEO, Google Ads, Meta (Facebook &
+          Instagram) Ads, content marketing, email marketing, and web analytics.
+          With a strong focus on industry-relevant tools like Google Analytics,
+          Canva, and HubSpot, the program prepares you to drive traffic,
+          generate leads, and optimize ROI for real-world businesses. Whether
+          you are aiming for agency roles, freelance projects, or in-house
+          marketing positions, this course will help you become a job-ready
+          digital marketer.
         </p>
 
         {/* Key Features */}
@@ -171,22 +172,22 @@ const FullStackCourse = () => {
           <h3 className="text-2xl font-semibold mb-6">Skills Covered</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-8 text-gray-700">
             {[
-  "Search Engine Optimization (SEO)",
-  "Google Ads & Pay-Per-Click (PPC) Advertising",
-  "Social Media Marketing (Facebook, Instagram, LinkedIn)",
-  "Content Marketing Strategy & Copywriting",
-  "Email Marketing & Automation Tools",
-  "Google Analytics & Data-Driven Insights",
-  "Meta Ads Manager (Facebook & Instagram Ads)",
-  "Influencer & Affiliate Marketing",
-  "Landing Page Optimization & A/B Testing",
-  "Marketing Funnel Creation & Lead Generation",
-  "E-commerce Marketing Strategies",
-  "Campaign Tracking & ROI Measurement",
-  "Marketing Automation Tools (HubSpot, Mailchimp, etc.)",
-  "Canva & Visual Content Creation",
-  "Digital Marketing Strategy & Brand Positioning"
-].map((skill, index) => (
+              "Search Engine Optimization (SEO)",
+              "Google Ads & Pay-Per-Click (PPC) Advertising",
+              "Social Media Marketing (Facebook, Instagram, LinkedIn)",
+              "Content Marketing Strategy & Copywriting",
+              "Email Marketing & Automation Tools",
+              "Google Analytics & Data-Driven Insights",
+              "Meta Ads Manager (Facebook & Instagram Ads)",
+              "Influencer & Affiliate Marketing",
+              "Landing Page Optimization & A/B Testing",
+              "Marketing Funnel Creation & Lead Generation",
+              "E-commerce Marketing Strategies",
+              "Campaign Tracking & ROI Measurement",
+              "Marketing Automation Tools (HubSpot, Mailchimp, etc.)",
+              "Canva & Visual Content Creation",
+              "Digital Marketing Strategy & Brand Positioning",
+            ].map((skill, index) => (
               <div key={index} className="flex items-start gap-2">
                 <span className="text-[#ff6e0c] text-xl">✔</span>
                 <p>{skill}</p>
@@ -200,7 +201,18 @@ const FullStackCourse = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 bg-white text-gray-800">
         <h2 className="text-3xl font-semibold mb-2">Benefits</h2>
         <p className="mb-8 text-gray-600 max-w-4xl">
-        The Digital Marketing<sup>®</sup> certification offers a wide range of benefits for aspiring marketers and professionals looking to advance their careers. It empowers you with in-demand skills in SEO, Google Ads, Meta Ads, content creation, email marketing, and analytics—making you job-ready for roles in IT, e-commerce, healthcare, fintech, and more. With a globally recognized credential, you will gain a competitive edge in the job market, unlock freelance and remote work opportunities, and build a strong personal brand. The certification also enhances your ability to drive measurable results for businesses, ultimately leading to faster career growth and increased earning potential.</p>
+          The Digital Marketing<sup>®</sup> certification offers a wide range of
+          benefits for aspiring marketers and professionals looking to advance
+          their careers. It empowers you with in-demand skills in SEO, Google
+          Ads, Meta Ads, content creation, email marketing, and analytics—making
+          you job-ready for roles in IT, e-commerce, healthcare, fintech, and
+          more. With a globally recognized credential, you will gain a
+          competitive edge in the job market, unlock freelance and remote work
+          opportunities, and build a strong personal brand. The certification
+          also enhances your ability to drive measurable results for businesses,
+          ultimately leading to faster career growth and increased earning
+          potential.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
           {/* Designation Column */}
           <div className="flex flex-col divide-y border-r">
@@ -352,39 +364,38 @@ const FullStackCourse = () => {
             </h2>
             <div className="bg-white border rounded-lg shadow-md divide-y">
               {[
-
                 {
-    "q": "Who can join this Digital Marketing Certification Program?",
-    "a": "Engineering, management, and degree students from any year or background can join. No prior marketing experience is required."
-  },
-  {
-    "q": "Do I need any specific background before enrolling?",
-    "a": "No. This program is designed for beginners and covers both the fundamentals and advanced concepts of digital marketing step by step."
-  },
-  {
-    "q": "How long is the Digital Marketing certification valid for?",
-    "a": "The Digital Marketing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime."
-  },
-  {
-    "q": "What skills will I learn in this course?",
-    "a": "You’ll learn social media marketing, SEO, Google Ads, content marketing, email marketing, analytics, and how to manage real-world marketing campaigns."
-  },
-  {
-    "q": "How long is the course, and what is the learning mode?",
-    "a": "The course runs for 1–2 months with 30+ hours of live interactive classes, weekly doubt-clearing sessions, and project-based learning."
-  },
-  {
-    "q": "Will I get a certificate after completing the course?",
-    "a": "Yes. You’ll receive an ISO- and MSME-recognized Digital Marketing Certification after successfully completing training and submitting your project work."
-  },
-  {
-    "q": "Is there any placement guarantee?",
-    "a": "We provide placement assistance, including interview preparation and resume support. Final job offers depend on individual performance and interview results."
-  },
-  {
-    "q": "How do I register and pay the course fee?",
-    "a": "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation."
-  },
+                  q: "Who can join this Digital Marketing Certification Program?",
+                  a: "Engineering, management, and degree students from any year or background can join. No prior marketing experience is required.",
+                },
+                {
+                  q: "Do I need any specific background before enrolling?",
+                  a: "No. This program is designed for beginners and covers both the fundamentals and advanced concepts of digital marketing step by step.",
+                },
+                {
+                  q: "How long is the Digital Marketing certification valid for?",
+                  a: "The Digital Marketing Certification from Glowlogics is ISO- and MSME-recognized and valid for a lifetime.",
+                },
+                {
+                  q: "What skills will I learn in this course?",
+                  a: "You’ll learn social media marketing, SEO, Google Ads, content marketing, email marketing, analytics, and how to manage real-world marketing campaigns.",
+                },
+                {
+                  q: "How long is the course, and what is the learning mode?",
+                  a: "The course runs for 1–2 months with 30+ hours of live interactive classes, weekly doubt-clearing sessions, and project-based learning.",
+                },
+                {
+                  q: "Will I get a certificate after completing the course?",
+                  a: "Yes. You’ll receive an ISO- and MSME-recognized Digital Marketing Certification after successfully completing training and submitting your project work.",
+                },
+                {
+                  q: "Is there any placement guarantee?",
+                  a: "We provide placement assistance, including interview preparation and resume support. Final job offers depend on individual performance and interview results.",
+                },
+                {
+                  q: "How do I register and pay the course fee?",
+                  a: "You can register through our official form link or Company QR Code. Payment details will be shared after registration confirmation.",
+                },
               ].map((item, idx) => (
                 <div key={idx} className="group">
                   <button
@@ -409,192 +420,213 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+  <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+      Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+    </h3>
+  </div>
 
-  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-    Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
-  </h3>
+  {/* Certificate Image with Hover Zoom */}
+  <div
+    id="cert-container"
+    className="border rounded-lg shadow-md overflow-hidden w-full"
+    onMouseMove={(e) => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        const rect = img.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+      }
+    }}
+    onMouseLeave={() => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        img.style.transformOrigin = "center center";
+      }
+    }}
+  >
+    <img
+      id="cert-img"
+      src="/CourseCompletionGlowlogics.png"
+      alt="Certificate 1"
+      data-index="0"
+      className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+      onClick={() => {
+        const modal = document.getElementById("cert-modal");
+        modal.style.display = "flex";
+      }}
+    />
+  </div>
 
-  {/* Countdown Grid */}
+  {/* Certificate Navigation Buttons */}
+  <div className="flex gap-6 mt-4">
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ◀
+    </button>
 
-</div> <div
-              id="cert-container"
-              className="border rounded-lg shadow-md overflow-hidden w-full"
-              onMouseMove={(e) => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  const rect = img.getBoundingClientRect();
-                  const x = ((e.clientX - rect.left) / rect.width) * 100;
-                  const y = ((e.clientY - rect.top) / rect.height) * 100;
-                  img.style.transformOrigin = `${x}% ${y}%`;
-                }
-              }}
-              onMouseLeave={() => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  img.style.transformOrigin = "center center";
-                }
-              }}
-            >
-              <img
-                id="cert-img"
-                src="/CourseCompletionGlowlogics.png"
-                alt="Certificate 1"
-                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-              />
-            </div>
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex + 1) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ▶
+    </button>
+  </div>
 
-            <div className="flex gap-6 mt-4">
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex =
-                    (currentIndex - 1 + certificates.length) %
-                    certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ◀
-              </button>
-
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex = (currentIndex + 1) % certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ▶
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className=" py-12 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
-    Admiration expressed by others regarding our presence.
-  </h2>
-
-  <div className="relative w-full space-y-8 overflow-x-hidden">
-    <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
-      {[...Array(2)].flatMap(() =>
-        [
-          {
-            name: "Vrinda K",
-            title: "Dayalbagh Educational Institute",
-            text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
-            img: "/vrindaK.png",
-          },
-          {
-            name: "Smriti Mathuriya",
-            title: "Dayalbagh Educational Institute",
-            text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
-            img: "/Smrithi.png",
-          },
-          {
-            name: "Aan Narai",
-            title: "Alliance University",
-            text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
-            img: "/Aan.png",
-          },
-          {
-            name: "Kavya R",
-            title: "Bachelor's in Engineering",
-            text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
-            img: "/Kavya.png",
-          },
-          {
-            name: "Kulsum Bano",
-            title: "MMICT&MB, 2nd Year",
-            text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
-            img: "/Kulsum.png",
-          },
-          {
-            name: "Bollepally Jashwanth Varma",
-            title: "Sai Spurthi Institute of Technology, 3rd Year",
-            text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
-            img: "/CyberUnknown.png",
-          },
-          {
-            name: "Tejaswini.K",
-            title: "Jayaraj Annapackiam College",
-            text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
-            img: "/TejasvaniK.png",
-          },
-          {
-            name: "Thotakura Puneeth Sai",
-            title: "Anantha Lakshmi Institute of Technology, 3rd Year",
-            text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
-            img: "/Thotakura Puneeth Sai.png",
-          },
-          {
-            name: "Preetham",
-            title: "Navkis College of Engineering",
-            text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
-            img: "/pritam.png",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
-          >
-            <svg
-              className="text-blue-500 text-xl mb-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              width="20"
-              height="20"
-            >
-              <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
-            </svg>
-            <p className="text-gray-700 text-sm mb-4">{item.text}</p>
-            <div className="flex items-center space-x-3 mt-auto">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-sm">{item.name}</p>
-                <p className="text-xs text-gray-500">{item.title}</p>
-              </div>
-            </div>
-          </div>
-        ))
-      )}
+  {/* Fullscreen Popup Modal */}
+  <div
+    id="cert-modal"
+    className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
+    style={{ display: "none" }}
+  >
+    <div className="relative max-w-4xl w-full">
+      <button
+        onClick={() => {
+          document.getElementById("cert-modal").style.display = "none";
+        }}
+        className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
+      >
+        ✕ Close
+      </button>
+      <img
+        id="modal-img"
+        src="/CourseCompletionGlowlogics.png"
+        alt="Full Certificate"
+        className="w-full h-auto object-contain rounded-lg"
+      />
     </div>
   </div>
 </div>
 
+        </div>
+        <div className=" py-12 overflow-hidden">
+          <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
+            Admiration expressed by others regarding our presence.
+          </h2>
+
+          <div className="relative w-full space-y-8 overflow-x-hidden">
+            <div className="flex w-max animate-marquee space-x-6 px-6 items-start">
+              {[...Array(2)].flatMap(() =>
+                [
+                  {
+                    name: "Vrinda K",
+                    title: "Dayalbagh Educational Institute",
+                    text: "I had a great learning experience with Glow Logics while pursuing their cloud computing course. The curriculum was hands-on and project-focused, which helped me apply theoretical concepts to real-world scenarios. The projects I worked on not only deepened my understanding but also significantly strengthened my resume. I’m truly grateful for the practical exposure and support provided throughout the course.",
+                    img: "/vrindaK.png",
+                  },
+                  {
+                    name: "Smriti Mathuriya",
+                    title: "Dayalbagh Educational Institute",
+                    text: "Hello! My name is Smriti Mathuriya. I’m pursuing a B.Sc. from Dayalbagh Educational Institute and recently completed my internship at Glowlogics in the Data Science domain.",
+                    img: "/Smrithi.png",
+                  },
+                  {
+                    name: "Aan Narai",
+                    title: "Alliance University",
+                    text: "I'm Aan Narai, a third-year B.Tech student at Alliance University. I recently completed my UI/UX course from Glowlogics Solutions and received my certification. The training quality was excellent, the instructors were very helpful, and the learning environment was extremely user-friendly. Any issues I faced were resolved immediately. Thank you, Glowlogics!",
+                    img: "/Aan.png",
+                  },
+                  {
+                    name: "Kavya R",
+                    title: "Bachelor's in Engineering",
+                    text: "Hello everyone, I'm Kavya, currently pursuing my Bachelor's in Engineering with a focus on Computer Technology. I'm currently enrolled in the internship program at Glowlogics. My experience so far has been great—the projects are well-structured and easy to understand. Submitting projects and receiving certificates is seamless. Many students are also securing internships and getting placed in reputed companies through this program.",
+                    img: "/Kavya.png",
+                  },
+                  {
+                    name: "Kulsum Bano",
+                    title: "MMICT&MB, 2nd Year",
+                    text: "My name is Kulsum Bano, and I recently completed my UI/UX Training and Internship Program with Glowlogics. The sessions were highly interactive, engaging, relevant, and beginner-friendly. The mentors were very supportive, and I would definitely recommend this program to anyone looking to start their tech journey. Thank you, Glowlogics!",
+                    img: "/Kulsum.png",
+                  },
+                  {
+                    name: "Bollepally Jashwanth Varma",
+                    title: "Sai Spurthi Institute of Technology, 3rd Year",
+                    text: "I recently completed the Cybersecurity Ethical Hacking Internship at GlowLogics Solution and had an excellent experience. The course was well-structured, covering essential topics like penetration testing and vulnerability assessment. The instructors were knowledgeable and supportive. The practical projects gave me real-world exposure. I highly recommend it to aspiring ethical hackers!",
+                    img: "/CyberUnknown.png",
+                  },
+                  {
+                    name: "Tejaswini.K",
+                    title: "Jayaraj Annapackiam College",
+                    text: "Hello everyone, I am Tejaswini K. I study Computer Science at Jayaraj Annapackiam College. I recently completed the Artificial Intelligence course from Glowlogics. The course was well-organized and beginner-friendly. The instructors explained everything in a clear manner. I now feel confident working on AI projects, especially using Python. Thank you, Glowlogics!",
+                    img: "/TejasvaniK.png",
+                  },
+                  {
+                    name: "Thotakura Puneeth Sai",
+                    title: "Anantha Lakshmi Institute of Technology, 3rd Year",
+                    text: "Hi, I'm Thotakura Puneeth Sai, a 3rd-year B.Tech student at Anantha Lakshmi Institute of Technology and Sciences. I completed the Cybersecurity & Ethical Hacking course at Glowlogics, and it was an amazing experience. The instructors were supportive, and the hands-on classes were top-notch. I gained real-world skills essential in cybersecurity. Thank you, Glowlogics!",
+                    img: "/Thotakura Puneeth Sai.png",
+                  },
+                  {
+                    name: "Preetham",
+                    title: "Navkis College of Engineering",
+                    text: "Hello, I’m Preetham. I recently completed my Bachelor's in Engineering. In my final semester, I enrolled in a specialized VLSI course at Glowlogics. The course covered Verilog, FPGA, ASIC flow, and low-power techniques. I also did a Verilog design project that strengthened my hardware skills. This training has prepared me well for the semiconductor field.",
+                    img: "/pritam.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-50 rounded-xl shadow p-6 w-[320px] flex-shrink-0 flex flex-col"
+                  >
+                    <svg
+                      className="text-blue-500 text-xl mb-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                      width="20"
+                      height="20"
+                    >
+                      <path d="M464 32H320c-26.5 0-48 21.5-48 48v144c0 26.5 21.5 48 48 48h24v32c0 44.2-35.8 80-80 80-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 88.4 0 160-71.6 160-160v-64c0-26.5-21.5-48-48-48H336V80h128v352h48V80c0-26.5-21.5-48-48-48z" />
+                    </svg>
+                    <p className="text-gray-700 text-sm mb-4">{item.text}</p>
+                    <div className="flex items-center space-x-3 mt-auto">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="w-14 h-14 rounded-full object-cover"
+                      />
+                      <div>
+                        <p className="font-semibold text-sm">{item.name}</p>
+                        <p className="text-xs text-gray-500">{item.title}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

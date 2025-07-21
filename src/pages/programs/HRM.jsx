@@ -1,41 +1,36 @@
 import { useState } from "react";
 import { FaCheckCircle, FaStar, FaUserFriends } from "react-icons/fa";
+import RoadmapFlow from "/RoadmapFlow.png";
 // import { FaQuoteLeft } from "react-icons/fa";
 
 const FullStackCourse = () => {
   const [openSection, setOpenSection] = useState(null);
 
-  // const roles = [
-  //   "Project Director",
-  //   "Senior Project Manager",
-  //   "Team Leads/Team Managers",
-  //   "Project Management Officer (PMO)",
-  // ];
 
   const roleLogos = {
-    "Project Director": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg",
+    "HR Executive –  Starting Salary (India): ₹3 – ₹5.5 LPA": [
+      "data:image/png;base64,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",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1mfxOyRFkqOsS2bqbAv6Jme5aZst5647elBXv3sNokwJNbq3Wohed1XLWWg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjl7XELiAxlFFuJltyWm6Th6inOxlVzxc7MMrSSbAJyYiszxgXSb41DDrv8Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR10Fz15vjWryAGF7LWpwGCBpDyAiBOpgW5o3r--4GHkybcmtt0q5FI7cavs&s",
     ],
-    "Senior Project Manager": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Accenture.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Infosys_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo_2020.svg",
+    "Talent Acquisition Specialist – Starting Salary (India): ₹3.5 – ₹6 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSdO7qhiIhfW64Jzgkz4Cj7q0QULsDwlU1aoDKHgzoOwE7zTdiQXABFQI2Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFUnTw99fm9fVevBAnkSKTEI5XV_T9LbhKusHHYOdxLt2w6vvDTX-15ZO6uw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpsGe5iEJob0dcSB5w9P5aWFjriI1hp0gyk5BlsAn303UpqPqoxUUqNhUuZ0&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJWrxnzTPiaRgGMzwh2fyV6kD15A-ihppe3wEcKFGD8pj1znEEBk1RytrrA&s",
     ],
-    "Team Leads/Team Managers": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f6/TCS_New_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/HCL_Technologies_Logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/ZOHO_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Salesforce.com_logo.svg",
+    "HR Generalist – Starting Salary (India): ₹4 – ₹6.5 LPA": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9K8eaqkEKLNFWf7fzbQAca3McYHsdkvpKMtXwLKgEB_hDmtMn61N2v0DEgA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKP2CNJ_0aX4DAuhMIOmzxvMXUE8adsc5v8z44BExycJHV6oFEDsB1a1HmNA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXESL8W6aoDD3CHdJhAz5rmb-MbmKKvvuatyvydeY-fxSHcDheXyKvmYG2W0A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD75Ew8D4llFJk_ZTfQVFS8PwxlhVYwES4SOUQqTcmZtHPw5Pz42sC1coMWQ&s",
     ],
-    "Project Management Officer (PMO)": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Deloitte.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/8/82/KPMG_logo.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/3/3e/EY_logo_2019.svg",
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/PwC_logo.svg",
+    "Learning and Development Coordinator – Starting Salary (India): ₹3.5 – ₹6 LPA": [
+       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_P85o6q5b2clTlqYUhvgVMIdgUu6MqvzfBISHBirSsS0R7uJwK3u1Fd1bB-U&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQ2ed2DEYUtBqM5QFnRlUDyMc6naNQ7ZqTLQ3pdl1WOk8NHom7ffKz3ub-g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ywGfT6BXzPfdxnmFPHu9WagIC7E_Dz9XlHiCyKOO0jjcX-iktawn2T41-4Q&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSze0EO7gJyuZJ7-LbrCiBH60WrvWTeLenF82OZdK0kaNvhnmmReIiMQFZvRg&s",
     ],
   };
 
@@ -408,6 +403,20 @@ const FullStackCourse = () => {
             ))}
           </div>
         </div>
+         <div>
+                  <br></br>
+                </div>
+                <div className="overflow-hidden w-full max-w-5xl mx-auto rounded-lg shadow-md">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">
+                    Your 5-Step Career Roadmap with Glowlogics
+                  </h2>
+
+                  <img
+                    src={RoadmapFlow}
+                    alt="World map with student locations"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-105 w-full h-auto"
+                  />
+                </div>
         <div className="max-w-7xl mx-auto px-4 py-16 flex flex-col lg:flex-row gap-10 items-start">
           {/* Left: FAQ Section */}
           <div className="w-full lg:w-2/3">
@@ -472,94 +481,115 @@ const FullStackCourse = () => {
           </div>
 
           {/* Right: Certificates */}
-          <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
-           <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+         <div className="w-full lg:w-1/2 mx-auto relative flex flex-col items-center">
+  <div className="bg-[#f9fbff] rounded-xl shadow-md p-8 max-w-md mx-auto text-center border border-orange-600 mb-6">
+    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+      Next cohort starts on <span className="text-black font-bold">3 Aug 2025</span>
+    </h3>
+  </div>
 
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-                Next cohort starts on{" "}
-                <span className="text-black font-bold">3 Aug 2025</span>
-              </h3>
+  {/* Certificate Image with Hover Zoom */}
+  <div
+    id="cert-container"
+    className="border rounded-lg shadow-md overflow-hidden w-full"
+    onMouseMove={(e) => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        const rect = img.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+      }
+    }}
+    onMouseLeave={() => {
+      const img = document.getElementById("cert-img");
+      if (img) {
+        img.style.transformOrigin = "center center";
+      }
+    }}
+  >
+    <img
+      id="cert-img"
+      src="/CourseCompletionGlowlogics.png"
+      alt="Certificate 1"
+      data-index="0"
+      className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
+      onClick={() => {
+        const modal = document.getElementById("cert-modal");
+        modal.style.display = "flex";
+      }}
+    />
+  </div>
 
-              {/* Countdown Grid */}
-            </div>{" "}
-            <div
-              id="cert-container"
-              className="border rounded-lg shadow-md overflow-hidden w-full"
-              onMouseMove={(e) => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  const rect = img.getBoundingClientRect();
-                  const x = ((e.clientX - rect.left) / rect.width) * 100;
-                  const y = ((e.clientY - rect.top) / rect.height) * 100;
-                  img.style.transformOrigin = `${x}% ${y}%`;
-                }
-              }}
-              onMouseLeave={() => {
-                const img = document.getElementById("cert-img");
-                if (img) {
-                  img.style.transformOrigin = "center center";
-                }
-              }}
-            >
-              <img
-                id="cert-img"
-                src="/CourseCompletionGlowlogics.png"
-                alt="Certificate 1"
-                className="w-full h-auto object-contain p-2 transition-transform duration-300 ease-in-out scale-100 hover:scale-[2.5] cursor-zoom-in"
-              />
-            </div>
-            <div className="flex gap-6 mt-4">
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex =
-                    (currentIndex - 1 + certificates.length) %
-                    certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ◀
-              </button>
+  {/* Certificate Navigation Buttons */}
+  <div className="flex gap-6 mt-4">
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ◀
+    </button>
 
-              <button
-                onClick={() => {
-                  const certificates = [
-                    "/CourseCompletionGlowlogics.png",
-                    "/InternshipGlowlogics.png",
-                    "/PlacementGlowlogics.png",
-                  ];
-                  let currentIndex =
-                    parseInt(
-                      document
-                        .getElementById("cert-img")
-                        .getAttribute("data-index")
-                    ) || 0;
-                  currentIndex = (currentIndex + 1) % certificates.length;
-                  const img = document.getElementById("cert-img");
-                  img.src = certificates[currentIndex];
-                  img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
-                  img.setAttribute("data-index", currentIndex);
-                }}
-                className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
-              >
-                ▶
-              </button>
-            </div>
-          </div>
+    <button
+      onClick={() => {
+        const certificates = [
+          "/CourseCompletionGlowlogics.png",
+          "/InternshipGlowlogics.png",
+          "/PlacementGlowlogics.png",
+        ];
+        let currentIndex =
+          parseInt(document.getElementById("cert-img").getAttribute("data-index")) || 0;
+        currentIndex = (currentIndex + 1) % certificates.length;
+        const img = document.getElementById("cert-img");
+        img.src = certificates[currentIndex];
+        img.setAttribute("alt", `Certificate ${currentIndex + 1}`);
+        img.setAttribute("data-index", currentIndex);
+        document.getElementById("modal-img").src = certificates[currentIndex];
+      }}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700"
+    >
+      ▶
+    </button>
+  </div>
+
+  {/* Fullscreen Popup Modal */}
+  <div
+    id="cert-modal"
+    className="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4"
+    style={{ display: "none" }}
+  >
+    <div className="relative max-w-4xl w-full">
+      <button
+        onClick={() => {
+          document.getElementById("cert-modal").style.display = "none";
+        }}
+        className="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full px-3 py-1 text-sm font-semibold"
+      >
+        ✕ Close
+      </button>
+      <img
+        id="modal-img"
+        src="/CourseCompletionGlowlogics.png"
+        alt="Full Certificate"
+        className="w-full h-auto object-contain rounded-lg"
+      />
+    </div>
+  </div>
+</div>
         </div>
         <div className=" py-12 overflow-hidden">
           <h2 className="text-3xl font-bold text-center mb-10 leading-snug">
