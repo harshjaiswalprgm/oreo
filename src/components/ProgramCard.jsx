@@ -16,7 +16,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "20 June 25",
     image:
-      "https://img.freepik.com/premium-vector/modern-3d-illustration-landing-page-ui-design_145666-1960.jpg",
+      "/src/assets/images/UIUX.webp",
     desc: "Design apps and websites people love to use.",
     details:
       "Learn UI/UX skills like wireframing, prototyping, user flow creation, and real-world design projects. No coding needed — just creativity and curiosity.",
@@ -31,7 +31,7 @@ const programData = [
     author: "Selfbased",
     date: "",
     image:
-      "https://img.freepik.com/premium-photo/spreadsheet-document-information-financial-startup-concept-snugly_31965-600877.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/AdvanceExcel.webp",
     desc: "Master Excel for data analysis, reporting & automation.",
     details:
       "Learn formulas, pivot tables, dashboards, macros, and more through a self-paced program. Build skills to handle real-world business data confidently",
@@ -46,7 +46,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "7 June 25",
     image:
-      "https://img.freepik.com/premium-photo/search-engine-marketing-composition-design_23-2150923510.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/digitalmarketing.webp",
     desc: "Master Digital Marketing: SEO, Social Media, Ads & Analytics",
     details:
       "Learn live from experts through interactive sessions covering SEO, Google Ads, social media marketing, content strategy, and real-world projects to build your portfolio.",
@@ -60,7 +60,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "2 June 25",
     image:
-      "https://img.freepik.com/premium-photo/writing-code-creating-website-dashboards-programming-help-technology-website-upkeep_27634-1240.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/JavaFullStack.webp",
     desc: "Master Java, Spring, SQL & Full Stack Web Development",
     details:
       "Learn frontend and backend development using Java, Spring Boot, SQL, HTML, CSS, and more. Build complete web applications with live projects and expert mentorship.",
@@ -74,7 +74,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "9 June 25",
     image:
-      "https://img.freepik.com/premium-photo/businessman-working-with-business-analytics-data-management-system-computer-online-document-management-metrics-connected-database-corporate-strategy-finance-operations-salesx9_661047-4235.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/DataScience.webp",
     desc: "Master Data Science: Python, Machine Learning & Analytics.",
     details:
       "Learn Python, data analysis, machine learning, visualization, and real-world project building. Gain job-ready skills with live classes and industry mentorship.",
@@ -88,7 +88,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "8 June 25",
     image:
-      "https://img.freepik.com/free-photo/man-working-with-computer-side-view_23-2149930994.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/appdev.webp",
     desc: "Learn Mobile App Development with Android & Flutter.",
     details:
       "Build real-world Android and cross-platform apps using Java, Kotlin, and Flutter. Master UI/UX basics, backend integration, and app deployment with expert guidance.",
@@ -104,7 +104,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "09 Jun 25",
     image:
-      "https://img.freepik.com/premium-photo/html-system-websites-concept_23-2150323528.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/FullStackWeb.webp",
     desc: "Learn HTML, CSS, JavaScript, React & Backend.",
     details:
       "Master web development from scratch with frontend, backend, databases, APIs, deployment, and real-world projects.",
@@ -118,7 +118,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "2 June 25",
     image:
-      "https://img.freepik.com/free-vector/ai-futuristic-technology-background_53876-97391.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/ai.webp",
     desc: "Learn AI concepts, Python, Machine Learning & NLP.",
     details:
       "Master artificial intelligence with Python, machine learning models, deep learning, computer vision, and AI project deployment.",
@@ -132,7 +132,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "9 June 25",
     image:
-      "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169861.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/DataScience.webp",
     desc: "Master Data Science: Python, Machine Learning & Analytics.",
     details:
       "Learn Python, data analysis, machine learning, visualization, and real-world project building. Gain job-ready skills with live classes and industry mentorship.",
@@ -146,7 +146,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "1 June 25",
     image:
-      "https://img.freepik.com/free-photo/cyber-security-concept-digital-art_23-2151637765.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/CyberSecurity.webp",
     desc: "Learn Ethical Hacking, Network Security & Cyber Laws",
     details:
       "Master cybersecurity fundamentals, ethical hacking, penetration testing, network defense, encryption, and securing real-world systems.",
@@ -161,7 +161,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "20 June 25",
     image:
-      "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/UIUX.webp",
     desc: "Design apps and websites people love to use.",
     details:
       "Learn UI/UX skills like wireframing, prototyping, user flow creation, and real-world design projects. No coding needed — just creativity and curiosity.",
@@ -175,7 +175,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "3 June 25",
     image:
-      "https://img.freepik.com/premium-photo/creative-square-circuit-button-hologram-with-cloud-icon-dark-wallpaper-technology-cloud-computing-concept-3d-rendering_670147-96675.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/CloudComputing.webp",
     desc: "Learn Cloud Platforms, AWS, Azure & Virtualization.",
     details:
       "Master cloud computing essentials including cloud services, deployment models, storage, networking, and real-world project implementation.",
@@ -189,7 +189,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "2 July 25",
     image:
-      "https://plus.unsplash.com/premium_photo-1683121713210-97667d2e83c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNlbWljb25kdWN0b3J8ZW58MHx8MHx8fDA%3D",
+      "/src/assets/images/VLSI.webp",
     desc: "Learn VLSI Design, Verilog, RTL Simulation & FPGA",
     details:
       "Master VLSI concepts with digital design, RTL coding, ASIC/FPGA implementation, synthesis, and timing analysis using industry-standard tools.",
@@ -203,7 +203,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "4 June 25",
     image:
-      "https://img.freepik.com/premium-vector/internet-things-iot_35632-74.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/IOT.webp",
     desc: "Learn IoT Systems, Sensors, Arduino & Cloud Integration.",
     details:
       "Master Internet of Things with hands-on projects using IoT devices, sensor data collection, cloud storage, real-time monitoring, and automation.",
@@ -217,7 +217,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "5 June 25",
     image:
-      "https://img.freepik.com/free-photo/tired-woman-architect-working-modern-cad-program-overtime-sitting-desk-start-up-office-industrial-female-engineer-studying-prototype-idea-pc-showing-cad-software-device-display_482257-13399.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/AutoCAD.webp",
     desc: "Learn 2D & 3D Drafting, Modeling, and Design with AutoCAD.",
     details:
       "Master technical drawing, blueprint creation, and real-world architectural and mechanical design projects using AutoCAD software.",
@@ -304,7 +304,7 @@ const programData = [
     author: "Selfbased",
     date: "",
     image:
-      "https://img.freepik.com/premium-photo/business-teamwork-meeting-success-achievement-goal_42957-2564.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/LEADERSHIP.avif",
     desc: "Develop Leadership Skills, Team Management & Business Strategies.",
     details:
       "Learn essential management skills like team handling, decision-making, conflict resolution, project leadership, and business growth strategies through a self-paced learning program.",
@@ -333,7 +333,7 @@ const programData = [
     author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
-      "https://img.freepik.com/free-photo/top-viewtop-view-manager-employee-doing-teamwork-business-office-looking-charts-laptop-display_482257-2443.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/Accounting.webp",
     desc: "Learn Business Accounting, Taxation & Financial Reporting.",
     details:
       "Master core accounting concepts including balance sheets, profit and loss statements, GST, TDS, and real-world finance handling through live interactive classes and guided projects.",
@@ -405,7 +405,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "5 May 25",
     image:
-      "https://img.freepik.com/free-photo/three-business-people-meeting_23-2147626533.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
+      "/src/assets/images/hr.webp",
     desc: "Learn Core HR Practices, Payroll, and Financial Management",
     details:
       "Master HR operations, recruitment, payroll, employee management, finance basics, and business accounting through a self-paced program designed for career growth.",
