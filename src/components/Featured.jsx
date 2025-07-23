@@ -1,4 +1,3 @@
-
 export default function Featured() {
   // Refs
   const refs = Array.from({ length: 6 }, () => (null));
@@ -22,12 +21,12 @@ export default function Featured() {
   };
 
   const cardImages = [
-    "/src/assets/images/webdev.webp",
-    "/src/assets/images/appdev.webp",
-    "/src/assets/images/ai.webp",
-    "/src/assets/images/hr.webp",
-    "/src/assets/images/python.webp",
-    "/src/assets/images/digitalmarketing.webp",
+    "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBwJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1625314868143-20e93ce3ff33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFpfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEhSfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHB5dGhvbnxlbnwwfHwwfHx8MA%3D%3D",
+    "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxkaWdpdGFsJTIwbWFya2V0aW5nfGVufDB8fDB8fHww",
   ];
 
   return (
