@@ -16,7 +16,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "20 June 25",
     image:
-      "/src/assets/images/UIUX.webp",
+      "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150104516.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Design apps and websites people love to use.",
     details:
       "Learn UI/UX skills like wireframing, prototyping, user flow creation, and real-world design projects. No coding needed — just creativity and curiosity.",
@@ -88,7 +88,7 @@ const programData = [
     author: "📅 This Batch Is Now Live",
     date: "8 June 25",
     image:
-      "/src/assets/images/appdev.webp",
+      "https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169839.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Learn Mobile App Development with Android & Flutter.",
     details:
       "Build real-world Android and cross-platform apps using Java, Kotlin, and Flutter. Master UI/UX basics, backend integration, and app deployment with expert guidance.",
@@ -333,7 +333,7 @@ const programData = [
     author: "Glowlogics Solutions",
     date: "28 Aug 25",
     image:
-      "/src/assets/images/Accounting.webp",
+      "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?ga=GA1.1.1362237040.1750501614&semt=ais_hybrid&w=740",
     desc: "Learn Business Accounting, Taxation & Financial Reporting.",
     details:
       "Master core accounting concepts including balance sheets, profit and loss statements, GST, TDS, and real-world finance handling through live interactive classes and guided projects.",
