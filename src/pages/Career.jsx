@@ -13,7 +13,7 @@ const jobOpenings = [
     exp: "Freshers, 1-3 years",
     ctc: "₹4-6 LPA",
     description:
-      "Responsible for inbound/outbound sales calls, product demos, and closing leads.",
+      "Responsible for inbound / outbound sales calls, product demos, and closing leads.",
   },
   {
     id: 2,
