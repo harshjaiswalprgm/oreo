@@ -8,68 +8,67 @@ const jobOpenings = [
     title: "Inside Sales Representative",
     location: "Bangalore, Bangalore, Kolkata",
     category: "Sales",
-
-
-
     company: "Glowlogics",
     companyLevel: "Mid-Level",
     exp: "Freshers, 1-3 years",
     ctc: "₹4-6 LPA",
     description:
       "Responsible for inbound / outbound sales calls, product demos, and closing leads.",
-
   },
   {
     id: 2,
     title: "Marketing Specialist",
-    location: "Bangalore, Mangalore,",
+    location: "Bangalore, Bangalore,",
     category: "Marketing",
+    company: "Glowlogics",
     companyLevel: "Entry-Level",
     exp: "0-2 years",
-
-    ctc: "₹3-4 LPA",
-    description: "Assist in executing campaigns, managing SEO/SEM, and analyzing market trends."
-
+    ctc: "₹3-5 LPA",
+    description:
+      "Assist in executing campaigns, managing SEO/SEM, and analyzing market trends.",
   },
   {
     id: 3,
     title: "Brand Marketing",
     location: "Work from Home",
     category: "Marketing",
+    company: "Glowlogics",
     companyLevel: "Mid-Level",
-
-    exp: "Still Studing or Part Time 0-1 years",
-    ctc: "upto ₹15,000 per mmonth",
-    description: "Develop and execute branding strategies to increase product visibility and equity."
-
+    exp: "0-2 years",
+    ctc: "₹4.5-7 LPA",
+    description:
+      "Develop and execute branding strategies to increase product visibility and equity.",
   },
   {
     id: 4,
     title: "Manager Sales",
     location: "Bangalore",
     category: "Sales",
+    company: "Glowlogics",
     companyLevel: "Senior-Level",
-    exp: "3+ years",
-    ctc: "₹6-8 LPA",
-    description: "Lead the sales team, drive KPIs, manage strategic clients and revenue pipelines."
+    exp: "5+ years",
+    ctc: "₹10-15 LPA",
+    description:
+      "Lead the sales team, drive KPIs, manage strategic clients and revenue pipelines.",
   },
   {
     id: 5,
     title: "Manager Marketing",
-    location: "Bangalore",
+    location: "Bangalore, Kolkata, Bangalore",
     category: "Marketing",
+    company: "Glowlogics",
     companyLevel: "Senior-Level",
-
-    exp: "2+ years",
-    ctc: "₹5-7 LPA",
-    description: "Head the marketing team, define GTM strategy, monitor performance."
-   
+    exp: "5+ years",
+    ctc: "₹10-14 LPA",
+    description:
+      "Head the marketing team, define GTM strategy, monitor performance.",
   },
   {
     id: 6,
     title: "Campus Ambassador",
     location: "Work from Home",
     category: "Marketing",
+    company: "Glowlogics",
     companyLevel: "Internship",
     exp: "Fresher",
     ctc: "Performance Based",
@@ -81,6 +80,7 @@ const jobOpenings = [
     title: "B2B Sales",
     location: "Bangalore and Bangalore",
     category: "Sales",
+    company: "Glowlogics",
     companyLevel: "Mid-Level",
     exp: "2-4 years",
     ctc: "₹5-8 LPA",
@@ -152,8 +152,7 @@ export default function Career() {
       </div>
 
       {/* Feature Circles */}
-   
-
+      {/* Feature Circles */}
       <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 mb-16 px-4">
         {[
           {
