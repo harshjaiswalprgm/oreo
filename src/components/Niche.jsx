@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default function Footer() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -272,19 +272,19 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-black/20 pt-6 text-sm">
           {/* Left Side - Copyright */}
-          <div className="text-center md:text-left">
-            <p>
-              © 2023 Glowlogics Solutions Pvt. Ltd. All Rights Reserved{" "}
-              <a href="#" className="underline">
-                Legal Terms
-              </a>{" "}
-              |{" "}
-              <a href="#" className="underline">
-                Privacy Policy
-              </a>
-            </p>
-            <p>Website by Glowlogics | Connecting Skills to Careers.</p>
-          </div>
+         <div className="text-center md:text-left">
+  <p>
+    © 2023 Glowlogics Solutions Pvt. Ltd. All Rights Reserved{" "}
+    <Link to="/legal-terms" className="underline">
+      Legal Terms
+    </Link>{" "}
+    |{" "}
+    <Link to="/privacy-policy" className="underline">
+      Privacy Policy
+    </Link>
+  </p>
+  <p>Website by Glowlogics | Connecting Skills to Careers.</p>
+</div>
 
           {/* Right Side - Payment Logos */}
           <div className="flex items-center gap-3">
