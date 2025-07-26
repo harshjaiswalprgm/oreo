@@ -1,7 +1,10 @@
+// App.jsx
 import ScrollToTop from "./components/ScrollToTop";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "./index.css";
+
+// ✅ Components
 import Navbar from "./components/Navbar";
 import Marquee from "./components/Marquee";
 import Description from "./components/Description";
@@ -19,38 +22,35 @@ import OfferPopup from "./components/OfferPopup";
 import GlowlogicsChatbot from "./components/GlowlogicsChatbot";
 import GlobalReachSection from "./components/GlobalReachSection";
 import HeroSection from "./components/HeroSection";
-//////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////
 
+// ✅ Static Pages
 import Career from "./pages/Career";
 import About from "./pages/About";
-import PrivacyPolicy from "./pages/PrivacyPolicy"; // added
-import LegalTerms from "./pages/LegalTerms"; //  added
-import EventHub from "./pages/EventHub"; //   added
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import LegalTerms from "./pages/LegalTerms";
+import EventHub from "./pages/EventHub";
 
-//////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////
-
+// ✅ Program Pages
 import WebDev from "./pages/programs/webDev";
 import VLSI from "./pages/programs/VLSI";
 import UIUX from "./pages/programs/UIUX";
 import Ai from "./pages/programs/Ai";
 import DataSciences from "./pages/programs/Data Sciences";
-import CyberSecurity from "./pages/programs/CyberSecurity"; //   added
-import CloudComputing from "./pages/programs/CloudComputing"; //   added
-import IOT from "./pages/programs/IOT"; //   added
-import AutoCAD from "./pages/programs/AutoCAD"; //   added
-import JavaFullstack from "./pages/programs/JavaFullstack"; //   added
-import AppDevelopment from "./pages/programs/AppDevelopment"; //   added
-import DigitalMarketing from "./pages/programs/DigitalMarketing"; //   added
-import PowerBi from "./pages/programs/PowerBi"; //   added
-import HRM from "./pages/programs/HRM"; //   added
-import Leadership from "./pages/programs/Leadership"; //   added
-import AdvancedExcel from "./pages/programs/AdvancedExcel"; //   added
-import Accounting from "./pages/programs/Accounting"; //   added
-import Entrepreneurship from "./pages/programs/Entrepreneurship"; //   added
-import BusinessCommunication from "./pages/programs/BusinessCommunication"; //   added
-import Blaw from "./pages/programs/Blaw"; //   added
+import CyberSecurity from "./pages/programs/CyberSecurity";
+import CloudComputing from "./pages/programs/CloudComputing";
+import IOT from "./pages/programs/IOT";
+import AutoCAD from "./pages/programs/AutoCAD";
+import JavaFullstack from "./pages/programs/JavaFullstack";
+import AppDevelopment from "./pages/programs/AppDevelopment";
+import DigitalMarketing from "./pages/programs/DigitalMarketing";
+import PowerBi from "./pages/programs/PowerBi";
+import HRM from "./pages/programs/HRM";
+import Leadership from "./pages/programs/Leadership";
+import AdvancedExcel from "./pages/programs/AdvancedExcel";
+import Accounting from "./pages/programs/Accounting";
+import Entrepreneurship from "./pages/programs/Entrepreneurship";
+import BusinessCommunication from "./pages/programs/BusinessCommunication";
+import Blaw from "./pages/programs/Blaw";
 
 // ✅ Scroll to section if route state has scrollTo
 function ScrollHandler() {
@@ -79,7 +79,7 @@ function ScrollToTopOnLoad() {
   return null;
 }
 
-// ✅ HomePage sections (cleaned)
+// ✅ Home Page
 function HomePage() {
   return (
     <>
@@ -100,7 +100,6 @@ function HomePage() {
       <Image3DSlider />
       <Testimonial />
       <SectionOne />
-
       {/* <Niche /> */}
     </>
   );
@@ -156,13 +155,11 @@ function App() {
         />
         <Route path="/programs/Blaw" element={<Blaw />} />
       </Routes>
+
       <Niche />
-
-
       <OfferPopup />
       <FloatingSocials />
-       <GlowlogicsChatbot />
-
+      <GlowlogicsChatbot />
     </div>
   );
 }
